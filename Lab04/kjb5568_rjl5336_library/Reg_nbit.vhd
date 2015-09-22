@@ -44,6 +44,17 @@ architecture Behavioral of Reg_nbit is
 
 begin
 
+process(CLK) is 
+begin
+	if(clk'event and clk = '1') then
+		if(clr = '1') then
+			Q <= (others => '0');
+		elsif(load ='1') then
+			Q <= D;
+		end if;
+	end if;
+end process;	
+
 
 end Behavioral;
 
