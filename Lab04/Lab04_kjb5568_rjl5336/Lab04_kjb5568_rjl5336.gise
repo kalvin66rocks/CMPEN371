@@ -42,6 +42,10 @@
     <transform xil_pn:end_ts="1443038525" xil_pn:in_ck="6921553236305812655" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1443038525">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../kjb5568_rjl5336_library/AdderSubtractor_nbit.vhd"/>
       <outfile xil_pn:name="../kjb5568_rjl5336_library/Average.vhd"/>
       <outfile xil_pn:name="../kjb5568_rjl5336_library/CompareGRT.vhd"/>
@@ -82,6 +86,11 @@
     <transform xil_pn:end_ts="1443038525" xil_pn:in_ck="6921553236305812655" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1443038525">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../kjb5568_rjl5336_library/AdderSubtractor_nbit.vhd"/>
       <outfile xil_pn:name="../kjb5568_rjl5336_library/Average.vhd"/>
       <outfile xil_pn:name="../kjb5568_rjl5336_library/CompareGRT.vhd"/>
@@ -110,6 +119,10 @@
     <transform xil_pn:end_ts="1443038530" xil_pn:in_ck="6921553236305812655" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5240244776859829171" xil_pn:start_ts="1443038525">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="CounterUpDown_nbit_beh.prj"/>
       <outfile xil_pn:name="CounterUpDown_nbit_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -120,6 +133,8 @@
     <transform xil_pn:end_ts="1443038530" xil_pn:in_ck="6391711195047951251" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1529282085361838216" xil_pn:start_ts="1443038530">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="CounterUpDown_nbit_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

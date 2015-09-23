@@ -39,16 +39,16 @@ signal   count : integer := 0 ;
 begin
 
 process (CLK) is 
-	begin 
-		if (CLK'event and CLK='1') then 
-			if(up = '1') then
-				count <= count + 1 ;
-			elsif (down = '1') then 
-				count <= count - 1 ;
-			end if;
+begin 
+	if (CLK'event and CLK='1' and en = '1') then 
+		if(up = '1') then
+			count <= count + 1 ;
+		elsif (down = '1') then 
+			count <= count - 1 ;
 		elsif(CLR = '1') then 
-				count <= 0;
+			count <= 0;
 		end if;
+	end if;
 	Q <= STD_LOGIC_VECTOR (to_unsigned(count, Q'length)); 
 end process;
 

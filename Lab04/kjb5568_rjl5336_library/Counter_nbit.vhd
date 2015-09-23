@@ -34,7 +34,6 @@ architecture Behavioral of Counter_nbit is
 signal   count : integer := 0 ;
 
 begin
-
 process (CLK) is 
 	begin 
 		if (CLK'event and CLK='1') then 
@@ -46,6 +45,5 @@ process (CLK) is
 		end if;
 	Q <= STD_LOGIC_VECTOR (to_unsigned(count, Q'length)); 
 	end process;
-
 end Behavioral;
 
