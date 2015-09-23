@@ -19,15 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+use IEEE.NUMERIC_STD.ALL;
 
 entity CounterUpDown_nbit is
   generic (n : integer := 8);
@@ -42,7 +34,23 @@ end CounterUpDown_nbit;
 
 architecture Behavioral of counterupdown_nbit is
 
+signal   count : integer := 0 ;
+
 begin
+
+process (CLK) is 
+	begin 
+		if (CLK'event and CLK='1') then 
+			if(up = '1') then
+				count <= count + 1 ;
+			elsif (down = '1') then 
+				count <= count - 1 ;
+			end if;
+		elsif(CLR = '1') then 
+				count <= 0;
+		end if;
+	Q <= STD_LOGIC_VECTOR (to_unsigned(count, Q'length)); 
+end process;
 
 
 end Behavioral;

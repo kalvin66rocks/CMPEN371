@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/kalvi_000/Documents/GitHub/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/CounterUpDown_nbit_isim_beh.exe" -prj "C:/Users/kalvi_000/Documents/GitHub/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/CounterUpDown_nbit_beh.prj" "kjb5568_rjl5336_library.CounterUpDown_nbit" 
