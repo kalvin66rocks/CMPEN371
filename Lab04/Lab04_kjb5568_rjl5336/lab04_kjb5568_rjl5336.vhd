@@ -171,8 +171,8 @@ Reg_display <= Register1_out when switch(15 downto 13) = "001" else
 					Register0_out;
 					
 					
-word_int <= '0' & switch(15 downto 13) & "000000000000" & reg_display;
-digit_en <= "11111111";
+word_int <= "00000" & switch(15 downto 13) & "00000000" & reg_display;
+digit_en <= "01001111";
 					
 display: wordto8dig7seg port map (
 	word => word_int,

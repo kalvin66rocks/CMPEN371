@@ -55,7 +55,7 @@ clr_int <= '1' when (to_integer(unsigned( sel(2 downto 0))))= 7 else
 w2h <= word( 31 downto 28) when sel = "111" else
 		 word( 27 downto 24) when sel = "110" else
 		 word( 23 downto 20) when sel = "101" else
-		 word( 19 downto 16) when sel = "010" else
+		 word( 19 downto 16) when sel = "100" else
 		 word( 15 downto 12) when sel = "011" else
 		 word( 11 downto 8)  when sel = "010" else
 		 word( 7 downto 4)   when sel = "001" else
