@@ -39,6 +39,7 @@ process (CLK) is
 		if (CLK'event and CLK='1') then 
 			if(CLR = '1') then 
 				count <= 0;
+				Q <= (others => '0');
 			elsif (EN = '1') then
 				count <= count + 1 ; 
 				Q <= STD_LOGIC_VECTOR (to_unsigned(count, Q'length)); 

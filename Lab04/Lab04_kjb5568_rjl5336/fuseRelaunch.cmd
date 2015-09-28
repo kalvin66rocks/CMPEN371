@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "K:/Lab04/Lab04_kjb5568_rjl5336/WordTo8dig7seg_isim_beh.exe" -prj "K:/Lab04/Lab04_kjb5568_rjl5336/WordTo8dig7seg_beh.prj" "kjb5568_rjl5336_library.WordTo8dig7seg" 
+-intstyle "ise" -incremental -lib "secureip" -o "H:/Github/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/pulse_gen_isim_beh.exe" -prj "H:/Github/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/pulse_gen_beh.prj" "kjb5568_rjl5336_library.pulse_gen" 

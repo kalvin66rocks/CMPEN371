@@ -50,9 +50,8 @@ cnt: counter_nbit generic map (n => n) port map(
 	
 pulse_int <= '1' when (to_integer(unsigned( count(n-1 downto 0))))= maxcount else
 				 '0';
+clear <= clr or pulse_int;
 pulse <= pulse_int;
-
-clear <= pulse_int or CLR;
 
 
 

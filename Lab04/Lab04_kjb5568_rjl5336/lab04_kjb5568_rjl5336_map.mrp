@@ -11,23 +11,23 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -1
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Mon Sep 28 09:28:11 2015
+Mapped Date    : Mon Sep 28 15:12:41 2015
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   15
+Number of warnings:    3
 Slice Logic Utilization:
   Number of Slice Registers:                    33 out of 126,800    1%
     Number used as Flip Flops:                  33
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         31 out of  63,400    1%
-    Number used as logic:                       27 out of  63,400    1%
-      Number using O6 output only:              11
+  Number of Slice LUTs:                         30 out of  63,400    1%
+    Number used as logic:                       26 out of  63,400    1%
+      Number using O6 output only:              12
       Number using O5 output only:               6
-      Number using O5 and O6:                   10
+      Number using O5 and O6:                    8
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  19,000    0%
     Number used exclusively as route-thrus:      4
@@ -36,14 +36,14 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    18 out of  15,850    1%
-  Number of LUT Flip Flop pairs used:           46
-    Number with an unused Flip Flop:            14 out of      46   30%
-    Number with an unused LUT:                  15 out of      46   32%
-    Number of fully used LUT-FF pairs:          17 out of      46   36%
-    Number of unique control sets:               9
+  Number of occupied Slices:                    19 out of  15,850    1%
+  Number of LUT Flip Flop pairs used:           45
+    Number with an unused Flip Flop:            13 out of      45   28%
+    Number with an unused LUT:                  15 out of      45   33%
+    Number of fully used LUT-FF pairs:          17 out of      45   37%
+    Number of unique control sets:               6
     Number of slice register sites lost
-      to control set restrictions:              39 out of 126,800    1%
+      to control set restrictions:              15 out of 126,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -54,8 +54,8 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        53 out of     210   25%
-    Number of LOCed IOBs:                       53 out of      53  100%
+  Number of bonded IOBs:                        41 out of     210   19%
+    Number of LOCed IOBs:                       41 out of      41  100%
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
@@ -90,11 +90,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of XADCs:                               0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.14
+Average Fanout of Non-Clock Nets:                2.82
 
-Peak Memory Usage:  898 MB
-Total REAL time to MAP completion:  27 secs 
-Total CPU time to MAP completion:   24 secs 
+Peak Memory Usage:  910 MB
+Total REAL time to MAP completion:  24 secs 
+Total CPU time to MAP completion:   22 secs 
 
 Table of Contents
 -----------------
@@ -117,47 +117,23 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:367 - The signal <SWITCH<6>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SWITCH<7>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SWITCH<10>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SWITCH<8>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SWITCH<11>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SWITCH<9>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SWITCH<12>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <BTNC_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <SWITCH<0>_IBUF> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <BTND_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SWITCH<1>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SWITCH<2>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SWITCH<3>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SWITCH<4>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SWITCH<5>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network SWITCH<12>_IBUF has no load.
+INFO:LIT:243 - Logical network SWITCH<12> has no load.
 INFO:LIT:395 - The above info message is repeated 14 more times for the
    following (max. 5 shown):
-   SWITCH<11>_IBUF,
-   SWITCH<10>_IBUF,
-   SWITCH<9>_IBUF,
-   SWITCH<8>_IBUF,
-   SWITCH<7>_IBUF
+   SWITCH<11>,
+   SWITCH<10>,
+   SWITCH<9>,
+   SWITCH<8>,
+   SWITCH<7>
    To see the details of these info messages, please use the -detail switch.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
@@ -230,18 +206,6 @@ Section 6 - IOB Properties
 | SEGMENT<5>                         | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | SEGMENT<6>                         | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | SWITCH<0>                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<1>                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<2>                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<3>                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<4>                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<5>                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<6>                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<7>                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<8>                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<9>                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<10>                         | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<11>                         | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| SWITCH<12>                         | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | SWITCH<13>                         | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | SWITCH<14>                         | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | SWITCH<15>                         | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
