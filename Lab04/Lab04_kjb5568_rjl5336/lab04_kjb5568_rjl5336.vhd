@@ -56,24 +56,17 @@ signal Center_corrected  : STD_LOGIC;
 
 begin
 
-pulse16: pulse_gen generic map( n => 16,  maxcount => 6250000) port map(
-	en => '1',
-	clk => clk,
-	clr => BTNR,
-	pulse => pulse_16);
-	
-pulse50: pulse_gen generic map( n => 16,  maxcount => 2) port map(
-	en => '1',
-	clk => clk,
-	clr => BTNR,
-	pulse => pulse_50);
-	
-pulse500: pulse_gen generic map( n => 16,  maxcount => 104000) port map(
-	en => '1',
-	clk => clk,
-	clr => BTNR,
-	pulse => pulse_500);
 
+Center_debounce: Debouncer port map(
+	D => BTNC,
+	CLK => CLK,
+	pulse => pulse_50,
+	Q => Center_Debounced);
+	
+Center_steady: OneShot port map(
+	D => Center_debounced,
+	CLK => CLK,
+	Q => Center_corrected);
 Register0: shift_register port map(
 	d => switch(0),
 	load => center_corrected,
@@ -104,53 +97,13 @@ Register4: counter_nbit generic map (16) port map(
 	CLK => CLK,
 	CLR => BTNR,
 	Q => Register4_out);
-
-	
-UP_Oneshot: OneShot port map(
-	D => BTNU,
-	CLK => CLK,
-	Q => UP_oneshotted);
 	
 Register5: counter_nbit generic map (16) port map(
 	EN => UP_oneshotted,
 	CLK => CLK,
 	CLR => BTNR,
 	Q => Register5_out);
-
-UP_steady: OneShot port map(
-	D => UP_debounced,
-	CLK => CLK,
-	Q => UP_corrected);
-
-
-UP_debounce: Debouncer port map(
-	D => BTNU,
-	CLK => CLK,
-	pulse => pulse_500,
-	Q => UP_Debounced);
 	
-Down_steady: OneShot port map(
-	D => Down_debounced,
-	CLK => CLK,
-	Q => Down_corrected);
-
-Down_debounce: Debouncer port map(
-	D => BTND,
-	CLK => CLK,
-	pulse => pulse_500,
-	Q => Down_Debounced);
-	
-Center_steady: OneShot port map(
-	D => Center_debounced,
-	CLK => CLK,
-	Q => Center_corrected);
-
-Center_debounce: Debouncer port map(
-	D => BTNC,
-	CLK => CLK,
-	pulse => pulse_500,
-	Q => Center_Debounced);
-
 Register6: counter_nbit generic map (16) port map(
 	EN => UP_corrected,
 	CLK => CLK,
@@ -164,6 +117,49 @@ Register7: CounterUpDown_nbit generic map (16) port map(
 	CLK => CLK,
 	CLR => BTNR,
 	Q => Register7_out);
+	
+UP_Oneshot: OneShot port map(
+	D => BTNU,
+	CLK => CLK,
+	Q => UP_oneshotted);
+
+UP_steady: OneShot port map(
+	D => UP_debounced,
+	CLK => CLK,
+	Q => UP_corrected);
+
+UP_debounce: Debouncer port map(
+	D => BTNU,
+	CLK => CLK,
+	pulse => pulse_50,
+	Q => UP_Debounced);
+	
+Down_steady: OneShot port map(
+	D => Down_debounced,
+	CLK => CLK,
+	Q => Down_corrected);
+
+Down_debounce: Debouncer port map(
+	D => BTND,
+	CLK => CLK,
+	pulse => pulse_50,
+	Q => Down_Debounced);
+	
+pulse16: pulse_gen generic map( n => 16,  maxcount => 6250000) port map(
+	en => '1',
+	clk => clk,
+	clr => BTNR,
+	pulse => pulse_16);
+pulse50: pulse_gen generic map( n => 16,  maxcount => 2) port map(
+	en => '1',
+	clk => clk,
+	clr => BTNR,
+	pulse => pulse_50);
+pulse500: pulse_gen generic map( n => 16,  maxcount => 104000) port map(
+	en => '1',
+	clk => clk,
+	clr => BTNR,
+	pulse => pulse_500);
 	
 Reg_display <= Register1_out when switch(15 downto 13) = "001" else
 					Register2_out when switch(15 downto 13) = "010" else
@@ -181,7 +177,7 @@ digit_en <= "11110001";
 display: wordto8dig7seg port map (
 	word => word_int,
 	clk => clk,
-	strobe => pulse_500,
+	strobe => pulse_50,
 	digit_en => digit_en,
 	segment => segment,
 	anode => anode);

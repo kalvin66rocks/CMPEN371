@@ -1,0 +1,29 @@
+Command line:
+   lab04_kjb5568_rjl5336_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62276
+
+Mon Sep 28 15:27:41 2015
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 841.339 Meg
+
+ Total Signals          : 281
+ Total Nets             : 358
+ Total Signal Drivers   : 75
+ Total Blocks           : 57
+ Total Primitive Blocks : 44
+ Total Processes        : 65
+ Total Traceable Variables  : 30
+ Total Scalar Nets and Variables : 858
+Total Line Count : 147
+
+ Total Simulation Time: 0.28125 sec
+
+ Current Memory Usage: 684.044 Meg
+
+Mon Sep 28 15:29:41 2015
+

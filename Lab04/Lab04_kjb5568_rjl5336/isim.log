@@ -1,5 +1,5 @@
 ISim log file
-Running: H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb H:/Github/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/pulse_gen_isim_beh.wdb 
+Running: H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\lab04_kjb5568_rjl5336_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb H:/Github/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/lab04_kjb5568_rjl5336_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,10 +10,14 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /pulse_gen/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /lab04_kjb5568_rjl5336/pulse16/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /lab04_kjb5568_rjl5336/pulse50/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /lab04_kjb5568_rjl5336/pulse500/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /lab04_kjb5568_rjl5336/display/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
-# isim force add /pulse_gen/clk 1 -radix bin -value 0 -radix bin -time 50 ns -repeat 100 ns
-# isim force add /pulse_gen/en 1 -radix bin
+# isim force add /lab04_kjb5568_rjl5336/clk 1 -radix bin -value 0 -radix bin -time 5 ns -repeat 10 ns
+# isim force add /lab04_kjb5568_rjl5336/btnc 1 -radix bin
+# isim force add /lab04_kjb5568_rjl5336/switch 0000000000000001 -radix bin
 # run 1.00us
 # run 1.00us
 # run 1.00us
@@ -30,6 +34,7 @@ Finished circuit initialization process.
 # run 1.00us
 # run 1.00us
 # run 1.00us
+# isim force add /lab04_kjb5568_rjl5336/clk 1 -radix bin -value 0 -radix bin -time 2500 ps -repeat 5 ns
 # run 1.00us
 # run 1.00us
 # run 1.00us
@@ -44,4 +49,8 @@ Finished circuit initialization process.
 # run 1.00us
 # run 1.00us
 # run 1.00us
+# run 1.00us
+# isim force add /lab04_kjb5568_rjl5336/btnc 0 -radix bin
+# run 1.00us
+# isim force add /lab04_kjb5568_rjl5336/btnc 1 -radix bin
 # run 1.00us

@@ -151,36 +151,37 @@ Parsing architecture <Structural> of entity <lab04_kjb5568_rjl5336>.
 
 Elaborating entity <lab04_kjb5568_rjl5336> (architecture <Structural>) from library <work>.
 
-Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
-
-Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
-
-Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
-
-Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
-
-Elaborating entity <Shift_Register> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
+Elaborating entity <Debouncer> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <DFF_CE> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd" Line 47: ce should be on the sensitivity list of the process
-
-Elaborating entity <Reg_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <OneShot> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <DFF> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
-Elaborating entity <Debouncer> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
+Elaborating entity <Shift_Register> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <Reg_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <CounterUpDown_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 35: en should be on the sensitivity list of the process
 WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 44: count should be on the sensitivity list of the process
+
+Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <WordTo8dig7seg> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <hextosevenseg> (architecture <structural>) from library <kjb5568_rjl5336_library>.
+WARNING:Xst:2972 - "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\lab04_kjb5568_rjl5336.vhd" line 158. All outputs of instance <pulse500> of block <pulse_gen> are unconnected in block <lab04_kjb5568_rjl5336>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -189,53 +190,17 @@ Elaborating entity <hextosevenseg> (architecture <structural>) from library <kjb
 Synthesizing Unit <lab04_kjb5568_rjl5336>.
     Related source file is "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\lab04_kjb5568_rjl5336.vhd".
 WARNING:Xst:647 - Input <SWITCH<12:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\lab04_kjb5568_rjl5336.vhd" line 158: Output port <PULSE> of the instance <pulse500> is unconnected or connected to loadless signal.
     Found 16-bit 8-to-1 multiplexer for signal <Reg_display> created at line 42.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <lab04_kjb5568_rjl5336> synthesized.
-WARNING:Xst:2972 - "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" line 45. All outputs of instance <cnt> of block <Counter_nbit> are unconnected in block <pulse_gen_1>. Underlying logic will be removed.
 
-Synthesizing Unit <pulse_gen_1>.
-    Related source file is "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
-        n = 16
-        maxCount = 6250000
+Synthesizing Unit <Debouncer>.
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Debouncer.vhd".
     Summary:
 	no macro.
-Unit <pulse_gen_1> synthesized.
-
-Synthesizing Unit <Counter_nbit_1>.
-    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd".
-        n = 16
-    Found 16-bit register for signal <Q>.
-    Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_7_o_add_0_OUT> created at line 44.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  48 D-type flip-flop(s).
-Unit <Counter_nbit_1> synthesized.
-
-Synthesizing Unit <pulse_gen_2>.
-    Related source file is "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
-        n = 16
-        maxCount = 2
-    Summary:
-	no macro.
-Unit <pulse_gen_2> synthesized.
-WARNING:Xst:2972 - "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" line 45. All outputs of instance <cnt> of block <Counter_nbit> are unconnected in block <pulse_gen_3>. Underlying logic will be removed.
-
-Synthesizing Unit <pulse_gen_3>.
-    Related source file is "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
-        n = 16
-        maxCount = 104000
-    Summary:
-	no macro.
-Unit <pulse_gen_3> synthesized.
-
-Synthesizing Unit <Shift_Register>.
-    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Shift_Register.vhd".
-    Summary:
-	no macro.
-Unit <Shift_Register> synthesized.
+Unit <Debouncer> synthesized.
 
 Synthesizing Unit <DFF_CE>.
     Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd".
@@ -243,14 +208,6 @@ Synthesizing Unit <DFF_CE>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <DFF_CE> synthesized.
-
-Synthesizing Unit <Reg_nbit>.
-    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Reg_nbit.vhd".
-        n = 16
-    Found 16-bit register for signal <Q>.
-    Summary:
-	inferred  16 D-type flip-flop(s).
-Unit <Reg_nbit> synthesized.
 
 Synthesizing Unit <OneShot>.
     Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\OneShot.vhd".
@@ -265,22 +222,58 @@ Synthesizing Unit <DFF>.
 	inferred   1 D-type flip-flop(s).
 Unit <DFF> synthesized.
 
-Synthesizing Unit <Debouncer>.
-    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Debouncer.vhd".
+Synthesizing Unit <Shift_Register>.
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Shift_Register.vhd".
     Summary:
 	no macro.
-Unit <Debouncer> synthesized.
+Unit <Shift_Register> synthesized.
+
+Synthesizing Unit <Counter_nbit_1>.
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd".
+        n = 16
+    Found 16-bit register for signal <Q>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_11_o_add_0_OUT> created at line 44.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  48 D-type flip-flop(s).
+Unit <Counter_nbit_1> synthesized.
+
+Synthesizing Unit <Reg_nbit>.
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Reg_nbit.vhd".
+        n = 16
+    Found 16-bit register for signal <Q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <Reg_nbit> synthesized.
 
 Synthesizing Unit <CounterUpDown_nbit>.
     Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd".
         n = 16
     Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_16_o_add_0_OUT> created at line 37.
-    Found 32-bit subtractor for signal <count[31]_GND_16_o_sub_2_OUT<31:0>> created at line 39.
+    Found 32-bit adder for signal <count[31]_GND_13_o_add_0_OUT> created at line 37.
+    Found 32-bit subtractor for signal <count[31]_GND_13_o_sub_2_OUT<31:0>> created at line 39.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
 Unit <CounterUpDown_nbit> synthesized.
+WARNING:Xst:2972 - "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" line 45. All outputs of instance <cnt> of block <Counter_nbit> are unconnected in block <pulse_gen_1>. Underlying logic will be removed.
+
+Synthesizing Unit <pulse_gen_1>.
+    Related source file is "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
+        n = 16
+        maxCount = 6250000
+    Summary:
+	no macro.
+Unit <pulse_gen_1> synthesized.
+
+Synthesizing Unit <pulse_gen_2>.
+    Related source file is "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
+        n = 16
+        maxCount = 2
+    Summary:
+	no macro.
+Unit <pulse_gen_2> synthesized.
 
 Synthesizing Unit <WordTo8dig7seg>.
     Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\numeric_display.vhd".
@@ -335,104 +328,22 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1293 - FF/Latch <count_4> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_5> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_6> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_7> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_8> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_9> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_10> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_11> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_12> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_13> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_14> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_15> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_16> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_17> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_18> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_19> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_20> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_21> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_22> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_18> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_17> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_16> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_15> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_14> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_13> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_12> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_11> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_10> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_9> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_8> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_7> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_6> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_5> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_4> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_3> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_0> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_1> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_2> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_3> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip3>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip8>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip9>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip11>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip12>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip13>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip14>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip15>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip16>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_0> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_1> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_2> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_23> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_24> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_25> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_26> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_27> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_28> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_29> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_30> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_31> has a constant value of 0 in block <Register7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip3>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip3>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip3>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Q> has a constant value of 0 in block <Flip2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_20> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_21> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_22> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_23> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_24> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_25> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_26> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_27> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_28> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_29> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_30> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_31> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Q_1> (without init value) has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_31> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_30> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_29> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_28> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_27> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_26> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_30> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_29> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_28> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_27> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_26> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_25> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_24> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_23> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_22> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_21> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_20> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_19> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_18> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_17> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_16> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_0> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_1> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_2> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
@@ -449,98 +360,23 @@ WARNING:Xst:1293 - FF/Latch <count_12> has a constant value of 0 in block <Regis
 WARNING:Xst:1293 - FF/Latch <count_13> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_14> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_15> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_16> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_17> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_18> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_19> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_12> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_13> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_14> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_15> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_16> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_17> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_18> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_19> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_20> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_21> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_22> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_23> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_24> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_25> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_26> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_27> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_28> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_29> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_30> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_31> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_25> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_24> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_23> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_22> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_21> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_20> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_19> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_0> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_1> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_2> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_3> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_4> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_5> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_6> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_7> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_8> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_9> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_10> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_11> has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_2> (without init value) has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_0> (without init value) has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_0> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_1> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_2> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_3> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_4> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_5> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_6> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_7> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_8> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_9> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_10> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_11> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_12> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_13> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_14> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_15> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_0> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_1> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_2> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_3> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_4> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_5> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_6> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_7> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_8> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_9> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_10> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_11> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_12> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_13> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_14> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_15> (without init value) has a constant value of 0 in block <Register6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_14> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_13> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_12> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_11> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_10> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_9> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_8> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_7> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_6> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_5> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_4> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_3> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_2> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_1> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_0> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1290 - Hierarchical block <pulse16> is unconnected in block <lab04_kjb5568_rjl5336>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <pulse500> is unconnected in block <lab04_kjb5568_rjl5336>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <UP_debounce> is unconnected in block <lab04_kjb5568_rjl5336>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <Down_debounce> is unconnected in block <lab04_kjb5568_rjl5336>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <Center_debounce> is unconnected in block <lab04_kjb5568_rjl5336>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <UP_steady> is unconnected in block <lab04_kjb5568_rjl5336>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <Down_steady> is unconnected in block <lab04_kjb5568_rjl5336>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <Center_steady> is unconnected in block <lab04_kjb5568_rjl5336>.
    It will be removed from the design.
 
 Synthesizing (advanced) Unit <CounterUpDown_nbit>.
@@ -604,21 +440,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1293 - FF/Latch <UP_steady/Flip/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Down_steady/Flip/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Center_steady/Flip/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <UP_debounce/Flip1/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Down_debounce/Flip1/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Center_debounce/Flip1/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <display/cnt/Q_2> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <display/cnt/Q_1> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <display/cnt/Q_0> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <UP_debounce/Flip2/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Down_debounce/Flip2/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Center_debounce/Flip2/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <UP_debounce/Flip3/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Down_debounce/Flip3/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Center_debounce/Flip3/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <count_16> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_17> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_18> of sequential type is unconnected in block <Counter_nbit_1>.
@@ -635,22 +456,35 @@ WARNING:Xst:2677 - Node <count_28> of sequential type is unconnected in block <C
 WARNING:Xst:2677 - Node <count_29> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_30> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_31> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:1293 - FF/Latch <Register7/count_0> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register7/count_1> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register7/count_2> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register7/count_3> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <Register7/count_4> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register7/count_5> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register7/count_6> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register7/count_7> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register7/count_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register7/count_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register7/count_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register7/count_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register7/count_12> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register7/count_13> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register7/count_14> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register7/count_15> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_3> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_4> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_5> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_6> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_7> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_12> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_13> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_14> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_15> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_16> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_17> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_18> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_19> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_20> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_21> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_22> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_23> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_24> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_25> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_26> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_27> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_28> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_29> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_30> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_31> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register7/count_16> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register7/count_17> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register7/count_18> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
@@ -667,7 +501,6 @@ WARNING:Xst:2677 - Node <Register7/count_28> of sequential type is unconnected i
 WARNING:Xst:2677 - Node <Register7/count_29> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register7/count_30> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register7/count_31> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:1989 - Unit <lab04_kjb5568_rjl5336>: instances <Register1>, <Register6> of unit <Counter_nbit_1> are equivalent, second instance is removed
 
 Optimizing unit <Reg_nbit> ...
 
@@ -676,138 +509,58 @@ Optimizing unit <Counter_nbit_1> ...
 Optimizing unit <Shift_Register> ...
 
 Optimizing unit <lab04_kjb5568_rjl5336> ...
-WARNING:Xst:1293 - FF/Latch <Register1/count_3> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_2> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Register1/count_0> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_1> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_0> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip1/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_3> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_2> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_1> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_2> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_3> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_4> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_5> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_6> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_7> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_8> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_9> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_10> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_11> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_12> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_13> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_14> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_15> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_0> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip2/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip3/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip4/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip5/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip6/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip7/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip8/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip9/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip10/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip11/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip12/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip13/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip14/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip15/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register0/Flip16/Q> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <Register3/Q_15> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register3/Q_14> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register3/Q_13> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register3/Q_12> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_1> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_2> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_3> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_4> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_5> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_6> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_7> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_12> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_13> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_14> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_15> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <Register3/Q_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register3/Q_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register3/Q_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register3/Q_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register3/Q_7> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register3/Q_6> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register3/Q_5> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register3/Q_4> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_15> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_14> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_13> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_12> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_7> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_6> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_5> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/count_4> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/Q_15> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/Q_14> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/Q_13> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/Q_12> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Register6/Q_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Register6/Q_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Register6/Q_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Register6/Q_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register5/Q_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register5/Q_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register5/Q_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register5/Q_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/Q_7> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/Q_6> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/Q_5> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register5/Q_4> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_15> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_14> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_13> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_12> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_7> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_6> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_5> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/count_4> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/Q_15> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/Q_14> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/Q_13> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/Q_12> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register4/Q_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register4/Q_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register4/Q_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register4/Q_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/Q_7> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/Q_6> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/Q_5> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register4/Q_4> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_15> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_14> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_13> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_12> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_7> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_6> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_5> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/count_4> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/Q_15> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/Q_14> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/Q_13> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/Q_12> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register2/Q_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register2/Q_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register2/Q_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register2/Q_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/Q_7> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/Q_6> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/Q_5> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register2/Q_4> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_15> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_14> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_13> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_12> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_7> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_6> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_5> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/count_4> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/Q_15> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/Q_14> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/Q_13> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/Q_12> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register1/Q_11> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register1/Q_10> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register1/Q_9> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:2677 - Node <Register1/Q_8> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/Q_7> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/Q_6> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/Q_5> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
-WARNING:Xst:2677 - Node <Register1/Q_4> of sequential type is unconnected in block <lab04_kjb5568_rjl5336>.
 WARNING:Xst:1293 - FF/Latch <pulse50/cnt/count_2> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pulse50/cnt/count_3> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pulse50/cnt/count_4> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
@@ -847,8 +600,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 33
- Flip-Flops                                            : 33
+# Registers                                            : 179
+ Flip-Flops                                            : 179
 
 =========================================================================
 
@@ -871,24 +624,26 @@ Top Level Output File Name         : lab04_kjb5568_rjl5336.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 64
+# BELS                             : 316
 #      GND                         : 1
-#      INV                         : 4
-#      LUT1                        : 10
-#      LUT2                        : 2
-#      LUT3                        : 1
-#      LUT4                        : 17
-#      MUXCY                       : 10
-#      MUXF7                       : 4
+#      INV                         : 6
+#      LUT1                        : 63
+#      LUT2                        : 5
+#      LUT3                        : 12
+#      LUT4                        : 23
+#      LUT6                        : 30
+#      MUXCY                       : 78
+#      MUXF7                       : 12
 #      VCC                         : 1
-#      XORCY                       : 14
-# FlipFlops/Latches                : 33
-#      FD                          : 3
-#      FDRE                        : 30
+#      XORCY                       : 85
+# FlipFlops/Latches                : 179
+#      FD                          : 4
+#      FDE                         : 25
+#      FDRE                        : 150
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 37
-#      IBUF                        : 6
+# IO Buffers                       : 40
+#      IBUF                        : 9
 #      OBUF                        : 31
 
 Device utilization summary:
@@ -898,20 +653,20 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              33  out of  126800     0%  
- Number of Slice LUTs:                   34  out of  63400     0%  
-    Number used as Logic:                34  out of  63400     0%  
+ Number of Slice Registers:             179  out of  126800     0%  
+ Number of Slice LUTs:                  139  out of  63400     0%  
+    Number used as Logic:               139  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     42
-   Number with an unused Flip Flop:       9  out of     42    21%  
-   Number with an unused LUT:             8  out of     42    19%  
-   Number of fully used LUT-FF pairs:    25  out of     42    59%  
-   Number of unique control sets:         6
+ Number of LUT Flip Flop pairs used:    204
+   Number with an unused Flip Flop:      25  out of    204    12%  
+   Number with an unused LUT:            65  out of    204    31%  
+   Number of fully used LUT-FF pairs:   114  out of    204    55%  
+   Number of unique control sets:        11
 
 IO Utilization: 
  Number of IOs:                          53
- Number of bonded IOBs:                  38  out of    210    18%  
+ Number of bonded IOBs:                  41  out of    210    19%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
@@ -937,7 +692,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 33    |
+CLK                                | BUFGP                  | 179   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -948,10 +703,10 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 2.099ns (Maximum Frequency: 476.304MHz)
-   Minimum input arrival time before clock: 1.892ns
-   Maximum output required time after clock: 2.845ns
-   Maximum combinational path delay: 2.654ns
+   Minimum period: 2.864ns (Maximum Frequency: 349.101MHz)
+   Minimum input arrival time before clock: 2.228ns
+   Maximum output required time after clock: 4.178ns
+   Maximum combinational path delay: 4.012ns
 
 Timing Details:
 ---------------
@@ -959,77 +714,91 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 2.099ns (frequency: 476.304MHz)
-  Total number of paths / destination ports: 83 / 50
+  Clock period: 2.864ns (frequency: 349.101MHz)
+  Total number of paths / destination ports: 1821 / 331
 -------------------------------------------------------------------------
-Delay:               2.099ns (Levels of Logic = 5)
-  Source:            Register5/count_0 (FF)
-  Destination:       Register5/count_3 (FF)
+Delay:               2.864ns (Levels of Logic = 17)
+  Source:            UP_steady/Flip/Q (FF)
+  Destination:       Register7/count_15 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: Register5/count_0 to Register5/count_3
+  Data Path: UP_steady/Flip/Q to Register7/count_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             2   0.478   0.405  Register5/count_0 (Register5/count_0)
-     INV:I->O              1   0.146   0.000  Register5/Mcount_count_lut<0>_INV_0 (Register5/Mcount_count_lut<0>)
-     MUXCY:S->O            1   0.472   0.000  Register5/Mcount_count_cy<0> (Register5/Mcount_count_cy<0>)
-     MUXCY:CI->O           1   0.029   0.000  Register5/Mcount_count_cy<1> (Register5/Mcount_count_cy<1>)
-     MUXCY:CI->O           0   0.029   0.000  Register5/Mcount_count_cy<2> (Register5/Mcount_count_cy<2>)
-     XORCY:CI->O           1   0.510   0.000  Register5/Mcount_count_xor<3> (Register5/Result<3>)
-     FDRE:D                    0.030          Register5/count_3
+     FD:C->Q              20   0.478   0.841  UP_steady/Flip/Q (UP_steady/Flip/Q)
+     LUT4:I1->O            1   0.124   0.000  Register7/Mcount_count_lut<0> (Register7/Mcount_count_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  Register7/Mcount_count_cy<0> (Register7/Mcount_count_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<1> (Register7/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<2> (Register7/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<3> (Register7/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<4> (Register7/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<5> (Register7/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<6> (Register7/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<7> (Register7/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<8> (Register7/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<9> (Register7/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<10> (Register7/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<11> (Register7/Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<12> (Register7/Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  Register7/Mcount_count_cy<13> (Register7/Mcount_count_cy<13>)
+     MUXCY:CI->O           0   0.029   0.000  Register7/Mcount_count_cy<14> (Register7/Mcount_count_cy<14>)
+     XORCY:CI->O           1   0.510   0.000  Register7/Mcount_count_xor<15> (Result<15>)
+     FDRE:D                    0.030          Register7/count_15
     ----------------------------------------
-    Total                      2.099ns (1.694ns logic, 0.405ns route)
-                                       (80.7% logic, 19.3% route)
+    Total                      2.864ns (2.023ns logic, 0.841ns route)
+                                       (70.6% logic, 29.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 53 / 53
+  Total number of paths / destination ports: 217 / 217
 -------------------------------------------------------------------------
-Offset:              1.892ns (Levels of Logic = 2)
+Offset:              2.228ns (Levels of Logic = 2)
   Source:            BTNR (PAD)
-  Destination:       pulse50/cnt/count_1 (FF)
+  Destination:       Register7/count_0 (FF)
   Destination Clock: CLK rising
 
-  Data Path: BTNR to pulse50/cnt/count_1
+  Data Path: BTNR to Register7/count_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            31   0.001   0.868  BTNR_IBUF (BTNR_IBUF)
-     LUT3:I0->O            2   0.124   0.405  pulse50/clear1 (pulse50/clear)
-     FDRE:R                    0.494          pulse50/cnt/count_0
+     IBUF:I->O           126   0.001   1.112  BTNR_IBUF (BTNR_IBUF)
+     LUT6:I0->O           16   0.124   0.497  Register7/_n00231 (Register7/_n0023)
+     FDRE:R                    0.494          Register7/count_0
     ----------------------------------------
-    Total                      1.892ns (0.619ns logic, 1.273ns route)
-                                       (32.7% logic, 67.3% route)
+    Total                      2.228ns (0.619ns logic, 1.609ns route)
+                                       (27.8% logic, 72.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 112 / 7
+  Total number of paths / destination ports: 722 / 28
 -------------------------------------------------------------------------
-Offset:              2.845ns (Levels of Logic = 4)
-  Source:            Register4/Q_0 (FF)
+Offset:              4.178ns (Levels of Logic = 6)
+  Source:            Register2/Q_12 (FF)
   Destination:       SEGMENT<0> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: Register4/Q_0 to SEGMENT<0>
+  Data Path: Register2/Q_12 to SEGMENT<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             1   0.478   0.536  Register4/Q_0 (Register4/Q_0)
-     LUT4:I2->O            1   0.124   0.000  Mmux_Reg_display_31 (Mmux_Reg_display_3)
-     MUXF7:I1->O           7   0.368   0.816  Mmux_Reg_display_2_f7 (Reg_display<0>)
+     FDRE:C->Q             2   0.478   0.782  Register2/Q_12 (Register2/Q_12)
+     LUT6:I2->O            1   0.124   0.000  Mmux_Reg_display_41 (Mmux_Reg_display_41)
+     MUXF7:I0->O           1   0.365   0.421  Mmux_Reg_display_2_f7_0 (Reg_display<12>)
+     LUT3:I2->O            1   0.124   0.421  display/Mmux_w2h1_SW0 (N8)
+     LUT6:I5->O            7   0.124   0.816  display/Mmux_w2h1 (display/w2h<0>)
      LUT4:I0->O            1   0.124   0.399  display/h27/Mram_Segment21 (SEGMENT_4_OBUF)
      OBUF:I->O                 0.000          SEGMENT_4_OBUF (SEGMENT<4>)
     ----------------------------------------
-    Total                      2.845ns (1.094ns logic, 1.751ns route)
-                                       (38.5% logic, 61.5% route)
+    Total                      4.178ns (1.339ns logic, 2.839ns route)
+                                       (32.0% logic, 68.0% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 140 / 7
+  Total number of paths / destination ports: 441 / 7
 -------------------------------------------------------------------------
-Delay:               2.654ns (Levels of Logic = 5)
+Delay:               4.012ns (Levels of Logic = 7)
   Source:            SWITCH<14> (PAD)
   Destination:       SEGMENT<0> (PAD)
 
@@ -1037,14 +806,16 @@ Delay:               2.654ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             8   0.001   0.822  SWITCH_14_IBUF (SWITCH_14_IBUF)
-     LUT4:I0->O            1   0.124   0.000  Mmux_Reg_display_371 (Mmux_Reg_display_37)
-     MUXF7:I1->O           7   0.368   0.816  Mmux_Reg_display_2_f7_6 (Reg_display<3>)
-     LUT4:I0->O            1   0.124   0.399  display/h27/Mram_Segment111 (SEGMENT_5_OBUF)
-     OBUF:I->O                 0.000          SEGMENT_5_OBUF (SEGMENT<5>)
+     IBUF:I->O            25   0.001   1.090  SWITCH_14_IBUF (SWITCH_14_IBUF)
+     LUT6:I0->O            1   0.124   0.000  Mmux_Reg_display_31 (Mmux_Reg_display_31)
+     MUXF7:I1->O           1   0.368   0.421  Mmux_Reg_display_2_f7_0 (Reg_display<12>)
+     LUT3:I2->O            1   0.124   0.421  display/Mmux_w2h1_SW0 (N8)
+     LUT6:I5->O            7   0.124   0.816  display/Mmux_w2h1 (display/w2h<0>)
+     LUT4:I0->O            1   0.124   0.399  display/h27/Mram_Segment21 (SEGMENT_4_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_4_OBUF (SEGMENT<4>)
     ----------------------------------------
-    Total                      2.654ns (0.617ns logic, 2.037ns route)
-                                       (23.2% logic, 76.8% route)
+    Total                      4.012ns (0.865ns logic, 3.147ns route)
+                                       (21.6% logic, 78.4% route)
 
 =========================================================================
 
@@ -1056,20 +827,20 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    2.099|         |         |         |
+CLK            |    2.864|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.67 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.01 secs
  
 --> 
 
-Total memory usage is 409524 kilobytes
+Total memory usage is 410584 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  430 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :  197 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 
