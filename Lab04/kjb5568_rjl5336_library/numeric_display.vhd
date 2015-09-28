@@ -59,6 +59,7 @@ w2h <= word( 31 downto 28) when sel = "111" else
 		 word( 15 downto 12) when sel = "011" else
 		 word( 11 downto 8)  when sel = "010" else
 		 word( 7 downto 4)   when sel = "001" else
+		 word( 3 downto 0)   when sel = "000" else
 		 word( 3 downto 0);
 
 h27: hextosevenseg port map(

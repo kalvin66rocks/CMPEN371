@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Sep 28 15:38:13 2015
+Mon Sep 28 16:21:02 2015
 
 drc -z lab04_kjb5568_rjl5336.ncd lab04_kjb5568_rjl5336.pcf
 

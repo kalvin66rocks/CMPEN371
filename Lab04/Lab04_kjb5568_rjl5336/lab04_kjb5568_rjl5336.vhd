@@ -145,7 +145,7 @@ Down_debounce: Debouncer port map(
 	pulse => pulse_50,
 	Q => Down_Debounced);
 	
-pulse16: pulse_gen generic map( n => 16,  maxcount => 6250000) port map(
+pulse16: pulse_gen generic map( n => 16,  maxcount => 625000) port map(
 	en => '1',
 	clk => clk,
 	clr => BTNR,
@@ -155,7 +155,7 @@ pulse50: pulse_gen generic map( n => 16,  maxcount => 2) port map(
 	clk => clk,
 	clr => BTNR,
 	pulse => pulse_50);
-pulse500: pulse_gen generic map( n => 16,  maxcount => 104000) port map(
+pulse500: pulse_gen generic map( n => 16,  maxcount => 10000) port map(
 	en => '1',
 	clk => clk,
 	clr => BTNR,
@@ -172,12 +172,12 @@ Reg_display <= Register1_out when switch(15 downto 13) = "001" else
 					
 					
 word_int <= '0' & switch(15 downto 13) & "000000000000" & reg_display;
-digit_en <= "11110001";
+digit_en <= "11111111";
 					
 display: wordto8dig7seg port map (
 	word => word_int,
 	clk => clk,
-	strobe => pulse_50,
+	strobe => pulse_500,
 	digit_en => digit_en,
 	segment => segment,
 	anode => anode);

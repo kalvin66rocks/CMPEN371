@@ -14,13 +14,7 @@
 <msg type="warning" file="HDLCompiler" num="92" delta="old" >"H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 44: <arg fmt="%s" index="1">count</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\lab04_kjb5568_rjl5336.vhd</arg>&quot; line <arg fmt="%d" index="2">158</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">pulse500</arg>&gt; of block &lt;<arg fmt="%s" index="4">pulse_gen</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">lab04_kjb5568_rjl5336</arg>&gt;. Underlying logic will be removed.
-</msg>
-
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SWITCH&lt;12:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\lab04_kjb5568_rjl5336.vhd</arg>&quot; line <arg fmt="%s" index="2">158</arg>: Output port &lt;<arg fmt="%s" index="3">PULSE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pulse500</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">45</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">cnt</arg>&gt; of block &lt;<arg fmt="%s" index="4">Counter_nbit</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">pulse_gen_1</arg>&gt;. Underlying logic will be removed.
@@ -231,91 +225,91 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">count_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Counter_nbit_1</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">display/cnt/count_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Register7/count_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
@@ -366,7 +360,7 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Register7/count_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -375,43 +369,43 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/count_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -426,28 +420,28 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register1/Q_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Register3/Q_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt;.
@@ -604,6 +598,9 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pulse50/cnt/Q_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lab04_kjb5568_rjl5336</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pulse500/cnt/count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">lab04_kjb5568_rjl5336</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pulse50/cnt/count_0&gt; </arg>
 </msg>
 
 </messages>
