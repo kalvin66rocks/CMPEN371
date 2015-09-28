@@ -1,22 +1,14 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+----------------------------------------------------------------------------
+-- Entity:        Average
+-- Written By:    Kevin Brenneman Richard Lucas
+-- Date Created:  9/10/15
+-- Description:   computes the average for 4 numbers rounding up when necessary
+--
+-- Revision History (date, initials, description): 9/10/15, KB RL, Initial Build
 -- 
--- Create Date:    11:32:57 09/17/2015 
--- Design Name: 
--- Module Name:    counterupdown_nbit - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+-- Dependencies:
+--		none
+----------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;

@@ -1,0 +1,29 @@
+Command line:
+   WordTo8dig7seg_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59231
+
+Mon Sep 28 01:59:00 2015
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 841.851 Meg
+
+ Total Signals          : 12
+ Total Nets             : 73
+ Total Signal Drivers   : 14
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 12
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 620
+Total Line Count : 18
+
+ Total Simulation Time: 14.125 sec
+
+ Current Memory Usage: 369.967 Meg
+
+Mon Sep 28 03:39:49 2015
+

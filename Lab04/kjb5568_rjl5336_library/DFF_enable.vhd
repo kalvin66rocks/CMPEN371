@@ -44,7 +44,7 @@ begin
 
 Process(CLK) is
 begin
-	if(clk'event and clk='1' and CE) then
+	if(clk'event and clk='1' and CE = '1') then
 	q<=d;
 	end if;
 end process;

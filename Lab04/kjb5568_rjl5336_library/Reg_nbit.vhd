@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 --------------------------------------------------------------------------------
 entity Reg_nbit is
- generic (n : integer := 8);
+ generic (n : integer := 16);
  port (     D : in STD_LOGIC_VECTOR(n-1 downto 0);
 			LOAD : in STD_LOGIC;
 			 CLK : in STD_LOGIC;

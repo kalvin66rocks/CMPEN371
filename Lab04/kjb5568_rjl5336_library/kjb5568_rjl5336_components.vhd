@@ -122,6 +122,61 @@ package kjb5568_rjl5336_Components is
 				 Q : out STD_LOGIC:= '0');
 	end component;
 	
+	component counter50mhz is
+		generic (n : integer := 8);
+		port   (EN : in STD_LOGIC;
+			 	 CLK : in STD_LOGIC;
+				 CLR : in STD_LOGIC;
+					Q : out STD_LOGIC_VECTOR (n-1 downto 0));
+	end component;
+	
+	component counter16hz is
+		generic (n : integer := 8);
+		port   (EN : in STD_LOGIC;
+			 	 CLK : in STD_LOGIC;
+				 CLR : in STD_LOGIC;
+					Q : out STD_LOGIC_VECTOR (n-1 downto 0));
+	end component;
+	
+	component OneShot is
+		port( D 		: in   STD_LOGIC;
+				CLK	: in STD_LOGIC;
+				Q	 	: out  STD_LOGIC);
+	end component;
+	
+	component Debouncer is
+		port( D 		: in   STD_LOGIC;
+				CLK	: in STD_LOGIC;
+				Pulse	: in STD_LOGIC;
+				Q	 	: out  STD_LOGIC);
+
+	end component;
+	
+	component Shift_Register is
+	port ( D : in std_logic;
+		load : in std_logic;
+		clk: in std_logic;
+		q : out std_logic_vector(15 downto 0));
+	end component;
+	
+	component WordTo8dig7seg is
+		port( word	: in std_logic_vector(31 downto 0);
+		 clk			: in std_logic;
+		 strobe		: in std_logic;
+		 Digit_en	: in std_logic_vector (7 downto 0);
+		 segment		: out std_logic_vector (6 downto 0);
+		 anode 		: out std_logic_vector (7 downto 0));
+	end component;
+	
+	component pulse_gen is
+		generic (n : integer := 4;
+		maxCount : natural := 9);
+		port (EN : in STD_LOGIC;
+			  CLK : in STD_LOGIC;
+		     CLR : in STD_LOGIC;
+			PULSE : out STD_LOGIC);
+	end component;
+
 
 end kjb5568_rjl5336_Components;
 ----------------------------------------------------------------------------

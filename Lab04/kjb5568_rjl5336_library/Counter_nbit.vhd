@@ -41,9 +41,9 @@ process (CLK) is
 				count <= 0;
 			elsif (EN = '1') then
 				count <= count + 1 ; 
+				Q <= STD_LOGIC_VECTOR (to_unsigned(count, Q'length)); 
 			end if;
 		end if;
-	Q <= STD_LOGIC_VECTOR (to_unsigned(count, Q'length)); 
 	end process;
 end Behavioral;
 
