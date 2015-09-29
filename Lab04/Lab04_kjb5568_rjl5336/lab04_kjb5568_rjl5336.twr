@@ -2,7 +2,7 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
+G:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
 -n 3 -fastpaths -xml lab04_kjb5568_rjl5336.twx lab04_kjb5568_rjl5336.ncd -o
 lab04_kjb5568_rjl5336.twr lab04_kjb5568_rjl5336.pcf -ucf Nexys4_Master.ucf
 
@@ -497,14 +497,14 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Tue Sep 29 12:26:14 2015 
+Analysis completed Tue Sep 29 15:30:55 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 671 MB
+Peak Memory Usage: 669 MB
 
 
 

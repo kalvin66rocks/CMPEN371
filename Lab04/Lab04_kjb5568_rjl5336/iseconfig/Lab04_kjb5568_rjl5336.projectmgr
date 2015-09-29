@@ -14,6 +14,7 @@
          <ClosedNode>/Debouncer - Behavioral K:|Lab04|Lab04_kjb5568_rjl5336|Debouncer.vhd</ClosedNode>
          <ClosedNode>/OneShot - Behavioral H:|Github|CMPEN371|Lab04|Lab04_kjb5568_rjl5336|OneShot.vhd</ClosedNode>
          <ClosedNode>/Shift_Register - Behavioral K:|Lab04|Lab04_kjb5568_rjl5336|Shift_Register.vhd</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules</ClosedNode>
          <ClosedNode>/Unassigned User Library Modules/AdderSubtractor_nbit - Structural</ClosedNode>
          <ClosedNode>/Unassigned User Library Modules/Debouncer - Behavioral</ClosedNode>
          <ClosedNode>/Unassigned User Library Modules/OneShot - Behavioral</ClosedNode>
@@ -71,13 +72,13 @@
          <ClosedNode>/pulse_gen - Behavioral K:|Lab04|Lab04_kjb5568_rjl5336|pulse_gen.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>lab04_kjb5568_rjl5336 - Structural (C:/Users/Kevin/Documents/GitHub/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/lab04_kjb5568_rjl5336.vhd)</SelectedItem>
+         <SelectedItem>lab04_kjb5568_rjl5336 - Structural (H:/Github/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/lab04_kjb5568_rjl5336.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000377000000020000000000000000000000000200000064ffffffff000000810000000300000002000003770000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d9000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d90000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>lab04_kjb5568_rjl5336 - Structural (C:/Users/Kevin/Documents/GitHub/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/lab04_kjb5568_rjl5336.vhd)</CurrentItem>
+      <CurrentItem>lab04_kjb5568_rjl5336 - Structural (H:/Github/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/lab04_kjb5568_rjl5336.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -100,9 +101,9 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002c60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000b12000000040101000100000000000000000000000064ffffffff00000081000000000000000400000042000000010000000000000024000000010000000000000066000000010000000000000a460000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\kjb5568_rjl5336_library\AdderSubtractor_nbit.vhd</CurrentItem>
+      <CurrentItem>AdderSubtractor_nbit.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -129,13 +130,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Configure Target Device</SelectedItem>
+         <SelectedItem>User Constraints</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Configure Target Device</CurrentItem>
+      <CurrentItem>User Constraints</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
       <ClosedNodes>

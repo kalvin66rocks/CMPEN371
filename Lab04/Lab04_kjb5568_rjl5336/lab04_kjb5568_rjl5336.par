@@ -1,14 +1,14 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-KEVIN-MSI::  Tue Sep 29 12:24:56 2015
+KEVIN-PC::  Tue Sep 29 15:30:24 2015
 
 par -w -intstyle ise -ol high -mt off lab04_kjb5568_rjl5336_map.ncd
 lab04_kjb5568_rjl5336.ncd lab04_kjb5568_rjl5336.pcf 
 
 
 Constraints file: lab04_kjb5568_rjl5336.pcf.
-Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment G:\Xilinx\14.7\ISE_DS\ISE\.
    "lab04_kjb5568_rjl5336" is an NCD, version 3.2, device xc7a100t, package csg324, speed -1
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
@@ -103,33 +103,33 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 29 secs 
-Finished initial Timing Analysis.  REAL time: 29 secs 
+Starting initial Timing Analysis.  REAL time: 11 secs 
+Finished initial Timing Analysis.  REAL time: 11 secs 
 
 Starting Router
 
 
-Phase  1  : 1406 unrouted;      REAL time: 31 secs 
+Phase  1  : 1406 unrouted;      REAL time: 12 secs 
 
-Phase  2  : 1147 unrouted;      REAL time: 32 secs 
+Phase  2  : 1147 unrouted;      REAL time: 12 secs 
 
-Phase  3  : 220 unrouted;      REAL time: 33 secs 
+Phase  3  : 220 unrouted;      REAL time: 13 secs 
 
-Phase  4  : 220 unrouted; (Setup:0, Hold:8193, Component Switching Limit:0)     REAL time: 40 secs 
+Phase  4  : 220 unrouted; (Setup:0, Hold:8193, Component Switching Limit:0)     REAL time: 16 secs 
 
 Updating file: lab04_kjb5568_rjl5336.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 16 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 16 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 16 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 16 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
-Total REAL time to Router completion: 42 secs 
-Total CPU time to Router completion: 41 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 16 secs 
+Total REAL time to Router completion: 16 secs 
+Total CPU time to Router completion: 16 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -179,10 +179,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 43 secs 
-Total CPU time to PAR completion: 43 secs 
+Total REAL time to PAR completion: 17 secs 
+Total CPU time to PAR completion: 16 secs 
 
-Peak Memory Usage:  753 MB
+Peak Memory Usage:  734 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
