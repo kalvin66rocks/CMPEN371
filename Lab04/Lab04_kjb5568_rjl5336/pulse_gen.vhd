@@ -36,22 +36,21 @@ end pulse_gen;
 
 architecture Behavioral of pulse_gen is
 
-signal pulse_int : std_logic;
-signal clear : std_logic;
-signal count : std_logic_vector(n-1 downto 0);
+signal counter	: integer := 0;
 
 begin
 
-cnt: counter_nbit generic map (n => n) port map(
-	EN => EN,
-	CLK => CLK,
-	CLR => clear,
-	Q => count);
-	
-pulse_int <= '1' when (to_integer(unsigned( count(n-1 downto 0))))= maxcount else
-				 '0';
-clear <= clr or pulse_int;
-pulse <= pulse_int;
+process (CLK) is
+	begin
+		if (counter < maxCount and EN = '1' and CLR = '0' and CLK = '1' and CLK'event) 
+			then counter <= counter + 1; PULSE <= '0';
+		end if;
+		if ((counter = maxCount)) 
+			then PULSE <= '1'; counter <= 0;
+		end if;
+		if (CLR = '1' and EN = '1') then counter <= 0;
+		end if;
+end process;
 
 
 

@@ -45,7 +45,8 @@ signal digit_en		 : STD_LOGIC_VECTOR (7 downto 0);
 signal reg_sel			 : STD_LOGIC_VECTOR (3 downto 0);
 signal pulse_16		 : STD_LOGIC;
 signal pulse_50		 : STD_LOGIC;
-signal pulse_500		 : STD_LOGIC;
+signal strobe			 : STD_LOGIC;
+signal pulse_1000		 : STD_LOGIC;
 signal UP_oneshotted  : STD_LOGIC;
 signal UP_debounced   : STD_LOGIC;
 signal Down_debounced : STD_LOGIC;
@@ -60,7 +61,7 @@ begin
 Center_debounce: Debouncer port map(
 	D => BTNC,
 	CLK => CLK,
-	pulse => pulse_50,
+	pulse => pulse_1000,
 	Q => Center_Debounced);
 	
 Center_steady: OneShot port map(
@@ -132,7 +133,7 @@ UP_steady: OneShot port map(
 UP_debounce: Debouncer port map(
 	D => BTNU,
 	CLK => CLK,
-	pulse => pulse_50,
+	pulse => pulse_1000,
 	Q => UP_Debounced);
 	
 Down_steady: OneShot port map(
@@ -143,26 +144,33 @@ Down_steady: OneShot port map(
 Down_debounce: Debouncer port map(
 	D => BTND,
 	CLK => CLK,
-	pulse => pulse_50,
+	pulse => pulse_1000,
 	Q => Down_Debounced);
 	
-pulse16: pulse_gen generic map( n => 16,  maxcount => 62500) port map(
+pulse16: pulse_gen generic map( n => 16,  maxcount => 6250000) port map(
 	en => '1',
 	clk => clk,
 	clr => BTNR,
 	pulse => pulse_16);
-pulse50: pulse_gen generic map( n => 16,  maxcount => 2) port map(
+pulse50: pulse_gen generic map( n => 16,  maxcount => 2) port map( 
 	en => '1',
 	clk => clk,
 	clr => BTNR,
 	pulse => pulse_50);
-pulse500: pulse_gen generic map( n => 16,  maxcount => 15000) port map(
+pulse500: pulse_gen generic map( n => 16,  maxcount => 100000) port map(
 	en => '1',
 	clk => clk,
 	clr => BTNR,
-	pulse => pulse_500);
+	pulse => strobe);
+pulse1000: pulse_gen generic map( n => 16,  maxcount => 10000) port map(
+	en => '1',
+	clk => clk,
+	clr => BTNR,
+	pulse => pulse_1000);	
+
 	
-Reg_display <= Register1_out when switch(15 downto 13) = "001" else
+Reg_display <= Register0_out when switch(15 downto 13) = "000" else
+					Register1_out when switch(15 downto 13) = "001" else
 					Register2_out when switch(15 downto 13) = "010" else
 					Register3_out when switch(15 downto 13) = "011" else
 					Register4_out when switch(15 downto 13) = "100" else
@@ -172,13 +180,13 @@ Reg_display <= Register1_out when switch(15 downto 13) = "001" else
 					Register0_out;
 					
 					
-word_int <= "00000" & switch(15 downto 13) & "00000000" & reg_display;
-digit_en <= "01001111";
+word_int <= "0" & switch(15 downto 13) & "000000000000" & reg_display;
+digit_en <= "10001111";
 					
 display: wordto8dig7seg port map (
 	word => word_int,
 	clk => clk,
-	strobe => pulse_500,
+	strobe => strobe,
 	digit_en => digit_en,
 	segment => segment,
 	anode => anode);

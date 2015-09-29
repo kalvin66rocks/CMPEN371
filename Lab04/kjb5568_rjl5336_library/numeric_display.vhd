@@ -50,7 +50,7 @@ cnt: counter_nbit generic map (n=>3) port map (
 	CLR => clr_int,
 	Q => sel);
 	
-clr_int <= '1' when (to_integer(unsigned( sel(2 downto 0))))= 7 else
+clr_int <= '1' when (to_integer(unsigned( sel(2 downto 0))))= 8 else
 		     '0';
 w2h <= word( 31 downto 28) when sel = "111" else
 		 word( 27 downto 24) when sel = "110" else
@@ -67,15 +67,15 @@ h27: hextosevenseg port map(
 	segment => segment);
 	
 				 
-anode (7 downto 0) <= "01111111" when(digit_en(7)='1' and sel = "111") else
-							 "10111111" when(digit_en(6)='1' and sel = "110") else
+anode (7 downto 0) <= "01111111" when(digit_en(7)='1' and sel = "111") else   --
+							 "10111111" when(digit_en(6)='1' and sel = "110") else   --h
 							 "11011111" when(digit_en(5)='1' and sel = "101") else
 							 "11101111" when(digit_en(4)='1' and sel = "100") else
 							 "11110111" when(digit_en(3)='1' and sel = "011") else
 							 "11111011" when(digit_en(2)='1' and sel = "010") else
 							 "11111101" when(digit_en(1)='1' and sel = "001") else
 							 "11111110" when(digit_en(0)='1' and sel = "000") else
-							 "01111111";
+							 "11111111";
 
 end Behavioral;
 
