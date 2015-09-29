@@ -218,15 +218,31 @@ static void kjb5568_rjl5336_library_a_1799425940_3212880686_p_1(char *t0)
     char *t119;
     char *t120;
     char *t121;
-    unsigned int t122;
-    unsigned int t123;
+    unsigned char t123;
     unsigned int t124;
     char *t125;
     char *t126;
     char *t127;
     char *t128;
-    char *t129;
-    char *t130;
+    unsigned int t129;
+    unsigned int t130;
+    unsigned int t131;
+    char *t132;
+    char *t133;
+    char *t134;
+    char *t135;
+    char *t136;
+    char *t137;
+    char *t138;
+    unsigned int t139;
+    unsigned int t140;
+    unsigned int t141;
+    char *t142;
+    char *t143;
+    char *t144;
+    char *t145;
+    char *t146;
+    char *t147;
 
 LAB0:    xsi_set_current_line(55, ng0);
     t1 = (t0 + 1992U);
@@ -313,23 +329,35 @@ LAB54:    t106 = 0;
 LAB55:    if (t106 != 0)
         goto LAB51;
 
-LAB52:
-LAB59:    t120 = (t0 + 1032U);
+LAB52:    t120 = (t0 + 1992U);
     t121 = *((char **)t120);
-    t122 = (31 - 3);
-    t123 = (t122 * 1U);
-    t124 = (0 + t123);
-    t120 = (t121 + t124);
-    t125 = (t0 + 4784);
-    t126 = (t125 + 56U);
-    t127 = *((char **)t126);
-    t128 = (t127 + 56U);
-    t129 = *((char **)t128);
-    memcpy(t129, t120, 4U);
-    xsi_driver_first_trans_fast(t125);
+    t120 = (t0 + 7837);
+    t123 = 1;
+    if (3U == 3U)
+        goto LAB61;
 
-LAB2:    t130 = (t0 + 4624);
-    *((int *)t130) = 1;
+LAB62:    t123 = 0;
+
+LAB63:    if (t123 != 0)
+        goto LAB59;
+
+LAB60:
+LAB67:    t137 = (t0 + 1032U);
+    t138 = *((char **)t137);
+    t139 = (31 - 31);
+    t140 = (t139 * 1U);
+    t141 = (0 + t140);
+    t137 = (t138 + t141);
+    t142 = (t0 + 4784);
+    t143 = (t142 + 56U);
+    t144 = *((char **)t143);
+    t145 = (t144 + 56U);
+    t146 = *((char **)t145);
+    memcpy(t146, t137, 4U);
+    xsi_driver_first_trans_fast(t142);
+
+LAB2:    t147 = (t0 + 4624);
+    *((int *)t147) = 1;
 
 LAB1:    return;
 LAB3:    t8 = (t0 + 1032U);
@@ -542,7 +570,37 @@ LAB57:    t108 = (t104 + t107);
 LAB58:    t107 = (t107 + 1);
     goto LAB56;
 
-LAB60:    goto LAB2;
+LAB59:    t127 = (t0 + 1032U);
+    t128 = *((char **)t127);
+    t129 = (31 - 3);
+    t130 = (t129 * 1U);
+    t131 = (0 + t130);
+    t127 = (t128 + t131);
+    t132 = (t0 + 4784);
+    t133 = (t132 + 56U);
+    t134 = *((char **)t133);
+    t135 = (t134 + 56U);
+    t136 = *((char **)t135);
+    memcpy(t136, t127, 4U);
+    xsi_driver_first_trans_fast(t132);
+    goto LAB2;
+
+LAB61:    t124 = 0;
+
+LAB64:    if (t124 < 3U)
+        goto LAB65;
+    else
+        goto LAB63;
+
+LAB65:    t125 = (t121 + t124);
+    t126 = (t120 + t124);
+    if (*((unsigned char *)t125) != *((unsigned char *)t126))
+        goto LAB62;
+
+LAB66:    t124 = (t124 + 1);
+    goto LAB64;
+
+LAB68:    goto LAB2;
 
 }
 
@@ -733,7 +791,7 @@ static void kjb5568_rjl5336_library_a_1799425940_3212880686_p_2(char *t0)
     char *t200;
     char *t201;
 
-LAB0:    xsi_set_current_line(69, ng0);
+LAB0:    xsi_set_current_line(70, ng0);
     t2 = (t0 + 1512U);
     t3 = *((char **)t2);
     t4 = (7 - 7);
@@ -871,7 +929,7 @@ LAB98:    if (t169 != 0)
         goto LAB94;
 
 LAB95:
-LAB107:    t193 = (t0 + 7925);
+LAB107:    t193 = (t0 + 7928);
     t195 = (8U != 8U);
     if (t195 == 1)
         goto LAB109;
@@ -888,7 +946,7 @@ LAB2:    t201 = (t0 + 4640);
     *((int *)t201) = 1;
 
 LAB1:    return;
-LAB3:    t17 = (t0 + 7840);
+LAB3:    t17 = (t0 + 7843);
     t19 = (8U != 8U);
     if (t19 == 1)
         goto LAB14;
@@ -904,7 +962,7 @@ LAB15:    t20 = (t0 + 4848);
 
 LAB5:    t10 = (t0 + 1992U);
     t11 = *((char **)t10);
-    t10 = (t0 + 7837);
+    t10 = (t0 + 7840);
     t13 = 1;
     if (3U == 3U)
         goto LAB8;
@@ -932,7 +990,7 @@ LAB13:    t14 = (t14 + 1);
 LAB14:    xsi_size_not_matching(8U, 8U, 0);
     goto LAB15;
 
-LAB16:    t41 = (t0 + 7851);
+LAB16:    t41 = (t0 + 7854);
     t43 = (8U != 8U);
     if (t43 == 1)
         goto LAB27;
@@ -948,7 +1006,7 @@ LAB28:    t44 = (t0 + 4848);
 
 LAB18:    t34 = (t0 + 1992U);
     t35 = *((char **)t34);
-    t34 = (t0 + 7848);
+    t34 = (t0 + 7851);
     t37 = 1;
     if (3U == 3U)
         goto LAB21;
@@ -976,7 +1034,7 @@ LAB26:    t38 = (t38 + 1);
 LAB27:    xsi_size_not_matching(8U, 8U, 0);
     goto LAB28;
 
-LAB29:    t65 = (t0 + 7862);
+LAB29:    t65 = (t0 + 7865);
     t67 = (8U != 8U);
     if (t67 == 1)
         goto LAB40;
@@ -992,7 +1050,7 @@ LAB41:    t68 = (t0 + 4848);
 
 LAB31:    t58 = (t0 + 1992U);
     t59 = *((char **)t58);
-    t58 = (t0 + 7859);
+    t58 = (t0 + 7862);
     t61 = 1;
     if (3U == 3U)
         goto LAB34;
@@ -1020,7 +1078,7 @@ LAB39:    t62 = (t62 + 1);
 LAB40:    xsi_size_not_matching(8U, 8U, 0);
     goto LAB41;
 
-LAB42:    t89 = (t0 + 7873);
+LAB42:    t89 = (t0 + 7876);
     t91 = (8U != 8U);
     if (t91 == 1)
         goto LAB53;
@@ -1036,7 +1094,7 @@ LAB54:    t92 = (t0 + 4848);
 
 LAB44:    t82 = (t0 + 1992U);
     t83 = *((char **)t82);
-    t82 = (t0 + 7870);
+    t82 = (t0 + 7873);
     t85 = 1;
     if (3U == 3U)
         goto LAB47;
@@ -1064,7 +1122,7 @@ LAB52:    t86 = (t86 + 1);
 LAB53:    xsi_size_not_matching(8U, 8U, 0);
     goto LAB54;
 
-LAB55:    t113 = (t0 + 7884);
+LAB55:    t113 = (t0 + 7887);
     t115 = (8U != 8U);
     if (t115 == 1)
         goto LAB66;
@@ -1080,7 +1138,7 @@ LAB67:    t116 = (t0 + 4848);
 
 LAB57:    t106 = (t0 + 1992U);
     t107 = *((char **)t106);
-    t106 = (t0 + 7881);
+    t106 = (t0 + 7884);
     t109 = 1;
     if (3U == 3U)
         goto LAB60;
@@ -1108,7 +1166,7 @@ LAB65:    t110 = (t110 + 1);
 LAB66:    xsi_size_not_matching(8U, 8U, 0);
     goto LAB67;
 
-LAB68:    t137 = (t0 + 7895);
+LAB68:    t137 = (t0 + 7898);
     t139 = (8U != 8U);
     if (t139 == 1)
         goto LAB79;
@@ -1124,7 +1182,7 @@ LAB80:    t140 = (t0 + 4848);
 
 LAB70:    t130 = (t0 + 1992U);
     t131 = *((char **)t130);
-    t130 = (t0 + 7892);
+    t130 = (t0 + 7895);
     t133 = 1;
     if (3U == 3U)
         goto LAB73;
@@ -1152,7 +1210,7 @@ LAB78:    t134 = (t134 + 1);
 LAB79:    xsi_size_not_matching(8U, 8U, 0);
     goto LAB80;
 
-LAB81:    t161 = (t0 + 7906);
+LAB81:    t161 = (t0 + 7909);
     t163 = (8U != 8U);
     if (t163 == 1)
         goto LAB92;
@@ -1168,7 +1226,7 @@ LAB93:    t164 = (t0 + 4848);
 
 LAB83:    t154 = (t0 + 1992U);
     t155 = *((char **)t154);
-    t154 = (t0 + 7903);
+    t154 = (t0 + 7906);
     t157 = 1;
     if (3U == 3U)
         goto LAB86;
@@ -1196,7 +1254,7 @@ LAB91:    t158 = (t158 + 1);
 LAB92:    xsi_size_not_matching(8U, 8U, 0);
     goto LAB93;
 
-LAB94:    t185 = (t0 + 7917);
+LAB94:    t185 = (t0 + 7920);
     t187 = (8U != 8U);
     if (t187 == 1)
         goto LAB105;
@@ -1212,7 +1270,7 @@ LAB106:    t188 = (t0 + 4848);
 
 LAB96:    t178 = (t0 + 1992U);
     t179 = *((char **)t178);
-    t178 = (t0 + 7914);
+    t178 = (t0 + 7917);
     t181 = 1;
     if (3U == 3U)
         goto LAB99;

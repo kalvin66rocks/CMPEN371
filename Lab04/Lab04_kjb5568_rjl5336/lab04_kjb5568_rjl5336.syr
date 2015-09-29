@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: lab04_kjb5568_rjl5336.prj
 
@@ -105,43 +105,43 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\kjb5568_rjl5336_components.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\kjb5568_rjl5336_components.vhd" into library kjb5568_rjl5336_library
 Parsing package <kjb5568_rjl5336_Components>.
 Parsing package body <kjb5568_rjl5336_Components>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\hextosevenseg.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\hextosevenseg.vhd" into library kjb5568_rjl5336_library
 Parsing entity <hextosevenseg>.
 Parsing architecture <structural> of entity <hextosevenseg>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd" into library kjb5568_rjl5336_library
 Parsing entity <DFF_CE>.
 Parsing architecture <Behavioral> of entity <dff_ce>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\DFF.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF.vhd" into library kjb5568_rjl5336_library
 Parsing entity <DFF>.
 Parsing architecture <Behavioral> of entity <dff>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd" into library kjb5568_rjl5336_library
 Parsing entity <Counter_nbit>.
 Parsing architecture <Behavioral> of entity <counter_nbit>.
-Parsing VHDL file "E:\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" into library kjb5568_rjl5336_library
 Parsing entity <pulse_gen>.
 Parsing architecture <Behavioral> of entity <pulse_gen>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\Shift_Register.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Shift_Register.vhd" into library kjb5568_rjl5336_library
 Parsing entity <Shift_Register>.
 Parsing architecture <Behavioral> of entity <shift_register>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\Reg_nbit.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Reg_nbit.vhd" into library kjb5568_rjl5336_library
 Parsing entity <Reg_nbit>.
 Parsing architecture <Behavioral> of entity <reg_nbit>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\OneShot.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\OneShot.vhd" into library kjb5568_rjl5336_library
 Parsing entity <OneShot>.
 Parsing architecture <Behavioral> of entity <oneshot>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\numeric_display.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\numeric_display.vhd" into library kjb5568_rjl5336_library
 Parsing entity <WordTo8dig7seg>.
 Parsing architecture <Behavioral> of entity <wordto8dig7seg>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\Debouncer.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Debouncer.vhd" into library kjb5568_rjl5336_library
 Parsing entity <Debouncer>.
 Parsing architecture <Behavioral> of entity <debouncer>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd" into library kjb5568_rjl5336_library
 Parsing entity <CounterUpDown_nbit>.
 Parsing architecture <Behavioral> of entity <counterupdown_nbit>.
-Parsing VHDL file "E:\Lab04\Lab04_kjb5568_rjl5336\lab04_kjb5568_rjl5336.vhd" into library work
+Parsing VHDL file "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\lab04_kjb5568_rjl5336.vhd" into library work
 Parsing entity <lab04_kjb5568_rjl5336>.
 Parsing architecture <Structural> of entity <lab04_kjb5568_rjl5336>.
 
@@ -154,7 +154,7 @@ Elaborating entity <lab04_kjb5568_rjl5336> (architecture <Structural>) from libr
 Elaborating entity <Debouncer> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <DFF_CE> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
-WARNING:HDLCompiler:92 - "E:\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd" Line 47: ce should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd" Line 47: ce should be on the sensitivity list of the process
 
 Elaborating entity <OneShot> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
@@ -167,8 +167,8 @@ Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from
 Elaborating entity <Reg_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <CounterUpDown_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
-WARNING:HDLCompiler:92 - "E:\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 35: en should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "E:\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 44: count should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 35: en should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 44: count should be on the sensitivity list of the process
 
 Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
@@ -187,7 +187,7 @@ Elaborating entity <hextosevenseg> (architecture <structural>) from library <kjb
 =========================================================================
 
 Synthesizing Unit <lab04_kjb5568_rjl5336>.
-    Related source file is "E:\Lab04\Lab04_kjb5568_rjl5336\lab04_kjb5568_rjl5336.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\lab04_kjb5568_rjl5336.vhd".
 WARNING:Xst:647 - Input <SWITCH<12:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16-bit 8-to-1 multiplexer for signal <Reg_display> created at line 42.
     Summary:
@@ -195,39 +195,39 @@ WARNING:Xst:647 - Input <SWITCH<12:1>> is never used. This port will be preserve
 Unit <lab04_kjb5568_rjl5336> synthesized.
 
 Synthesizing Unit <Debouncer>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\Debouncer.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Debouncer.vhd".
     Summary:
 	no macro.
 Unit <Debouncer> synthesized.
 
 Synthesizing Unit <DFF_CE>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd".
     Found 1-bit register for signal <Q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <DFF_CE> synthesized.
 
 Synthesizing Unit <OneShot>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\OneShot.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\OneShot.vhd".
     Summary:
 	no macro.
 Unit <OneShot> synthesized.
 
 Synthesizing Unit <DFF>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\DFF.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF.vhd".
     Found 1-bit register for signal <Q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <DFF> synthesized.
 
 Synthesizing Unit <Shift_Register>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\Shift_Register.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Shift_Register.vhd".
     Summary:
 	no macro.
 Unit <Shift_Register> synthesized.
 
 Synthesizing Unit <Counter_nbit_1>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd".
         n = 16
     Found 16-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
@@ -238,7 +238,7 @@ Synthesizing Unit <Counter_nbit_1>.
 Unit <Counter_nbit_1> synthesized.
 
 Synthesizing Unit <Reg_nbit>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\Reg_nbit.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Reg_nbit.vhd".
         n = 16
     Found 16-bit register for signal <Q>.
     Summary:
@@ -246,7 +246,7 @@ Synthesizing Unit <Reg_nbit>.
 Unit <Reg_nbit> synthesized.
 
 Synthesizing Unit <CounterUpDown_nbit>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd".
         n = 16
     Found 32-bit register for signal <count>.
     Found 32-bit adder for signal <count[31]_GND_13_o_add_0_OUT> created at line 37.
@@ -255,18 +255,17 @@ Synthesizing Unit <CounterUpDown_nbit>.
 	inferred   1 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
 Unit <CounterUpDown_nbit> synthesized.
-WARNING:Xst:2972 - "E:\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" line 45. All outputs of instance <cnt> of block <Counter_nbit> are unconnected in block <pulse_gen_1>. Underlying logic will be removed.
 
 Synthesizing Unit <pulse_gen_1>.
-    Related source file is "E:\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
         n = 16
-        maxCount = 625000
+        maxCount = 62500
     Summary:
 	no macro.
 Unit <pulse_gen_1> synthesized.
 
 Synthesizing Unit <pulse_gen_2>.
-    Related source file is "E:\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
         n = 16
         maxCount = 2
     Summary:
@@ -274,7 +273,7 @@ Synthesizing Unit <pulse_gen_2>.
 Unit <pulse_gen_2> synthesized.
 
 Synthesizing Unit <pulse_gen_3>.
-    Related source file is "E:\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
         n = 16
         maxCount = 15000
     Summary:
@@ -282,7 +281,7 @@ Synthesizing Unit <pulse_gen_3>.
 Unit <pulse_gen_3> synthesized.
 
 Synthesizing Unit <WordTo8dig7seg>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\numeric_display.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\numeric_display.vhd".
     Found 8x8-bit Read Only RAM for signal <anode>
     Found 4-bit 8-to-1 multiplexer for signal <w2h> created at line 39.
     Summary:
@@ -291,7 +290,7 @@ Synthesizing Unit <WordTo8dig7seg>.
 Unit <WordTo8dig7seg> synthesized.
 
 Synthesizing Unit <Counter_nbit_2>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd".
         n = 3
     Found 3-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
@@ -302,7 +301,7 @@ Synthesizing Unit <Counter_nbit_2>.
 Unit <Counter_nbit_2> synthesized.
 
 Synthesizing Unit <hextosevenseg>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\hextosevenseg.vhd".
+    Related source file is "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\hextosevenseg.vhd".
     Found 16x7-bit Read Only RAM for signal <Segment>
     Summary:
 	inferred   1 RAM(s).
@@ -315,14 +314,14 @@ Macro Statistics
 # RAMs                                                 : 2
  16x7-bit single-port Read Only RAM                    : 1
  8x8-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 9
- 32-bit adder                                          : 8
+# Adders/Subtractors                                   : 10
+ 32-bit adder                                          : 9
  32-bit addsub                                         : 1
-# Registers                                            : 47
+# Registers                                            : 49
  1-bit register                                        : 29
- 16-bit register                                       : 8
+ 16-bit register                                       : 9
  3-bit register                                        : 1
- 32-bit register                                       : 9
+ 32-bit register                                       : 10
 # Multiplexers                                         : 2
  16-bit 8-to-1 multiplexer                             : 1
  4-bit 8-to-1 multiplexer                              : 1
@@ -333,56 +332,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1293 - FF/Latch <count_31> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_30> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_29> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_28> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_27> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_26> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_25> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_24> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_23> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_22> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_21> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_20> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_19> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_18> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_17> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_16> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_0> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_1> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_2> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_3> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_4> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_5> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_6> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_7> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_8> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_9> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_10> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_11> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_12> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_13> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_14> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_15> has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_15> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_14> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_13> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_12> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_11> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_10> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_9> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_8> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_7> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_6> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_5> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_4> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_3> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_2> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_1> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_0> (without init value) has a constant value of 0 in block <Register1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1290 - Hierarchical block <pulse16> is unconnected in block <lab04_kjb5568_rjl5336>.
-   It will be removed from the design.
 
 Synthesizing (advanced) Unit <CounterUpDown_nbit>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
@@ -431,11 +380,11 @@ Macro Statistics
 # RAMs                                                 : 2
  16x7-bit single-port distributed Read Only RAM        : 1
  8x8-bit single-port distributed Read Only RAM         : 1
-# Counters                                             : 9
- 32-bit up counter                                     : 8
+# Counters                                             : 10
+ 32-bit up counter                                     : 9
  32-bit updown counter                                 : 1
-# Registers                                            : 160
- Flip-Flops                                            : 160
+# Registers                                            : 176
+ Flip-Flops                                            : 176
 # Multiplexers                                         : 2
  16-bit 8-to-1 multiplexer                             : 1
  4-bit 8-to-1 multiplexer                              : 1
@@ -514,38 +463,6 @@ Optimizing unit <Counter_nbit_1> ...
 Optimizing unit <Shift_Register> ...
 
 Optimizing unit <lab04_kjb5568_rjl5336> ...
-WARNING:Xst:1293 - FF/Latch <Register1/count_0> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_1> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_2> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_3> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_4> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_5> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_6> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_7> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_8> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_9> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_10> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_11> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_12> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_13> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_14> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register1/count_15> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_0> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_1> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_2> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_3> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_4> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_5> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_6> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_7> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_8> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_9> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_10> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_11> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_12> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_13> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_14> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Register1/Q_15> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <pulse50/cnt/count_2> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pulse50/cnt/count_3> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pulse50/cnt/count_4> has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
@@ -574,7 +491,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse50/cnt/Q_12> (
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse50/cnt/Q_13> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse50/cnt/Q_14> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse50/cnt/Q_15> (without init value) has a constant value of 0 in block <lab04_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <pulse500/cnt/count_0> in Unit <lab04_kjb5568_rjl5336> is equivalent to the following FF/Latch, which will be removed : <pulse50/cnt/count_0> 
+INFO:Xst:2261 - The FF/Latch <pulse500/cnt/count_0> in Unit <lab04_kjb5568_rjl5336> is equivalent to the following 2 FFs/Latches, which will be removed : <pulse50/cnt/count_0> <pulse16/cnt/count_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -592,8 +509,8 @@ Unit <lab04_kjb5568_rjl5336> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 224
- Flip-Flops                                            : 224
+# Registers                                            : 287
+ Flip-Flops                                            : 287
 # Shift Registers                                      : 3
  2-bit shift register                                  : 3
 
@@ -618,23 +535,23 @@ Top Level Output File Name         : lab04_kjb5568_rjl5336.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 413
+# BELS                             : 553
 #      GND                         : 1
-#      INV                         : 8
-#      LUT1                        : 78
-#      LUT2                        : 6
-#      LUT3                        : 10
-#      LUT4                        : 55
-#      LUT5                        : 3
-#      LUT6                        : 42
-#      MUXCY                       : 93
+#      INV                         : 9
+#      LUT1                        : 108
+#      LUT2                        : 7
+#      LUT3                        : 20
+#      LUT4                        : 86
+#      LUT5                        : 4
+#      LUT6                        : 47
+#      MUXCY                       : 123
 #      MUXF7                       : 16
 #      VCC                         : 1
-#      XORCY                       : 100
-# FlipFlops/Latches                : 227
-#      FD                          : 36
+#      XORCY                       : 131
+# FlipFlops/Latches                : 290
+#      FD                          : 67
 #      FDE                         : 22
-#      FDRE                        : 169
+#      FDRE                        : 201
 # Shift Registers                  : 3
 #      SRLC16E                     : 3
 # Clock Buffers                    : 1
@@ -650,18 +567,18 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             227  out of  126800     0%  
- Number of Slice LUTs:                  205  out of  63400     0%  
-    Number used as Logic:               202  out of  63400     0%  
+ Number of Slice Registers:             290  out of  126800     0%  
+ Number of Slice LUTs:                  284  out of  63400     0%  
+    Number used as Logic:               281  out of  63400     0%  
     Number used as Memory:                3  out of  19000     0%  
        Number used as SRL:                3
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    279
-   Number with an unused Flip Flop:      52  out of    279    18%  
-   Number with an unused LUT:            74  out of    279    26%  
-   Number of fully used LUT-FF pairs:   153  out of    279    54%  
-   Number of unique control sets:        11
+ Number of LUT Flip Flop pairs used:    365
+   Number with an unused Flip Flop:      75  out of    365    20%  
+   Number with an unused LUT:            81  out of    365    22%  
+   Number of fully used LUT-FF pairs:   209  out of    365    57%  
+   Number of unique control sets:        13
 
 IO Utilization: 
  Number of IOs:                          53
@@ -691,7 +608,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 230   |
+CLK                                | BUFGP                  | 293   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -702,8 +619,8 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.056ns (Maximum Frequency: 327.275MHz)
-   Minimum input arrival time before clock: 2.233ns
+   Minimum period: 3.063ns (Maximum Frequency: 326.444MHz)
+   Minimum input arrival time before clock: 2.240ns
    Maximum output required time after clock: 4.533ns
    Maximum combinational path delay: 4.369ns
 
@@ -713,33 +630,33 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 3.056ns (frequency: 327.275MHz)
-  Total number of paths / destination ports: 2642 / 393
+  Clock period: 3.063ns (frequency: 326.444MHz)
+  Total number of paths / destination ports: 3992 / 488
 -------------------------------------------------------------------------
-Delay:               3.056ns (Levels of Logic = 3)
-  Source:            pulse500/cnt/Q_13 (FF)
-  Destination:       pulse500/cnt/count_13 (FF)
+Delay:               3.063ns (Levels of Logic = 3)
+  Source:            pulse16/cnt/Q_13 (FF)
+  Destination:       pulse16/cnt/count_12 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: pulse500/cnt/Q_13 to pulse500/cnt/count_13
+  Data Path: pulse16/cnt/Q_13 to pulse16/cnt/count_12
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.478   0.945  pulse500/cnt/Q_13 (pulse500/cnt/Q_13)
-     LUT6:I0->O            2   0.124   0.542  pulse500/pulse_int<15>4_SW0 (N6)
-     LUT6:I4->O           32   0.124   0.689  pulse500/clear1 (pulse500/clear)
-     LUT4:I2->O            1   0.124   0.000  pulse500/cnt/count_13_rstpot (pulse500/cnt/count_13_rstpot)
-     FD:D                      0.030          pulse500/cnt/count_13
+     FD:C->Q               3   0.478   0.953  pulse16/cnt/Q_13 (pulse16/cnt/Q_13)
+     LUT6:I0->O            2   0.124   0.542  pulse16/pulse_int<15>4_SW0 (N6)
+     LUT6:I4->O           31   0.124   0.688  pulse16/clear1 (pulse16/clear)
+     LUT4:I2->O            1   0.124   0.000  pulse16/cnt/count_12_rstpot (pulse16/cnt/count_12_rstpot)
+     FD:D                      0.030          pulse16/cnt/count_12
     ----------------------------------------
-    Total                      3.056ns (0.880ns logic, 2.176ns route)
-                                       (28.8% logic, 71.2% route)
+    Total                      3.063ns (0.880ns logic, 2.183ns route)
+                                       (28.7% logic, 71.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 280 / 280
+  Total number of paths / destination ports: 343 / 343
 -------------------------------------------------------------------------
-Offset:              2.233ns (Levels of Logic = 2)
+Offset:              2.240ns (Levels of Logic = 2)
   Source:            BTNR (PAD)
   Destination:       Register7/count_0 (FF)
   Destination Clock: CLK rising
@@ -748,16 +665,16 @@ Offset:              2.233ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           147   0.001   1.117  BTNR_IBUF (BTNR_IBUF)
+     IBUF:I->O           180   0.001   1.124  BTNR_IBUF (BTNR_IBUF)
      LUT6:I0->O           16   0.124   0.497  Register7/_n00231 (Register7/_n0023)
      FDRE:R                    0.494          Register7/count_0
     ----------------------------------------
-    Total                      2.233ns (0.619ns logic, 1.614ns route)
-                                       (27.7% logic, 72.3% route)
+    Total                      2.240ns (0.619ns logic, 1.621ns route)
+                                       (27.6% logic, 72.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 946 / 28
+  Total number of paths / destination ports: 1063 / 29
 -------------------------------------------------------------------------
 Offset:              4.533ns (Levels of Logic = 6)
   Source:            Register2/Q_4 (FF)
@@ -812,20 +729,20 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    3.056|         |         |         |
+CLK            |    3.063|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 22.51 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.94 secs
  
 --> 
 
-Total memory usage is 406560 kilobytes
+Total memory usage is 406660 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  175 (   0 filtered)
+Number of warnings :   93 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 

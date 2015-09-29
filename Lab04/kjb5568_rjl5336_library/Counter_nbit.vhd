@@ -42,7 +42,7 @@ process (CLK) is
 				Q <= (others => '0');
 			elsif (EN = '1') then
 				count <= count + 1 ; 
-				Q <= STD_LOGIC_VECTOR (to_unsigned(count, Q'length)); 
+				Q <= STD_LOGIC_VECTOR(to_unsigned(count, Q'length)); 
 			end if;
 		end if;
 	end process;

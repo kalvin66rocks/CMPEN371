@@ -67,50 +67,51 @@ Center_steady: OneShot port map(
 	D => Center_debounced,
 	CLK => CLK,
 	Q => Center_corrected);
+	
 Register0: shift_register port map(
 	d => switch(0),
 	load => center_corrected,
 	clk => clk,
 	q => Register0_out);
 
-Register1: counter_nbit generic map (16) port map (
+Register1: counter_nbit generic map (n=>16) port map (
 	EN => pulse_16,
 	CLK => CLK,
 	CLR => BTNR,
 	Q => register1_out);
 
-Register2: counter_nbit generic map (16) port map (
+Register2: counter_nbit generic map (n=>16) port map (
 	EN => pulse_50,
 	CLK => CLK,
 	CLR => BTNR,
 	Q => register2_out);
 	
-Register3: Reg_nbit generic map (16) port map (
+Register3: Reg_nbit generic map (n=>16) port map (
 	D => register2_out,
 	LOAD => BTNL,
 	CLK => CLK,
 	CLR => BTNR,
 	Q => Register3_out);
 
-Register4: counter_nbit generic map (16) port map(
+Register4: counter_nbit generic map (n=>16) port map(
 	EN => BTNU,
 	CLK => CLK,
 	CLR => BTNR,
 	Q => Register4_out);
 	
-Register5: counter_nbit generic map (16) port map(
+Register5: counter_nbit generic map (n=>16) port map(
 	EN => UP_oneshotted,
 	CLK => CLK,
 	CLR => BTNR,
 	Q => Register5_out);
 	
-Register6: counter_nbit generic map (16) port map(
+Register6: counter_nbit generic map (n=>16) port map(
 	EN => UP_corrected,
 	CLK => CLK,
 	CLR => BTNR,
 	Q => Register6_out);
 	
-Register7: CounterUpDown_nbit generic map (16) port map(
+Register7: CounterUpDown_nbit generic map (n=>16) port map(
 	EN => '1',
 	UP => UP_corrected,
 	DOWN => Down_corrected,
@@ -145,7 +146,7 @@ Down_debounce: Debouncer port map(
 	pulse => pulse_50,
 	Q => Down_Debounced);
 	
-pulse16: pulse_gen generic map( n => 16,  maxcount => 625000) port map(
+pulse16: pulse_gen generic map( n => 16,  maxcount => 62500) port map(
 	en => '1',
 	clk => clk,
 	clr => BTNR,
@@ -171,8 +172,8 @@ Reg_display <= Register1_out when switch(15 downto 13) = "001" else
 					Register0_out;
 					
 					
-word_int <= '0' & switch(15 downto 13) & "000000000000" & reg_display;
-digit_en <= "10001111";
+word_int <= "00000" & switch(15 downto 13) & "00000000" & reg_display;
+digit_en <= "01001111";
 					
 display: wordto8dig7seg port map (
 	word => word_int,

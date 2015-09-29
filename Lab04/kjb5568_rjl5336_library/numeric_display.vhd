@@ -44,7 +44,7 @@ signal   count_track : integer := 0 ;
 
 begin
 
-cnt: counter_nbit generic map (3) port map (
+cnt: counter_nbit generic map (n=>3) port map (
 	EN => Strobe,
 	CLK => CLK,
 	CLR => clr_int,
