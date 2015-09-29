@@ -60,7 +60,7 @@ w2h <= word( 31 downto 28) when sel = "111" else
 		 word( 11 downto 8)  when sel = "010" else
 		 word( 7 downto 4)   when sel = "001" else
 		 word( 3 downto 0)   when sel = "000" else
-		 word( 3 downto 0);
+		 word( 31 downto 28);
 
 h27: hextosevenseg port map(
 	hex => w2h,
@@ -75,7 +75,7 @@ anode (7 downto 0) <= "01111111" when(digit_en(7)='1' and sel = "111") else
 							 "11111011" when(digit_en(2)='1' and sel = "010") else
 							 "11111101" when(digit_en(1)='1' and sel = "001") else
 							 "11111110" when(digit_en(0)='1' and sel = "000") else
-							 "11111110";
+							 "01111111";
 
 end Behavioral;
 

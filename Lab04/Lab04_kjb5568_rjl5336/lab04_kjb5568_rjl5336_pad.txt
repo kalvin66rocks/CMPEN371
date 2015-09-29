@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Sep 28 18:13:17 2015
+Mon Sep 28 21:09:50 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -218,7 +218,7 @@ Pinout by Pin Number:
 |L16       |           |IOB33S   |IO_L3N_T0_DQS_EMCCLK_14     |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
 |L17       |           |         |VCCO_14                     |         |           |14            |          |         |           |         |3.30     |          |           |                |
 |L18       |           |IOB33M   |IO_L4P_T0_D04_14            |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
-|M1        |ANODE<7>   |IOB33    |IO_L1N_T0_34                |OUTPUT   |LVCMOS33   |34            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|M1        |ANODE<7>   |IOB33    |IO_L1N_T0_34                |OUTPUT   |LVCMOS33   |34            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |M2        |SEGMENT<5> |IOB33    |IO_L4N_T0_34                |OUTPUT   |LVCMOS33   |34            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |M3        |ANODE<2>   |IOB33    |IO_L4P_T0_34                |OUTPUT   |LVCMOS33   |34            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |M4        |           |IOB33M   |IO_L16P_T2_34               |UNUSED   |           |34            |          |         |           |         |         |          |           |                |

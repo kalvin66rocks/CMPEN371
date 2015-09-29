@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: lab04_kjb5568_rjl5336.prj
 
@@ -276,14 +276,13 @@ Unit <pulse_gen_2> synthesized.
 Synthesizing Unit <pulse_gen_3>.
     Related source file is "E:\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd".
         n = 16
-        maxCount = 10000
+        maxCount = 15000
     Summary:
 	no macro.
 Unit <pulse_gen_3> synthesized.
 
 Synthesizing Unit <WordTo8dig7seg>.
     Related source file is "E:\Lab04\kjb5568_rjl5336_library\numeric_display.vhd".
-WARNING:Xst:647 - Input <Digit_en<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8x8-bit Read Only RAM for signal <anode>
     Found 4-bit 8-to-1 multiplexer for signal <w2h> created at line 39.
     Summary:
@@ -621,10 +620,10 @@ Primitive and Black Box Usage:
 ------------------------------
 # BELS                             : 413
 #      GND                         : 1
-#      INV                         : 7
+#      INV                         : 8
 #      LUT1                        : 78
 #      LUT2                        : 6
-#      LUT3                        : 11
+#      LUT3                        : 10
 #      LUT4                        : 55
 #      LUT5                        : 3
 #      LUT6                        : 42
@@ -718,17 +717,17 @@ Timing constraint: Default period analysis for Clock 'CLK'
   Total number of paths / destination ports: 2642 / 393
 -------------------------------------------------------------------------
 Delay:               3.056ns (Levels of Logic = 3)
-  Source:            pulse500/cnt/Q_0 (FF)
+  Source:            pulse500/cnt/Q_13 (FF)
   Destination:       pulse500/cnt/count_13 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: pulse500/cnt/Q_0 to pulse500/cnt/count_13
+  Data Path: pulse500/cnt/Q_13 to pulse500/cnt/count_13
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.478   0.945  pulse500/cnt/Q_0 (pulse500/cnt/Q_0)
-     LUT6:I0->O            2   0.124   0.542  pulse500/pulse_int<15>1 (pulse500/pulse_int<15>)
+     FD:C->Q               2   0.478   0.945  pulse500/cnt/Q_13 (pulse500/cnt/Q_13)
+     LUT6:I0->O            2   0.124   0.542  pulse500/pulse_int<15>4_SW0 (N6)
      LUT6:I4->O           32   0.124   0.689  pulse500/clear1 (pulse500/clear)
      LUT4:I2->O            1   0.124   0.000  pulse500/cnt/count_13_rstpot (pulse500/cnt/count_13_rstpot)
      FD:D                      0.030          pulse500/cnt/count_13
@@ -758,7 +757,7 @@ Offset:              2.233ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 948 / 28
+  Total number of paths / destination ports: 946 / 28
 -------------------------------------------------------------------------
 Offset:              4.533ns (Levels of Logic = 6)
   Source:            Register2/Q_4 (FF)
@@ -820,13 +819,13 @@ CLK            |    3.056|         |         |         |
 
 
 Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 22.34 secs
+Total CPU time to Xst completion: 22.51 secs
  
 --> 
 
-Total memory usage is 406544 kilobytes
+Total memory usage is 406560 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  176 (   0 filtered)
+Number of warnings :  175 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 
