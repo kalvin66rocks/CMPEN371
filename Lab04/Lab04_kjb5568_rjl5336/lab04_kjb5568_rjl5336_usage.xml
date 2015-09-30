@@ -5,7 +5,11 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <DeviceUsageSummary rev="82">
+<<<<<<< HEAD
 <DesignStatistics TimeStamp="Tue Sep 29 21:50:20 2015"><group name="NetStatistics">
+=======
+<DesignStatistics TimeStamp="Tue Sep 29 15:31:25 2015"><group name="NetStatistics">
+>>>>>>> origin/master
 <item name="NumNets_Active" rev="82">
 <attrib name="value" value="488"/></item>
 <item name="NumNets_Gnd" rev="82">
@@ -146,7 +150,11 @@
 <attrib name="value" value="57"/></item>
 </group>
 </DesignStatistics>
+<<<<<<< HEAD
 <DeviceUsage TimeStamp="Tue Sep 29 21:50:20 2015"><group name="SiteSummary">
+=======
+<DeviceUsage TimeStamp="Tue Sep 29 15:31:25 2015"><group name="SiteSummary">
+>>>>>>> origin/master
 <item name="BUFG" rev="82">
 <attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
 <item name="BUFG_BUFG" rev="82">
@@ -183,7 +191,11 @@
 <attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
 </group>
 </DeviceUsage>
+<<<<<<< HEAD
 <ReportConfigData TimeStamp="Tue Sep 29 21:50:20 2015"><group name="LUT_OR_MEM6">
+=======
+<ReportConfigData TimeStamp="Tue Sep 29 15:31:25 2015"><group name="LUT_OR_MEM6">
+>>>>>>> origin/master
 <item name="CLK" rev="82">
 <attrib name="CLK" value="3"/><attrib name="CLK_INV" value="0"/></item>
 <item name="LUT_OR_MEM" rev="82">
@@ -238,7 +250,11 @@
 <attrib name="ASYNC" value="7"/><attrib name="SYNC" value="50"/></item>
 </group>
 </ReportConfigData>
+<<<<<<< HEAD
 <ReportPinData TimeStamp="Tue Sep 29 21:50:20 2015"><group name="IOB33_OUTBUF">
+=======
+<ReportPinData TimeStamp="Tue Sep 29 15:31:25 2015"><group name="IOB33_OUTBUF">
+>>>>>>> origin/master
 <item name="IN" rev="82">
 <attrib name="value" value="31"/></item>
 <item name="OUT" rev="82">
