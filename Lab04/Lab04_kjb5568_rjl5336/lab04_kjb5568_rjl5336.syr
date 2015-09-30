@@ -4,21 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-<<<<<<< HEAD
-Total CPU time to Xst completion: 0.25 secs
-=======
 Total CPU time to Xst completion: 0.09 secs
->>>>>>> origin/master
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-<<<<<<< HEAD
-Total CPU time to Xst completion: 0.25 secs
-=======
-Total CPU time to Xst completion: 0.09 secs
->>>>>>> origin/master
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: lab04_kjb5568_rjl5336.prj
 
@@ -109,6 +101,7 @@ Slice Utilization Ratio Delta      : 5
 
 =========================================================================
 
+WARNING:UtilitiesC:240 - The message file "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336/_xmsgs/xst.xmsgs" is corrupt, therefore all message will be marked as new.
 
 =========================================================================
 *                          HDL Parsing                                  *
@@ -162,11 +155,7 @@ Elaborating entity <lab04_kjb5568_rjl5336> (architecture <Structural>) from libr
 Elaborating entity <Debouncer> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <DFF_CE> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
-<<<<<<< HEAD
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd" Line 39: ce should be on the sensitivity list of the process
-=======
-WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd" Line 47: ce should be on the sensitivity list of the process
->>>>>>> origin/master
+WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd" Line 29: ce should be on the sensitivity list of the process
 
 Elaborating entity <OneShot> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
@@ -183,15 +172,9 @@ WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\count
 WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 44: count should be on the sensitivity list of the process
 
 Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
-<<<<<<< HEAD
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 37: counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 40: counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 43: clr should be on the sensitivity list of the process
-=======
-WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 45: counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 48: counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 51: clr should be on the sensitivity list of the process
->>>>>>> origin/master
+WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 37: counter should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 40: counter should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 43: clr should be on the sensitivity list of the process
 
 Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
@@ -212,7 +195,7 @@ Elaborating entity <hextosevenseg> (architecture <structural>) from library <kjb
 Synthesizing Unit <lab04_kjb5568_rjl5336>.
     Related source file is "H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\lab04_kjb5568_rjl5336.vhd".
 WARNING:Xst:647 - Input <SWITCH<12:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 16-bit 8-to-1 multiplexer for signal <Reg_display> created at line 42.
+    Found 16-bit 8-to-1 multiplexer for signal <Reg_display> created at line 41.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <lab04_kjb5568_rjl5336> synthesized.
@@ -856,23 +839,14 @@ CLK            |    3.487|         |         |         |
 =========================================================================
 
 
-<<<<<<< HEAD
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 23.53 secs
- 
---> 
-
-Total memory usage is 406592 kilobytes
-=======
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.80 secs
+Total CPU time to Xst completion: 10.16 secs
  
 --> 
 
-Total memory usage is 407680 kilobytes
->>>>>>> origin/master
+Total memory usage is 406632 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  140 (   0 filtered)
+Number of warnings :  141 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

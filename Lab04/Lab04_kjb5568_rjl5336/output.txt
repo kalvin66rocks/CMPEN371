@@ -1,0 +1,10 @@
+Storage Target: SPI Flash Single FPGA
+Auto Select Storage Device
+FF
+Lab04
+H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\
+
+MCS
+ab04_kjb5568_rjl5336\
+
+MCS

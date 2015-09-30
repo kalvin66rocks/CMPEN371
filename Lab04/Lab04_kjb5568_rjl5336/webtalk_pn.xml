@@ -3,19 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<<<<<<< HEAD
-<application name="pn" timeStamp="Tue Sep 29 21:47:51 2015">
+<application name="pn" timeStamp="Wed Sep 30 02:09:35 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="B8575652591D4B5D958BC8081E338509" type="project"/>
-<property name="ProjectIteration" value="40" type="project"/>
-<property name="ProjectFile" value="C:/Users/Kevin/Documents/GitHub/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/Lab04_kjb5568_rjl5336.xise" type="project"/>
-=======
-<application name="pn" timeStamp="Tue Sep 29 15:30:24 2015">
-<section name="Project Information" visible="false">
-<property name="ProjectID" value="B8575652591D4B5D958BC8081E338509" type="project"/>
-<property name="ProjectIteration" value="40" type="project"/>
+<property name="ProjectIteration" value="1" type="project"/>
 <property name="ProjectFile" value="H:/Github/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/Lab04_kjb5568_rjl5336.xise" type="project"/>
->>>>>>> origin/master
 <property name="ProjectCreationTimestamp" value="2015-09-16T15:20:48" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -30,10 +22,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
 <property name="PROP_UseSmartGuide" value="false" type="design"/>
+<property name="PROP_UserBrowsedStrategyFiles" value="G:/Xilinx/14.7/ISE_DS/ISE/data/default.xds" type="process"/>
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2015-09-16T15:20:48" type="design"/>
 <property name="PROP_intWbtProjectID" value="B8575652591D4B5D958BC8081E338509" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="40" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="1" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="kjb5568_rjl5336_library.WordTo8dig7seg" type="process"/>
