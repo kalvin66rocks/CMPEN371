@@ -1,8 +1,8 @@
 ----------------------------------------------------------------------------
--- Entity:        Average
+-- Entity:        UP Down Counter
 -- Written By:    Kevin Brenneman Richard Lucas
 -- Date Created:  9/10/15
--- Description:   computes the average for 4 numbers rounding up when necessary
+-- Description:   counnter that can count up or down depending on input, both up and down is not handled
 --
 -- Revision History (date, initials, description): 9/10/15, KB RL, Initial Build
 -- 

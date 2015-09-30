@@ -14,7 +14,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 library kjb5568_rjl5336_library;
 use kjb5568_rjl5336_library.kjb5568_rjl5336_components.all;
---use IEEE.NUMERIC_STD.ALL;
 
 entity lab04_kjb5568_rjl5336 is
 	 Port ( BTNL 		: in  STD_LOGIC;

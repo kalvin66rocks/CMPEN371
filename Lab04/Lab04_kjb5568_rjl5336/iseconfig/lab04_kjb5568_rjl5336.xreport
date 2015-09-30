@@ -1,17 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <ImplementationReportsDirectory>H:/Github/CMPEN371/Lab04/Lab04_kjb5568_rjl5336\</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>H:/Github/CMPEN371/Lab04/Lab04_kjb5568_rjl5336</ImplementationReportsDirectory>
   <ModuleName>lab04_kjb5568_rjl5336</ModuleName>
-<<<<<<< HEAD
-  <DateModified>2015-09-29T21:24:42</DateModified>
-  <SavedFilePath>C:/Users/Kevin/Documents/GitHub/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/iseconfig/lab04_kjb5568_rjl5336.xreport</SavedFilePath>
-=======
-  <DateModified>2015-09-29T15:51:25</DateModified>
+  <DateInitialized>2015-09-29T22:47:36</DateInitialized>
+  <DateModified>2015-09-29T22:47:37</DateModified>
   <SavedFilePath>H:/Github/CMPEN371/Lab04/Lab04_kjb5568_rjl5336/iseconfig/lab04_kjb5568_rjl5336.xreport</SavedFilePath>
->>>>>>> origin/master
-  <DateInitialized>2015-09-23T16:22:15</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
-  <SummaryTimeStamp>2015-09-29T15:29:34</SummaryTimeStamp>
  </header>
 </report-views>
