@@ -1,22 +1,14 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+----------------------------------------------------------------------------
+-- Entity:        N bit counter
+-- Written By:    Kevin Brenneman Richard Lucas
+-- Date Created:  9/16/15
+-- Description:   counter that always counts up and will output the count as an n bit vector
+--
+-- Revision History (date, initials, description): 9/16/15, KB RL, Initial Build
 -- 
--- Create Date:    11:31:33 09/17/2015 
--- Design Name: 
--- Module Name:    Counter_nbit - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+-- Dependencies:
+--		kjb5568_rjl5336_compnents.vhd
+----------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;

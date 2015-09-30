@@ -1,22 +1,14 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+----------------------------------------------------------------------------
+-- Entity:        word to 8 digit seven seg
+-- Written By:    Kevin Brenneman Richard Lucas
+-- Date Created:  9/16/15
+-- Description:   enables the display of a 32 bit word on 8 seven segment displays
+--
+-- Revision History (date, initials, description): 9/16/15, KB RL, Initial Build
 -- 
--- Create Date:    23:14:16 09/27/2015 
--- Design Name: 
--- Module Name:    numeric_display - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+-- Dependencies:
+--		kjb5568_rjl5336_compnents.vhd
+----------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;

@@ -1,22 +1,14 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+----------------------------------------------------------------------------
+-- Entity:        DFF_CE
+-- Written By:    Kevin Brenneman Richard Lucas
+-- Date Created:  9/16/15
+-- Description:   flip flop with an enable
+--
+-- Revision History (date, initials, description): 9/16/15, KB RL, Initial Build
 -- 
--- Create Date:    16:09:21 09/16/2015 
--- Design Name: 
--- Module Name:    DFF_enable - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+-- Dependencies:
+--		kjb5568_rjl5336_compnents.vhd
+----------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 

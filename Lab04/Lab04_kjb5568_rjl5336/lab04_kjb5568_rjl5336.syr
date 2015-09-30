@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> Reading design: lab04_kjb5568_rjl5336.prj
 
@@ -154,7 +154,7 @@ Elaborating entity <lab04_kjb5568_rjl5336> (architecture <Structural>) from libr
 Elaborating entity <Debouncer> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <DFF_CE> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd" Line 47: ce should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\kjb5568_rjl5336_library\DFF_enable.vhd" Line 39: ce should be on the sensitivity list of the process
 
 Elaborating entity <OneShot> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
@@ -171,9 +171,9 @@ WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\kjb5568
 WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 44: count should be on the sensitivity list of the process
 
 Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 45: counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 48: counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 51: clr should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 37: counter should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 40: counter should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\pulse_gen.vhd" Line 43: clr should be on the sensitivity list of the process
 
 Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
@@ -236,7 +236,7 @@ Synthesizing Unit <Counter_nbit_1>.
         n = 16
     Found 16-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_11_o_add_0_OUT> created at line 44.
+    Found 32-bit adder for signal <count[31]_GND_11_o_add_0_OUT> created at line 36.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  48 D-type flip-flop(s).
@@ -267,8 +267,8 @@ Synthesizing Unit <pulse_gen_1>.
         maxCount = 6250000
     Found 1-bit register for signal <PULSE>.
     Found 32-bit register for signal <counter>.
-    Found 32-bit adder for signal <counter[31]_GND_14_o_add_1_OUT> created at line 46.
-    Found 32-bit comparator greater for signal <GND_14_o_counter[31]_LessThan_1_o> created at line 45
+    Found 32-bit adder for signal <counter[31]_GND_14_o_add_1_OUT> created at line 38.
+    Found 32-bit comparator greater for signal <GND_14_o_counter[31]_LessThan_1_o> created at line 37
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  33 D-type flip-flop(s).
@@ -281,8 +281,8 @@ Synthesizing Unit <pulse_gen_2>.
         maxCount = 2
     Found 1-bit register for signal <PULSE>.
     Found 32-bit register for signal <counter>.
-    Found 32-bit adder for signal <counter[31]_GND_16_o_add_1_OUT> created at line 46.
-    Found 32-bit comparator greater for signal <GND_16_o_counter[31]_LessThan_1_o> created at line 45
+    Found 32-bit adder for signal <counter[31]_GND_16_o_add_1_OUT> created at line 38.
+    Found 32-bit comparator greater for signal <GND_16_o_counter[31]_LessThan_1_o> created at line 37
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  33 D-type flip-flop(s).
@@ -295,8 +295,8 @@ Synthesizing Unit <pulse_gen_3>.
         maxCount = 100000
     Found 1-bit register for signal <PULSE>.
     Found 32-bit register for signal <counter>.
-    Found 32-bit adder for signal <counter[31]_GND_18_o_add_1_OUT> created at line 46.
-    Found 32-bit comparator greater for signal <GND_18_o_counter[31]_LessThan_1_o> created at line 45
+    Found 32-bit adder for signal <counter[31]_GND_18_o_add_1_OUT> created at line 38.
+    Found 32-bit comparator greater for signal <GND_18_o_counter[31]_LessThan_1_o> created at line 37
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  33 D-type flip-flop(s).
@@ -309,8 +309,8 @@ Synthesizing Unit <pulse_gen_4>.
         maxCount = 10000
     Found 1-bit register for signal <PULSE>.
     Found 32-bit register for signal <counter>.
-    Found 32-bit adder for signal <counter[31]_GND_20_o_add_1_OUT> created at line 46.
-    Found 32-bit comparator greater for signal <GND_20_o_counter[31]_LessThan_1_o> created at line 45
+    Found 32-bit adder for signal <counter[31]_GND_20_o_add_1_OUT> created at line 38.
+    Found 32-bit comparator greater for signal <GND_20_o_counter[31]_LessThan_1_o> created at line 37
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  33 D-type flip-flop(s).
@@ -320,7 +320,7 @@ Unit <pulse_gen_4> synthesized.
 Synthesizing Unit <WordTo8dig7seg>.
     Related source file is "C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\kjb5568_rjl5336_library\numeric_display.vhd".
     Found 8x8-bit Read Only RAM for signal <anode>
-    Found 4-bit 8-to-1 multiplexer for signal <w2h> created at line 39.
+    Found 4-bit 8-to-1 multiplexer for signal <w2h> created at line 31.
     Summary:
 	inferred   1 RAM(s).
 	inferred   1 Multiplexer(s).
@@ -331,7 +331,7 @@ Synthesizing Unit <Counter_nbit_2>.
         n = 3
     Found 3-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_23_o_add_0_OUT> created at line 44.
+    Found 32-bit adder for signal <count[31]_GND_23_o_add_0_OUT> created at line 36.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  35 D-type flip-flop(s).
@@ -838,12 +838,12 @@ CLK            |    3.487|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 24.00 secs
-Total CPU time to Xst completion: 23.40 secs
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 23.53 secs
  
 --> 
 
-Total memory usage is 406640 kilobytes
+Total memory usage is 406592 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  140 (   0 filtered)

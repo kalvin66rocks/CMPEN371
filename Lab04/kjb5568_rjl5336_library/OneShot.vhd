@@ -1,22 +1,14 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+----------------------------------------------------------------------------
+-- Entity:        One Shot
+-- Written By:    Kevin Brenneman Richard Lucas
+-- Date Created:  9/16/15
+-- Description:   looks for a rising clock edge to help stabilize an input
+--
+-- Revision History (date, initials, description): 9/16/15, KB RL, Initial Build
 -- 
--- Create Date:    15:21:12 09/27/2015 
--- Design Name: 
--- Module Name:    OneShot - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+-- Dependencies:
+--		kjb5568_rjl5336_compnents.vhd
+----------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library kjb5568_rjl5336_library;

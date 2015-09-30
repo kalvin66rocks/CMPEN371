@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-KEVIN-MSI::  Tue Sep 29 12:24:56 2015
+KEVIN-MSI::  Tue Sep 29 21:47:52 2015
 
 par -w -intstyle ise -ol high -mt off lab04_kjb5568_rjl5336_map.ncd
 lab04_kjb5568_rjl5336.ncd lab04_kjb5568_rjl5336.pcf 
@@ -109,27 +109,27 @@ Finished initial Timing Analysis.  REAL time: 29 secs
 Starting Router
 
 
-Phase  1  : 1406 unrouted;      REAL time: 31 secs 
+Phase  1  : 1406 unrouted;      REAL time: 32 secs 
 
 Phase  2  : 1147 unrouted;      REAL time: 32 secs 
 
 Phase  3  : 220 unrouted;      REAL time: 33 secs 
 
-Phase  4  : 220 unrouted; (Setup:0, Hold:8193, Component Switching Limit:0)     REAL time: 40 secs 
+Phase  4  : 220 unrouted; (Setup:0, Hold:8193, Component Switching Limit:0)     REAL time: 41 secs 
 
 Updating file: lab04_kjb5568_rjl5336.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 42 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 42 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 42 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:8240, Component Switching Limit:0)     REAL time: 42 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 42 secs 
 Total REAL time to Router completion: 42 secs 
-Total CPU time to Router completion: 41 secs 
+Total CPU time to Router completion: 42 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -179,10 +179,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 43 secs 
+Total REAL time to PAR completion: 44 secs 
 Total CPU time to PAR completion: 43 secs 
 
-Peak Memory Usage:  753 MB
+Peak Memory Usage:  754 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

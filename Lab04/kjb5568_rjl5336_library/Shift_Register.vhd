@@ -1,8 +1,8 @@
 ----------------------------------------------------------------------------
--- Entity:        Lab 4 Top Level
+-- Entity:        Shift register
 -- Written By:    Kevin Brenneman Richard Lucas
 -- Date Created:  9/16/15
--- Description:   Top level for getting aquanited with registers
+-- Description:   register for storing multiple  bits and shifting them to the right
 --
 -- Revision History (date, initials, description): 9/16/15, KB RL, Initial Build
 -- 
