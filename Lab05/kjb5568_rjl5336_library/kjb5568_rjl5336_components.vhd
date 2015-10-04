@@ -176,6 +176,19 @@ package kjb5568_rjl5336_Components is
 		     CLR : in STD_LOGIC;
 			PULSE : out STD_LOGIC);
 	end component;
+	
+	component FSM is
+	port ( BUTTON		: in	STD_LOGIC_VECTOR(4 downto 0);
+			 CLK 			: in  STD_LOGIC;
+			 reset		: in  STD_LOGIC;
+	       CONTROL		: out	STD_LOGIC_VECTOR(2 downto 0));
+	end component;
+	
+	component Pingpong_Fsm is
+	port(	pulse 	: in std_logic;
+			reset		: in std_logic;
+			LED			: out STD_LOGIC_VECTOR(15 downto 0));
+	end component;
 
 
 end kjb5568_rjl5336_Components;
