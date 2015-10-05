@@ -1,14 +1,14 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-KEVIN-PC::  Sun Oct 04 20:38:01 2015
+KEVIN_SURFACE::  Mon Oct 05 10:04:10 2015
 
 par -w -intstyle ise -ol high -mt off lab05_kjb5568_rjl5336_map.ncd
 lab05_kjb5568_rjl5336.ncd lab05_kjb5568_rjl5336.pcf 
 
 
 Constraints file: lab05_kjb5568_rjl5336.pcf.
-Loading device for application Rf_Device from file '7a100t.nph' in environment G:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
    "lab05_kjb5568_rjl5336" is an NCD, version 3.2, device xc7a100t, package csg324, speed -1
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
@@ -27,9 +27,9 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         86 out of  63,400    1%
-    Number used as logic:                       85 out of  63,400    1%
-      Number using O6 output only:              66
+  Number of Slice LUTs:                         87 out of  63,400    1%
+    Number used as logic:                       86 out of  63,400    1%
+      Number using O6 output only:              67
       Number using O5 output only:              14
       Number using O5 and O6:                    5
       Number used as ROM:                        0
@@ -40,11 +40,11 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    46 out of  15,850    1%
-  Number of LUT Flip Flop pairs used:          100
-    Number with an unused Flip Flop:            44 out of     100   44%
-    Number with an unused LUT:                  14 out of     100   14%
-    Number of fully used LUT-FF pairs:          42 out of     100   42%
+  Number of occupied Slices:                    45 out of  15,850    1%
+  Number of LUT Flip Flop pairs used:           99
+    Number with an unused Flip Flop:            43 out of      99   43%
+    Number with an unused LUT:                  12 out of      99   12%
+    Number of fully used LUT-FF pairs:          44 out of      99   44%
     Number of slice register sites lost
       to control set restrictions:               0 out of 126,800    0%
 
@@ -57,8 +57,8 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        39 out of     210   18%
-    Number of LOCed IOBs:                       39 out of      39  100%
+  Number of bonded IOBs:                        38 out of     210   18%
+    Number of LOCed IOBs:                       38 out of      38  100%
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
@@ -97,34 +97,33 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 12 secs 
-Finished initial Timing Analysis.  REAL time: 12 secs 
+Starting initial Timing Analysis.  REAL time: 20 secs 
+Finished initial Timing Analysis.  REAL time: 20 secs 
 
-WARNING:Par:288 - The signal SWITCH<1>_IBUF has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 376 unrouted;      REAL time: 13 secs 
+Phase  1  : 378 unrouted;      REAL time: 22 secs 
 
-Phase  2  : 306 unrouted;      REAL time: 14 secs 
+Phase  2  : 309 unrouted;      REAL time: 22 secs 
 
-Phase  3  : 75 unrouted;      REAL time: 14 secs 
+Phase  3  : 89 unrouted;      REAL time: 22 secs 
 
-Phase  4  : 75 unrouted; (Setup:0, Hold:456, Component Switching Limit:0)     REAL time: 17 secs 
+Phase  4  : 89 unrouted; (Setup:0, Hold:169, Component Switching Limit:0)     REAL time: 26 secs 
 
 Updating file: lab05_kjb5568_rjl5336.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:337, Component Switching Limit:0)     REAL time: 18 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:96, Component Switching Limit:0)     REAL time: 26 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:337, Component Switching Limit:0)     REAL time: 18 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:96, Component Switching Limit:0)     REAL time: 26 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:337, Component Switching Limit:0)     REAL time: 18 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:96, Component Switching Limit:0)     REAL time: 26 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:337, Component Switching Limit:0)     REAL time: 18 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:96, Component Switching Limit:0)     REAL time: 26 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
-Total REAL time to Router completion: 18 secs 
-Total CPU time to Router completion: 17 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
+Total REAL time to Router completion: 26 secs 
+Total CPU time to Router completion: 24 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -142,7 +141,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           CLK_BUFGP |BUFGCTRL_X0Y31| No   |   31 |  0.030     |  1.637      |
+|           CLK_BUFGP |BUFGCTRL_X0Y31| No   |   31 |  0.036     |  1.641      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -162,8 +161,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |     5.305ns|     4.695ns|       0|           0
-  pin" 100 MHz HIGH 50%                     | HOLD        |     0.137ns|            |       0|           0
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |     5.453ns|     4.547ns|       0|           0
+  pin" 100 MHz HIGH 50%                     | HOLD        |     0.097ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -174,19 +173,17 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+Total REAL time to PAR completion: 26 secs 
+Total CPU time to PAR completion: 25 secs 
 
-Total REAL time to PAR completion: 18 secs 
-Total CPU time to PAR completion: 18 secs 
-
-Peak Memory Usage:  733 MB
+Peak Memory Usage:  737 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 Timing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 3
+Number of warning messages: 0
 Number of info messages: 0
 
 Writing design to file lab05_kjb5568_rjl5336.ncd

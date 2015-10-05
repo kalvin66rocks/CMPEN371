@@ -23,26 +23,25 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Pingpong_Fsm is
 	port(	pulse 	: in std_logic;
+			clr		: in std_logic;
 			LED			: out STD_LOGIC_VECTOR(15 downto 0));
 end Pingpong_Fsm;
 
 architecture Behavioral of Pingpong_Fsm is
 
-type state_type is (start,p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15);
+type state_type is (p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15);
 
 signal presentstate : state_type;
 signal nextstate	  : state_type;
 signal l : std_logic := '0';
 signal r : std_logic := '0';
-signal start_signal : std_logic := '0';
 
 begin
 process (pulse) is
 begin
 	if(pulse'event and pulse = '1') then
-		if(start_signal ='0') then
-			presentstate <= start;
-			start_signal <= '1';
+		if(clr ='1') then
+			presentstate <= p15;
 		else 
 			presentstate <= nextstate;
 		end if;
@@ -52,8 +51,6 @@ end process;
 process(presentstate,l,r)
 begin
 	Case presentstate is
-		when start => 
-			nextstate <= p15;
 		when p15 =>
 			l<='0';
 			r<='1';

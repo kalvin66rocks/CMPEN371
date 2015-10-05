@@ -116,7 +116,7 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 			clk => clk,
 			clr => Switch(0),
 			pulse => strobe);
-		pulseping: pulse_gen generic map( n => 16,  maxcount => 50000000) port map(
+		pulseping: pulse_gen generic map( n => 16,  maxcount => 5000000) port map(
 			en => '1',
 			clk => clk,
 			clr => Switch(0),
@@ -129,6 +129,7 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 			control => control);
 		pingpoing: pingpong_fsm port map(
 			pulse => pulse_ping,
+			clr => switch(0),
 			led => led_ping);
 			
 word_int <= "00000000000000000000000000000" & control;
