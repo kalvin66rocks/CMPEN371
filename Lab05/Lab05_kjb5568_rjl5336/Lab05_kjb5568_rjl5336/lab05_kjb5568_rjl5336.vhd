@@ -37,6 +37,7 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 	signal pulse_ping		 : STD_LOGIC;
 	signal strobe			 : STD_LOGIC;
 	signal pulse_1000		 : STD_LOGIC;
+	signal store_enable	 : STD_LOGIC;
 	signal corrected 		 : std_logic_vector (4 downto 0);
 	signal debounced  	 : std_logic_vector (4 downto 0);
 	signal control 		 : std_logic_vector (2 downto 0);
@@ -126,6 +127,7 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 			button => corrected,
 			clk => clk,
 			reset => switch (0),
+			enable => store_enable,
 			control => control);
 		pingpoing: pingpong_fsm port map(
 			pulse => pulse_ping,
@@ -147,6 +149,8 @@ led_false <= "0000111100110000";
 			
 led <= led_ping when control = "001" else 
 		 led_false;
+		 
+--feed the control into a register, change the way that top_fsm sends out signals, plus implement an enable into it.
 
 			
 

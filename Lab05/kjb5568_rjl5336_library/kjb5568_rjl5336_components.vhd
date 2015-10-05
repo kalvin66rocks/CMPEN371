@@ -181,6 +181,7 @@ package kjb5568_rjl5336_Components is
 	port ( BUTTON		: in	STD_LOGIC_VECTOR(4 downto 0);
 			 CLK 			: in  STD_LOGIC;
 			 reset		: in  STD_LOGIC;
+			 enable		: in 	STD_LOGIC;
 	       CONTROL		: out	STD_LOGIC_VECTOR(2 downto 0));
 	end component;
 	

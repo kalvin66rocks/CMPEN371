@@ -24,7 +24,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity FSM is
 	port ( BUTTON		: in	STD_LOGIC_VECTOR(4 downto 0);
 			 CLK 			: in	STD_LOGIC;
-			 reset 			: in	STD_LOGIC;
+			 reset 		: in	STD_LOGIC;
+			 enable		: std_logic;
 	       CONTROL		: out	STD_LOGIC_VECTOR(2 downto 0)
 	);
 end FSM;
