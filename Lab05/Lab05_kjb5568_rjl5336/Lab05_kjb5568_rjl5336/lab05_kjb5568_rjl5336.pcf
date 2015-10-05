@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Oct 04 17:48:39 2015
+// Written by: Map P.20131013 on Sun Oct 04 20:37:58 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -40,6 +40,7 @@ COMP "BUTTON<2>" LOCATE = SITE "R10" LEVEL 1;
 COMP "BUTTON<3>" LOCATE = SITE "E16" LEVEL 1;
 COMP "BUTTON<4>" LOCATE = SITE "F15" LEVEL 1;
 COMP "SWITCH<0>" LOCATE = SITE "U9" LEVEL 1;
+COMP "SWITCH<1>" LOCATE = SITE "U8" LEVEL 1;
 COMP "CLK" LOCATE = SITE "E3" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "Up_debounce/Flip3/Q" BEL "Up_debounce/Flip2/Q" BEL
         "Up_debounce/Flip1/Q" BEL "Center_debounce/Flip3/Q" BEL

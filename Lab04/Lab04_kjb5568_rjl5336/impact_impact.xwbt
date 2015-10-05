@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\impact.xsl
-OUTFILE=C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\impact.xsl
+INFILE=H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\impact.xsl
+OUTFILE=H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336\impact.xsl
 FAMILY=Single
 PART=Single
-WORKINGDIR=C:\Users\Kevin\Documents\GitHub\CMPEN371\Lab04\Lab04_kjb5568_rjl5336
+WORKINGDIR=H:\Github\CMPEN371\Lab04\Lab04_kjb5568_rjl5336
 LICENSE=iMPACT
 USER_INFO=iMPACT

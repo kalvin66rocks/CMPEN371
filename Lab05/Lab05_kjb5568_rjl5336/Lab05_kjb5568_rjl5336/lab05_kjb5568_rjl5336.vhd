@@ -129,7 +129,6 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 			control => control);
 		pingpoing: pingpong_fsm port map(
 			pulse => pulse_ping,
-			reset =>switch(0),
 			led => led_ping);
 			
 word_int <= "00000000000000000000000000000" & control;

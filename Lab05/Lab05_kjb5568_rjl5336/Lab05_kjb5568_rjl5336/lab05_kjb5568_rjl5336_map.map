@@ -11,7 +11,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -1
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Sun Oct 04 17:47:24 2015
+Mapped Date    : Sun Oct 04 20:37:32 2015
 
 Mapping design into LUTs...
 Running directed packing...
@@ -20,61 +20,63 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 1 mins 3 secs 
-Total CPU  time at the beginning of Placer: 58 secs 
+Total REAL time at the beginning of Placer: 20 secs 
+Total CPU  time at the beginning of Placer: 20 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:49c72d98) REAL time: 1 mins 6 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:d2094b3b) REAL time: 21 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:49c72d98) REAL time: 1 mins 6 secs 
+Phase 2.7  Design Feasibility Check (Checksum:d2094b3b) REAL time: 22 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:49c72d98) REAL time: 1 mins 6 secs 
+Phase 3.31  Local Placement Optimization (Checksum:d2094b3b) REAL time: 22 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:5d4c3ddc) REAL time: 1 mins 11 secs 
+(Checksum:9d056f2) REAL time: 24 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:5d4c3ddc) REAL time: 1 mins 11 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:9d056f2) REAL time: 24 secs 
 
 Phase 6.3  Local Placement Optimization
-Phase 6.3  Local Placement Optimization (Checksum:5d4c3ddc) REAL time: 1 mins 12 secs 
+Phase 6.3  Local Placement Optimization (Checksum:9d056f2) REAL time: 24 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:5d4c3ddc) REAL time: 1 mins 12 secs 
+Phase 7.5  Local Placement Optimization (Checksum:9d056f2) REAL time: 24 secs 
 
 Phase 8.8  Global Placement
-.......
+......
+............................................
 ................
-........................................................................
-Phase 8.8  Global Placement (Checksum:4020fd79) REAL time: 1 mins 13 secs 
+Phase 8.8  Global Placement (Checksum:132de3d1) REAL time: 24 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:4020fd79) REAL time: 1 mins 13 secs 
+Phase 9.5  Local Placement Optimization (Checksum:132de3d1) REAL time: 24 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:7be1ad69) REAL time: 1 mins 14 secs 
+Phase 10.18  Placement Optimization (Checksum:24681b90) REAL time: 25 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:7be1ad69) REAL time: 1 mins 14 secs 
+Phase 11.5  Local Placement Optimization (Checksum:24681b90) REAL time: 25 secs 
 
 Phase 12.34  Placement Validation
-Phase 12.34  Placement Validation (Checksum:7be1ad69) REAL time: 1 mins 14 secs 
+Phase 12.34  Placement Validation (Checksum:24681b90) REAL time: 25 secs 
 
-Total REAL time to Placer completion: 1 mins 14 secs 
-Total CPU  time to Placer completion: 1 mins 9 secs 
+Total REAL time to Placer completion: 25 secs 
+Total CPU  time to Placer completion: 24 secs 
 Running post-placement packing...
 Writing output files...
+WARNING:PhysDesignRules:367 - The signal <SWITCH<1>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    1
 Slice Logic Utilization:
   Number of Slice Registers:                    56 out of 126,800    1%
     Number used as Flip Flops:                  56
@@ -94,11 +96,11 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    43 out of  15,850    1%
-  Number of LUT Flip Flop pairs used:           97
-    Number with an unused Flip Flop:            41 out of      97   42%
-    Number with an unused LUT:                  11 out of      97   11%
-    Number of fully used LUT-FF pairs:          45 out of      97   46%
+  Number of occupied Slices:                    46 out of  15,850    1%
+  Number of LUT Flip Flop pairs used:          100
+    Number with an unused Flip Flop:            44 out of     100   44%
+    Number with an unused LUT:                  14 out of     100   14%
+    Number of fully used LUT-FF pairs:          42 out of     100   42%
     Number of unique control sets:               3
     Number of slice register sites lost
       to control set restrictions:               8 out of 126,800    1%
@@ -112,8 +114,8 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        38 out of     210   18%
-    Number of LOCed IOBs:                       38 out of      38  100%
+  Number of bonded IOBs:                        39 out of     210   18%
+    Number of LOCed IOBs:                       39 out of      39  100%
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
@@ -148,11 +150,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of XADCs:                               0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.60
+Average Fanout of Non-Clock Nets:                2.58
 
-Peak Memory Usage:  913 MB
-Total REAL time to MAP completion:  1 mins 17 secs 
-Total CPU time to MAP completion:   1 mins 11 secs 
+Peak Memory Usage:  896 MB
+Total REAL time to MAP completion:  26 secs 
+Total CPU time to MAP completion:   25 secs 
 
 Mapping completed.
 See MAP report file "lab05_kjb5568_rjl5336_map.mrp" for details.

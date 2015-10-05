@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: lab05_kjb5568_rjl5336.prj
 
@@ -167,34 +167,6 @@ Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from li
 Elaborating entity <FSM> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <Pingpong_Fsm> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 64: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 66: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 71: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 73: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 78: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 80: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 85: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 87: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 92: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 94: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 99: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 101: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 106: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 108: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 113: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 115: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 120: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 122: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 127: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 129: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 134: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 136: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 141: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 143: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 148: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 150: r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 155: l should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 157: r should be on the sensitivity list of the process
 
 Elaborating entity <WordTo8dig7seg> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
@@ -299,16 +271,16 @@ Unit <FSM> synthesized.
 
 Synthesizing Unit <Pingpong_Fsm>.
     Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd".
+    Found 1-bit register for signal <start_signal>.
     Found 5-bit register for signal <presentstate>.
-    Found 16x1-bit Read Only RAM for signal <presentstate[3]_GND_16_o_Mux_35_o>
-    Found 32x17-bit Read Only RAM for signal <_n0144>
-WARNING:Xst:737 - Found 1-bit latch for signal <l>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <r>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32x20-bit Read Only RAM for signal <_n0147>
 WARNING:Xst:737 - Found 1-bit latch for signal <nextstate<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <nextstate<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <nextstate<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <nextstate<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <nextstate<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <l>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <LED<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <LED<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <LED<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -326,8 +298,8 @@ WARNING:Xst:737 - Found 1-bit latch for signal <LED<2>>. Latches may be generate
 WARNING:Xst:737 - Found 1-bit latch for signal <LED<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <LED<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   2 RAM(s).
-	inferred   5 D-type flip-flop(s).
+	inferred   1 RAM(s).
+	inferred   6 D-type flip-flop(s).
 	inferred  23 Latch(s).
 	inferred   8 Multiplexer(s).
 Unit <Pingpong_Fsm> synthesized.
@@ -361,14 +333,13 @@ Unit <hextosevenseg> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 3
- 16x1-bit single-port Read Only RAM                    : 1
+# RAMs                                                 : 2
  16x7-bit single-port Read Only RAM                    : 1
- 32x17-bit single-port Read Only RAM                   : 1
+ 32x20-bit single-port Read Only RAM                   : 1
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 2
-# Registers                                            : 25
- 1-bit register                                        : 20
+# Registers                                            : 26
+ 1-bit register                                        : 21
  16-bit register                                       : 1
  3-bit register                                        : 1
  32-bit register                                       : 2
@@ -387,7 +358,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1293 - FF/Latch <count_19> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_20> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_21> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_22> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
@@ -400,6 +370,7 @@ WARNING:Xst:1293 - FF/Latch <count_28> has a constant value of 0 in block <cnt>.
 WARNING:Xst:1293 - FF/Latch <count_29> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_30> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_31> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <start_signal> has a constant value of 0 in block <pingpoing>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <LED_11> (without init value) has a constant value of 0 in block <pingpoing>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <presentstate_0> has a constant value of 0 in block <pingpoing>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <presentstate_1> has a constant value of 0 in block <pingpoing>. This FF/Latch will be trimmed during the optimization process.
@@ -425,6 +396,7 @@ WARNING:Xst:1293 - FF/Latch <count_15> has a constant value of 0 in block <cnt>.
 WARNING:Xst:1293 - FF/Latch <count_16> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_17> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <count_18> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_19> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_0> (without init value) has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_1> (without init value) has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_2> (without init value) has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
@@ -449,23 +421,12 @@ The following registers are absorbed into counter <count>: 1 register on signal 
 Unit <Counter_nbit_2> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Pingpong_Fsm>.
-INFO:Xst:3231 - The small RAM <Mram_presentstate[3]_GND_16_o_Mux_35_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram__n0147> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 16-word x 1-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <presentstate<3:0>> |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram__n0144> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 32-word x 17-bit                    |          |
+    |     aspect ratio   | 32-word x 20-bit                    |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <presentstate>  |          |
     |     diA            | connected to signal <GND>           |          |
@@ -491,14 +452,13 @@ Unit <hextosevenseg> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 3
- 16x1-bit single-port distributed Read Only RAM        : 1
+# RAMs                                                 : 2
  16x7-bit single-port distributed Read Only RAM        : 1
- 32x17-bit single-port distributed Read Only RAM       : 1
+ 32x20-bit single-port distributed Read Only RAM       : 1
 # Counters                                             : 2
  32-bit up counter                                     : 2
-# Registers                                            : 44
- Flip-Flops                                            : 44
+# Registers                                            : 45
+ Flip-Flops                                            : 45
 # Multiplexers                                         : 10
  1-bit 2-to-1 multiplexer                              : 8
  16-bit 2-to-1 multiplexer                             : 1
@@ -511,11 +471,12 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 WARNING:Xst:1710 - FF/Latch <LED_11> (without init value) has a constant value of 0 in block <Pingpong_Fsm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <start_signal> has a constant value of 0 in block <Pingpong_Fsm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <presentstate_0> has a constant value of 0 in block <Pingpong_Fsm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <presentstate_1> has a constant value of 0 in block <Pingpong_Fsm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <presentstate_2> has a constant value of 0 in block <Pingpong_Fsm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <presentstate_3> has a constant value of 0 in block <Pingpong_Fsm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <presentstate_4> has a constant value of 0 in block <Pingpong_Fsm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <presentstate_1> has a constant value of 0 in block <Pingpong_Fsm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <presentstate_2> has a constant value of 0 in block <Pingpong_Fsm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <presentstate_3> has a constant value of 0 in block <Pingpong_Fsm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <presentstate_4> has a constant value of 0 in block <Pingpong_Fsm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <nextstate_0> is unconnected in block <Pingpong_Fsm>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <nextstate_1> is unconnected in block <Pingpong_Fsm>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <nextstate_2> is unconnected in block <Pingpong_Fsm>.
@@ -787,14 +748,14 @@ CLK            |    3.056|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 21.18 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.48 secs
  
 --> 
 
-Total memory usage is 406624 kilobytes
+Total memory usage is 406468 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  151 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :  125 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 
