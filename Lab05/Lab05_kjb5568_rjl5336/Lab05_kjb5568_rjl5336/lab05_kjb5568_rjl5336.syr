@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.62 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.62 secs
  
 --> Reading design: lab05_kjb5568_rjl5336.prj
 
@@ -707,7 +707,7 @@ Speed Grade: -1
 
    Minimum period: 3.056ns (Maximum Frequency: 327.275MHz)
    Minimum input arrival time before clock: 1.940ns
-   Maximum output required time after clock: 2.795ns
+   Maximum output required time after clock: 2.829ns
    Maximum combinational path delay: 1.300ns
 
 Timing Details:
@@ -760,45 +760,25 @@ Offset:              1.940ns (Levels of Logic = 3)
                                        (14.4% logic, 85.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'store_enable'
-  Total number of paths / destination ports: 28 / 7
--------------------------------------------------------------------------
-Offset:              1.970ns (Levels of Logic = 2)
-  Source:            Top_FSM/CONTROL_0 (LATCH)
-  Destination:       SEGMENT<0> (PAD)
-  Source Clock:      store_enable falling
-
-  Data Path: Top_FSM/CONTROL_0 to SEGMENT<0>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               8   0.625   0.822  Top_FSM/CONTROL_0 (Top_FSM/CONTROL_0)
-     LUT4:I0->O            1   0.124   0.399  display/h27/Mram_Segment21 (SEGMENT_4_OBUF)
-     OBUF:I->O                 0.000          SEGMENT_4_OBUF (SEGMENT<4>)
-    ----------------------------------------
-    Total                      1.970ns (0.749ns logic, 1.221ns route)
-                                       (38.0% logic, 62.0% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 78 / 16
+  Total number of paths / destination ports: 106 / 23
 -------------------------------------------------------------------------
-Offset:              2.795ns (Levels of Logic = 3)
-  Source:            register1/Q_3 (FF)
+Offset:              2.829ns (Levels of Logic = 3)
+  Source:            register1/Q_1 (FF)
   Destination:       LED<0> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: register1/Q_3 to LED<0>
+  Data Path: register1/Q_1 to LED<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            18   0.478   0.888  register1/Q_3 (register1/Q_3)
+     FDRE:C->Q            24   0.478   0.922  register1/Q_1 (register1/Q_1)
      LUT4:I0->O            2   0.124   0.782  Mmux_LED711 (Mmux_LED71)
      LUT4:I0->O            1   0.124   0.399  Mmux_LED13 (LED_0_OBUF)
      OBUF:I->O                 0.000          LED_0_OBUF (LED<0>)
     ----------------------------------------
-    Total                      2.795ns (0.726ns logic, 2.069ns route)
-                                       (26.0% logic, 74.0% route)
+    Total                      2.829ns (0.726ns logic, 2.103ns route)
+                                       (25.7% logic, 74.3% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -830,7 +810,7 @@ Clock to Setup on destination clock CLK
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 CLK            |    3.056|         |         |         |
-store_enable   |         |    1.100|         |         |
+store_enable   |         |    1.054|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock store_enable
@@ -844,12 +824,12 @@ CLK            |         |         |    1.416|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 23.14 secs
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 33.02 secs
  
 --> 
 
-Total memory usage is 406580 kilobytes
+Total memory usage is 437964 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   75 (   0 filtered)

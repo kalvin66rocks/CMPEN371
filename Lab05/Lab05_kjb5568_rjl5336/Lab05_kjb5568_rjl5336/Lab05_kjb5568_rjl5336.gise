@@ -25,6 +25,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FSM.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="FSM.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="FSM.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FSM_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FSM_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="FSM_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Pingpong_Fsm.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Pingpong_Fsm.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Pingpong_Fsm.xst"/>
@@ -41,6 +44,7 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="lab05_kjb5568_rjl5336.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="lab05_kjb5568_rjl5336.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="lab05_kjb5568_rjl5336.bld"/>
@@ -95,22 +99,49 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444143603" xil_pn:in_ck="5521016129219549066" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1444143602">
+    <transform xil_pn:end_ts="1444168909" xil_pn:in_ck="-5108188281521561507" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1444168909">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/AdderSubtractor_nbit.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Average.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/CompareGRT.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Counter_nbit.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/DFF.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/DFF_enable.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Debouncer.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/FSM.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/FullAdder.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/LST.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Minimum.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Mux4to1_tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/OneShot.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Pingpong_Fsm.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Reg_nbit.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Shift_Register.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/avg_tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/counter16hz.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/counter50mhz.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/counterupdown_nbit.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/encode__tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/hextosevenseg.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/hextosevseg_tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/max_tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/maximum.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/min_tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/mux.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/numeric_display.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/pulse_gen.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/rippe_carry_adder.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/threeto8encoder.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/train_fsm.vhd"/>
+      <outfile xil_pn:name="lab05_kjb5568_rjl5336.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1444143603" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4134225747303960074" xil_pn:start_ts="1444143603">
+    <transform xil_pn:end_ts="1444168909" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-712776890386084439" xil_pn:start_ts="1444168909">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444143603" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8077610108682631912" xil_pn:start_ts="1444143603">
+    <transform xil_pn:end_ts="1444168909" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7677181339715100935" xil_pn:start_ts="1444168909">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -118,36 +149,60 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444143603" xil_pn:in_ck="5521016129219549066" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1444143603">
+    <transform xil_pn:end_ts="1444168909" xil_pn:in_ck="-5108188281521561507" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1444168909">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/AdderSubtractor_nbit.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Average.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/CompareGRT.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Counter_nbit.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/DFF.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/DFF_enable.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Debouncer.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/FSM.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/FullAdder.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/LST.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Minimum.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Mux4to1_tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/OneShot.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Pingpong_Fsm.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Reg_nbit.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/Shift_Register.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/avg_tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/counter16hz.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/counter50mhz.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/counterupdown_nbit.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/encode__tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/hextosevenseg.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/hextosevseg_tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/max_tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/maximum.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/min_tb.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/mux.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/numeric_display.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/pulse_gen.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/rippe_carry_adder.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/threeto8encoder.vhd"/>
+      <outfile xil_pn:name="../../kjb5568_rjl5336_library/train_fsm.vhd"/>
+      <outfile xil_pn:name="lab05_kjb5568_rjl5336.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1444143610" xil_pn:in_ck="5521016129219549066" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6238558211276726161" xil_pn:start_ts="1444143603">
+    <transform xil_pn:end_ts="1444168915" xil_pn:in_ck="-5108188281521561507" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7150903141678301805" xil_pn:start_ts="1444168909">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="FSM_beh.prj"/>
+      <outfile xil_pn:name="FSM_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1444143610" xil_pn:in_ck="-6323783575577003722" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1081720967486196228" xil_pn:start_ts="1444143610">
+    <transform xil_pn:end_ts="1444168916" xil_pn:in_ck="-2191359780263141739" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5479946319478035234" xil_pn:start_ts="1444168915">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="FSM_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1443985399" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1443985399">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -177,7 +232,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444152354" xil_pn:in_ck="8315847204264770131" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-7117404328762912376" xil_pn:start_ts="1444152327">
+    <transform xil_pn:end_ts="1444166507" xil_pn:in_ck="8315847204264770131" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-7117404328762912376" xil_pn:start_ts="1444166466">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -199,7 +254,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444152372" xil_pn:in_ck="-5615703649243209342" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7705809618734844316" xil_pn:start_ts="1444152354">
+    <transform xil_pn:end_ts="1444166529" xil_pn:in_ck="-5615703649243209342" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7705809618734844316" xil_pn:start_ts="1444166507">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -208,9 +263,11 @@
       <outfile xil_pn:name="lab05_kjb5568_rjl5336.ngd"/>
       <outfile xil_pn:name="lab05_kjb5568_rjl5336_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1444152450" xil_pn:in_ck="-5615703649243209341" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-7188367874928765557" xil_pn:start_ts="1444152372">
+    <transform xil_pn:end_ts="1444166634" xil_pn:in_ck="-5615703649243209341" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-7188367874928765557" xil_pn:start_ts="1444166529">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="lab05_kjb5568_rjl5336.pcf"/>
       <outfile xil_pn:name="lab05_kjb5568_rjl5336_map.map"/>
@@ -221,7 +278,7 @@
       <outfile xil_pn:name="lab05_kjb5568_rjl5336_summary.xml"/>
       <outfile xil_pn:name="lab05_kjb5568_rjl5336_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1444152532" xil_pn:in_ck="-8214712930980185572" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1444152450">
+    <transform xil_pn:end_ts="1444166786" xil_pn:in_ck="-8214712930980185572" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1444166712">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -235,7 +292,7 @@
       <outfile xil_pn:name="lab05_kjb5568_rjl5336_pad.txt"/>
       <outfile xil_pn:name="lab05_kjb5568_rjl5336_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1444152611" xil_pn:in_ck="3620728974777959229" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="306664139534459597" xil_pn:start_ts="1444152532">
+    <transform xil_pn:end_ts="1444166919" xil_pn:in_ck="3620728974777959229" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="306664139534459597" xil_pn:start_ts="1444166836">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -248,12 +305,12 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1444152614" xil_pn:in_ck="3620728974777946375" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6383737364629502382" xil_pn:start_ts="1444152611">
+    <transform xil_pn:end_ts="1444167431" xil_pn:in_ck="3620728974777946375" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6383737364629502382" xil_pn:start_ts="1444166919">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444152532" xil_pn:in_ck="-5615703649243209473" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1444152499">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1444166786" xil_pn:in_ck="-5615703649243209473" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1444166768">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="lab05_kjb5568_rjl5336.twr"/>

@@ -144,7 +144,7 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 			reset => (btnd and btnl and btnr),
 			led => led_train);
 			
-word_int <= "0000000000000000000000000000" & store_enable;
+word_int <= "0000000000000000000000000000" & control_out;
 digit_en <= "00000001";
 
 		register1: reg_nbit generic map ( n=> 4) port map(
