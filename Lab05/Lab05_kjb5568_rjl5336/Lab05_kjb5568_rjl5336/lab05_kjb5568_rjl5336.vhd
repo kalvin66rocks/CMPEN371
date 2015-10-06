@@ -40,10 +40,14 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 	signal store_enable	 : STD_LOGIC;
 	signal corrected 		 : std_logic_vector (4 downto 0);
 	signal debounced  	 : std_logic_vector (4 downto 0);
-	signal control 		 : std_logic_vector (2 downto 0);
+	signal control 		 : std_logic_vector (3 downto 0);
+	signal control_out	 : std_logic_vector (3 downto 0);
 	signal word_int		 : STD_LOGIC_VECTOR (31 downto 0);
 	signal digit_en		 : STD_LOGIC_VECTOR (7 downto 0);
 	signal led_ping		 : STD_LOGIC_VECTOR (15 downto 0);
+	signal led_wall		 : STD_LOGIC_VECTOR (15 downto 0);
+	signal led_train		 : STD_LOGIC_VECTOR (15 downto 0);
+	signal led_physics	 : STD_LOGIC_VECTOR (15 downto 0);
 	signal led_false		 : STD_LOGIC_VECTOR (15 downto 0);
 	
 	alias BTNU is button(4);
@@ -117,7 +121,7 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 			clk => clk,
 			clr => Switch(0),
 			pulse => strobe);
-		pulseping: pulse_gen generic map( n => 16,  maxcount => 5000000) port map(
+		pulseping: pulse_gen generic map( n => 16,  maxcount => 50000) port map(
 			en => '1',
 			clk => clk,
 			clr => Switch(0),
@@ -126,17 +130,25 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 		Top_FSM : FSM port map(
 			button => corrected,
 			clk => clk,
-			reset => switch (0),
+			reset =>(btnd and btnl and btnr),
 			enable => store_enable,
 			control => control);
 		pingpoing: pingpong_fsm port map(
-			pulse => pulse_ping,
-			clr => switch(0),
+			enable => pulse_1000,
+			clk => clk,
+			clr => (btnd and btnl and btnr),
 			led => led_ping);
 			
-word_int <= "00000000000000000000000000000" & control;
+word_int <= "0000000000000000000000000000" & control;
 digit_en <= "00000001";
-					
+
+		register1: reg_nbit generic map ( n=> 4) port map(
+			D => control,
+			LOAD => store_enable,
+			CLK => clk,
+			CLR => switch(0),
+			Q => control_out);
+		
 		display: wordto8dig7seg port map (
 			word => word_int,
 			clk => clk,
@@ -145,9 +157,13 @@ digit_en <= "00000001";
 			segment => segment,
 			anode => anode);
 			
-led_false <= "0000111100110000";
+led_false <= "0000111100110010";
 			
-led <= led_ping when control = "001" else 
+led <= led_ping when control_out = "1011" else 
+		 led_train when control_out = "1010" else 
+		 led_physics when control_out = "1100" else 
+		 led_wall when control_out = "1101" else 
+		 switch when control_out = "0000" else 
 		 led_false;
 		 
 --feed the control into a register, change the way that top_fsm sends out signals, plus implement an enable into it.

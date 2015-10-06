@@ -25,8 +25,8 @@ entity FSM is
 	port ( BUTTON		: in	STD_LOGIC_VECTOR(4 downto 0);
 			 CLK 			: in	STD_LOGIC;
 			 reset 		: in	STD_LOGIC;
-			 enable		: std_logic;
-	       CONTROL		: out	STD_LOGIC_VECTOR(2 downto 0)
+			 enable		: out std_logic;
+	       CONTROL		: out	STD_LOGIC_VECTOR(3 downto 0)
 	);
 end FSM;
 
@@ -60,7 +60,8 @@ process(presentstate, button)
 begin
 	Case presentstate is
 		when off =>
-			control <= "000";
+			control <= "0000";
+			enable <='1';
 				if ( button = "00001") then 
 					nextstate <= l;
 				elsif ( button = "01000") then 
@@ -68,10 +69,10 @@ begin
 				elsif ( button = "00111") then 
 					nextstate <= off;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when L =>
-			control <= "000";
+			enable <='0';
 				if (button = "10000") then
 					nextstate <= lu;
 				elsif ( button = "01000") then 
@@ -79,19 +80,19 @@ begin
 				elsif ( button = "00000") then 
 					nextstate <= L;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when LU =>
-			control <= "000";
+			enable <='0';
 				if (button = "00100") then
 					nextstate <= train;
 				elsif ( button = "00000") then 
 					nextstate <= LU;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when LC =>
-			control <= "000";
+			enable <='0';
 				if (button = "00001") then
 					nextstate <= wall;
 				elsif (button = "00100") then
@@ -99,64 +100,65 @@ begin
 				elsif ( button = "00000") then 
 					nextstate <= LC;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when LCR =>
-			control <= "000";
+			enable <='0';
 				if (button = "01000") then
 					nextstate <= lcrc;
 				elsif ( button = "00000") then 
 					nextstate <= LCR;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when LCRC =>
-			control <= "000";
+			enable <='0';
 				if (button = "00001") then
 					nextstate <= Pingpong;
 				elsif ( button = "00000") then 
 					nextstate <= LCRC;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when C =>
-			control <= "000";
+			enable <='0';
 				if (button = "01000") then
 					nextstate <= cc;
 				elsif ( button = "00000") then 
 					nextstate <= C;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when Cc =>
-			control <= "000";
+			enable <='0';
 				if (button = "01000") then
 					nextstate <= ccc;
 				elsif ( button = "00000") then 
 					nextstate <= CC;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when Ccc =>
-			control <= "000";
+			enable <='0';
 				if (button = "01000") then
 					nextstate <= cccc;
 				elsif ( button = "00000") then 
 					nextstate <= CCC;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when Cccc =>
-			control <= "000";
+			enable <='0';
 				if (button = "01000") then
 					nextstate <= physics;
 				elsif ( button = "00000") then 
 					nextstate <= CCCC;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when pingpong =>
-			control <= "001";
+			control <= "1011";
+			enable <='1';
 				if ( button = "00000") then 
 					nextstate <= PINGPONG;
 				elsif ( button = "00001") then 
@@ -164,10 +166,11 @@ begin
 				elsif ( button = "01000") then 
 					nextstate <= c;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when wall =>
-			control <= "010";
+			control <= "1101";
+			enable <='1';
 				if ( button = "00000") then 
 					nextstate <= WALL;
 				elsif ( button = "00001") then 
@@ -175,10 +178,11 @@ begin
 				elsif ( button = "01000") then 
 					nextstate <= c;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when train =>
-			control <= "011";
+			control <= "1010";
+			enable <='1';
 				if ( button = "00000") then 
 					nextstate <= TRAIN;
 				elsif ( button = "00001") then 
@@ -186,10 +190,11 @@ begin
 				elsif ( button = "01000") then 
 					nextstate <= c;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
 		when physics =>
-			control <= "100";
+			control <= "1100";
+			enable <='1';
 				if ( button = "00000") then 
 					nextstate <= PHYSICS;
 				elsif ( button = "00001") then 
@@ -197,8 +202,12 @@ begin
 				elsif ( button = "01000") then 
 					nextstate <= c;
 				else
-					nextstate <= off;
+					nextstate <= presentstate;
 				end if;
+		when others =>
+			control <="0000";
+			enable <='1';
+			nextstate <= off;
 		
 		
 	end case;

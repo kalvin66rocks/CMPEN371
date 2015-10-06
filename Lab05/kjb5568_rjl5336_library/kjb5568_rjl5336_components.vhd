@@ -181,12 +181,13 @@ package kjb5568_rjl5336_Components is
 	port ( BUTTON		: in	STD_LOGIC_VECTOR(4 downto 0);
 			 CLK 			: in  STD_LOGIC;
 			 reset		: in  STD_LOGIC;
-			 enable		: in 	STD_LOGIC;
-	       CONTROL		: out	STD_LOGIC_VECTOR(2 downto 0));
+			 enable		: out 	STD_LOGIC;
+	       CONTROL		: out	STD_LOGIC_VECTOR(3 downto 0));
 	end component;
 	
 	component Pingpong_Fsm is
-	port(	pulse 	: in std_logic;
+	port(	enable 	: in std_logic;
+			clk		: in std_logic;
 			clr		: in std_logic;
 			LED			: out STD_LOGIC_VECTOR(15 downto 0));
 	end component;
