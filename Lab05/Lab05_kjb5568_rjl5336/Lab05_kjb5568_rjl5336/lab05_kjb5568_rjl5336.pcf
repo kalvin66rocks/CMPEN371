@@ -1,8 +1,19 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Oct 06 11:26:25 2015
+// Written by: Map P.20131013 on Tue Oct 06 13:27:25 2015
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "SWITCH<15>" LOCATE = SITE "P4" LEVEL 1;
+COMP "ANODE<0>" LOCATE = SITE "N6" LEVEL 1;
+COMP "ANODE<1>" LOCATE = SITE "M6" LEVEL 1;
+COMP "LED<10>" LOCATE = SITE "V1" LEVEL 1;
+COMP "ANODE<2>" LOCATE = SITE "M3" LEVEL 1;
+COMP "LED<11>" LOCATE = SITE "R1" LEVEL 1;
+COMP "ANODE<3>" LOCATE = SITE "N5" LEVEL 1;
+COMP "LED<12>" LOCATE = SITE "P5" LEVEL 1;
+COMP "ANODE<4>" LOCATE = SITE "N2" LEVEL 1;
+COMP "LED<13>" LOCATE = SITE "U1" LEVEL 1;
+COMP "ANODE<5>" LOCATE = SITE "N4" LEVEL 1;
 COMP "LED<14>" LOCATE = SITE "R2" LEVEL 1;
 COMP "ANODE<6>" LOCATE = SITE "L1" LEVEL 1;
 COMP "LED<15>" LOCATE = SITE "P2" LEVEL 1;
@@ -45,17 +56,6 @@ COMP "SWITCH<9>" LOCATE = SITE "V2" LEVEL 1;
 COMP "SWITCH<12>" LOCATE = SITE "T1" LEVEL 1;
 COMP "SWITCH<13>" LOCATE = SITE "R3" LEVEL 1;
 COMP "SWITCH<14>" LOCATE = SITE "P3" LEVEL 1;
-COMP "SWITCH<15>" LOCATE = SITE "P4" LEVEL 1;
-COMP "ANODE<0>" LOCATE = SITE "N6" LEVEL 1;
-COMP "ANODE<1>" LOCATE = SITE "M6" LEVEL 1;
-COMP "LED<10>" LOCATE = SITE "V1" LEVEL 1;
-COMP "ANODE<2>" LOCATE = SITE "M3" LEVEL 1;
-COMP "LED<11>" LOCATE = SITE "R1" LEVEL 1;
-COMP "ANODE<3>" LOCATE = SITE "N5" LEVEL 1;
-COMP "LED<12>" LOCATE = SITE "P5" LEVEL 1;
-COMP "ANODE<4>" LOCATE = SITE "N2" LEVEL 1;
-COMP "LED<13>" LOCATE = SITE "U1" LEVEL 1;
-COMP "ANODE<5>" LOCATE = SITE "N4" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "Up_debounce/Flip3/Q" BEL "Up_debounce/Flip2/Q" BEL
         "Up_debounce/Flip1/Q" BEL "Center_debounce/Flip3/Q" BEL
         "Center_debounce/Flip2/Q" BEL "Center_debounce/Flip1/Q" BEL
@@ -67,10 +67,7 @@ TIMEGRP sys_clk_pin = BEL "Up_debounce/Flip3/Q" BEL "Up_debounce/Flip2/Q" BEL
         "Center_steady/Flip/Q" BEL "Right_steady/Flip/Q" BEL
         "down_steady/Flip/Q" BEL "Left_steady/Flip/Q" BEL "register1/Q_3" BEL
         "register1/Q_2" BEL "register1/Q_1" BEL "register1/Q_0" BEL
-        "pingpoing/presentstate_FSM_FFd4" BEL
-        "pingpoing/presentstate_FSM_FFd1" BEL
-        "pingpoing/presentstate_FSM_FFd3" BEL
-        "pingpoing/presentstate_FSM_FFd2" BEL "Top_FSM/presentstate_FSM_FFd2"
+        "pingpong/presentstate_FSM_FFd2" BEL "Top_FSM/presentstate_FSM_FFd2"
         BEL "Top_FSM/presentstate_FSM_FFd3" BEL
         "Top_FSM/presentstate_FSM_FFd1" BEL "Top_FSM/presentstate_FSM_FFd4"
         BEL "Top_FSM/presentstate_FSM_FFd5" BEL
@@ -86,11 +83,11 @@ TIMEGRP sys_clk_pin = BEL "Up_debounce/Flip3/Q" BEL "Up_debounce/Flip2/Q" BEL
         BEL "pulse1000/cnt/Q_7" BEL "pulse1000/cnt/Q_6" BEL
         "pulse1000/cnt/Q_5" BEL "pulse1000/cnt/Q_4" BEL "pulse1000/cnt/Q_3"
         BEL "pulse1000/cnt/Q_2" BEL "pulse1000/cnt/Q_1" BEL
-        "pulse1000/cnt/Q_0" BEL "pulse1000/cnt/count_8" BEL
-        "pulse1000/cnt/count_7" BEL "pulse1000/cnt/count_6" BEL
-        "pulse1000/cnt/count_5" BEL "pulse1000/cnt/count_4" BEL
-        "pulse1000/cnt/count_3" BEL "pulse1000/cnt/count_2" BEL
-        "pulse1000/cnt/count_1" BEL "pulse1000/cnt/count_9" BEL
+        "pulse1000/cnt/Q_0" BEL "pulse1000/cnt/count_7" BEL
+        "pulse1000/cnt/count_6" BEL "pulse1000/cnt/count_5" BEL
+        "pulse1000/cnt/count_4" BEL "pulse1000/cnt/count_3" BEL
+        "pulse1000/cnt/count_2" BEL "pulse1000/cnt/count_1" BEL
+        "pulse1000/cnt/count_8" BEL "pulse1000/cnt/count_9" BEL
         "pulse1000/cnt/count_10" BEL "pulse1000/cnt/count_11" BEL
         "pulse1000/cnt/count_12" BEL "pulse1000/cnt/count_13" BEL
         "pulse1000/cnt/count_14" BEL "pulse1000/cnt/count_15" BEL

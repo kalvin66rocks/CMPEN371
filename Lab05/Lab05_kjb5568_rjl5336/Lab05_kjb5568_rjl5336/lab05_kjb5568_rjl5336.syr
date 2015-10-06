@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: lab05_kjb5568_rjl5336.prj
 
@@ -120,6 +120,9 @@ Parsing architecture <Behavioral> of entity <dff>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Counter_nbit.vhd" into library kjb5568_rjl5336_library
 Parsing entity <Counter_nbit>.
 Parsing architecture <Behavioral> of entity <counter_nbit>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\train_fsm.vhd" into library kjb5568_rjl5336_library
+Parsing entity <train_fsm>.
+Parsing architecture <Behavioral> of entity <train_fsm>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Reg_nbit.vhd" into library kjb5568_rjl5336_library
 Parsing entity <Reg_nbit>.
 Parsing architecture <Behavioral> of entity <reg_nbit>.
@@ -146,6 +149,7 @@ Parsing entity <lab05_kjb5568_rjl5336>.
 Parsing architecture <Behavioral> of entity <lab05_kjb5568_rjl5336>.
 WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" Line 133: Actual for formal port reset is neither a static name nor a globally static expression
 WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" Line 139: Actual for formal port clr is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" Line 144: Actual for formal port reset is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -175,6 +179,8 @@ INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\FSM
 Elaborating entity <Pingpong_Fsm> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 196. Case statement is complete. others clause is never selected
 
+Elaborating entity <train_fsm> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
+
 Elaborating entity <Reg_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <WordTo8dig7seg> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
@@ -183,9 +189,7 @@ Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from
 
 Elaborating entity <hextosevenseg> (architecture <structural>) from library <kjb5568_rjl5336_library>.
 WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" Line 48: Net <led_wall[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" Line 49: Net <led_train[15]> does not have a driver.
 WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" Line 50: Net <led_physics[15]> does not have a driver.
-WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" line 124. All outputs of instance <pulseping> of block <pulse_gen> are unconnected in block <lab05_kjb5568_rjl5336>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -193,9 +197,7 @@ WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb
 
 Synthesizing Unit <lab05_kjb5568_rjl5336>.
     Related source file is "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd".
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" line 124: Output port <PULSE> of the instance <pulseping> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <led_wall> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <led_train> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <led_physics> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	inferred   7 Multiplexer(s).
@@ -254,6 +256,15 @@ Synthesizing Unit <pulse_gen_2>.
     Summary:
 	no macro.
 Unit <pulse_gen_2> synthesized.
+WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\pulse_gen.vhd" line 45. All outputs of instance <cnt> of block <Counter_nbit> are unconnected in block <pulse_gen_3>. Underlying logic will be removed.
+
+Synthesizing Unit <pulse_gen_3>.
+    Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\pulse_gen.vhd".
+        n = 16
+        maxCount = 5000000
+    Summary:
+	no macro.
+Unit <pulse_gen_3> synthesized.
 
 Synthesizing Unit <FSM>.
     Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\FSM.vhd".
@@ -305,6 +316,27 @@ WARNING:Xst:737 - Found 1-bit latch for signal <r>. Latches may be generated fro
 	inferred   1 Finite State Machine(s).
 Unit <Pingpong_Fsm> synthesized.
 
+Synthesizing Unit <train_fsm>.
+    Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\train_fsm.vhd".
+    Found 5-bit register for signal <presentstate>.
+    Found finite state machine <FSM_2> for signal <presentstate>.
+    -----------------------------------------------------------------------
+    | States             | 25                                             |
+    | Transitions        | 50                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 16                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | t24                                            |
+    | Power Up State     | t24                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <train_fsm> synthesized.
+
 Synthesizing Unit <Reg_nbit>.
     Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Reg_nbit.vhd".
         n = 4
@@ -325,7 +357,7 @@ Synthesizing Unit <Counter_nbit_2>.
         n = 3
     Found 3-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_23_o_add_0_OUT> created at line 36.
+    Found 32-bit adder for signal <count[31]_GND_24_o_add_0_OUT> created at line 36.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  35 D-type flip-flop(s).
@@ -358,7 +390,7 @@ Macro Statistics
  1-bit 2-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 7
  4-bit 8-to-1 multiplexer                              : 1
-# FSMs                                                 : 2
+# FSMs                                                 : 3
 
 =========================================================================
 
@@ -439,14 +471,15 @@ Macro Statistics
 # Multiplexers                                         : 8
  16-bit 2-to-1 multiplexer                             : 7
  4-bit 8-to-1 multiplexer                              : 1
-# FSMs                                                 : 2
+# FSMs                                                 : 3
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <display/cnt/Q_2> (without init value) has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <pingpong/r> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <display/cnt/Q_2> (without init value) has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <display/cnt/Q_1> (without init value) has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <display/cnt/Q_0> (without init value) has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
@@ -470,6 +503,37 @@ Optimizing FSM <FSM_1> on signal <presentstate[1:4]> with user encoding.
  p13   | 1101
  p14   | 1110
  p15   | 1111
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_2> on signal <presentstate[1:5]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ t24   | 00000
+ t23   | 00001
+ t22   | 00010
+ t21   | 00011
+ t20   | 00100
+ t19   | 00101
+ t18   | 00110
+ t17   | 00111
+ t16   | 01000
+ t15   | 01001
+ t14   | 01010
+ t13   | 01011
+ t12   | 01100
+ t11   | 01101
+ t10   | 01110
+ t9    | 01111
+ t8    | 10000
+ t7    | 10001
+ t6    | 10010
+ t5    | 10011
+ t4    | 10100
+ t3    | 10101
+ t2    | 10110
+ t1    | 10111
+ t0    | 11000
 -------------------
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <Top_FSM/FSM_0> on signal <presentstate[1:14]> with one-hot encoding.
@@ -507,12 +571,18 @@ WARNING:Xst:2677 - Node <count_28> of sequential type is unconnected in block <C
 WARNING:Xst:2677 - Node <count_29> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_30> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_31> of sequential type is unconnected in block <Counter_nbit_1>.
+WARNING:Xst:1293 - FF/Latch <train/presentstate_FSM_FFd5> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <train/presentstate_FSM_FFd4> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <train/presentstate_FSM_FFd3> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <train/presentstate_FSM_FFd2> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <train/presentstate_FSM_FFd1> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <Counter_nbit_1> ...
 
 Optimizing unit <lab05_kjb5568_rjl5336> ...
 
 Optimizing unit <FSM> ...
+INFO:Xst:2261 - The FF/Latch <pingpong/presentstate_FSM_FFd2> in Unit <lab05_kjb5568_rjl5336> is equivalent to the following 3 FFs/Latches, which will be removed : <pingpong/presentstate_FSM_FFd4> <pingpong/presentstate_FSM_FFd3> <pingpong/presentstate_FSM_FFd1> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -524,8 +594,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 74
- Flip-Flops                                            : 74
+# Registers                                            : 71
+ Flip-Flops                                            : 71
 
 =========================================================================
 
@@ -548,25 +618,25 @@ Top Level Output File Name         : lab05_kjb5568_rjl5336.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 178
+# BELS                             : 156
 #      GND                         : 1
 #      INV                         : 1
 #      LUT1                        : 15
-#      LUT2                        : 14
-#      LUT3                        : 14
-#      LUT4                        : 52
-#      LUT5                        : 13
-#      LUT6                        : 36
+#      LUT2                        : 10
+#      LUT3                        : 7
+#      LUT4                        : 51
+#      LUT5                        : 16
+#      LUT6                        : 23
 #      MUXCY                       : 15
 #      VCC                         : 1
 #      XORCY                       : 16
-# FlipFlops/Latches                : 79
+# FlipFlops/Latches                : 75
 #      FD                          : 37
 #      FDE                         : 15
 #      FDR                         : 13
 #      FDRE                        : 4
-#      FDS                         : 5
-#      LD                          : 5
+#      FDS                         : 2
+#      LD                          : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 52
@@ -580,16 +650,16 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              79  out of  126800     0%  
- Number of Slice LUTs:                  145  out of  63400     0%  
-    Number used as Logic:               145  out of  63400     0%  
+ Number of Slice Registers:              75  out of  126800     0%  
+ Number of Slice LUTs:                  123  out of  63400     0%  
+    Number used as Logic:               123  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    161
-   Number with an unused Flip Flop:      82  out of    161    50%  
-   Number with an unused LUT:            16  out of    161     9%  
-   Number of fully used LUT-FF pairs:    63  out of    161    39%  
-   Number of unique control sets:         6
+ Number of LUT Flip Flop pairs used:    139
+   Number with an unused Flip Flop:      64  out of    139    46%  
+   Number with an unused LUT:            16  out of    139    11%  
+   Number of fully used LUT-FF pairs:    59  out of    139    42%  
+   Number of unique control sets:         5
 
 IO Utilization: 
  Number of IOs:                          53
@@ -616,14 +686,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
----------------------------------------------------------------------------------------------+---------------------------+-------+
-Clock Signal                                                                                 | Clock buffer(FF name)     | Load  |
----------------------------------------------------------------------------------------------+---------------------------+-------+
-CLK                                                                                          | BUFGP                     | 74    |
-pingpoing/presentstate[3]_enable_Mux_37_o(pingpoing/Mmux_presentstate[3]_enable_Mux_37_o11:O)| NONE(*)(pingpoing/r)      | 1     |
-store_enable(Top_FSM/enable1:O)                                                              | NONE(*)(Top_FSM/CONTROL_0)| 4     |
----------------------------------------------------------------------------------------------+---------------------------+-------+
-(*) These 2 clock signal(s) are generated by combinatorial logic,
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+CLK                                | BUFGP                     | 71    |
+store_enable(Top_FSM/enable1:O)    | NONE(*)(Top_FSM/CONTROL_0)| 4     |
+-----------------------------------+---------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -636,10 +705,10 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.083ns (Maximum Frequency: 324.409MHz)
+   Minimum period: 3.056ns (Maximum Frequency: 327.275MHz)
    Minimum input arrival time before clock: 1.940ns
-   Maximum output required time after clock: 3.028ns
-   Maximum combinational path delay: 2.008ns
+   Maximum output required time after clock: 2.795ns
+   Maximum combinational path delay: 1.300ns
 
 Timing Details:
 ---------------
@@ -647,45 +716,45 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 3.083ns (frequency: 324.409MHz)
-  Total number of paths / destination ports: 1428 / 84
+  Clock period: 3.056ns (frequency: 327.275MHz)
+  Total number of paths / destination ports: 1346 / 81
 -------------------------------------------------------------------------
-Delay:               3.083ns (Levels of Logic = 3)
+Delay:               3.056ns (Levels of Logic = 3)
   Source:            pulse1000/cnt/Q_0 (FF)
-  Destination:       pulse1000/cnt/count_14 (FF)
+  Destination:       pulse1000/cnt/count_13 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: pulse1000/cnt/Q_0 to pulse1000/cnt/count_14
+  Data Path: pulse1000/cnt/Q_0 to pulse1000/cnt/count_13
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               2   0.478   0.945  pulse1000/cnt/Q_0 (pulse1000/cnt/Q_0)
-     LUT6:I0->O            6   0.124   0.569  pulse1000/pulse_int<15>1 (pulse1000/pulse_int<15>)
+     LUT6:I0->O            2   0.124   0.542  pulse1000/pulse_int<15>1 (pulse1000/pulse_int<15>)
      LUT6:I4->O           32   0.124   0.689  pulse1000/clear1 (pulse1000/clear)
-     LUT4:I2->O            1   0.124   0.000  pulse1000/cnt/count_14_rstpot (pulse1000/cnt/count_14_rstpot)
-     FD:D                      0.030          pulse1000/cnt/count_14
+     LUT4:I2->O            1   0.124   0.000  pulse1000/cnt/count_13_rstpot (pulse1000/cnt/count_13_rstpot)
+     FD:D                      0.030          pulse1000/cnt/count_13
     ----------------------------------------
-    Total                      3.083ns (0.880ns logic, 2.203ns route)
-                                       (28.5% logic, 71.5% route)
+    Total                      3.056ns (0.880ns logic, 2.176ns route)
+                                       (28.8% logic, 71.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 95 / 59
+  Total number of paths / destination ports: 86 / 56
 -------------------------------------------------------------------------
 Offset:              1.940ns (Levels of Logic = 3)
   Source:            SWITCH<0> (PAD)
-  Destination:       pulse1000/cnt/count_14 (FF)
+  Destination:       pulse1000/cnt/count_13 (FF)
   Destination Clock: CLK rising
 
-  Data Path: SWITCH<0> to pulse1000/cnt/count_14
+  Data Path: SWITCH<0> to pulse1000/cnt/count_13
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             6   0.001   0.972  SWITCH_0_IBUF (SWITCH_0_IBUF)
      LUT6:I0->O           32   0.124   0.689  pulse1000/clear1 (pulse1000/clear)
-     LUT4:I2->O            1   0.124   0.000  pulse1000/cnt/count_14_rstpot (pulse1000/cnt/count_14_rstpot)
-     FD:D                      0.030          pulse1000/cnt/count_14
+     LUT4:I2->O            1   0.124   0.000  pulse1000/cnt/count_13_rstpot (pulse1000/cnt/count_13_rstpot)
+     FD:D                      0.030          pulse1000/cnt/count_13
     ----------------------------------------
     Total                      1.940ns (0.279ns logic, 1.661ns route)
                                        (14.4% logic, 85.6% route)
@@ -712,45 +781,43 @@ Offset:              1.970ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 170 / 16
+  Total number of paths / destination ports: 78 / 16
 -------------------------------------------------------------------------
-Offset:              3.028ns (Levels of Logic = 4)
-  Source:            pingpoing/presentstate_FSM_FFd2 (FF)
-  Destination:       LED<12> (PAD)
+Offset:              2.795ns (Levels of Logic = 3)
+  Source:            register1/Q_3 (FF)
+  Destination:       LED<0> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: pingpoing/presentstate_FSM_FFd2 to LED<12>
+  Data Path: register1/Q_3 to LED<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q             17   0.478   0.822  pingpoing/presentstate_FSM_FFd2 (pingpoing/presentstate_FSM_FFd2)
-     LUT3:I0->O            1   0.124   0.536  Mmux_LED41 (Mmux_LED4)
-     LUT6:I4->O            1   0.124   0.421  Mmux_LED42 (Mmux_LED41)
-     LUT2:I1->O            1   0.124   0.399  Mmux_LED43 (LED_12_OBUF)
-     OBUF:I->O                 0.000          LED_12_OBUF (LED<12>)
+     FDRE:C->Q            18   0.478   0.888  register1/Q_3 (register1/Q_3)
+     LUT4:I0->O            2   0.124   0.782  Mmux_LED711 (Mmux_LED71)
+     LUT4:I0->O            1   0.124   0.399  Mmux_LED13 (LED_0_OBUF)
+     OBUF:I->O                 0.000          LED_0_OBUF (LED<0>)
     ----------------------------------------
-    Total                      3.028ns (0.850ns logic, 2.178ns route)
-                                       (28.1% logic, 71.9% route)
+    Total                      2.795ns (0.726ns logic, 2.069ns route)
+                                       (26.0% logic, 74.0% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Delay:               2.008ns (Levels of Logic = 4)
-  Source:            SWITCH<9> (PAD)
-  Destination:       LED<9> (PAD)
+Delay:               1.300ns (Levels of Logic = 3)
+  Source:            SWITCH<11> (PAD)
+  Destination:       LED<11> (PAD)
 
-  Data Path: SWITCH<9> to LED<9>
+  Data Path: SWITCH<11> to LED<11>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.421  SWITCH_9_IBUF (SWITCH_9_IBUF)
-     LUT2:I1->O            1   0.124   0.939  Mmux_LED16_SW0 (N10)
-     LUT6:I0->O            1   0.124   0.399  Mmux_LED16 (LED_9_OBUF)
-     OBUF:I->O                 0.000          LED_9_OBUF (LED<9>)
+     IBUF:I->O             1   0.001   0.776  SWITCH_11_IBUF (SWITCH_11_IBUF)
+     LUT5:I1->O            1   0.124   0.399  Mmux_LED31 (LED_11_OBUF)
+     OBUF:I->O                 0.000          LED_11_OBUF (LED<11>)
     ----------------------------------------
-    Total                      2.008ns (0.249ns logic, 1.759ns route)
-                                       (12.4% logic, 87.6% route)
+    Total                      1.300ns (0.125ns logic, 1.175ns route)
+                                       (9.6% logic, 90.4% route)
 
 =========================================================================
 
@@ -758,21 +825,12 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock CLK
------------------------------------------+---------+---------+---------+---------+
-                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------+---------+---------+---------+---------+
-CLK                                      |    3.083|         |         |         |
-pingpoing/presentstate[3]_enable_Mux_37_o|         |    2.822|         |         |
-store_enable                             |         |    1.100|         |         |
------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock pingpoing/presentstate[3]_enable_Mux_37_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |         |         |    1.495|         |
+CLK            |    3.056|         |         |         |
+store_enable   |         |    1.100|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock store_enable
@@ -786,14 +844,14 @@ CLK            |         |         |    1.416|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 21.21 secs
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 23.14 secs
  
 --> 
 
-Total memory usage is 406540 kilobytes
+Total memory usage is 406580 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   70 (   0 filtered)
+Number of warnings :   75 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 
