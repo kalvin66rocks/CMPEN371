@@ -30,7 +30,7 @@ end Pingpong_Fsm;
 
 architecture Behavioral of Pingpong_Fsm is
 
-type state_type is (p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,start);
+type state_type is (p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,init,comp,start);
 
 signal presentstate : state_type;
 signal nextstate	  : state_type;
@@ -54,14 +54,25 @@ begin
 		when start =>
 			if(enable ='1') then
 			r<='1';
+			nextstate <= init;
+			else
+			nextstate <= presentstate;
+			end if;
+			led <="1000000000000000";
+		when init =>
+			if(enable ='1') then
+			r<='1';
 			nextstate <= p15;
 			else
 			nextstate <= presentstate;
 			end if;
 			led <="1000000000000000";
 		when p15 =>
-			if(enable ='1') then
-			nextstate <= p14;
+			if(enable ='1' and r='0') then
+			nextstate <= init;
+			r<='1';
+			elsif (r='1' and enable ='1') then
+				nextstate <= p14;
 			else
 			nextstate <= presentstate;
 			end if;
@@ -69,7 +80,6 @@ begin
 		when p14 =>
 			if(r='0' and enable ='1') then
 				nextstate <= p15;
-				r<='1';
 			elsif (r='1' and enable ='1') then
 				nextstate <= p13;
 			else
@@ -189,14 +199,24 @@ begin
 				nextstate <= p2;
 			elsif (r='1' and enable ='1') then
 				nextstate <= p0;
-				r<='0';
 			else
 			nextstate <= presentstate;
 			end if;
 			led <="0000000000000010";
 		when p0 =>
+			if(r='0' and enable ='1') then
+				nextstate <= p1;
+			elsif (r='1' and enable ='1') then
+				nextstate <= comp;
+				r<='0';
+			else
+			nextstate <= presentstate;
+			end if;
+			led <="0000000000000001";
+		when comp =>
 			if(enable = '1') then
-			nextstate <= p1;
+			nextstate <= p0;
+			r<= '0';
 			else
 			nextstate <= presentstate;
 			end if;

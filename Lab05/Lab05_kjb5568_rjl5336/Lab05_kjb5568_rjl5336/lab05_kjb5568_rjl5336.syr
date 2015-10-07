@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: lab05_kjb5568_rjl5336.prj
 
@@ -182,7 +182,7 @@ Elaborating entity <FSM> (architecture <Behavioral>) from library <kjb5568_rjl53
 INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\FSM.vhd" Line 216. Case statement is complete. others clause is never selected
 
 Elaborating entity <Pingpong_Fsm> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 204. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 224. Case statement is complete. others clause is never selected
 
 Elaborating entity <train_fsm> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
@@ -332,8 +332,8 @@ Synthesizing Unit <Pingpong_Fsm>.
     Found 5-bit register for signal <presentstate>.
     Found finite state machine <FSM_1> for signal <presentstate>.
     -----------------------------------------------------------------------
-    | States             | 17                                             |
-    | Transitions        | 65                                             |
+    | States             | 19                                             |
+    | Transitions        | 73                                             |
     | Inputs             | 3                                              |
     | Outputs            | 21                                             |
     | Clock              | clk (rising_edge)                              |
@@ -392,7 +392,7 @@ Synthesizing Unit <Counter_nbit_5>.
         n = 3
     Found 3-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_24_o_add_0_OUT> created at line 36.
+    Found 32-bit adder for signal <count[31]_GND_25_o_add_0_OUT> created at line 36.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  35 D-type flip-flop(s).
@@ -565,7 +565,9 @@ Optimizing FSM <pingpong/FSM_1> on signal <presentstate[1:5]> with user encoding
  p13   | 01101
  p14   | 01110
  p15   | 01111
- start | 10000
+ init  | 10000
+ comp  | 10001
+ start | 10010
 -------------------
 WARNING:Xst:2677 - Node <count_16> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_17> of sequential type is unconnected in block <Counter_nbit_1>.
@@ -691,25 +693,25 @@ Top Level Output File Name         : lab05_kjb5568_rjl5336.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 545
+# BELS                             : 544
 #      GND                         : 1
 #      INV                         : 5
 #      LUT1                        : 79
-#      LUT2                        : 114
-#      LUT3                        : 15
-#      LUT4                        : 20
-#      LUT5                        : 43
-#      LUT6                        : 105
+#      LUT2                        : 113
+#      LUT3                        : 16
+#      LUT4                        : 18
+#      LUT5                        : 41
+#      LUT6                        : 109
 #      MUXCY                       : 79
-#      MUXF7                       : 2
+#      MUXF7                       : 1
 #      VCC                         : 1
 #      XORCY                       : 81
 # FlipFlops/Latches                : 214
 #      FD                          : 145
-#      FDE                         : 15
-#      FDR                         : 41
-#      FDRE                        : 10
-#      FDS                         : 2
+#      FDE                         : 19
+#      FDR                         : 40
+#      FDRE                        : 6
+#      FDS                         : 3
 #      LD                          : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -764,7 +766,7 @@ Clock Information:
 Clock Signal                                                                                  | Clock buffer(FF name)  | Load  |
 ----------------------------------------------------------------------------------------------+------------------------+-------+
 CLK                                                                                           | BUFGP                  | 213   |
-pingpong/presentstate[4]_PWR_24_o_Mux_38_o(pingpong/Mmux_presentstate[4]_PWR_24_o_Mux_38_o1:O)| NONE(*)(pingpong/r)    | 1     |
+pingpong/presentstate[4]_PWR_24_o_Mux_42_o(pingpong/Mmux_presentstate[4]_PWR_24_o_Mux_42_o1:O)| NONE(*)(pingpong/r)    | 1     |
 ----------------------------------------------------------------------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -779,10 +781,10 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.515ns (Maximum Frequency: 284.535MHz)
+   Minimum period: 3.514ns (Maximum Frequency: 284.571MHz)
    Minimum input arrival time before clock: 3.043ns
-   Maximum output required time after clock: 4.003ns
-   Maximum combinational path delay: 2.140ns
+   Maximum output required time after clock: 4.526ns
+   Maximum combinational path delay: 1.988ns
 
 Timing Details:
 ---------------
@@ -790,10 +792,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 3.515ns (frequency: 284.535MHz)
-  Total number of paths / destination ports: 5311 / 252
+  Clock period: 3.514ns (frequency: 284.571MHz)
+  Total number of paths / destination ports: 5321 / 252
 -------------------------------------------------------------------------
-Delay:               3.515ns (Levels of Logic = 2)
+Delay:               3.514ns (Levels of Logic = 2)
   Source:            pulseping/cnt/Q_3 (FF)
   Destination:       pulseping/cnt/count_22 (FF)
   Source Clock:      CLK rising
@@ -804,16 +806,16 @@ Delay:               3.515ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.478   0.919  pulseping/cnt/Q_3 (pulseping/cnt/Q_3)
-     LUT5:I0->O           41   0.124   0.931  pulseping/clear14 (pulseping/clear13)
+     LUT5:I0->O           39   0.124   0.930  pulseping/clear14 (pulseping/clear13)
      LUT5:I1->O            8   0.124   0.445  pulseping/clear2 (pulseping/clear)
      FDR:R                     0.494          pulseping/cnt/count_15
     ----------------------------------------
-    Total                      3.515ns (1.220ns logic, 2.295ns route)
+    Total                      3.514ns (1.220ns logic, 2.294ns route)
                                        (34.7% logic, 65.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 561 / 193
+  Total number of paths / destination ports: 560 / 190
 -------------------------------------------------------------------------
 Offset:              3.043ns (Levels of Logic = 3)
   Source:            BUTTON<2> (PAD)
@@ -825,7 +827,7 @@ Offset:              3.043ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             5   0.001   0.743  BUTTON_2_IBUF (BUTTON_2_IBUF)
-     LUT3:I0->O           65   0.124   1.099  btn_reset<0>11 (btn_reset)
+     LUT3:I0->O           66   0.124   1.099  btn_reset<0>11 (btn_reset)
      LUT6:I0->O           10   0.124   0.458  pulsetrain/clear1_1 (pulsetrain/clear1)
      FDR:R                     0.494          pulsetrain/cnt/count_15
     ----------------------------------------
@@ -834,45 +836,46 @@ Offset:              3.043ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 389 / 24
+  Total number of paths / destination ports: 385 / 24
 -------------------------------------------------------------------------
-Offset:              4.003ns (Levels of Logic = 4)
-  Source:            pingpong/presentstate_FSM_FFd3 (FF)
-  Destination:       LED<3> (PAD)
+Offset:              4.526ns (Levels of Logic = 5)
+  Source:            register1/Q_2 (FF)
+  Destination:       LED<13> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: pingpong/presentstate_FSM_FFd3 to LED<3>
+  Data Path: register1/Q_2 to LED<13>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             23   0.478   1.059  pingpong/presentstate_FSM_FFd3 (pingpong/presentstate_FSM_FFd3)
-     LUT5:I0->O            1   0.124   0.919  Mmux_LED105 (Mmux_LED104)
-     LUT5:I0->O            1   0.124   0.776  Mmux_LED106_SW0 (N44)
-     LUT6:I2->O            1   0.124   0.399  Mmux_LED106 (LED_3_OBUF)
-     OBUF:I->O                 0.000          LED_3_OBUF (LED<3>)
+     FDE:C->Q             28   0.478   0.868  register1/Q_2 (register1/Q_2)
+     LUT3:I0->O            1   0.124   0.919  Mmux_LED51_SW0 (N4)
+     LUT6:I1->O            2   0.124   0.945  Mmux_LED51 (Mmux_LED51)
+     LUT6:I0->O            1   0.124   0.421  Mmux_LED52 (Mmux_LED5)
+     LUT6:I5->O            1   0.124   0.399  Mmux_LED55 (LED_13_OBUF)
+     OBUF:I->O                 0.000          LED_13_OBUF (LED<13>)
     ----------------------------------------
-    Total                      4.003ns (0.850ns logic, 3.153ns route)
-                                       (21.2% logic, 78.8% route)
+    Total                      4.526ns (0.974ns logic, 3.552ns route)
+                                       (21.5% logic, 78.5% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Delay:               2.140ns (Levels of Logic = 4)
-  Source:            SWITCH<1> (PAD)
-  Destination:       LED<1> (PAD)
+Delay:               1.988ns (Levels of Logic = 4)
+  Source:            SWITCH<13> (PAD)
+  Destination:       LED<13> (PAD)
 
-  Data Path: SWITCH<1> to LED<1>
+  Data Path: SWITCH<13> to LED<13>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.716  SWITCH_1_IBUF (SWITCH_1_IBUF)
-     LUT5:I2->O            1   0.124   0.776  Mmux_LED82 (Mmux_LED81)
-     LUT4:I0->O            1   0.124   0.399  Mmux_LED84 (LED_1_OBUF)
-     OBUF:I->O                 0.000          LED_1_OBUF (LED<1>)
+     IBUF:I->O             1   0.001   0.919  SWITCH_13_IBUF (SWITCH_13_IBUF)
+     LUT6:I1->O            1   0.124   0.421  Mmux_LED52 (Mmux_LED5)
+     LUT6:I5->O            1   0.124   0.399  Mmux_LED55 (LED_13_OBUF)
+     OBUF:I->O                 0.000          LED_13_OBUF (LED<13>)
     ----------------------------------------
-    Total                      2.140ns (0.249ns logic, 1.891ns route)
-                                       (11.6% logic, 88.4% route)
+    Total                      1.988ns (0.249ns logic, 1.739ns route)
+                                       (12.5% logic, 87.5% route)
 
 =========================================================================
 
@@ -884,27 +887,27 @@ Clock to Setup on destination clock CLK
                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------+---------+---------+---------+---------+
-CLK                                       |    3.515|         |         |         |
-pingpong/presentstate[4]_PWR_24_o_Mux_38_o|         |    2.428|         |         |
+CLK                                       |    3.514|         |         |         |
+pingpong/presentstate[4]_PWR_24_o_Mux_42_o|         |    2.584|         |         |
 ------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock pingpong/presentstate[4]_PWR_24_o_Mux_38_o
+Clock to Setup on destination clock pingpong/presentstate[4]_PWR_24_o_Mux_42_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |         |         |    1.672|         |
+CLK            |         |         |    1.604|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 23.31 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.35 secs
  
 --> 
 
-Total memory usage is 406536 kilobytes
+Total memory usage is 410588 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   77 (   0 filtered)

@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Tue Oct 06 21:46:14 2015">
+  <application stringID="Xst" timeStamp="Tue Oct 06 23:46:10 2015">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Calibre2\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\OpenVPN\bin;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\"/>
+          <item stringID="value" value="G:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;G:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;G:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;G:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;G:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;G:\Xilinx\14.7\ISE_DS\PlanAhead\bin;G:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;G:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;G:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;G:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;G:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;G:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;G:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;G:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;G:\Xilinx\14.7\ISE_DS\common\bin\nt64;G:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\ProgramData\Oracle\Java\javapath;C:\Users\Kevin\Documents\AMD APP\bin\x86_64;C:\Users\Kevin\Documents\AMD APP\bin\x86;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;F:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -20,32 +20,32 @@
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\"/>
+          <item stringID="value" value="G:\Xilinx\14.7\ISE_DS\ISE\"/>
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE"/>
+          <item stringID="value" value="G:\Xilinx\14.7\ISE_DS\ISE"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\EDK"/>
+          <item stringID="value" value="G:\Xilinx\14.7\ISE_DS\EDK"/>
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\PlanAhead"/>
+          <item stringID="value" value="G:\Xilinx\14.7\ISE_DS\PlanAhead"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
         <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
       </item>
-      <item stringID="User_EnvHost" value="Kevin-MSI"/>
+      <item stringID="User_EnvHost" value="Kevin-PC"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="AMD A10-5750M APU with Radeon(tm) HD Graphics  "/>
-          <item stringID="speed" value="2495 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i5-3570K CPU @ 3.40GHz"/>
+          <item stringID="speed" value="3410 MHz"/>
         </row>
       </table>
     </section>
@@ -146,26 +146,26 @@
         <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="lab05_kjb5568_rjl5336.ngc"/>
       </section>
       <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="545">
+        <item dataType="int" stringID="XST_BELS" value="544">
           <item dataType="int" stringID="XST_GND" value="1"/>
           <item dataType="int" stringID="XST_INV" value="5"/>
           <item dataType="int" stringID="XST_LUT1" value="79"/>
-          <item dataType="int" stringID="XST_LUT2" value="114"/>
-          <item dataType="int" stringID="XST_LUT3" value="15"/>
-          <item dataType="int" stringID="XST_LUT4" value="20"/>
-          <item dataType="int" stringID="XST_LUT5" value="43"/>
-          <item dataType="int" stringID="XST_LUT6" value="105"/>
+          <item dataType="int" stringID="XST_LUT2" value="113"/>
+          <item dataType="int" stringID="XST_LUT3" value="16"/>
+          <item dataType="int" stringID="XST_LUT4" value="18"/>
+          <item dataType="int" stringID="XST_LUT5" value="41"/>
+          <item dataType="int" stringID="XST_LUT6" value="109"/>
           <item dataType="int" stringID="XST_MUXCY" value="79"/>
-          <item dataType="int" stringID="XST_MUXF7" value="2"/>
+          <item dataType="int" stringID="XST_MUXF7" value="1"/>
           <item dataType="int" stringID="XST_VCC" value="1"/>
           <item dataType="int" stringID="XST_XORCY" value="81"/>
         </item>
         <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="214">
           <item dataType="int" stringID="XST_FD" value="145"/>
-          <item dataType="int" stringID="XST_FDE" value="15"/>
-          <item dataType="int" stringID="XST_FDR" value="41"/>
-          <item dataType="int" stringID="XST_FDRE" value="10"/>
-          <item dataType="int" stringID="XST_FDS" value="2"/>
+          <item dataType="int" stringID="XST_FDE" value="19"/>
+          <item dataType="int" stringID="XST_FDR" value="40"/>
+          <item dataType="int" stringID="XST_FDRE" value="6"/>
+          <item dataType="int" stringID="XST_FDS" value="3"/>
         </item>
         <item dataType="int" stringID="XST_CLOCK_BUFFERS" value="1">
           <item dataType="int" stringID="XST_BUFGP" value="1"/>

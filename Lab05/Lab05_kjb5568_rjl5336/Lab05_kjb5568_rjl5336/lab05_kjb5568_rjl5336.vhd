@@ -160,7 +160,7 @@ btn_reset <=  (btnd and btnl and btnr);
 			D => control,
 			LOAD => store_enable,
 			CLK => clk,
-			CLR => switch(0),
+			CLR => '0',
 			Q => control_out);
 		
 		display: wordto8dig7seg port map (
