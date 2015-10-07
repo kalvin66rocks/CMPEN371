@@ -1,22 +1,14 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+----------------------------------------------------------------------------
+-- Entity:        Ping Pong FSM
+-- Written By:    Kevin Brenneman Richard Lucas
+-- Date Created:  9/30/15
+-- Description:   FSM for controlling the ping pong state
+--
+-- Revision History (date, initials, description): 9/30/15, KB RL, Initial Build
 -- 
--- Create Date:    16:34:24 10/04/2015 
--- Design Name: 
--- Module Name:    Pingpong_Fsm - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+-- Dependencies:
+--		kjb5568_rjl5336_compnents.vhd
+----------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 

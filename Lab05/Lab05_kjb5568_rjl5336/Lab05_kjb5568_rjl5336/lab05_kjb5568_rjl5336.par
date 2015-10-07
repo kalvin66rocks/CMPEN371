@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-KEVIN_SURFACE::  Wed Oct 07 10:50:08 2015
+KEVIN_SURFACE::  Wed Oct 07 14:59:46 2015
 
 par -w -intstyle ise -ol high -mt off lab05_kjb5568_rjl5336_map.ncd
 lab05_kjb5568_rjl5336.ncd lab05_kjb5568_rjl5336.pcf 
@@ -97,13 +97,13 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 11 secs 
-Finished initial Timing Analysis.  REAL time: 11 secs 
+Starting initial Timing Analysis.  REAL time: 12 secs 
+Finished initial Timing Analysis.  REAL time: 12 secs 
 
 Starting Router
 
 
-Phase  1  : 2000 unrouted;      REAL time: 12 secs 
+Phase  1  : 2000 unrouted;      REAL time: 13 secs 
 
 Phase  2  : 1793 unrouted;      REAL time: 13 secs 
 
@@ -113,17 +113,17 @@ Phase  4  : 677 unrouted; (Setup:0, Hold:2614, Component Switching Limit:0)     
 
 Updating file: lab05_kjb5568_rjl5336.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:2465, Component Switching Limit:0)     REAL time: 17 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:2465, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:2465, Component Switching Limit:0)     REAL time: 17 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:2465, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:2465, Component Switching Limit:0)     REAL time: 17 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:2465, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:2465, Component Switching Limit:0)     REAL time: 17 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:2465, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
-Total REAL time to Router completion: 17 secs 
-Total CPU time to Router completion: 17 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+Total REAL time to Router completion: 18 secs 
+Total CPU time to Router completion: 18 secs 
 
 Partition Implementation Status
 -------------------------------

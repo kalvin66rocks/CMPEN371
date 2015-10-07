@@ -1,22 +1,15 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    02:04:14 10/07/2015 
--- Design Name: 
--- Module Name:    wall_fsm - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
+----------------------------------------------------------------------------
+-- Entity:        wall FSM
+-- Written By:    Kevin Brenneman Richard Lucas
+-- Date Created:  9/30/15
+-- Description:   FSM for controlling the wall state
 --
--- Dependencies: 
+-- Revision History (date, initials, description): 9/30/15, KB RL, Initial Build
+-- not completely functionally, only is able to be trapped on the one side when it is trapped from the left.
 --
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+-- Dependencies:
+--		kjb5568_rjl5336_compnents.vhd
+----------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 

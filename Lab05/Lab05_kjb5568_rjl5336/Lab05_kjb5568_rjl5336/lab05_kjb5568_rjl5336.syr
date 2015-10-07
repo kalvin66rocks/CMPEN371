@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -188,14 +188,14 @@ Elaborating entity <FSM> (architecture <Behavioral>) from library <kjb5568_rjl53
 INFO:HDLCompiler:679 - "C:\Users\kalvi_000\Desktop\Lab05\kjb5568_rjl5336_library\FSM.vhd" Line 215. Case statement is complete. others clause is never selected
 
 Elaborating entity <Pingpong_Fsm> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
-INFO:HDLCompiler:679 - "C:\Users\kalvi_000\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 222. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\kalvi_000\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 214. Case statement is complete. others clause is never selected
 
 Elaborating entity <physics_fsm> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <train_fsm> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <wall_fsm> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\kalvi_000\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\wall_fsm.vhd" Line 305. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\kalvi_000\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\wall_fsm.vhd" Line 298. Case statement is complete. others clause is never selected
 
 Elaborating entity <Reg_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
@@ -417,7 +417,7 @@ Synthesizing Unit <wall_fsm>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 1-bit 17-to-1 multiplexer for signal <presentstate[4]_PWR_28_o_Mux_67_o> created at line 62.
+    Found 1-bit 17-to-1 multiplexer for signal <presentstate[4]_PWR_28_o_Mux_67_o> created at line 55.
 WARNING:Xst:737 - Found 1-bit latch for signal <r>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred   1 Latch(s).
@@ -1068,12 +1068,12 @@ wall/presentstate[4]_PWR_28_o_Mux_67_o|         |         |    1.819|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.71 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.83 secs
  
 --> 
 
-Total memory usage is 410036 kilobytes
+Total memory usage is 410048 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   78 (   0 filtered)
