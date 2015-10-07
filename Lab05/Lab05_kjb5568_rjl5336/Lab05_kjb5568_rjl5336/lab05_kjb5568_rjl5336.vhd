@@ -146,11 +146,22 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 			clk => clk,
 			clr => btn_reset,
 			led => led_ping);
+		physics: physics_fsm port map(
+			enable => pulse_train,
+			clk => clk,
+			clr => btn_reset,
+			led => led_physics);
 		train: train_fsm port map(
 			enable => pulse_train,
 			clk => clk,
 			reset => btn_reset,
 			led => led_train);
+		wall: wall_fsm port map(
+			enable => pulse_ping,
+			clk => clk,
+			switch =>switch,
+			clr => btn_reset,
+			led => led_wall);
 			
 word_int <= "0000000000000000000000000000" & control_out;
 digit_en <= "00000001";
@@ -171,18 +182,12 @@ btn_reset <=  (btnd and btnl and btnr);
 			segment => segment,
 			anode => anode);
 			
-led_false <=   "0000111100110010";
-led_wall <=    "1100001111000011";
-led_physics <= "1010101010101010";
-			
 led <= led_ping when control_out = "1011" else 
 		 led_train when control_out = "1010" else 
 		 led_physics when control_out = "1100" else 
 		 led_wall when control_out = "1101" else 
 		 switch when control_out = "0000" else 
-		 led_false;
-		 
---feed the control into a register, change the way that top_fsm sends out signals, plus implement an enable into it.
+		 switch;
 
 			
 

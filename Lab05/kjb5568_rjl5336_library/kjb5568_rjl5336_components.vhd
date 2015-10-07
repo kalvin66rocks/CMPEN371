@@ -198,6 +198,22 @@ package kjb5568_rjl5336_Components is
 			reset		: in std_logic;
 			LED			: out STD_LOGIC_VECTOR(15 downto 0));
 	end component;
+	
+	component physics_fsm is
+	Port (enable 	: in std_logic;
+			clk		: in std_logic;
+			clr		: in std_logic;
+			LED		: out STD_LOGIC_VECTOR(15 downto 0));
+	end component;
+	
+	component wall_fsm is
+	port(	enable 	: in std_logic;
+			clk		: in std_logic;
+			clr		: in std_logic;
+			Switch	: in STD_LOGIC_VECTOR(15 downto 0);
+			LED		: out STD_LOGIC_VECTOR(15 downto 0));
+	end component;
+
 
 
 end kjb5568_rjl5336_Components;

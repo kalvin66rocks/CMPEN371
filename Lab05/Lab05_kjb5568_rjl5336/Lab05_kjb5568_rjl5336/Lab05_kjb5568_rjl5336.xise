@@ -59,7 +59,7 @@
     </file>
     <file xil_pn:name="../../kjb5568_rjl5336_library/Debouncer.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../kjb5568_rjl5336_library/DFF.vhd" xil_pn:type="FILE_VHDL">
@@ -144,22 +144,22 @@
     </file>
     <file xil_pn:name="../../kjb5568_rjl5336_library/numeric_display.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../kjb5568_rjl5336_library/OneShot.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../kjb5568_rjl5336_library/pulse_gen.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../kjb5568_rjl5336_library/Reg_nbit.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../kjb5568_rjl5336_library/rippe_carry_adder.vhd" xil_pn:type="FILE_VHDL">
@@ -179,11 +179,11 @@
     </file>
     <file xil_pn:name="lab05_kjb5568_rjl5336.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="14"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="16"/>
     </file>
     <file xil_pn:name="../../kjb5568_rjl5336_library/FSM.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="14"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="Nexys4_Master.ucf" xil_pn:type="FILE_UCF">
@@ -191,13 +191,22 @@
     </file>
     <file xil_pn:name="../../kjb5568_rjl5336_library/Pingpong_Fsm.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../kjb5568_rjl5336_library/train_fsm.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
+    </file>
+    <file xil_pn:name="../../kjb5568_rjl5336_library/physics_fsm.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="110"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
+      <library xil_pn:name="kjb5568_rjl5336_library"/>
+    </file>
+    <file xil_pn:name="wall_fsm.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="110"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
     </file>
   </files>
 
