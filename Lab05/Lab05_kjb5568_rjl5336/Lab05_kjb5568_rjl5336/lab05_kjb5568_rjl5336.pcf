@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Oct 07 03:08:15 2015
+// Written by: Map P.20131013 on Wed Oct 07 10:50:04 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -104,8 +104,8 @@ TIMEGRP sys_clk_pin = BEL "Up_debounce/Flip3/Q" BEL "Up_debounce/Flip2/Q" BEL
         "pulsetrain/cnt/count_16" BEL "pulsetrain/cnt/count_15" BEL
         "pulsetrain/cnt/count_14" BEL "pulsetrain/cnt/count_13" BEL
         "pulsetrain/cnt/count_12" BEL "pulsetrain/cnt/count_11" BEL
-        "pulsetrain/cnt/count_10" BEL "pingpong/presentstate_FSM_FFd1" BEL
-        "pingpong/presentstate_FSM_FFd2" BEL "pingpong/presentstate_FSM_FFd3"
+        "pulsetrain/cnt/count_10" BEL "pingpong/presentstate_FSM_FFd2" BEL
+        "pingpong/presentstate_FSM_FFd3" BEL "pingpong/presentstate_FSM_FFd1"
         BEL "pingpong/presentstate_FSM_FFd4" BEL
         "pingpong/presentstate_FSM_FFd5" BEL "pulse1000/cnt/count_15" BEL
         "pulse1000/cnt/count_14" BEL "pulse1000/cnt/count_13" BEL

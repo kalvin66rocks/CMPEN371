@@ -197,7 +197,7 @@ begin
 			if(r='0' and enable ='1') then
 				nextstate <= p2;
 			elsif (r='1' and enable ='1') then
-				nextstate <= p0;
+				nextstate <= comp;
 			else
 			nextstate <= presentstate;
 			end if;
@@ -207,14 +207,13 @@ begin
 				nextstate <= p1;
 			elsif (r='1' and enable ='1') then
 				nextstate <= comp;
-				r<='0';
 			else
 			nextstate <= presentstate;
 			end if;
 			led <="0000000000000001";
 		when comp =>
 			if(enable = '1') then
-			nextstate <= p0;
+			nextstate <= p1;
 			r<= '0';
 			else
 			nextstate <= presentstate;
