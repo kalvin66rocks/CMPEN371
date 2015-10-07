@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 library kjb5568_rjl5336_library;
 use kjb5568_rjl5336_library.kjb5568_rjl5336_components.all;
 
@@ -35,9 +36,11 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 	signal pulse_16		 : STD_LOGIC;
 	signal pulse_50		 : STD_LOGIC;
 	signal pulse_ping		 : STD_LOGIC;
+	signal pulse_train	 : STD_LOGIC;
 	signal strobe			 : STD_LOGIC;
 	signal pulse_1000		 : STD_LOGIC;
 	signal store_enable	 : STD_LOGIC;
+	signal btn_reset		 : STD_LOGIC;
 	signal corrected 		 : std_logic_vector (4 downto 0);
 	signal debounced  	 : std_logic_vector (4 downto 0);
 	signal control 		 : std_logic_vector (3 downto 0);
@@ -113,39 +116,45 @@ architecture Behavioral of lab05_kjb5568_rjl5336 is
 		pulse1000: pulse_gen generic map( n => 16,  maxcount => 10000) port map(
 			en => '1',
 			clk => clk,
-			clr => SWITCH(0),
+			clr => btn_reset,
 			pulse => pulse_1000);
 			
-		pulse500: pulse_gen generic map( n => 16,  maxcount => 100000) port map(
+		pulse500: pulse_gen generic map( n => 17,  maxcount => 100000) port map(
 			en => '1',
 			clk => clk,
-			clr => Switch(0),
+			clr => btn_reset,
 			pulse => strobe);
-		pulseping: pulse_gen generic map( n => 16,  maxcount => 5000000) port map(
+		pulseping: pulse_gen generic map( n => 23,  maxcount => 6250000) port map(
 			en => '1',
 			clk => clk,
-			clr => Switch(0),
+			clr => btn_reset,
 			pulse => pulse_ping);
+		pulsetrain: pulse_gen generic map( n => 25,  maxcount => 20000000) port map(
+			en => '1',
+			clk => clk,
+			clr => btn_reset,
+			pulse => pulse_train);
 			
 		Top_FSM : FSM port map(
 			button => corrected,
 			clk => clk,
-			reset =>(btnd and btnl and btnr),
+			reset =>btn_reset,
 			enable => store_enable,
 			control => control);
 		pingpong: pingpong_fsm port map(
 			enable => pulse_ping,
 			clk => clk,
-			clr => (btnd and btnl and btnr),
+			clr => btn_reset,
 			led => led_ping);
 		train: train_fsm port map(
-			enable => pulse_ping,
+			enable => pulse_train,
 			clk => clk,
-			reset => (btnd and btnl and btnr),
+			reset => btn_reset,
 			led => led_train);
 			
 word_int <= "0000000000000000000000000000" & control_out;
 digit_en <= "00000001";
+btn_reset <=  (btnd and btnl and btnr);
 
 		register1: reg_nbit generic map ( n=> 4) port map(
 			D => control,
@@ -162,7 +171,9 @@ digit_en <= "00000001";
 			segment => segment,
 			anode => anode);
 			
-led_false <= "0000111100110010";
+led_false <=   "0000111100110010";
+led_wall <=    "1100001111000011";
+led_physics <= "1010101010101010";
 			
 led <= led_ping when control_out = "1011" else 
 		 led_train when control_out = "1010" else 

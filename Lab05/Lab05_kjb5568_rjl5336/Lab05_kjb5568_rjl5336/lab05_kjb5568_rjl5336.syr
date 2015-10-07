@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.62 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.62 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: lab05_kjb5568_rjl5336.prj
 
@@ -147,9 +147,6 @@ Parsing architecture <Behavioral> of entity <debouncer>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" into library work
 Parsing entity <lab05_kjb5568_rjl5336>.
 Parsing architecture <Behavioral> of entity <lab05_kjb5568_rjl5336>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" Line 133: Actual for formal port reset is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" Line 139: Actual for formal port clr is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" Line 144: Actual for formal port reset is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -171,13 +168,21 @@ Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from
 
 Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
+Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
 Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
+Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
 Elaborating entity <FSM> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\FSM.vhd" Line 207. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\FSM.vhd" Line 216. Case statement is complete. others clause is never selected
 
 Elaborating entity <Pingpong_Fsm> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 196. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd" Line 204. Case statement is complete. others clause is never selected
 
 Elaborating entity <train_fsm> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
@@ -188,8 +193,6 @@ Elaborating entity <WordTo8dig7seg> (architecture <Behavioral>) from library <kj
 Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <hextosevenseg> (architecture <structural>) from library <kjb5568_rjl5336_library>.
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" Line 48: Net <led_wall[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd" Line 50: Net <led_physics[15]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -197,10 +200,8 @@ WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\La
 
 Synthesizing Unit <lab05_kjb5568_rjl5336>.
     Related source file is "C:\Users\Kevin\Desktop\Lab05\Lab05_kjb5568_rjl5336\Lab05_kjb5568_rjl5336\lab05_kjb5568_rjl5336.vhd".
-WARNING:Xst:653 - Signal <led_wall> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <led_physics> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
-	inferred   7 Multiplexer(s).
+	inferred   8 Multiplexer(s).
 Unit <lab05_kjb5568_rjl5336> synthesized.
 
 Synthesizing Unit <Debouncer>.
@@ -242,29 +243,68 @@ Synthesizing Unit <Counter_nbit_1>.
         n = 16
     Found 16-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_11_o_add_0_OUT> created at line 36.
+    Found 32-bit adder for signal <count[31]_count[31]_mux_1_OUT> created at line 36.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  48 D-type flip-flop(s).
 Unit <Counter_nbit_1> synthesized.
-WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\pulse_gen.vhd" line 45. All outputs of instance <cnt> of block <Counter_nbit> are unconnected in block <pulse_gen_2>. Underlying logic will be removed.
 
 Synthesizing Unit <pulse_gen_2>.
     Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\pulse_gen.vhd".
-        n = 16
+        n = 17
         maxCount = 100000
     Summary:
 	no macro.
 Unit <pulse_gen_2> synthesized.
-WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\pulse_gen.vhd" line 45. All outputs of instance <cnt> of block <Counter_nbit> are unconnected in block <pulse_gen_3>. Underlying logic will be removed.
+
+Synthesizing Unit <Counter_nbit_2>.
+    Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Counter_nbit.vhd".
+        n = 17
+    Found 17-bit register for signal <Q>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_count[31]_mux_1_OUT> created at line 36.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  49 D-type flip-flop(s).
+Unit <Counter_nbit_2> synthesized.
 
 Synthesizing Unit <pulse_gen_3>.
     Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\pulse_gen.vhd".
-        n = 16
-        maxCount = 5000000
+        n = 23
+        maxCount = 6250000
     Summary:
 	no macro.
 Unit <pulse_gen_3> synthesized.
+
+Synthesizing Unit <Counter_nbit_3>.
+    Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Counter_nbit.vhd".
+        n = 23
+    Found 23-bit register for signal <Q>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_count[31]_mux_1_OUT> created at line 36.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  55 D-type flip-flop(s).
+Unit <Counter_nbit_3> synthesized.
+
+Synthesizing Unit <pulse_gen_4>.
+    Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\pulse_gen.vhd".
+        n = 25
+        maxCount = 20000000
+    Summary:
+	no macro.
+Unit <pulse_gen_4> synthesized.
+
+Synthesizing Unit <Counter_nbit_4>.
+    Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Counter_nbit.vhd".
+        n = 25
+    Found 25-bit register for signal <Q>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_count[31]_mux_1_OUT> created at line 36.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+Unit <Counter_nbit_4> synthesized.
 
 Synthesizing Unit <FSM>.
     Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\FSM.vhd".
@@ -274,7 +314,7 @@ Synthesizing Unit <FSM>.
     | States             | 14                                             |
     | Transitions        | 39                                             |
     | Inputs             | 5                                              |
-    | Outputs            | 6                                              |
+    | Outputs            | 5                                              |
     | Clock              | CLK (rising_edge)                              |
     | Reset              | reset (positive)                               |
     | Reset type         | synchronous                                    |
@@ -283,28 +323,23 @@ Synthesizing Unit <FSM>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-WARNING:Xst:737 - Found 1-bit latch for signal <CONTROL<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <CONTROL<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <CONTROL<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <CONTROL<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   4 Latch(s).
 	inferred   1 Finite State Machine(s).
 Unit <FSM> synthesized.
 
 Synthesizing Unit <Pingpong_Fsm>.
     Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Pingpong_Fsm.vhd".
-    Found 4-bit register for signal <presentstate>.
+    Found 5-bit register for signal <presentstate>.
     Found finite state machine <FSM_1> for signal <presentstate>.
     -----------------------------------------------------------------------
-    | States             | 16                                             |
-    | Transitions        | 46                                             |
-    | Inputs             | 2                                              |
-    | Outputs            | 20                                             |
+    | States             | 17                                             |
+    | Transitions        | 65                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 21                                             |
     | Clock              | clk (rising_edge)                              |
     | Reset              | clr (positive)                                 |
     | Reset type         | synchronous                                    |
-    | Reset State        | p15                                            |
+    | Reset State        | start                                          |
     | Power Up State     | p0                                             |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
@@ -312,7 +347,7 @@ Synthesizing Unit <Pingpong_Fsm>.
 WARNING:Xst:737 - Found 1-bit latch for signal <r>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred   1 Latch(s).
-	inferred   1 Multiplexer(s).
+	inferred   3 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <Pingpong_Fsm> synthesized.
 
@@ -321,15 +356,15 @@ Synthesizing Unit <train_fsm>.
     Found 5-bit register for signal <presentstate>.
     Found finite state machine <FSM_2> for signal <presentstate>.
     -----------------------------------------------------------------------
-    | States             | 25                                             |
-    | Transitions        | 50                                             |
+    | States             | 26                                             |
+    | Transitions        | 52                                             |
     | Inputs             | 1                                              |
     | Outputs            | 16                                             |
     | Clock              | clk (rising_edge)                              |
     | Reset              | reset (positive)                               |
     | Reset type         | synchronous                                    |
-    | Reset State        | t24                                            |
-    | Power Up State     | t24                                            |
+    | Reset State        | start                                          |
+    | Power Up State     | start                                          |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
@@ -352,7 +387,7 @@ Synthesizing Unit <WordTo8dig7seg>.
 	inferred   1 Multiplexer(s).
 Unit <WordTo8dig7seg> synthesized.
 
-Synthesizing Unit <Counter_nbit_2>.
+Synthesizing Unit <Counter_nbit_5>.
     Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\Counter_nbit.vhd".
         n = 3
     Found 3-bit register for signal <Q>.
@@ -361,7 +396,7 @@ Synthesizing Unit <Counter_nbit_2>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  35 D-type flip-flop(s).
-Unit <Counter_nbit_2> synthesized.
+Unit <Counter_nbit_5> synthesized.
 
 Synthesizing Unit <hextosevenseg>.
     Related source file is "C:\Users\Kevin\Desktop\Lab05\kjb5568_rjl5336_library\hextosevenseg.vhd".
@@ -376,19 +411,22 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  16x7-bit single-port Read Only RAM                    : 1
-# Adders/Subtractors                                   : 2
- 32-bit adder                                          : 2
-# Registers                                            : 25
+# Adders/Subtractors                                   : 5
+ 32-bit adder                                          : 5
+# Registers                                            : 31
  1-bit register                                        : 20
  16-bit register                                       : 1
+ 17-bit register                                       : 1
+ 23-bit register                                       : 1
+ 25-bit register                                       : 1
  3-bit register                                        : 1
- 32-bit register                                       : 2
+ 32-bit register                                       : 5
  4-bit register                                        : 1
-# Latches                                              : 5
- 1-bit latch                                           : 5
-# Multiplexers                                         : 9
- 1-bit 2-to-1 multiplexer                              : 1
- 16-bit 2-to-1 multiplexer                             : 7
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 12
+ 1-bit 2-to-1 multiplexer                              : 3
+ 16-bit 2-to-1 multiplexer                             : 8
  4-bit 8-to-1 multiplexer                              : 1
 # FSMs                                                 : 3
 
@@ -398,43 +436,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1293 - FF/Latch <count_31> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_30> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_29> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_28> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_27> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_26> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_25> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_24> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_23> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_22> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_21> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_20> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_19> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_18> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_17> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_16> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_0> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_1> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_2> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_3> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_4> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_5> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_6> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_7> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_8> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_9> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_10> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_11> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_12> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_13> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_14> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_15> has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_0> (without init value) has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_1> (without init value) has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Q_2> (without init value) has a constant value of 0 in block <cnt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1290 - Hierarchical block <pulse500> is unconnected in block <lab05_kjb5568_rjl5336>.
-   It will be removed from the design.
 
 Synthesizing (advanced) Unit <Counter_nbit_1>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
@@ -443,6 +444,18 @@ Unit <Counter_nbit_1> synthesized (advanced).
 Synthesizing (advanced) Unit <Counter_nbit_2>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
 Unit <Counter_nbit_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_nbit_3>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter_nbit_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_nbit_4>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter_nbit_4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_nbit_5>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter_nbit_5> synthesized (advanced).
 
 Synthesizing (advanced) Unit <hextosevenseg>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Segment> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -464,12 +477,13 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  16x7-bit single-port distributed Read Only RAM        : 1
-# Counters                                             : 2
- 32-bit up counter                                     : 2
-# Registers                                            : 43
- Flip-Flops                                            : 43
-# Multiplexers                                         : 8
- 16-bit 2-to-1 multiplexer                             : 7
+# Counters                                             : 5
+ 32-bit up counter                                     : 5
+# Registers                                            : 108
+ Flip-Flops                                            : 108
+# Multiplexers                                         : 12
+ 1-bit 2-to-1 multiplexer                              : 3
+ 16-bit 2-to-1 multiplexer                             : 8
  4-bit 8-to-1 multiplexer                              : 1
 # FSMs                                                 : 3
 
@@ -478,65 +492,8 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1293 - FF/Latch <pingpong/r> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <display/cnt/Q_2> (without init value) has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <display/cnt/Q_1> (without init value) has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <display/cnt/Q_0> (without init value) has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_1> on signal <presentstate[1:4]> with user encoding.
--------------------
- State | Encoding
--------------------
- p0    | 0000
- p1    | 0001
- p2    | 0010
- p3    | 0011
- p4    | 0100
- p5    | 0101
- p6    | 0110
- p7    | 0111
- p8    | 1000
- p9    | 1001
- p10   | 1010
- p11   | 1011
- p12   | 1100
- p13   | 1101
- p14   | 1110
- p15   | 1111
--------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_2> on signal <presentstate[1:5]> with user encoding.
--------------------
- State | Encoding
--------------------
- t24   | 00000
- t23   | 00001
- t22   | 00010
- t21   | 00011
- t20   | 00100
- t19   | 00101
- t18   | 00110
- t17   | 00111
- t16   | 01000
- t15   | 01001
- t14   | 01010
- t13   | 01011
- t12   | 01100
- t11   | 01101
- t10   | 01110
- t9    | 01111
- t8    | 10000
- t7    | 10001
- t6    | 10010
- t5    | 10011
- t4    | 10100
- t3    | 10101
- t2    | 10110
- t1    | 10111
- t0    | 11000
--------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Top_FSM/FSM_0> on signal <presentstate[1:14]> with one-hot encoding.
+Optimizing FSM <FSM_0> on signal <presentstate[1:14]> with one-hot encoding.
 ----------------------------
  State    | Encoding
 ----------------------------
@@ -555,6 +512,61 @@ Optimizing FSM <Top_FSM/FSM_0> on signal <presentstate[1:14]> with one-hot encod
  lcrc     | 01000000000000
  pingpong | 10000000000000
 ----------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_2> on signal <presentstate[1:5]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ start | 00000
+ t24   | 00001
+ t23   | 00010
+ t22   | 00011
+ t21   | 00100
+ t20   | 00101
+ t19   | 00110
+ t18   | 00111
+ t17   | 01000
+ t16   | 01001
+ t15   | 01010
+ t14   | 01011
+ t13   | 01100
+ t12   | 01101
+ t11   | 01110
+ t10   | 01111
+ t9    | 10000
+ t8    | 10001
+ t7    | 10010
+ t6    | 10011
+ t5    | 10100
+ t4    | 10101
+ t3    | 10110
+ t2    | 10111
+ t1    | 11000
+ t0    | 11001
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <pingpong/FSM_1> on signal <presentstate[1:5]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ p0    | 00000
+ p1    | 00001
+ p2    | 00010
+ p3    | 00011
+ p4    | 00100
+ p5    | 00101
+ p6    | 00110
+ p7    | 00111
+ p8    | 01000
+ p9    | 01001
+ p10   | 01010
+ p11   | 01011
+ p12   | 01100
+ p13   | 01101
+ p14   | 01110
+ p15   | 01111
+ start | 10000
+-------------------
 WARNING:Xst:2677 - Node <count_16> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_17> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_18> of sequential type is unconnected in block <Counter_nbit_1>.
@@ -571,18 +583,79 @@ WARNING:Xst:2677 - Node <count_28> of sequential type is unconnected in block <C
 WARNING:Xst:2677 - Node <count_29> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_30> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_31> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:1293 - FF/Latch <train/presentstate_FSM_FFd5> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <train/presentstate_FSM_FFd4> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <train/presentstate_FSM_FFd3> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <train/presentstate_FSM_FFd2> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <train/presentstate_FSM_FFd1> has a constant value of 0 in block <lab05_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <count_17> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_18> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_19> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_20> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_21> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_22> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_23> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_24> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_25> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_26> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_27> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_28> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_29> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_30> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_31> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <count_23> of sequential type is unconnected in block <Counter_nbit_3>.
+WARNING:Xst:2677 - Node <count_24> of sequential type is unconnected in block <Counter_nbit_3>.
+WARNING:Xst:2677 - Node <count_25> of sequential type is unconnected in block <Counter_nbit_3>.
+WARNING:Xst:2677 - Node <count_26> of sequential type is unconnected in block <Counter_nbit_3>.
+WARNING:Xst:2677 - Node <count_27> of sequential type is unconnected in block <Counter_nbit_3>.
+WARNING:Xst:2677 - Node <count_28> of sequential type is unconnected in block <Counter_nbit_3>.
+WARNING:Xst:2677 - Node <count_29> of sequential type is unconnected in block <Counter_nbit_3>.
+WARNING:Xst:2677 - Node <count_30> of sequential type is unconnected in block <Counter_nbit_3>.
+WARNING:Xst:2677 - Node <count_31> of sequential type is unconnected in block <Counter_nbit_3>.
+WARNING:Xst:2677 - Node <count_25> of sequential type is unconnected in block <Counter_nbit_4>.
+WARNING:Xst:2677 - Node <count_26> of sequential type is unconnected in block <Counter_nbit_4>.
+WARNING:Xst:2677 - Node <count_27> of sequential type is unconnected in block <Counter_nbit_4>.
+WARNING:Xst:2677 - Node <count_28> of sequential type is unconnected in block <Counter_nbit_4>.
+WARNING:Xst:2677 - Node <count_29> of sequential type is unconnected in block <Counter_nbit_4>.
+WARNING:Xst:2677 - Node <count_30> of sequential type is unconnected in block <Counter_nbit_4>.
+WARNING:Xst:2677 - Node <count_31> of sequential type is unconnected in block <Counter_nbit_4>.
+WARNING:Xst:2677 - Node <display/cnt/count_3> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_4> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_5> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_6> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_7> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_8> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_9> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_10> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_11> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_12> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_13> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_14> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_15> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_16> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_17> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_18> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_19> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_20> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_21> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_22> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_23> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_24> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_25> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_26> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_27> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_28> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_29> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_30> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <display/cnt/count_31> of sequential type is unconnected in block <lab05_kjb5568_rjl5336>.
 
 Optimizing unit <Counter_nbit_1> ...
 
+Optimizing unit <Counter_nbit_2> ...
+
+Optimizing unit <Counter_nbit_3> ...
+
+Optimizing unit <Counter_nbit_4> ...
+
 Optimizing unit <lab05_kjb5568_rjl5336> ...
 
-Optimizing unit <FSM> ...
-INFO:Xst:2261 - The FF/Latch <pingpong/presentstate_FSM_FFd2> in Unit <lab05_kjb5568_rjl5336> is equivalent to the following 3 FFs/Latches, which will be removed : <pingpong/presentstate_FSM_FFd4> <pingpong/presentstate_FSM_FFd3> <pingpong/presentstate_FSM_FFd1> 
+Optimizing unit <Pingpong_Fsm> ...
+INFO:Xst:2261 - The FF/Latch <pulse1000/cnt/count_0> in Unit <lab05_kjb5568_rjl5336> is equivalent to the following 3 FFs/Latches, which will be removed : <pulse500/cnt/count_0> <pulseping/cnt/count_0> <pulsetrain/cnt/count_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -594,8 +667,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 71
- Flip-Flops                                            : 71
+# Registers                                            : 213
+ Flip-Flops                                            : 213
 
 =========================================================================
 
@@ -618,25 +691,26 @@ Top Level Output File Name         : lab05_kjb5568_rjl5336.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 156
+# BELS                             : 545
 #      GND                         : 1
-#      INV                         : 1
-#      LUT1                        : 15
-#      LUT2                        : 10
-#      LUT3                        : 7
-#      LUT4                        : 51
-#      LUT5                        : 16
-#      LUT6                        : 23
-#      MUXCY                       : 15
+#      INV                         : 5
+#      LUT1                        : 79
+#      LUT2                        : 114
+#      LUT3                        : 15
+#      LUT4                        : 20
+#      LUT5                        : 43
+#      LUT6                        : 105
+#      MUXCY                       : 79
+#      MUXF7                       : 2
 #      VCC                         : 1
-#      XORCY                       : 16
-# FlipFlops/Latches                : 75
-#      FD                          : 37
+#      XORCY                       : 81
+# FlipFlops/Latches                : 214
+#      FD                          : 145
 #      FDE                         : 15
-#      FDR                         : 13
-#      FDRE                        : 4
+#      FDR                         : 41
+#      FDRE                        : 10
 #      FDS                         : 2
-#      LD                          : 4
+#      LD                          : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 52
@@ -650,16 +724,16 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              75  out of  126800     0%  
- Number of Slice LUTs:                  123  out of  63400     0%  
-    Number used as Logic:               123  out of  63400     0%  
+ Number of Slice Registers:             214  out of  126800     0%  
+ Number of Slice LUTs:                  381  out of  63400     0%  
+    Number used as Logic:               381  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    139
-   Number with an unused Flip Flop:      64  out of    139    46%  
-   Number with an unused LUT:            16  out of    139    11%  
-   Number of fully used LUT-FF pairs:    59  out of    139    42%  
-   Number of unique control sets:         5
+ Number of LUT Flip Flop pairs used:    394
+   Number with an unused Flip Flop:     180  out of    394    45%  
+   Number with an unused LUT:            13  out of    394     3%  
+   Number of fully used LUT-FF pairs:   201  out of    394    51%  
+   Number of unique control sets:         9
 
 IO Utilization: 
  Number of IOs:                          53
@@ -686,12 +760,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+---------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)     | Load  |
------------------------------------+---------------------------+-------+
-CLK                                | BUFGP                     | 71    |
-store_enable(Top_FSM/enable1:O)    | NONE(*)(Top_FSM/CONTROL_0)| 4     |
------------------------------------+---------------------------+-------+
+----------------------------------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                                                  | Clock buffer(FF name)  | Load  |
+----------------------------------------------------------------------------------------------+------------------------+-------+
+CLK                                                                                           | BUFGP                  | 213   |
+pingpong/presentstate[4]_PWR_24_o_Mux_38_o(pingpong/Mmux_presentstate[4]_PWR_24_o_Mux_38_o1:O)| NONE(*)(pingpong/r)    | 1     |
+----------------------------------------------------------------------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -705,10 +779,10 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.056ns (Maximum Frequency: 327.275MHz)
-   Minimum input arrival time before clock: 1.940ns
-   Maximum output required time after clock: 2.829ns
-   Maximum combinational path delay: 1.300ns
+   Minimum period: 3.515ns (Maximum Frequency: 284.535MHz)
+   Minimum input arrival time before clock: 3.043ns
+   Maximum output required time after clock: 4.003ns
+   Maximum combinational path delay: 2.140ns
 
 Timing Details:
 ---------------
@@ -716,88 +790,89 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 3.056ns (frequency: 327.275MHz)
-  Total number of paths / destination ports: 1346 / 81
+  Clock period: 3.515ns (frequency: 284.535MHz)
+  Total number of paths / destination ports: 5311 / 252
 -------------------------------------------------------------------------
-Delay:               3.056ns (Levels of Logic = 3)
-  Source:            pulse1000/cnt/Q_0 (FF)
-  Destination:       pulse1000/cnt/count_13 (FF)
+Delay:               3.515ns (Levels of Logic = 2)
+  Source:            pulseping/cnt/Q_3 (FF)
+  Destination:       pulseping/cnt/count_22 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: pulse1000/cnt/Q_0 to pulse1000/cnt/count_13
+  Data Path: pulseping/cnt/Q_3 to pulseping/cnt/count_22
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.478   0.945  pulse1000/cnt/Q_0 (pulse1000/cnt/Q_0)
-     LUT6:I0->O            2   0.124   0.542  pulse1000/pulse_int<15>1 (pulse1000/pulse_int<15>)
-     LUT6:I4->O           32   0.124   0.689  pulse1000/clear1 (pulse1000/clear)
-     LUT4:I2->O            1   0.124   0.000  pulse1000/cnt/count_13_rstpot (pulse1000/cnt/count_13_rstpot)
-     FD:D                      0.030          pulse1000/cnt/count_13
+     FD:C->Q               1   0.478   0.919  pulseping/cnt/Q_3 (pulseping/cnt/Q_3)
+     LUT5:I0->O           41   0.124   0.931  pulseping/clear14 (pulseping/clear13)
+     LUT5:I1->O            8   0.124   0.445  pulseping/clear2 (pulseping/clear)
+     FDR:R                     0.494          pulseping/cnt/count_15
     ----------------------------------------
-    Total                      3.056ns (0.880ns logic, 2.176ns route)
-                                       (28.8% logic, 71.2% route)
+    Total                      3.515ns (1.220ns logic, 2.295ns route)
+                                       (34.7% logic, 65.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 86 / 56
+  Total number of paths / destination ports: 561 / 193
 -------------------------------------------------------------------------
-Offset:              1.940ns (Levels of Logic = 3)
-  Source:            SWITCH<0> (PAD)
-  Destination:       pulse1000/cnt/count_13 (FF)
+Offset:              3.043ns (Levels of Logic = 3)
+  Source:            BUTTON<2> (PAD)
+  Destination:       pulsetrain/cnt/count_24 (FF)
   Destination Clock: CLK rising
 
-  Data Path: SWITCH<0> to pulse1000/cnt/count_13
+  Data Path: BUTTON<2> to pulsetrain/cnt/count_24
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             6   0.001   0.972  SWITCH_0_IBUF (SWITCH_0_IBUF)
-     LUT6:I0->O           32   0.124   0.689  pulse1000/clear1 (pulse1000/clear)
-     LUT4:I2->O            1   0.124   0.000  pulse1000/cnt/count_13_rstpot (pulse1000/cnt/count_13_rstpot)
-     FD:D                      0.030          pulse1000/cnt/count_13
+     IBUF:I->O             5   0.001   0.743  BUTTON_2_IBUF (BUTTON_2_IBUF)
+     LUT3:I0->O           65   0.124   1.099  btn_reset<0>11 (btn_reset)
+     LUT6:I0->O           10   0.124   0.458  pulsetrain/clear1_1 (pulsetrain/clear1)
+     FDR:R                     0.494          pulsetrain/cnt/count_15
     ----------------------------------------
-    Total                      1.940ns (0.279ns logic, 1.661ns route)
-                                       (14.4% logic, 85.6% route)
+    Total                      3.043ns (0.743ns logic, 2.300ns route)
+                                       (24.4% logic, 75.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 106 / 23
+  Total number of paths / destination ports: 389 / 24
 -------------------------------------------------------------------------
-Offset:              2.829ns (Levels of Logic = 3)
-  Source:            register1/Q_1 (FF)
-  Destination:       LED<0> (PAD)
+Offset:              4.003ns (Levels of Logic = 4)
+  Source:            pingpong/presentstate_FSM_FFd3 (FF)
+  Destination:       LED<3> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: register1/Q_1 to LED<0>
+  Data Path: pingpong/presentstate_FSM_FFd3 to LED<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            24   0.478   0.922  register1/Q_1 (register1/Q_1)
-     LUT4:I0->O            2   0.124   0.782  Mmux_LED711 (Mmux_LED71)
-     LUT4:I0->O            1   0.124   0.399  Mmux_LED13 (LED_0_OBUF)
-     OBUF:I->O                 0.000          LED_0_OBUF (LED<0>)
+     FDR:C->Q             23   0.478   1.059  pingpong/presentstate_FSM_FFd3 (pingpong/presentstate_FSM_FFd3)
+     LUT5:I0->O            1   0.124   0.919  Mmux_LED105 (Mmux_LED104)
+     LUT5:I0->O            1   0.124   0.776  Mmux_LED106_SW0 (N44)
+     LUT6:I2->O            1   0.124   0.399  Mmux_LED106 (LED_3_OBUF)
+     OBUF:I->O                 0.000          LED_3_OBUF (LED<3>)
     ----------------------------------------
-    Total                      2.829ns (0.726ns logic, 2.103ns route)
-                                       (25.7% logic, 74.3% route)
+    Total                      4.003ns (0.850ns logic, 3.153ns route)
+                                       (21.2% logic, 78.8% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Delay:               1.300ns (Levels of Logic = 3)
-  Source:            SWITCH<11> (PAD)
-  Destination:       LED<11> (PAD)
+Delay:               2.140ns (Levels of Logic = 4)
+  Source:            SWITCH<1> (PAD)
+  Destination:       LED<1> (PAD)
 
-  Data Path: SWITCH<11> to LED<11>
+  Data Path: SWITCH<1> to LED<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.776  SWITCH_11_IBUF (SWITCH_11_IBUF)
-     LUT5:I1->O            1   0.124   0.399  Mmux_LED31 (LED_11_OBUF)
-     OBUF:I->O                 0.000          LED_11_OBUF (LED<11>)
+     IBUF:I->O             1   0.001   0.716  SWITCH_1_IBUF (SWITCH_1_IBUF)
+     LUT5:I2->O            1   0.124   0.776  Mmux_LED82 (Mmux_LED81)
+     LUT4:I0->O            1   0.124   0.399  Mmux_LED84 (LED_1_OBUF)
+     OBUF:I->O                 0.000          LED_1_OBUF (LED<1>)
     ----------------------------------------
-    Total                      1.300ns (0.125ns logic, 1.175ns route)
-                                       (9.6% logic, 90.4% route)
+    Total                      2.140ns (0.249ns logic, 1.891ns route)
+                                       (11.6% logic, 88.4% route)
 
 =========================================================================
 
@@ -805,33 +880,33 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock CLK
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-CLK            |    3.056|         |         |         |
-store_enable   |         |    1.054|         |         |
----------------+---------+---------+---------+---------+
+------------------------------------------+---------+---------+---------+---------+
+                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------+---------+---------+---------+---------+
+CLK                                       |    3.515|         |         |         |
+pingpong/presentstate[4]_PWR_24_o_Mux_38_o|         |    2.428|         |         |
+------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock store_enable
+Clock to Setup on destination clock pingpong/presentstate[4]_PWR_24_o_Mux_38_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |         |         |    1.416|         |
+CLK            |         |         |    1.672|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 33.00 secs
-Total CPU time to Xst completion: 33.02 secs
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 23.31 secs
  
 --> 
 
-Total memory usage is 437964 kilobytes
+Total memory usage is 406536 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   75 (   0 filtered)
+Number of warnings :   77 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 

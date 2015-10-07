@@ -37,7 +37,7 @@ entity train_fsm is
 end train_fsm;
 
 architecture Behavioral of train_fsm is
-type state_type is (t24,t23,t22,t21,t20,t19,t18,t17,t16,t15,t14,t13,t12,t11,t10,t9,t8,t7,t6,t5,t4,t3,t2,t1,t0);
+type state_type is (start,t24,t23,t22,t21,t20,t19,t18,t17,t16,t15,t14,t13,t12,t11,t10,t9,t8,t7,t6,t5,t4,t3,t2,t1,t0);
 
 signal presentstate : state_type;
 signal nextstate	  : state_type;
@@ -47,7 +47,7 @@ process (clk) is
 begin
 	if(clk'event and clk = '1') then
 		if(reset ='1') then
-			presentstate <= t24;
+			presentstate <= start;
 		else 
 			presentstate <= nextstate;
 		end if;
@@ -57,6 +57,13 @@ end process;
 process(presentstate,enable)
 begin
 	Case presentstate is
+		when start =>
+			if(enable ='1') then
+			nextstate <= t24;
+			else
+			nextstate <= presentstate;
+			end if;
+			led <="0000000000000000";
 		when t24 =>
 			if(enable ='1') then
 			nextstate <= t23;

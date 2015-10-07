@@ -72,6 +72,7 @@ begin
 					nextstate <= presentstate;
 				end if;
 		when L =>
+		control <= "0000";
 			enable <='0';
 				if (button = "10000") then
 					nextstate <= lu;
@@ -83,6 +84,7 @@ begin
 					nextstate <= presentstate;
 				end if;
 		when LU =>
+			control <= "0000";
 			enable <='0';
 				if (button = "00100") then
 					nextstate <= train;
@@ -92,6 +94,7 @@ begin
 					nextstate <= presentstate;
 				end if;
 		when LC =>
+			control <= "0000";
 			enable <='0';
 				if (button = "00001") then
 					nextstate <= wall;
@@ -103,6 +106,7 @@ begin
 					nextstate <= presentstate;
 				end if;
 		when LCR =>
+			control <= "0000";
 			enable <='0';
 				if (button = "01000") then
 					nextstate <= lcrc;
@@ -112,6 +116,7 @@ begin
 					nextstate <= presentstate;
 				end if;
 		when LCRC =>
+			control <= "0000";
 			enable <='0';
 				if (button = "00001") then
 					nextstate <= Pingpong;
@@ -121,6 +126,7 @@ begin
 					nextstate <= presentstate;
 				end if;
 		when C =>
+			control <= "0000";
 			enable <='0';
 				if (button = "01000") then
 					nextstate <= cc;
@@ -130,6 +136,7 @@ begin
 					nextstate <= presentstate;
 				end if;
 		when Cc =>
+			control <= "0000";
 			enable <='0';
 				if (button = "01000") then
 					nextstate <= ccc;
@@ -139,6 +146,7 @@ begin
 					nextstate <= presentstate;
 				end if;
 		when Ccc =>
+			control <= "0000";
 			enable <='0';
 				if (button = "01000") then
 					nextstate <= cccc;
@@ -148,6 +156,7 @@ begin
 					nextstate <= presentstate;
 				end if;
 		when Cccc =>
+			control <= "0000";
 			enable <='0';
 				if (button = "01000") then
 					nextstate <= physics;
