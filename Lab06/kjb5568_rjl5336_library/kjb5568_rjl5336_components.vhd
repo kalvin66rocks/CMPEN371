@@ -233,8 +233,10 @@ package kjb5568_rjl5336_Components is
 	port (   Code_Ready 		: in  std_logic;
 			load				: in  std_logic;
 			PS2KBD_DATA_in : in  std_logic;
+			PS2KBD_CLK_in	: in  std_logic;
 			clk				: in  std_logic;
 			clr				: in  std_logic;
+			TIMEOUT			: out  std_logic;
 			word				: out std_logic_vector(31 downto 0));
 	end component;
 	
@@ -242,6 +244,7 @@ package kjb5568_rjl5336_Components is
 	port( PS2KBD_CLK_in 	: in std_logic;
 		clr				: in std_logic;
 		clk				: in std_logic;
+		TIMEOUT			: in  std_logic;
 		load				: out std_logic;
 		clear				: out std_logic;
 		Code_Ready		: out std_logic);

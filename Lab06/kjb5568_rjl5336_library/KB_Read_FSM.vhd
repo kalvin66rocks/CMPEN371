@@ -26,6 +26,7 @@ entity KB_Read_FSM is
 port( PS2KBD_CLK_in 	: in std_logic;
 		clr				: in std_logic;
 		clk				: in std_logic;
+		TIMEOUT			: in  std_logic;
 		load				: out std_logic;
 		clear				: out std_logic;
 		Code_Ready		: out std_logic);
@@ -51,17 +52,20 @@ begin
 	end if;
 end process;
 
-process(presentstate, PS2KBD_CLK_in)
+process(presentstate, PS2KBD_CLK_in,TIMEOUT)
 begin
 	Case presentstate is
 		when idle => 
 			Code_Ready <='0';
 			load <='0';
 			clear <='1';
+			count <= 0;
 			if(PS2KBD_CLK_in = '1') then
 				nextstate <= presentstate;
 			elsif(PS2KBD_CLK_in='0') then
 				nextstate <= compare;
+			elsif(TIMEOUT ='1')
+				
 			else 
 				nextstate <= presentstate;
 			end if;

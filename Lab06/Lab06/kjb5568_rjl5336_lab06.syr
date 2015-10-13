@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.30 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.30 secs
  
 --> Reading design: kjb5568_rjl5336_lab06.prj
 
@@ -114,27 +114,24 @@ Parsing architecture <Behavioral> of entity <dff_ce>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\DFF.vhd" into library kjb5568_rjl5336_library
 Parsing entity <DFF>.
 Parsing architecture <Behavioral> of entity <dff>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\Counter_nbit.vhd" into library kjb5568_rjl5336_library
-Parsing entity <Counter_nbit>.
-Parsing architecture <Behavioral> of entity <counter_nbit>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\shiftregister_32bit.vhd" into library kjb5568_rjl5336_library
 Parsing entity <shiftregister_32bit>.
 Parsing architecture <Behavioral> of entity <shiftregister_32bit>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\shift10.vhd" into library kjb5568_rjl5336_library
 Parsing entity <shift10>.
 Parsing architecture <Behavioral> of entity <shift10>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\pulse_gen.vhd" into library kjb5568_rjl5336_library
-Parsing entity <pulse_gen>.
-Parsing architecture <Behavioral> of entity <pulse_gen>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\OneShot.vhd" into library kjb5568_rjl5336_library
 Parsing entity <OneShot>.
 Parsing architecture <Behavioral> of entity <oneshot>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\hextosevenseg.vhd" into library kjb5568_rjl5336_library
 Parsing entity <hextosevenseg>.
 Parsing architecture <structural> of entity <hextosevenseg>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\Debouncer.vhd" into library kjb5568_rjl5336_library
-Parsing entity <Debouncer>.
-Parsing architecture <Behavioral> of entity <debouncer>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\Counter_nbit.vhd" into library kjb5568_rjl5336_library
+Parsing entity <Counter_nbit>.
+Parsing architecture <Behavioral> of entity <counter_nbit>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\pulse_gen.vhd" into library kjb5568_rjl5336_library
+Parsing entity <pulse_gen>.
+Parsing architecture <Behavioral> of entity <pulse_gen>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\numeric_display.vhd" into library kjb5568_rjl5336_library
 Parsing entity <WordTo8dig7seg>.
 Parsing architecture <Behavioral> of entity <wordto8dig7seg>.
@@ -144,6 +141,9 @@ Parsing architecture <Behavioral> of entity <kb_read_fsm>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\FSM_Datapath.vhd" into library kjb5568_rjl5336_library
 Parsing entity <FSM_Datapath>.
 Parsing architecture <Behavioral> of entity <fsm_datapath>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\Debouncer.vhd" into library kjb5568_rjl5336_library
+Parsing entity <Debouncer>.
+Parsing architecture <Behavioral> of entity <debouncer>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\Lab06\kjb5568_rjl5336_lab06.vhd" into library work
 Parsing entity <kjb5568_rjl5336_lab06>.
 Parsing architecture <Behavioral> of entity <kjb5568_rjl5336_lab06>.
@@ -186,8 +186,6 @@ Elaborating entity <WordTo8dig7seg> (architecture <Behavioral>) from library <kj
 Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <hextosevenseg> (architecture <structural>) from library <kjb5568_rjl5336_library>.
-WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Lab06\Lab06\kjb5568_rjl5336_lab06.vhd" line 58. All outputs of instance <Debounce_Data> of block <Debouncer> are unconnected in block <kjb5568_rjl5336_lab06>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Lab06\Lab06\kjb5568_rjl5336_lab06.vhd" line 64. All outputs of instance <pulse1000> of block <pulse_gen> are unconnected in block <kjb5568_rjl5336_lab06>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -197,7 +195,6 @@ Synthesizing Unit <kjb5568_rjl5336_lab06>.
     Related source file is "C:\Users\Kevin\Desktop\Lab06\Lab06\kjb5568_rjl5336_lab06.vhd".
 WARNING:Xst:647 - Input <SWITCH> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BUTTON> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Lab06\Lab06\kjb5568_rjl5336_lab06.vhd" line 58: Output port <Q> of the instance <Debounce_Data> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <kjb5568_rjl5336_lab06> synthesized.
@@ -218,7 +215,7 @@ Unit <DFF_CE> synthesized.
 Synthesizing Unit <pulse_gen_1>.
     Related source file is "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\pulse_gen.vhd".
         n = 16
-        maxCount = 10000
+        maxCount = 100
     Summary:
 	no macro.
 Unit <pulse_gen_1> synthesized.
@@ -357,7 +354,7 @@ Synthesizing Unit <Counter_nbit_3>.
         n = 3
     Found 3-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_55_o_add_0_OUT> created at line 36.
+    Found 32-bit adder for signal <count[31]_GND_54_o_add_0_OUT> created at line 36.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  35 D-type flip-flop(s).
@@ -379,8 +376,8 @@ Macro Statistics
  8x8-bit single-port Read Only RAM                     : 1
 # Adders/Subtractors                                   : 4
  32-bit adder                                          : 4
-# Registers                                            : 21
- 1-bit register                                        : 14
+# Registers                                            : 24
+ 1-bit register                                        : 17
  16-bit register                                       : 1
  17-bit register                                       : 1
  3-bit register                                        : 1
@@ -455,8 +452,8 @@ Macro Statistics
  32-bit adder                                          : 1
 # Counters                                             : 3
  32-bit up counter                                     : 3
-# Registers                                            : 82
- Flip-Flops                                            : 82
+# Registers                                            : 85
+ Flip-Flops                                            : 85
 # Comparators                                          : 1
  32-bit comparator greater                             : 1
 # Multiplexers                                         : 34
@@ -544,19 +541,19 @@ WARNING:Xst:2677 - Node <display/cnt/count_29> of sequential type is unconnected
 WARNING:Xst:2677 - Node <display/cnt/count_30> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
 WARNING:Xst:2677 - Node <display/cnt/count_31> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
 
-Optimizing unit <shift10> ...
-
 Optimizing unit <Counter_nbit_1> ...
+
+Optimizing unit <shift10> ...
 
 Optimizing unit <Counter_nbit_2> ...
 
 Optimizing unit <kjb5568_rjl5336_lab06> ...
 
-Optimizing unit <shiftregister_32bit> ...
-
 Optimizing unit <KB_Read_FSM> ...
+
+Optimizing unit <shiftregister_32bit> ...
 WARNING:Xst:2677 - Node <KB_Data/shift10right/Flip16/Q> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
-INFO:Xst:2261 - The FF/Latch <KB_Data/pulse1000/cnt/count_0> in Unit <kjb5568_rjl5336_lab06> is equivalent to the following FF/Latch, which will be removed : <pulse500/cnt/count_0> 
+INFO:Xst:2261 - The FF/Latch <pulse1000/cnt/count_0> in Unit <kjb5568_rjl5336_lab06> is equivalent to the following FF/Latch, which will be removed : <pulse500/cnt/count_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -568,8 +565,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 123
- Flip-Flops                                            : 123
+# Registers                                            : 126
+ Flip-Flops                                            : 126
 
 =========================================================================
 
@@ -592,22 +589,22 @@ Top Level Output File Name         : kjb5568_rjl5336_lab06.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 325
+# BELS                             : 326
 #      GND                         : 1
 #      INV                         : 4
 #      LUT1                        : 64
-#      LUT2                        : 3
-#      LUT3                        : 12
-#      LUT4                        : 41
-#      LUT5                        : 44
-#      LUT6                        : 14
+#      LUT2                        : 2
+#      LUT3                        : 11
+#      LUT4                        : 44
+#      LUT5                        : 45
+#      LUT6                        : 13
 #      MUXCY                       : 70
 #      MUXF7                       : 4
 #      VCC                         : 1
 #      XORCY                       : 67
-# FlipFlops/Latches                : 155
+# FlipFlops/Latches                : 158
 #      FD                          : 40
-#      FDE                         : 12
+#      FDE                         : 15
 #      FDR                         : 65
 #      FDRE                        : 6
 #      LD                          : 32
@@ -625,15 +622,15 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             155  out of  126800     0%  
- Number of Slice LUTs:                  182  out of  63400     0%  
-    Number used as Logic:               182  out of  63400     0%  
+ Number of Slice Registers:             158  out of  126800     0%  
+ Number of Slice LUTs:                  183  out of  63400     0%  
+    Number used as Logic:               183  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    221
-   Number with an unused Flip Flop:      66  out of    221    29%  
-   Number with an unused LUT:            39  out of    221    17%  
-   Number of fully used LUT-FF pairs:   116  out of    221    52%  
+ Number of LUT Flip Flop pairs used:    225
+   Number with an unused Flip Flop:      67  out of    225    29%  
+   Number with an unused LUT:            42  out of    225    18%  
+   Number of fully used LUT-FF pairs:   116  out of    225    51%  
    Number of unique control sets:         7
 
 IO Utilization: 
@@ -664,7 +661,7 @@ Clock Information:
 --------------------------------------------------------------------------+-------------------------+-------+
 Clock Signal                                                              | Clock buffer(FF name)   | Load  |
 --------------------------------------------------------------------------+-------------------------+-------+
-clk                                                                       | BUFGP                   | 123   |
+clk                                                                       | BUFGP                   | 126   |
 KB_FSM/presentstate[2]_PWR_12_o_Mux_18_o(KB_FSM/presentstate__n0106<2>1:O)| BUFG(*)(KB_FSM/count_31)| 32    |
 --------------------------------------------------------------------------+-------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -680,7 +677,7 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 3.591ns (Maximum Frequency: 278.435MHz)
-   Minimum input arrival time before clock: 0.898ns
+   Minimum input arrival time before clock: 0.430ns
    Maximum output required time after clock: 3.346ns
    Maximum combinational path delay: No path found
 
@@ -691,7 +688,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 3.408ns (frequency: 293.422MHz)
-  Total number of paths / destination ports: 1714 / 205
+  Total number of paths / destination ports: 1774 / 210
 -------------------------------------------------------------------------
 Delay:               3.408ns (Levels of Logic = 2)
   Source:            pulse500/cnt/Q_11 (FF)
@@ -768,23 +765,22 @@ Delay:               3.591ns (Levels of Logic = 34)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 6 / 6
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              0.898ns (Levels of Logic = 2)
-  Source:            PS2KBD_CLK_in (PAD)
-  Destination:       KB_FSM/presentstate_FSM_FFd3 (FF)
+Offset:              0.430ns (Levels of Logic = 1)
+  Source:            PS2KBD_DATA_in (PAD)
+  Destination:       Debounce_DATA/Flip1/Q (FF)
   Destination Clock: clk rising
 
-  Data Path: PS2KBD_CLK_in to KB_FSM/presentstate_FSM_FFd3
+  Data Path: PS2KBD_DATA_in to Debounce_DATA/Flip1/Q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   0.001   0.743  PS2KBD_CLK_in_IBUF (PS2KBD_CLK_in_IBUF)
-     LUT3:I0->O            1   0.124   0.000  KB_FSM/presentstate_FSM_FFd3-In1 (KB_FSM/presentstate_FSM_FFd3-In)
-     FD:D                      0.030          KB_FSM/presentstate_FSM_FFd3
+     IBUF:I->O             1   0.001   0.399  PS2KBD_DATA_in_IBUF (PS2KBD_DATA_in_IBUF)
+     FDE:D                     0.030          Debounce_DATA/Flip1/Q
     ----------------------------------------
-    Total                      0.898ns (0.155ns logic, 0.743ns route)
-                                       (17.3% logic, 82.7% route)
+    Total                      0.430ns (0.031ns logic, 0.399ns route)
+                                       (7.2% logic, 92.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -827,21 +823,21 @@ Clock to Setup on destination clock clk
                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------+---------+---------+---------+---------+
-KB_FSM/presentstate[2]_PWR_12_o_Mux_18_o|         |    3.541|         |         |
+KB_FSM/presentstate[2]_PWR_12_o_Mux_18_o|         |    3.846|         |         |
 clk                                     |    3.408|         |         |         |
 ----------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.60 secs
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.42 secs
  
 --> 
 
-Total memory usage is 409508 kilobytes
+Total memory usage is 406564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  102 (   0 filtered)
-Number of infos    :    4 (   0 filtered)
+Number of warnings :  100 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

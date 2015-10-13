@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Oct 13 02:06:22 2015
+// Written by: Map P.20131013 on Tue Oct 13 15:20:12 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -58,35 +58,36 @@ COMP "ANODE<0>" LOCATE = SITE "N6" LEVEL 1;
 COMP "ANODE<7>" LOCATE = SITE "M1" LEVEL 1;
 COMP "ANODE<5>" LOCATE = SITE "N4" LEVEL 1;
 COMP "ANODE<6>" LOCATE = SITE "L1" LEVEL 1;
-TIMEGRP sys_clk_pin = BEL "KB_Data/CR_Oneshot/Flip/Q" BEL
-        "KB_Data/Debounce_Data/Flip1/Q" BEL "KB_Data/Debounce_Data/Flip2/Q"
-        BEL "KB_Data/Debounce_Data/Flip3/Q" BEL "display/cnt/Q_2" BEL
+TIMEGRP sys_clk_pin = BEL "Debounce_DATA/Flip3/Q" BEL "Debounce_DATA/Flip2/Q"
+        BEL "Debounce_DATA/Flip1/Q" BEL "Debounce_CLK/Flip3/Q" BEL
+        "Debounce_CLK/Flip2/Q" BEL "Debounce_CLK/Flip1/Q" BEL
+        "KB_Data/CR_Oneshot/Flip/Q" BEL "display/cnt/Q_2" BEL
         "display/cnt/Q_1" BEL "display/cnt/Q_0" BEL "display/cnt/count_0" BEL
         "display/cnt/count_1" BEL "display/cnt/count_2" BEL
+        "pulse1000/cnt/count_15" BEL "pulse1000/cnt/count_14" BEL
+        "pulse1000/cnt/count_13" BEL "pulse1000/cnt/count_12" BEL
+        "pulse1000/cnt/count_11" BEL "pulse1000/cnt/count_10" BEL
+        "pulse1000/cnt/count_9" BEL "pulse1000/cnt/count_8" BEL
+        "pulse1000/cnt/count_7" BEL "pulse1000/cnt/count_6" BEL
+        "pulse1000/cnt/count_5" BEL "pulse1000/cnt/count_4" BEL
+        "pulse1000/cnt/count_3" BEL "pulse1000/cnt/count_2" BEL
+        "pulse1000/cnt/count_1" BEL "pulse1000/cnt/count_0" BEL
+        "pulse1000/cnt/Q_15" BEL "pulse1000/cnt/Q_14" BEL "pulse1000/cnt/Q_13"
+        BEL "pulse1000/cnt/Q_12" BEL "pulse1000/cnt/Q_11" BEL
+        "pulse1000/cnt/Q_10" BEL "pulse1000/cnt/Q_9" BEL "pulse1000/cnt/Q_8"
+        BEL "pulse1000/cnt/Q_7" BEL "pulse1000/cnt/Q_6" BEL
+        "pulse1000/cnt/Q_5" BEL "pulse1000/cnt/Q_4" BEL "pulse1000/cnt/Q_3"
+        BEL "pulse1000/cnt/Q_2" BEL "pulse1000/cnt/Q_1" BEL
+        "pulse1000/cnt/Q_0" BEL "KB_FSM/presentstate_FSM_FFd1" BEL
+        "KB_FSM/presentstate_FSM_FFd2" BEL "KB_FSM/presentstate_FSM_FFd3" BEL
+        "KB_FSM/presentstate_FSM_FFd4" BEL "KB_FSM/presentstate_FSM_FFd5" BEL
+        "KB_FSM/presentstate_FSM_FFd6" BEL "KB_FSM/presentstate_FSM_FFd7" BEL
         "KB_Data/shift10right/Flip7/Q" BEL "KB_Data/shift10right/Flip8/Q" BEL
         "KB_Data/shift10right/Flip9/Q" BEL "KB_Data/shift10right/Flip10/Q" BEL
         "KB_Data/shift10right/Flip11/Q" BEL "KB_Data/shift10right/Flip12/Q"
         BEL "KB_Data/shift10right/Flip13/Q" BEL
         "KB_Data/shift10right/Flip14/Q" BEL "KB_Data/shift10right/Flip15/Q"
-        BEL "KB_Data/pulse1000/cnt/count_15" BEL
-        "KB_Data/pulse1000/cnt/count_14" BEL "KB_Data/pulse1000/cnt/count_13"
-        BEL "KB_Data/pulse1000/cnt/count_12" BEL
-        "KB_Data/pulse1000/cnt/count_11" BEL "KB_Data/pulse1000/cnt/count_10"
-        BEL "KB_Data/pulse1000/cnt/count_9" BEL
-        "KB_Data/pulse1000/cnt/count_8" BEL "KB_Data/pulse1000/cnt/count_7"
-        BEL "KB_Data/pulse1000/cnt/count_6" BEL
-        "KB_Data/pulse1000/cnt/count_5" BEL "KB_Data/pulse1000/cnt/count_4"
-        BEL "KB_Data/pulse1000/cnt/count_3" BEL
-        "KB_Data/pulse1000/cnt/count_2" BEL "KB_Data/pulse1000/cnt/count_1"
-        BEL "KB_Data/pulse1000/cnt/count_0" BEL "KB_Data/pulse1000/cnt/Q_15"
-        BEL "KB_Data/pulse1000/cnt/Q_14" BEL "KB_Data/pulse1000/cnt/Q_13" BEL
-        "KB_Data/pulse1000/cnt/Q_12" BEL "KB_Data/pulse1000/cnt/Q_11" BEL
-        "KB_Data/pulse1000/cnt/Q_10" BEL "KB_Data/pulse1000/cnt/Q_9" BEL
-        "KB_Data/pulse1000/cnt/Q_8" BEL "KB_Data/pulse1000/cnt/Q_7" BEL
-        "KB_Data/pulse1000/cnt/Q_6" BEL "KB_Data/pulse1000/cnt/Q_5" BEL
-        "KB_Data/pulse1000/cnt/Q_4" BEL "KB_Data/pulse1000/cnt/Q_3" BEL
-        "KB_Data/pulse1000/cnt/Q_2" BEL "KB_Data/pulse1000/cnt/Q_1" BEL
-        "KB_Data/pulse1000/cnt/Q_0" BEL "KB_Data/shift_right/word_out_31" BEL
+        BEL "KB_Data/shift_right/word_out_31" BEL
         "KB_Data/shift_right/word_out_30" BEL
         "KB_Data/shift_right/word_out_29" BEL
         "KB_Data/shift_right/word_out_28" BEL
@@ -114,24 +115,21 @@ TIMEGRP sys_clk_pin = BEL "KB_Data/CR_Oneshot/Flip/Q" BEL
         "KB_Data/shift_right/word_out_4" BEL "KB_Data/shift_right/word_out_3"
         BEL "KB_Data/shift_right/word_out_2" BEL
         "KB_Data/shift_right/word_out_1" BEL "KB_Data/shift_right/word_out_0"
-        BEL "KB_FSM/presentstate_FSM_FFd1" BEL "KB_FSM/presentstate_FSM_FFd2"
-        BEL "KB_FSM/presentstate_FSM_FFd3" BEL "KB_FSM/presentstate_FSM_FFd4"
-        BEL "KB_FSM/presentstate_FSM_FFd5" BEL "KB_FSM/presentstate_FSM_FFd6"
-        BEL "KB_FSM/presentstate_FSM_FFd7" BEL "pulse500/cnt/count_16" BEL
-        "pulse500/cnt/count_15" BEL "pulse500/cnt/count_14" BEL
-        "pulse500/cnt/count_13" BEL "pulse500/cnt/count_12" BEL
-        "pulse500/cnt/count_11" BEL "pulse500/cnt/count_10" BEL
-        "pulse500/cnt/count_9" BEL "pulse500/cnt/count_8" BEL
-        "pulse500/cnt/count_7" BEL "pulse500/cnt/count_6" BEL
-        "pulse500/cnt/count_5" BEL "pulse500/cnt/count_4" BEL
-        "pulse500/cnt/count_3" BEL "pulse500/cnt/count_2" BEL
-        "pulse500/cnt/count_1" BEL "pulse500/cnt/Q_16" BEL "pulse500/cnt/Q_15"
-        BEL "pulse500/cnt/Q_14" BEL "pulse500/cnt/Q_13" BEL
-        "pulse500/cnt/Q_12" BEL "pulse500/cnt/Q_11" BEL "pulse500/cnt/Q_10"
-        BEL "pulse500/cnt/Q_9" BEL "pulse500/cnt/Q_8" BEL "pulse500/cnt/Q_7"
-        BEL "pulse500/cnt/Q_6" BEL "pulse500/cnt/Q_5" BEL "pulse500/cnt/Q_4"
-        BEL "pulse500/cnt/Q_3" BEL "pulse500/cnt/Q_2" BEL "pulse500/cnt/Q_1"
-        BEL "pulse500/cnt/Q_0" BEL "clk_BUFGP/BUFG";
+        BEL "pulse500/cnt/count_16" BEL "pulse500/cnt/count_15" BEL
+        "pulse500/cnt/count_14" BEL "pulse500/cnt/count_13" BEL
+        "pulse500/cnt/count_12" BEL "pulse500/cnt/count_11" BEL
+        "pulse500/cnt/count_10" BEL "pulse500/cnt/count_9" BEL
+        "pulse500/cnt/count_8" BEL "pulse500/cnt/count_7" BEL
+        "pulse500/cnt/count_6" BEL "pulse500/cnt/count_5" BEL
+        "pulse500/cnt/count_4" BEL "pulse500/cnt/count_3" BEL
+        "pulse500/cnt/count_2" BEL "pulse500/cnt/count_1" BEL
+        "pulse500/cnt/Q_16" BEL "pulse500/cnt/Q_15" BEL "pulse500/cnt/Q_14"
+        BEL "pulse500/cnt/Q_13" BEL "pulse500/cnt/Q_12" BEL
+        "pulse500/cnt/Q_11" BEL "pulse500/cnt/Q_10" BEL "pulse500/cnt/Q_9" BEL
+        "pulse500/cnt/Q_8" BEL "pulse500/cnt/Q_7" BEL "pulse500/cnt/Q_6" BEL
+        "pulse500/cnt/Q_5" BEL "pulse500/cnt/Q_4" BEL "pulse500/cnt/Q_3" BEL
+        "pulse500/cnt/Q_2" BEL "pulse500/cnt/Q_1" BEL "pulse500/cnt/Q_0" BEL
+        "clk_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 

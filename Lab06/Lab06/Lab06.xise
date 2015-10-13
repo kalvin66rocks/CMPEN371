@@ -58,12 +58,12 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/Counter_nbit.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/Debouncer.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="10"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/DFF.vhd" xil_pn:type="FILE_VHDL">
@@ -95,7 +95,7 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/hextosevenseg.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/hextosevseg_tb.vhd" xil_pn:type="FILE_VHDL">
@@ -153,12 +153,12 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/numeric_display.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="26"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/OneShot.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="27"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/physics_fsm.vhd" xil_pn:type="FILE_VHDL">
@@ -173,7 +173,7 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/pulse_gen.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="30"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/Reg_nbit.vhd" xil_pn:type="FILE_VHDL">
@@ -203,22 +203,22 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/shiftregister_32bit.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="47"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/shift10.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="49"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/FSM_Datapath.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="53"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/KB_Read_FSM.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="54"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="Nexys4_Master.ucf" xil_pn:type="FILE_UCF">
@@ -520,6 +520,7 @@
     <property xil_pn:name="Use Synchronous Set" xil_pn:value="Auto" xil_pn:valueState="default"/>
     <property xil_pn:name="Use Synthesis Constraints File" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="User Access Register Value" xil_pn:value="None" xil_pn:valueState="default"/>
+    <property xil_pn:name="User Browsed Strategy Files" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="UserID Code (8 Digit Hexadecimal)" xil_pn:value="0xFFFFFFFF" xil_pn:valueState="default"/>
     <property xil_pn:name="VHDL Source Analysis Standard" xil_pn:value="VHDL-93" xil_pn:valueState="default"/>
     <property xil_pn:name="Value Range Check" xil_pn:value="false" xil_pn:valueState="default"/>

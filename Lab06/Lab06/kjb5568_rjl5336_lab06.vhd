@@ -49,28 +49,37 @@ signal strobe : std_logic;
 signal clear : std_logic;
 signal Code_Ready : std_logic;
 signal pulse_1000 : std_logic;
+signal TIMEOUT : std_logic;
 signal digit_en		 : STD_LOGIC_VECTOR (7 downto 0);
 signal PS2KBD_CLK_in_Debounce : std_logic;
+signal PS2KBD_DATA_in_Debounce : std_logic;
 signal word_int	: STD_LOGIC_VECTOR (31 downto 0);
 
 begin
 
-Debounce_Data: Debouncer port map(
+Debounce_CLK: Debouncer port map(
 			D => PS2KBD_CLK_in,
 			CLK => CLK,
 			pulse => pulse_1000,
 			Q => PS2KBD_CLK_in_Debounce);
 			
-pulse1000: pulse_gen generic map( n => 16,  maxcount => 10000) port map(
+Debounce_DATA: Debouncer port map(
+			D => PS2KBD_DATA_in,
+			CLK => CLK,
+			pulse => pulse_1000,
+			Q => PS2KBD_DATA_in_Debounce);
+			
+pulse1000: pulse_gen generic map( n => 16,  maxcount => 100) port map(
 			en => '1',
 			clk => clk,
 			clr => '0',
 			pulse => pulse_1000);
 
 KB_FSM: KB_Read_FSM port map (
-		PS2KBD_CLK_in => PS2KBD_CLK_in,
+		PS2KBD_CLK_in => PS2KBD_CLK_in_Debounce,
 		clr => '0',			
-		clk => clk,			
+		clk => clk,
+		TIMEOUT	=>	TIMEOUT,
 		load => load,			
 		clear => clear,			
 		Code_Ready => Code_Ready);	
@@ -78,7 +87,9 @@ KB_FSM: KB_Read_FSM port map (
 KB_Data: FSM_Datapath port map (		
 		Code_Ready => Code_Ready,
 		load	=> load,
-		PS2KBD_DATA_in => PS2KBD_DATA_in,
+		PS2KBD_DATA_in => PS2KBD_DATA_in_Debounce,
+		PS2KBD_CLK_in	=> PS2KBD_CLK_in_Debounce,
+		TIMEOUT => TIMEOUT,
 		clk	=> clk,
 		clr	=> clear,
 		word	=> word_int);

@@ -28,15 +28,16 @@ entity FSM_Datapath is
 port (   Code_Ready 		: in  std_logic;
 			load				: in  std_logic;
 			PS2KBD_DATA_in : in  std_logic;
+			PS2KBD_CLK_in	: in  std_logic;
 			clk				: in  std_logic;
 			clr				: in  std_logic;
+			TIMEOUT			: out  std_logic;
 			word				: out std_logic_vector(31 downto 0));
 end FSM_Datapath;
 
 architecture Behavioral of FSM_Datapath is
 
 signal Code_Ready_One_Shot : std_logic;
-signal PS2KBD_DATA_in_Debounce : std_logic;
 signal pulse_1000		 : STD_LOGIC;
 signal word_int		 : STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
 signal word_int1		 : STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
@@ -49,24 +50,17 @@ CR_Oneshot: OneShot port map(
 			CLK => CLK,
 			Q => Code_Ready_One_Shot);
 			
-			
-Debounce_Data: Debouncer port map(
-			D => PS2KBD_DATA_in,
-			CLK => CLK,
-			pulse => pulse_1000,
-			Q => PS2KBD_DATA_in_Debounce);
-			
-pulse1000: pulse_gen generic map( n => 16,  maxcount => 10000) port map(
-			en => '1',
-			clk => clk,
-			clr => '0',
-			pulse => pulse_1000);
-			
 shift10right: shift10 port map(
-		d =>PS2KBD_DATA_in_Debounce,
+		d =>PS2KBD_DATA_in,
 		load => load,
 		clk => clk,
 		q => kb_int);
+		
+TIMEOUT_PULSE: pulse_gen generic map( n => 16,  maxcount => 100) port map(
+			en => PS2KBD_CLK_in,
+			clk => clk,
+			clr => not PS2KBD_CLK_in,
+			pulse => TIMEOUT);
 
 shift_right: shiftregister_32bit port map(
 		D 	=> kb_int ( 8 downto 1),
