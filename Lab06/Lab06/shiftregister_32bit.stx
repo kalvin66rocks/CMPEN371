@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to C:/Users/Kevin/Desktop/Lab06/Lab06/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: shiftregister_32bit.prj
 
@@ -39,17 +39,17 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\Lab06\shiftregister_32bit.vhd" into library work
+Parsing VHDL file "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\shiftregister_32bit.vhd" into library kjb5568_rjl5336_library
 Parsing entity <shiftregister_32bit>.
 Parsing architecture <Behavioral> of entity <shiftregister_32bit>.
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.60 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.87 secs
  
 --> 
 
-Total memory usage is 287924 kilobytes
+Total memory usage is 283820 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

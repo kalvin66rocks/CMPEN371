@@ -28,10 +28,8 @@ entity FSM_Datapath is
 port (   Code_Ready 		: in  std_logic;
 			load				: in  std_logic;
 			PS2KBD_DATA_in : in  std_logic;
-			PS2KBD_CLK_in	: in  std_logic;
 			clk				: in  std_logic;
 			clr				: in  std_logic;
-			TIMEOUT			: out  std_logic;
 			word				: out std_logic_vector(31 downto 0));
 end FSM_Datapath;
 
@@ -55,20 +53,13 @@ shift10right: shift10 port map(
 		load => load,
 		clk => clk,
 		q => kb_int);
-		
-TIMEOUT_PULSE: pulse_gen generic map( n => 16,  maxcount => 100) port map(
-			en => PS2KBD_CLK_in,
-			clk => clk,
-			clr => not PS2KBD_CLK_in,
-			pulse => TIMEOUT);
 
 shift_right: shiftregister_32bit port map(
 		D 	=> kb_int ( 8 downto 1),
-		q	=>	word_int,
 		load	=> Code_Ready_One_Shot,
 		clk	=> clk,
+		clr => clr,
 		word_out =>	word_int1);
-word_int <= word_int1;
 word <= word_int1;
 
 

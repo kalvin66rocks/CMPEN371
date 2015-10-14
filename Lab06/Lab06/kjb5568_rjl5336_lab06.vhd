@@ -46,7 +46,7 @@ architecture Behavioral of kjb5568_rjl5336_lab06 is
 
 signal load : std_logic;
 signal strobe : std_logic;
-signal clear : std_logic;
+--signal clear : std_logic;
 signal Code_Ready : std_logic;
 signal pulse_1000 : std_logic;
 signal TIMEOUT : std_logic;
@@ -69,29 +69,25 @@ Debounce_DATA: Debouncer port map(
 			pulse => pulse_1000,
 			Q => PS2KBD_DATA_in_Debounce);
 			
-pulse1000: pulse_gen generic map( n => 16,  maxcount => 100) port map(
+pulse1000: pulse_gen generic map( n => 2,  maxcount => 2) port map(
 			en => '1',
 			clk => clk,
-			clr => '0',
+			clr => button(2),
 			pulse => pulse_1000);
 
 KB_FSM: KB_Read_FSM port map (
 		PS2KBD_CLK_in => PS2KBD_CLK_in_Debounce,
 		clr => '0',			
 		clk => clk,
-		TIMEOUT	=>	TIMEOUT,
 		load => load,			
-		clear => clear,			
 		Code_Ready => Code_Ready);	
 		
 KB_Data: FSM_Datapath port map (		
 		Code_Ready => Code_Ready,
 		load	=> load,
 		PS2KBD_DATA_in => PS2KBD_DATA_in_Debounce,
-		PS2KBD_CLK_in	=> PS2KBD_CLK_in_Debounce,
-		TIMEOUT => TIMEOUT,
 		clk	=> clk,
-		clr	=> clear,
+		clr	=> button(2),
 		word	=> word_int);
 		
 pulse500: pulse_gen generic map( n => 17,  maxcount => 100000) port map(

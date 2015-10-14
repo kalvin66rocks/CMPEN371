@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.30 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.30 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
  
 --> Reading design: kjb5568_rjl5336_lab06.prj
 
@@ -163,9 +163,6 @@ Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from li
 Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <KB_Read_FSM> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\KB_Read_FSM.vhd" Line 72: count should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\KB_Read_FSM.vhd" Line 74: count should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\KB_Read_FSM.vhd" Line 110: count should be on the sensitivity list of the process
 
 Elaborating entity <FSM_Datapath> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
@@ -194,7 +191,8 @@ Elaborating entity <hextosevenseg> (architecture <structural>) from library <kjb
 Synthesizing Unit <kjb5568_rjl5336_lab06>.
     Related source file is "C:\Users\Kevin\Desktop\Lab06\Lab06\kjb5568_rjl5336_lab06.vhd".
 WARNING:Xst:647 - Input <SWITCH> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <BUTTON> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BUTTON<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BUTTON<4:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <kjb5568_rjl5336_lab06> synthesized.
@@ -214,38 +212,38 @@ Unit <DFF_CE> synthesized.
 
 Synthesizing Unit <pulse_gen_1>.
     Related source file is "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\pulse_gen.vhd".
-        n = 16
-        maxCount = 100
+        n = 2
+        maxCount = 2
     Summary:
 	no macro.
 Unit <pulse_gen_1> synthesized.
 
 Synthesizing Unit <Counter_nbit_1>.
     Related source file is "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\Counter_nbit.vhd".
-        n = 16
-    Found 16-bit register for signal <Q>.
+        n = 2
+    Found 2-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
     Found 32-bit adder for signal <count[31]_count[31]_mux_1_OUT> created at line 36.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  48 D-type flip-flop(s).
+	inferred  34 D-type flip-flop(s).
 Unit <Counter_nbit_1> synthesized.
 
 Synthesizing Unit <KB_Read_FSM>.
     Related source file is "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\KB_Read_FSM.vhd".
-    Found 3-bit register for signal <presentstate>.
+    Found 4-bit register for signal <presentstate>.
     Found finite state machine <FSM_0> for signal <presentstate>.
     -----------------------------------------------------------------------
-    | States             | 7                                              |
-    | Transitions        | 11                                             |
+    | States             | 9                                              |
+    | Transitions        | 14                                             |
     | Inputs             | 2                                              |
-    | Outputs            | 5                                              |
+    | Outputs            | 7                                              |
     | Clock              | clk (rising_edge)                              |
-    | Power Up State     | idle                                           |
+    | Power Up State     | int                                            |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <count[31]_GND_11_o_add_11_OUT> created at line 110.
+    Found 32-bit adder for signal <count[31]_GND_10_o_add_10_OUT> created at line 107.
 WARNING:Xst:737 - Found 1-bit latch for signal <count<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <count<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <count<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -278,7 +276,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <count<3>>. Latches may be genera
 WARNING:Xst:737 - Found 1-bit latch for signal <count<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <count<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <count<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator greater for signal <GND_11_o_count[31]_LessThan_6_o> created at line 74
+    Found 32-bit comparator greater for signal <GND_10_o_count[31]_LessThan_6_o> created at line 79
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  32 Latch(s).
@@ -289,7 +287,6 @@ Unit <KB_Read_FSM> synthesized.
 
 Synthesizing Unit <FSM_Datapath>.
     Related source file is "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\FSM_Datapath.vhd".
-WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <FSM_Datapath> synthesized.
@@ -315,7 +312,7 @@ Unit <shift10> synthesized.
 
 Synthesizing Unit <shiftregister_32bit>.
     Related source file is "C:\Users\Kevin\Desktop\Lab06\kjb5568_rjl5336_library\shiftregister_32bit.vhd".
-    Found 32-bit register for signal <word_out>.
+    Found 32-bit register for signal <out_int>.
     Summary:
 	inferred  32 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
@@ -354,7 +351,7 @@ Synthesizing Unit <Counter_nbit_3>.
         n = 3
     Found 3-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_54_o_add_0_OUT> created at line 36.
+    Found 32-bit adder for signal <count[31]_GND_53_o_add_0_OUT> created at line 36.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  35 D-type flip-flop(s).
@@ -378,8 +375,8 @@ Macro Statistics
  32-bit adder                                          : 4
 # Registers                                            : 24
  1-bit register                                        : 17
- 16-bit register                                       : 1
  17-bit register                                       : 1
+ 2-bit register                                        : 1
  3-bit register                                        : 1
  32-bit register                                       : 4
 # Latches                                              : 32
@@ -452,8 +449,8 @@ Macro Statistics
  32-bit adder                                          : 1
 # Counters                                             : 3
  32-bit up counter                                     : 3
-# Registers                                            : 85
- Flip-Flops                                            : 85
+# Registers                                            : 71
+ Flip-Flops                                            : 71
 # Comparators                                          : 1
  32-bit comparator greater                             : 1
 # Multiplexers                                         : 34
@@ -468,34 +465,20 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <KB_FSM/FSM_0> on signal <presentstate[1:7]> with one-hot encoding.
+Optimizing FSM <KB_FSM/FSM_0> on signal <presentstate[1:4]> with user encoding.
 ---------------------
  State   | Encoding
 ---------------------
- idle    | 0000001
- compare | 0000010
- wait1   | 0001000
- wait2   | 0010000
- load1   | 0100000
- inc     | 1000000
- set     | 0000100
+ int     | 0000
+ idle    | 0001
+ compare | 0010
+ wait1   | 0011
+ wait2   | 0100
+ load1   | 0101
+ inc     | 0110
+ ready   | 0111
+ reset   | 1000
 ---------------------
-WARNING:Xst:2677 - Node <count_16> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_17> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_18> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_19> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_20> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_21> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_22> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_23> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_24> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_25> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_26> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_27> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_28> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_29> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_30> of sequential type is unconnected in block <Counter_nbit_1>.
-WARNING:Xst:2677 - Node <count_31> of sequential type is unconnected in block <Counter_nbit_1>.
 WARNING:Xst:2677 - Node <count_17> of sequential type is unconnected in block <Counter_nbit_2>.
 WARNING:Xst:2677 - Node <count_18> of sequential type is unconnected in block <Counter_nbit_2>.
 WARNING:Xst:2677 - Node <count_19> of sequential type is unconnected in block <Counter_nbit_2>.
@@ -511,6 +494,36 @@ WARNING:Xst:2677 - Node <count_28> of sequential type is unconnected in block <C
 WARNING:Xst:2677 - Node <count_29> of sequential type is unconnected in block <Counter_nbit_2>.
 WARNING:Xst:2677 - Node <count_30> of sequential type is unconnected in block <Counter_nbit_2>.
 WARNING:Xst:2677 - Node <count_31> of sequential type is unconnected in block <Counter_nbit_2>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_2> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_3> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_4> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_5> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_6> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_7> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_8> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_9> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_10> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_11> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_12> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_13> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_14> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_15> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_16> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_17> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_18> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_19> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_20> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_21> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_22> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_23> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_24> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_25> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_26> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_27> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_28> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_29> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_30> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
+WARNING:Xst:2677 - Node <pulse1000/cnt/count_31> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
 WARNING:Xst:2677 - Node <display/cnt/count_3> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
 WARNING:Xst:2677 - Node <display/cnt/count_4> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
 WARNING:Xst:2677 - Node <display/cnt/count_5> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
@@ -541,8 +554,6 @@ WARNING:Xst:2677 - Node <display/cnt/count_29> of sequential type is unconnected
 WARNING:Xst:2677 - Node <display/cnt/count_30> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
 WARNING:Xst:2677 - Node <display/cnt/count_31> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
 
-Optimizing unit <Counter_nbit_1> ...
-
 Optimizing unit <shift10> ...
 
 Optimizing unit <Counter_nbit_2> ...
@@ -553,7 +564,6 @@ Optimizing unit <KB_Read_FSM> ...
 
 Optimizing unit <shiftregister_32bit> ...
 WARNING:Xst:2677 - Node <KB_Data/shift10right/Flip16/Q> of sequential type is unconnected in block <kjb5568_rjl5336_lab06>.
-INFO:Xst:2261 - The FF/Latch <pulse1000/cnt/count_0> in Unit <kjb5568_rjl5336_lab06> is equivalent to the following FF/Latch, which will be removed : <pulse500/cnt/count_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -561,12 +571,19 @@ Found area constraint ratio of 100 (+ 5) on block kjb5568_rjl5336_lab06, actual 
 
 Final Macro Processing ...
 
+Processing Unit <kjb5568_rjl5336_lab06> :
+	Found 2-bit shift register for signal <Debounce_DATA/Flip2/Q>.
+	Found 2-bit shift register for signal <Debounce_CLK/Flip2/Q>.
+Unit <kjb5568_rjl5336_lab06> processed.
+
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 126
- Flip-Flops                                            : 126
+# Registers                                            : 92
+ Flip-Flops                                            : 92
+# Shift Registers                                      : 2
+ 2-bit shift register                                  : 2
 
 =========================================================================
 
@@ -589,30 +606,32 @@ Top Level Output File Name         : kjb5568_rjl5336_lab06.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 326
+# BELS                             : 286
 #      GND                         : 1
 #      INV                         : 4
-#      LUT1                        : 64
+#      LUT1                        : 50
 #      LUT2                        : 2
-#      LUT3                        : 11
-#      LUT4                        : 44
-#      LUT5                        : 45
-#      LUT6                        : 13
-#      MUXCY                       : 70
+#      LUT3                        : 45
+#      LUT4                        : 10
+#      LUT5                        : 15
+#      LUT6                        : 44
+#      MUXCY                       : 56
 #      MUXF7                       : 4
 #      VCC                         : 1
-#      XORCY                       : 67
-# FlipFlops/Latches                : 158
-#      FD                          : 40
-#      FDE                         : 15
-#      FDR                         : 65
-#      FDRE                        : 6
+#      XORCY                       : 54
+# FlipFlops/Latches                : 126
+#      FD                          : 5
+#      FDE                         : 13
+#      FDR                         : 38
+#      FDRE                        : 38
 #      LD                          : 32
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 33
-#      IBUF                        : 2
+# IO Buffers                       : 34
+#      IBUF                        : 3
 #      OBUF                        : 31
 
 Device utilization summary:
@@ -622,20 +641,22 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             158  out of  126800     0%  
- Number of Slice LUTs:                  183  out of  63400     0%  
-    Number used as Logic:               183  out of  63400     0%  
+ Number of Slice Registers:             126  out of  126800     0%  
+ Number of Slice LUTs:                  172  out of  63400     0%  
+    Number used as Logic:               170  out of  63400     0%  
+    Number used as Memory:                2  out of  19000     0%  
+       Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    225
-   Number with an unused Flip Flop:      67  out of    225    29%  
-   Number with an unused LUT:            42  out of    225    18%  
-   Number of fully used LUT-FF pairs:   116  out of    225    51%  
-   Number of unique control sets:         7
+ Number of LUT Flip Flop pairs used:    194
+   Number with an unused Flip Flop:      68  out of    194    35%  
+   Number with an unused LUT:            22  out of    194    11%  
+   Number of fully used LUT-FF pairs:   104  out of    194    53%  
+   Number of unique control sets:         8
 
 IO Utilization: 
  Number of IOs:                          55
- Number of bonded IOBs:                  34  out of    210    16%  
+ Number of bonded IOBs:                  35  out of    210    16%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
@@ -661,8 +682,8 @@ Clock Information:
 --------------------------------------------------------------------------+-------------------------+-------+
 Clock Signal                                                              | Clock buffer(FF name)   | Load  |
 --------------------------------------------------------------------------+-------------------------+-------+
-clk                                                                       | BUFGP                   | 126   |
-KB_FSM/presentstate[2]_PWR_12_o_Mux_18_o(KB_FSM/presentstate__n0106<2>1:O)| BUFG(*)(KB_FSM/count_31)| 32    |
+clk                                                                       | BUFGP                   | 96    |
+KB_FSM/presentstate[3]_GND_11_o_Mux_17_o(KB_FSM/presentstate__n0114<2>1:O)| BUFG(*)(KB_FSM/count_31)| 32    |
 --------------------------------------------------------------------------+-------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -677,7 +698,7 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 3.591ns (Maximum Frequency: 278.435MHz)
-   Minimum input arrival time before clock: 0.430ns
+   Minimum input arrival time before clock: 1.888ns
    Maximum output required time after clock: 3.346ns
    Maximum combinational path delay: No path found
 
@@ -687,8 +708,8 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 3.408ns (frequency: 293.422MHz)
-  Total number of paths / destination ports: 1774 / 210
+  Clock period: 3.408ns (frequency: 293.403MHz)
+  Total number of paths / destination ports: 1364 / 217
 -------------------------------------------------------------------------
 Delay:               3.408ns (Levels of Logic = 2)
   Source:            pulse500/cnt/Q_11 (FF)
@@ -702,62 +723,62 @@ Delay:               3.408ns (Levels of Logic = 2)
     ----------------------------------------  ------------
      FDR:C->Q              1   0.478   0.919  pulse500/cnt/Q_11 (pulse500/cnt/Q_11)
      LUT5:I0->O            1   0.124   0.716  pulse500/clear<16>3 (pulse500/clear<16>2)
-     LUT3:I0->O           39   0.124   0.553  pulse500/clear<16>4 (strobe)
+     LUT3:I0->O           40   0.124   0.553  pulse500/clear<16>4 (strobe)
      FDR:R                     0.494          pulse500/cnt/Q_0
     ----------------------------------------
     Total                      3.408ns (1.220ns logic, 2.188ns route)
                                        (35.8% logic, 64.2% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'KB_FSM/presentstate[2]_PWR_12_o_Mux_18_o'
+Timing constraint: Default period analysis for Clock 'KB_FSM/presentstate[3]_GND_11_o_Mux_17_o'
   Clock period: 3.591ns (frequency: 278.435MHz)
   Total number of paths / destination ports: 528 / 32
 -------------------------------------------------------------------------
 Delay:               3.591ns (Levels of Logic = 34)
   Source:            KB_FSM/count_0 (LATCH)
   Destination:       KB_FSM/count_31 (LATCH)
-  Source Clock:      KB_FSM/presentstate[2]_PWR_12_o_Mux_18_o falling
-  Destination Clock: KB_FSM/presentstate[2]_PWR_12_o_Mux_18_o falling
+  Source Clock:      KB_FSM/presentstate[3]_GND_11_o_Mux_17_o falling
+  Destination Clock: KB_FSM/presentstate[3]_GND_11_o_Mux_17_o falling
 
   Data Path: KB_FSM/count_0 to KB_FSM/count_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LD:G->Q               2   0.625   0.405  KB_FSM/count_0 (KB_FSM/count_0)
-     INV:I->O              1   0.146   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_lut<0>_INV_0 (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_lut<0>)
-     MUXCY:S->O            1   0.472   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<0> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<0>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<1> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<1>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<2> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<2>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<3> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<3>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<4> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<4>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<5> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<5>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<6> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<6>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<7> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<7>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<8> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<8>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<9> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<9>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<10> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<10>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<11> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<11>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<12> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<12>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<13> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<13>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<14> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<14>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<15> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<15>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<16> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<16>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<17> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<17>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<18> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<18>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<19> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<19>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<20> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<20>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<21> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<21>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<22> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<22>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<23> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<23>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<24> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<24>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<25> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<25>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<26> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<26>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<27> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<27>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<28> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<28>)
-     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<29> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<29>)
-     MUXCY:CI->O           0   0.029   0.000  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<30> (KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_cy<30>)
-     XORCY:CI->O           1   0.510   0.421  KB_FSM/Madd_count[31]_GND_11_o_add_11_OUT_xor<31> (KB_FSM/count[31]_GND_11_o_add_11_OUT<31>)
-     LUT5:I4->O            1   0.124   0.000  KB_FSM/Mmux_presentstate[2]_X_10_o_Mux_17_o<0>2 (KB_FSM/presentstate[2]_X_10_o_Mux_17_o)
+     INV:I->O              1   0.146   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_lut<0>_INV_0 (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<0> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<1> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<2> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<3> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<4> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<5> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<6> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<7> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<8> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<9> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<10> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<11> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<12> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<13> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<14> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<15> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<16> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<17> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<18> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<19> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<20> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<21> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<22> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<23> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<24> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<25> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<26> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<27> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<28> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<29> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<30> (KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_cy<30>)
+     XORCY:CI->O           1   0.510   0.421  KB_FSM/Madd_count[31]_GND_10_o_add_10_OUT_xor<31> (KB_FSM/count[31]_GND_10_o_add_10_OUT<31>)
+     LUT3:I2->O            1   0.124   0.000  KB_FSM/Mmux_presentstate[3]_count[31]_Mux_16_o11 (KB_FSM/presentstate[3]_count[31]_Mux_16_o)
      LD:D                      0.011          KB_FSM/count_31
     ----------------------------------------
     Total                      3.591ns (2.765ns logic, 0.826ns route)
@@ -765,22 +786,23 @@ Delay:               3.591ns (Levels of Logic = 34)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 2 / 2
+  Total number of paths / destination ports: 102 / 102
 -------------------------------------------------------------------------
-Offset:              0.430ns (Levels of Logic = 1)
-  Source:            PS2KBD_DATA_in (PAD)
-  Destination:       Debounce_DATA/Flip1/Q (FF)
+Offset:              1.888ns (Levels of Logic = 2)
+  Source:            BUTTON<2> (PAD)
+  Destination:       KB_Data/shift_right/out_int_31 (FF)
   Destination Clock: clk rising
 
-  Data Path: PS2KBD_DATA_in to Debounce_DATA/Flip1/Q
+  Data Path: BUTTON<2> to KB_Data/shift_right/out_int_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.399  PS2KBD_DATA_in_IBUF (PS2KBD_DATA_in_IBUF)
-     FDE:D                     0.030          Debounce_DATA/Flip1/Q
+     IBUF:I->O            35   0.001   1.072  BUTTON_2_IBUF (BUTTON_2_IBUF)
+     LUT5:I0->O           32   0.124   0.552  KB_Data/shift_right/_n0021_inv1 (KB_Data/shift_right/_n0021_inv)
+     FDRE:CE                   0.139          KB_Data/shift_right/out_int_0
     ----------------------------------------
-    Total                      0.430ns (0.031ns logic, 0.399ns route)
-                                       (7.2% logic, 92.8% route)
+    Total                      1.888ns (0.264ns logic, 1.624ns route)
+                                       (14.0% logic, 86.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -809,13 +831,13 @@ Offset:              3.346ns (Levels of Logic = 4)
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock KB_FSM/presentstate[2]_PWR_12_o_Mux_18_o
+Clock to Setup on destination clock KB_FSM/presentstate[3]_GND_11_o_Mux_17_o
 ----------------------------------------+---------+---------+---------+---------+
                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------+---------+---------+---------+---------+
-KB_FSM/presentstate[2]_PWR_12_o_Mux_18_o|         |         |    3.591|         |
-clk                                     |         |         |    1.685|         |
+KB_FSM/presentstate[3]_GND_11_o_Mux_17_o|         |         |    3.591|         |
+clk                                     |         |         |    1.491|         |
 ----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -823,21 +845,21 @@ Clock to Setup on destination clock clk
                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------+---------+---------+---------+---------+
-KB_FSM/presentstate[2]_PWR_12_o_Mux_18_o|         |    3.846|         |         |
+KB_FSM/presentstate[3]_GND_11_o_Mux_17_o|         |    3.725|         |         |
 clk                                     |    3.408|         |         |         |
 ----------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 21.42 secs
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 22.83 secs
  
 --> 
 
-Total memory usage is 406564 kilobytes
+Total memory usage is 406540 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  100 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :  111 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

@@ -1,1 +1,1 @@
-vhdl work "KB_Read_FSM.vhd"
+vhdl kjb5568_rjl5336_library "../kjb5568_rjl5336_library/KB_Read_FSM.vhd"
