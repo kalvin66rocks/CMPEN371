@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=E:\Lab07\Lab07_egw100.ncd
-OUTFILE=E:\Lab07\Lab07_egw100.bit
+INFILE=C:\Users\Kevin\Desktop\Lab07\Lab07_egw100.ncd
+OUTFILE=C:\Users\Kevin\Desktop\Lab07\Lab07_egw100.bit
 FAMILY=Artix7
 PART=xc7a100t-1csg324
-WORKINGDIR=E:\Lab07
+WORKINGDIR=C:\Users\Kevin\Desktop\Lab07
 LICENSE=WebPack
-USER_INFO=211080222_0_0_051
+USER_INFO=211083008_0_0_273

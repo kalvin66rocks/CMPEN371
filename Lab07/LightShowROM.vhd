@@ -43,7 +43,6 @@ architecture Behavioral of LightShowROM is
           x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
           x"4"  & "0000000110000000", -- Load LED
           x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
-
           x"4"  & "0000001001000000", -- Load LED
           x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
           x"4"  & "0000010000100000", -- Load LED
@@ -58,12 +57,163 @@ architecture Behavioral of LightShowROM is
           x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
           x"4"  & "1000000000000001", -- Load LED
           x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
-
-          x"8"  & "0000000000000000", -- Jump 0
-          x"9"  & "0000000000000000", -- Branch if right is pushed
-          x"10" & "0000000000000000", -- Branch if center is pushed
-			 x"12" & "0000000000000000", -- Branch if left is pushed
-                --"0000001111111111"
+			 x"9"  & "0000000000100010", -- Branch if right is pushed (
+			 x"A"  & "0000000001000011", -- Branch if center is pushed
+			 x"C"  & "0000000010000100", -- Branch if left is pushed
+			 x"8"  & "0000000000000000", -- Jump 0
+			 x"4"  & "1010101010101010", -- Load LED --should jump to here###########block 34
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+          x"4"  & "0101010101010101", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1010101010101010", -- Load LED 
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+          x"4"  & "0101010101010101", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1010101010101010", -- Load LED 
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+          x"4"  & "0101010101010101", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1010101010101010", -- Load LED 
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+          x"4"  & "0101010101010101", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1010101010101010", -- Load LED 
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+          x"4"  & "0101010101010101", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1010101010101010", -- Load LED 
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+          x"4"  & "0101010101010101", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1010101010101010", -- Load LED 
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+          x"4"  & "0101010101010101", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1010101010101010", -- Load LED 
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+          x"4"  & "0101010101010101", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec) ==16
+			 x"8"  & "0000000000011110", -- Jump 30						################block 66
+			 x"4"  & "1100000000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+          x"4"  & "0011000000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000110000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000001100000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000011000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000110000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000001100", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000000011", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec) ##82
+			 x"4"  & "1100000000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+          x"4"  & "0011000000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000110000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000001100000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000011000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000110000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000001100", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000000011", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec) ##98
+			 x"4"  & "1100000000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+          x"4"  & "0011000000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000110000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000001100000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000011000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000110000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000001100", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000000011", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec) ##114
+			 x"4"  & "1100000000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+          x"4"  & "0011000000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000110000000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000001100000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000011000000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000110000", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000001100", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
+			 x"4"  & "0000000000000011", -- Load LED
+          x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec) #130
+			 x"8"  & "0000000000011110", -- Jump 30
+			 x"4"  & "1000000000000000", -- Load LED			#132
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1100000000000000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1110000000000000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1111000000000000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1111100000000000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1111110000000000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1111111000000000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1111111100000000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1111111110000000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "1111111111000000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0111111111100000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0011111111110000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0001111111111000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000111111111100", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000011111111110", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000001111111111", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000000111111111", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000000011111111", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000000001111111", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000000000111111", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000000000011111", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000000000001111", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000000000000111", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000000000000011", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000000000000001", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"4"  & "0000000000000000", -- Load LED
+          x"1"  & "0000000001111111", -- Delay 127 ms (approx 1/8 sec)
+			 x"8"  & "0000000000011110", -- Jump 30
+			 x"8"  & "0000000000000000", -- Jump 0				##186
+          
           
           others => (others => '0')
 	);

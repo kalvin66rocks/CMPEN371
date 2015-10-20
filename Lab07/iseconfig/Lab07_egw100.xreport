@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-10-20T10:07:53</DateModified>
+  <DateModified>2015-10-20T12:58:29</DateModified>
   <ModuleName>Lab07_egw100</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>E:/Lab07/iseconfig/Lab07_egw100.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/Lab07\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Kevin/Desktop/Lab07/iseconfig/Lab07_egw100.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Kevin/Desktop/Lab07\</ImplementationReportsDirectory>
   <DateInitialized>2015-10-19T09:12:51</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

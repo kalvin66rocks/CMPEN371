@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: Lab07_egw100.prj
 
@@ -105,37 +105,37 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\kjb5568_rjl5336_components.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "K:/Lab04/kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd" into library kjb5568_rjl5336_library
 Parsing package <kjb5568_rjl5336_Components>.
 Parsing package body <kjb5568_rjl5336_Components>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "K:/Lab04/kjb5568_rjl5336_library/Counter_nbit.vhd" into library kjb5568_rjl5336_library
 Parsing entity <Counter_nbit>.
 Parsing architecture <Behavioral> of entity <counter_nbit>.
-Parsing VHDL file "E:\Lab07\LightShowROM.vhd" into library work
-Parsing entity <LightShowROM>.
-Parsing architecture <Behavioral> of entity <lightshowrom>.
-Parsing VHDL file "E:\Lab07\CompareEQU.vhd" into library kjb5568_rjl5336_library
-Parsing entity <CompareEQU>.
-Parsing architecture <structural> of entity <compareequ>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\Reg_nbit.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "K:/Lab04/kjb5568_rjl5336_library/Reg_nbit.vhd" into library kjb5568_rjl5336_library
 Parsing entity <Reg_nbit>.
 Parsing architecture <Behavioral> of entity <reg_nbit>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\pulse_gen.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "K:/Lab04/kjb5568_rjl5336_library/pulse_gen.vhd" into library kjb5568_rjl5336_library
 Parsing entity <pulse_gen>.
 Parsing architecture <Behavioral> of entity <pulse_gen>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\hextosevenseg.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "K:/Lab04/kjb5568_rjl5336_library/hextosevenseg.vhd" into library kjb5568_rjl5336_library
 Parsing entity <hextosevenseg>.
 Parsing architecture <structural> of entity <hextosevenseg>.
-Parsing VHDL file "E:\Lab07\LightShowDatapath.vhd" into library work
-Parsing entity <LightShowDatapath>.
-Parsing architecture <Structural> of entity <lightshowdatapath>.
-Parsing VHDL file "E:\Lab07\LightShowControl.vhd" into library work
-Parsing entity <LightShowControl>.
-Parsing architecture <FSM> of entity <lightshowcontrol>.
-Parsing VHDL file "E:\Lab04\kjb5568_rjl5336_library\numeric_display.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "C:\Users\Kevin\Desktop\Lab07\LightShowROM.vhd" into library work
+Parsing entity <LightShowROM>.
+Parsing architecture <Behavioral> of entity <lightshowrom>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Lab07\CompareEQU.vhd" into library kjb5568_rjl5336_library
+Parsing entity <CompareEQU>.
+Parsing architecture <structural> of entity <compareequ>.
+Parsing VHDL file "K:/Lab04/kjb5568_rjl5336_library/numeric_display.vhd" into library kjb5568_rjl5336_library
 Parsing entity <WordTo8dig7seg>.
 Parsing architecture <Behavioral> of entity <wordto8dig7seg>.
-Parsing VHDL file "E:\Lab07\Lab07_egw100.vhd" into library work
+Parsing VHDL file "C:\Users\Kevin\Desktop\Lab07\LightShowDatapath.vhd" into library work
+Parsing entity <LightShowDatapath>.
+Parsing architecture <Structural> of entity <lightshowdatapath>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Lab07\LightShowControl.vhd" into library work
+Parsing entity <LightShowControl>.
+Parsing architecture <FSM> of entity <lightshowcontrol>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Lab07\Lab07_egw100.vhd" into library work
 Parsing entity <Lab07_egw100>.
 Parsing architecture <Structural> of entity <lab07_egw100>.
 
@@ -146,7 +146,7 @@ Parsing architecture <Structural> of entity <lab07_egw100>.
 Elaborating entity <Lab07_egw100> (architecture <Structural>) from library <work>.
 
 Elaborating entity <LightShowControl> (architecture <FSM>) from library <work>.
-INFO:HDLCompiler:679 - "E:\Lab07\LightShowControl.vhd" Line 157. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\Lab07\LightShowControl.vhd" Line 157. Case statement is complete. others clause is never selected
 
 Elaborating entity <LightShowDatapath> (architecture <Structural>) from library <work>.
 
@@ -175,15 +175,15 @@ Elaborating entity <hextosevenseg> (architecture <structural>) from library <kjb
 =========================================================================
 
 Synthesizing Unit <Lab07_egw100>.
-    Related source file is "E:\Lab07\Lab07_egw100.vhd".
+    Related source file is "C:\Users\Kevin\Desktop\Lab07\Lab07_egw100.vhd".
 WARNING:Xst:647 - Input <SWITCH<5:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "E:\Lab07\Lab07_egw100.vhd" line 71: Output port <DEBUG_out> of the instance <FSM_LIGHT_SHOW> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Lab07\Lab07_egw100.vhd" line 71: Output port <DEBUG_out> of the instance <FSM_LIGHT_SHOW> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Lab07_egw100> synthesized.
 
 Synthesizing Unit <LightShowControl>.
-    Related source file is "E:\Lab07\LightShowControl.vhd".
+    Related source file is "C:\Users\Kevin\Desktop\Lab07\LightShowControl.vhd".
 WARNING:Xst:647 - Input <BUTTON<4:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit register for signal <presentState>.
     Found finite state machine <FSM_0> for signal <presentState>.
@@ -205,7 +205,7 @@ WARNING:Xst:647 - Input <BUTTON<4:4>> is never used. This port will be preserved
 Unit <LightShowControl> synthesized.
 
 Synthesizing Unit <LightShowDatapath>.
-    Related source file is "E:\Lab07\LightShowDatapath.vhd".
+    Related source file is "C:\Users\Kevin\Desktop\Lab07\LightShowDatapath.vhd".
     Found 10-bit adder for signal <PC[9]_GND_7_o_add_0_OUT> created at line 1241.
     Found 16x1-bit Read Only RAM for signal <STATUS_out<1>>
     Summary:
@@ -215,7 +215,7 @@ Synthesizing Unit <LightShowDatapath>.
 Unit <LightShowDatapath> synthesized.
 
 Synthesizing Unit <Reg_nbit_1>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\Reg_nbit.vhd".
+    Related source file is "K:/Lab04/kjb5568_rjl5336_library/Reg_nbit.vhd".
         n = 10
     Found 10-bit register for signal <Q>.
     Summary:
@@ -223,7 +223,7 @@ Synthesizing Unit <Reg_nbit_1>.
 Unit <Reg_nbit_1> synthesized.
 
 Synthesizing Unit <LightShowROM>.
-    Related source file is "E:\Lab07\LightShowROM.vhd".
+    Related source file is "C:\Users\Kevin\Desktop\Lab07\LightShowROM.vhd".
     Found 20-bit register for signal <DATA_out>.
     Found 1024x20-bit Read Only RAM for signal <ADDRESS[9]_GND_9_o_wide_mux_0_OUT>
     Summary:
@@ -232,7 +232,7 @@ Synthesizing Unit <LightShowROM>.
 Unit <LightShowROM> synthesized.
 
 Synthesizing Unit <Reg_nbit_2>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\Reg_nbit.vhd".
+    Related source file is "K:/Lab04/kjb5568_rjl5336_library/Reg_nbit.vhd".
         n = 16
     Found 16-bit register for signal <Q>.
     Summary:
@@ -240,7 +240,7 @@ Synthesizing Unit <Reg_nbit_2>.
 Unit <Reg_nbit_2> synthesized.
 
 Synthesizing Unit <pulse_gen>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\pulse_gen.vhd".
+    Related source file is "K:/Lab04/kjb5568_rjl5336_library/pulse_gen.vhd".
         n = 17
         maxCount = 100000
     Summary:
@@ -248,7 +248,7 @@ Synthesizing Unit <pulse_gen>.
 Unit <pulse_gen> synthesized.
 
 Synthesizing Unit <Counter_nbit_1>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd".
+    Related source file is "K:/Lab04/kjb5568_rjl5336_library/Counter_nbit.vhd".
         n = 17
     Found 17-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
@@ -259,7 +259,7 @@ Synthesizing Unit <Counter_nbit_1>.
 Unit <Counter_nbit_1> synthesized.
 
 Synthesizing Unit <Counter_nbit_2>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd".
+    Related source file is "K:/Lab04/kjb5568_rjl5336_library/Counter_nbit.vhd".
         n = 16
     Found 16-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
@@ -270,7 +270,7 @@ Synthesizing Unit <Counter_nbit_2>.
 Unit <Counter_nbit_2> synthesized.
 
 Synthesizing Unit <CompareEQU>.
-    Related source file is "E:\Lab07\CompareEQU.vhd".
+    Related source file is "C:\Users\Kevin\Desktop\Lab07\CompareEQU.vhd".
         n = 16
     Found 16-bit comparator equal for signal <EQU> created at line 36
     Summary:
@@ -278,7 +278,7 @@ Synthesizing Unit <CompareEQU>.
 Unit <CompareEQU> synthesized.
 
 Synthesizing Unit <WordTo8dig7seg>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\numeric_display.vhd".
+    Related source file is "K:/Lab04/kjb5568_rjl5336_library/numeric_display.vhd".
     Found 8x8-bit Read Only RAM for signal <anode>
     Found 4-bit 8-to-1 multiplexer for signal <w2h> created at line 39.
     Summary:
@@ -287,7 +287,7 @@ Synthesizing Unit <WordTo8dig7seg>.
 Unit <WordTo8dig7seg> synthesized.
 
 Synthesizing Unit <Counter_nbit_3>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\Counter_nbit.vhd".
+    Related source file is "K:/Lab04/kjb5568_rjl5336_library/Counter_nbit.vhd".
         n = 3
     Found 3-bit register for signal <Q>.
     Found 32-bit register for signal <count>.
@@ -298,7 +298,7 @@ Synthesizing Unit <Counter_nbit_3>.
 Unit <Counter_nbit_3> synthesized.
 
 Synthesizing Unit <hextosevenseg>.
-    Related source file is "E:\Lab04\kjb5568_rjl5336_library\hextosevenseg.vhd".
+    Related source file is "K:/Lab04/kjb5568_rjl5336_library/hextosevenseg.vhd".
     Found 16x7-bit Read Only RAM for signal <Segment>
     Summary:
 	inferred   1 RAM(s).
@@ -791,12 +791,12 @@ CLK            |    3.598|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 24.91 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.89 secs
  
 --> 
 
-Total memory usage is 405528 kilobytes
+Total memory usage is 406500 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   62 (   0 filtered)

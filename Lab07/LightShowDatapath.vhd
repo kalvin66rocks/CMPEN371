@@ -6,6 +6,7 @@
 --
 -- Revision History (date, initials, description):
 --    11 Oct 15, egw100, updated for FA 15
+-- 	20 Oct 15, kjb5568 rjl5336, updated to use our components
 -- Dependencies:
 --		EGWComponents.pkg
 ----------------------------------------------------------------------------
