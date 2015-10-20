@@ -60,6 +60,10 @@ architecture Behavioral of LightShowROM is
           x"1"  & "0000000000001111", -- Delay 31 ms (approx 1/64 sec)
 
           x"8"  & "0000000000000000", -- Jump 0
+          x"9"  & "0000000000000000", -- Branch if right is pushed
+          x"10" & "0000000000000000", -- Branch if center is pushed
+			 x"12" & "0000000000000000", -- Branch if left is pushed
+                --"0000001111111111"
           
           others => (others => '0')
 	);
