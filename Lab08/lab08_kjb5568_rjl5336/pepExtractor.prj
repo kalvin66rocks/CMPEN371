@@ -1,0 +1,7 @@
+kjb5568_rjl5336_library	"../kjb5568_rjl5336_library/CompareEQU.vhd"
+kjb5568_rjl5336_library	"../kjb5568_rjl5336_library/Counter_nbit.vhd"
+kjb5568_rjl5336_library	"../kjb5568_rjl5336_library/DFF_enable.vhd"
+kjb5568_rjl5336_library	"../kjb5568_rjl5336_library/LST.vhd"
+kjb5568_rjl5336_library	"../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd"
+kjb5568_rjl5336_library	"../kjb5568_rjl5336_library/pulse_gen.vhd"
+work	"VGA_Control.vhd"

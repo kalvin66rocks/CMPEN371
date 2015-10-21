@@ -1,0 +1,12 @@
+AR counter_nbit behavioral C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/Counter_nbit.vhd sub00/vhpl03 1445459118
+PB kjb5568_rjl5336_components kjb5568_rjl5336_components C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd sub00/vhpl01 1445459116
+AR lst structural C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/LST.vhd sub00/vhpl09 1445459124
+EN pulse_gen NULL C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/pulse_gen.vhd sub00/vhpl10 1445459125
+PH kjb5568_rjl5336_components NULL C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd sub00/vhpl00 1445459115
+AR pulse_gen behavioral C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/pulse_gen.vhd sub00/vhpl11 1445459126
+EN lst NULL C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/LST.vhd sub00/vhpl08 1445459123
+EN compareequ NULL C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/CompareEQU.vhd sub00/vhpl04 1445459119
+AR compareequ structural C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/CompareEQU.vhd sub00/vhpl05 1445459120
+EN counter_nbit NULL C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/Counter_nbit.vhd sub00/vhpl02 1445459117
+EN dff_ce NULL C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/DFF_enable.vhd sub00/vhpl06 1445459121
+AR dff_ce behavioral C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/../kjb5568_rjl5336_library/DFF_enable.vhd sub00/vhpl07 1445459122

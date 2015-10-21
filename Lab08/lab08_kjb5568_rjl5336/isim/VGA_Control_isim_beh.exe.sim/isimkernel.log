@@ -1,0 +1,10 @@
+Command line:
+   VGA_Control_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60551
+
+Wed Oct 21 17:27:46 2015
+
+
+ Elaboration Time: 0.03125 sec
