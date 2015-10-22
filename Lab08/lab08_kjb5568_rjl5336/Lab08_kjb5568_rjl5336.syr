@@ -108,9 +108,6 @@ Slice Utilization Ratio Delta      : 5
 Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\kjb5568_rjl5336_components.vhd" into library kjb5568_rjl5336_library
 Parsing package <kjb5568_rjl5336_Components>.
 Parsing package body <kjb5568_rjl5336_Components>.
-Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\Counter_nbit.vhd" into library kjb5568_rjl5336_library
-Parsing entity <Counter_nbit>.
-Parsing architecture <Behavioral> of entity <counter_nbit>.
 Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\pulse_gen.vhd" into library kjb5568_rjl5336_library
 Parsing entity <pulse_gen>.
 Parsing architecture <Behavioral> of entity <pulse_gen>.
@@ -120,6 +117,9 @@ Parsing architecture <structural> of entity <lst>.
 Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\DFF_enable.vhd" into library kjb5568_rjl5336_library
 Parsing entity <DFF_CE>.
 Parsing architecture <Behavioral> of entity <dff_ce>.
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\Counter_nbit.vhd" into library kjb5568_rjl5336_library
+Parsing entity <Counter_nbit>.
+Parsing architecture <Behavioral> of entity <counter_nbit>.
 Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\CompareGRT.vhd" into library kjb5568_rjl5336_library
 Parsing entity <CompareGRT>.
 Parsing architecture <structural> of entity <comparegrt>.
@@ -129,12 +129,6 @@ Parsing architecture <structural> of entity <compareequ>.
 Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" into library work
 Parsing entity <VGA_Control>.
 Parsing architecture <Behavioral> of entity <vga_control>.
-WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 80: Actual for formal port clr is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 84: Actual for formal port en is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 86: Actual for formal port clr is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 130: Actual for formal port d is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 136: Actual for formal port d is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 142: Actual for formal port d is neither a static name nor a globally static expression
 Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd" into library work
 Parsing entity <Lab08_kjb5568_rjl5336>.
 Parsing architecture <Structural> of entity <lab08_kjb5568_rjl5336>.
@@ -146,17 +140,8 @@ Parsing architecture <Structural> of entity <lab08_kjb5568_rjl5336>.
 Elaborating entity <Lab08_kjb5568_rjl5336> (architecture <Structural>) from library <work>.
 
 Elaborating entity <VGA_Control> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 60: Using initial value "1100011111" for v799 since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 62: Using initial value "1010000000" for v640 since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 63: Using initial value "1010010000" for v656 since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 64: Using initial value "1011101111" for v751 since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 65: Using initial value "0111100000" for v480 since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 66: Using initial value "0111101010" for v490 since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" Line 67: Using initial value "0111101011" for v491 since it is never assigned
 
 Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
-
-Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 
@@ -167,7 +152,6 @@ Elaborating entity <LST> (architecture <structural>) with generics from library 
 Elaborating entity <CompareGRT> (architecture <structural>) with generics from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <DFF_CE> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
-WARNING:HDLCompiler:92 - "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\DFF_enable.vhd" Line 47: ce should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -176,7 +160,6 @@ WARNING:HDLCompiler:92 - "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_libra
 Synthesizing Unit <Lab08_kjb5568_rjl5336>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd".
 WARNING:Xst:647 - Input <Switch<15:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <BUTTON> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd" line 49: Output port <X_out> of the instance <Inst_VGA_Control> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd" line 49: Output port <Y_out> of the instance <Inst_VGA_Control> is unconnected or connected to loadless signal.
     Summary:
@@ -185,8 +168,6 @@ Unit <Lab08_kjb5568_rjl5336> synthesized.
 
 Synthesizing Unit <VGA_Control>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd".
-WARNING:Xst:653 - Signal <X_out> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <Y_out> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <VGA_Control> synthesized.
@@ -194,32 +175,23 @@ Unit <VGA_Control> synthesized.
 Synthesizing Unit <pulse_gen>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\pulse_gen.vhd".
         n = 3
-        maxCount = 5
+        maxCount = 3
+    Found 3-bit register for signal <count>.
+    Found 3-bit adder for signal <count[2]_count[2]_mux_1_OUT> created at line 1241.
     Summary:
-	no macro.
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
 Unit <pulse_gen> synthesized.
 
-Synthesizing Unit <Counter_nbit_1>.
-    Related source file is "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\Counter_nbit.vhd".
-        n = 3
-    Found 3-bit register for signal <Q>.
-    Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_count[31]_mux_1_OUT> created at line 44.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  35 D-type flip-flop(s).
-Unit <Counter_nbit_1> synthesized.
-
-Synthesizing Unit <Counter_nbit_2>.
+Synthesizing Unit <Counter_nbit>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\Counter_nbit.vhd".
         n = 10
-    Found 10-bit register for signal <Q>.
-    Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_10_o_add_0_OUT> created at line 44.
+    Found 10-bit register for signal <count>.
+    Found 10-bit adder for signal <count[9]_GND_9_o_add_0_OUT> created at line 1241.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  42 D-type flip-flop(s).
-Unit <Counter_nbit_2> synthesized.
+	inferred  10 D-type flip-flop(s).
+Unit <Counter_nbit> synthesized.
 
 Synthesizing Unit <CompareEQU>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\CompareEQU.vhd".
@@ -261,12 +233,12 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 3
- 32-bit adder                                          : 3
-# Registers                                            : 9
+ 10-bit adder                                          : 2
+ 3-bit adder                                           : 1
+# Registers                                            : 6
  1-bit register                                        : 3
  10-bit register                                       : 2
  3-bit register                                        : 1
- 32-bit register                                       : 3
 # Comparators                                          : 14
  10-bit comparator equal                               : 2
  10-bit comparator greater                             : 6
@@ -282,22 +254,23 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <Counter_nbit_1>.
+Synthesizing (advanced) Unit <Counter_nbit>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
-Unit <Counter_nbit_1> synthesized (advanced).
+Unit <Counter_nbit> synthesized (advanced).
 
-Synthesizing (advanced) Unit <Counter_nbit_2>.
+Synthesizing (advanced) Unit <pulse_gen>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
-Unit <Counter_nbit_2> synthesized (advanced).
+Unit <pulse_gen> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
 # Counters                                             : 3
- 32-bit up counter                                     : 3
-# Registers                                            : 26
- Flip-Flops                                            : 26
+ 10-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+# Registers                                            : 3
+ Flip-Flops                                            : 3
 # Comparators                                          : 14
  10-bit comparator equal                               : 2
  10-bit comparator greater                             : 6
@@ -310,67 +283,15 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_3> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_4> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_5> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_6> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_7> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_8> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_9> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_10> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_11> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_12> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_13> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_14> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_15> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_16> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_17> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_18> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_19> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_20> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_21> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_22> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_23> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_24> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_25> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_26> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_27> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_28> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_29> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_30> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <Pulse25/cnt/count_31> of sequential type is unconnected in block <VGA_Control>.
-WARNING:Xst:2677 - Node <count_10> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_11> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_12> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_13> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_14> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_15> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_16> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_17> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_18> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_19> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_20> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_21> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_22> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_23> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_24> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_25> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_26> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_27> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_28> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_29> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_30> of sequential type is unconnected in block <Counter_nbit_2>.
-WARNING:Xst:2677 - Node <count_31> of sequential type is unconnected in block <Counter_nbit_2>.
 
 Optimizing unit <Lab08_kjb5568_rjl5336> ...
-
-Optimizing unit <Counter_nbit_2> ...
 
 Optimizing unit <VGA_Control> ...
 WARNING:Xst:1426 - The value init of the FF/Latch hold_Vsync/Q hinder the constant cleaning in the block VGA_Control.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch hold_Vsync/Q hinder the constant cleaning in the block VGA_Control.
    You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <Inst_VGA_Control/Pulse25/count_2> (without init value) has a constant value of 0 in block <Lab08_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -382,8 +303,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 49
- Flip-Flops                                            : 49
+# Registers                                            : 25
+ Flip-Flops                                            : 25
 
 =========================================================================
 
@@ -406,22 +327,23 @@ Top Level Output File Name         : Lab08_kjb5568_rjl5336.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 134
+# BELS                             : 90
 #      GND                         : 1
 #      INV                         : 3
-#      LUT1                        : 20
-#      LUT2                        : 12
-#      LUT3                        : 14
-#      LUT4                        : 12
+#      LUT1                        : 18
+#      LUT2                        : 14
+#      LUT3                        : 2
+#      LUT4                        : 2
 #      LUT5                        : 2
-#      LUT6                        : 26
-#      MUXCY                       : 20
+#      LUT6                        : 9
+#      MUXCY                       : 18
 #      VCC                         : 1
-#      XORCY                       : 23
-# FlipFlops/Latches                : 49
-#      FD                          : 29
+#      XORCY                       : 20
+# FlipFlops/Latches                : 25
+#      FD                          : 1
 #      FDE                         : 3
-#      FDR                         : 17
+#      FDR                         : 2
+#      FDRE                        : 19
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 26
@@ -435,19 +357,19 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              49  out of  126800     0%  
- Number of Slice LUTs:                   89  out of  63400     0%  
-    Number used as Logic:                89  out of  63400     0%  
+ Number of Slice Registers:              25  out of  126800     0%  
+ Number of Slice LUTs:                   50  out of  63400     0%  
+    Number used as Logic:                50  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     92
-   Number with an unused Flip Flop:      43  out of     92    46%  
-   Number with an unused LUT:             3  out of     92     3%  
-   Number of fully used LUT-FF pairs:    46  out of     92    50%  
-   Number of unique control sets:         4
+ Number of LUT Flip Flop pairs used:     51
+   Number with an unused Flip Flop:      26  out of     51    50%  
+   Number with an unused LUT:             1  out of     51     1%  
+   Number of fully used LUT-FF pairs:    24  out of     51    47%  
+   Number of unique control sets:         5
 
 IO Utilization: 
- Number of IOs:                          36
+ Number of IOs:                          31
  Number of bonded IOBs:                  27  out of    210    12%  
 
 Specific Feature Utilization:
@@ -474,7 +396,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk                                | BUFGP                  | 49    |
+Clk                                | BUFGP                  | 25    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -485,7 +407,7 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.435ns (Maximum Frequency: 291.121MHz)
+   Minimum period: 3.353ns (Maximum Frequency: 298.240MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 1.609ns
    Maximum combinational path delay: 0.945ns
@@ -496,26 +418,26 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 3.435ns (frequency: 291.121MHz)
-  Total number of paths / destination ports: 1281 / 68
+  Clock period: 3.353ns (frequency: 298.240MHz)
+  Total number of paths / destination ports: 644 / 67
 -------------------------------------------------------------------------
-Delay:               3.435ns (Levels of Logic = 2)
-  Source:            Inst_VGA_Control/Pulse25/cnt/Q_1 (FF)
-  Destination:       Inst_VGA_Control/Vcount/Q_9 (FF)
+Delay:               3.353ns (Levels of Logic = 2)
+  Source:            Inst_VGA_Control/Vcount/count_0 (FF)
+  Destination:       Inst_VGA_Control/Vcount/count_9 (FF)
   Source Clock:      Clk rising
   Destination Clock: Clk rising
 
-  Data Path: Inst_VGA_Control/Pulse25/cnt/Q_1 to Inst_VGA_Control/Vcount/Q_9
+  Data Path: Inst_VGA_Control/Vcount/count_0 to Inst_VGA_Control/Vcount/count_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             19   0.478   0.835  Inst_VGA_Control/Pulse25/cnt/Q_1 (Inst_VGA_Control/Pulse25/cnt/Q_1)
-     LUT3:I0->O           13   0.124   0.856  Inst_VGA_Control/pixelCLK_RollH_AND_4_o121 (Inst_VGA_Control/pixelCLK)
-     LUT6:I2->O           20   0.124   0.524  Inst_VGA_Control/pixelCLK_RollH_AND_4_o (Inst_VGA_Control/pixelCLK_RollH_AND_4_o)
-     FDR:R                     0.494          Inst_VGA_Control/Vcount/Q_9
+     FD:C->Q               4   0.478   0.959  Inst_VGA_Control/Vcount/count_0 (Inst_VGA_Control/Vcount/count_0)
+     LUT6:I0->O            1   0.124   0.716  Inst_VGA_Control/Vcount_clear_SW0 (N2)
+     LUT6:I3->O           10   0.124   0.458  Inst_VGA_Control/Vcount_clear (Inst_VGA_Control/Vcount_clear)
+     FDRE:R                    0.494          Inst_VGA_Control/Vcount/count_1
     ----------------------------------------
-    Total                      3.435ns (1.220ns logic, 2.215ns route)
-                                       (35.5% logic, 64.5% route)
+    Total                      3.353ns (1.220ns logic, 2.133ns route)
+                                       (36.4% logic, 63.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
@@ -566,20 +488,20 @@ Clock to Setup on destination clock Clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |    3.435|         |         |         |
+Clk            |    3.353|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.16 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.61 secs
  
 --> 
 
-Total memory usage is 405956 kilobytes
+Total memory usage is 405972 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   71 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

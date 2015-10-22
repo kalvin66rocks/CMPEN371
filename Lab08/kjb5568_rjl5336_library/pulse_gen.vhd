@@ -26,7 +26,7 @@ use kjb5568_rjl5336_library.kjb5568_rjl5336_components.all;
 
 entity pulse_gen is
  generic (n : integer := 4;
-	maxCount : natural := 9);
+	maxCount : integer := 9);
 	port (EN : in STD_LOGIC;
 	CLK : in STD_LOGIC;
 	CLR : in STD_LOGIC;
@@ -42,13 +42,18 @@ signal count : std_logic_vector(n-1 downto 0);
 
 begin
 
-cnt: counter_nbit generic map (n => n) port map(
-	EN => EN,
-	CLK => CLK,
-	CLR => clear,
-	Q => count);
+process (clk) is 
+begin
+ if(clk'event and clk='1') then
+	if (clear ='1') then
+		count <= (others => '0');
+	elsif (en='1') then
+		count <= STD_LOGIC_VECTOR(unsigned(count)+1);
+	end if;
+ end if;
+end process;
 	
-pulse_int <= '1' when (to_integer(unsigned( count(n-1 downto 0))))= maxcount else
+pulse_int <= '1' when (to_integer(unsigned( count))= maxcount) else
 				 '0';
 pulse <= pulse_int;
 

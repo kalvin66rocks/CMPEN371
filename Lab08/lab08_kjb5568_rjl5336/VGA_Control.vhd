@@ -19,17 +19,9 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_STD.ALL; 
 library kjb5568_rjl5336_Library;
 use     kjb5568_rjl5336_Library.kjb5568_rjl5336_Components.all;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity VGA_Control is
     Port ( X_out 		: out  STD_LOGIC_VECTOR (9 downto 0);
@@ -47,108 +39,126 @@ architecture Behavioral of VGA_Control is
 signal pixelCLK : std_logic;
 signal RollH	 : std_logic;
 signal RollV	 : std_logic;
+signal Vcount_clear	 : std_logic;
+signal Hcount_clear	 : std_logic;
+signal Vcount_en	 : std_logic;
+signal holdActive	 : std_logic;
+signal DholdH	 : std_logic;
+signal DholdV	 : std_logic;
 signal HActive	 : std_logic;
 signal VActive	 : std_logic;
 signal H_lt_656 : std_logic;
 signal V_lt_490 : std_logic;
 signal V_gt_491 : std_logic;
 signal H_gt_751 : std_logic;
-signal sel		 : std_logic;
 signal RGB_enable_Reg		 : std_logic;
 signal X_out_int : STD_LOGIC_VECTOR (9 downto 0);
 signal y_out_int : STD_LOGIC_VECTOR (9 downto 0);
-signal v799		 : STD_LOGIC_VECTOR (9 downto 0) := "1100011111";
-signal v524		 : STD_LOGIC_VECTOR (9 downto 0) := "1000001100";
-signal v640		 : STD_LOGIC_VECTOR (9 downto 0) := "1010000000";
-signal v656		 : STD_LOGIC_VECTOR (9 downto 0) := "1010010000";
-signal v751		 : STD_LOGIC_VECTOR (9 downto 0) := "1011101111";
-signal v480		 : STD_LOGIC_VECTOR (9 downto 0) := "0111100000";
-signal v490		 : STD_LOGIC_VECTOR (9 downto 0) := "0111101010";
-signal v491		 : STD_LOGIC_VECTOR (9 downto 0) := "0111101011";
 
 begin
 
-Pulse25 : Pulse_Gen generic map (4, 16) port map (
+
+
+
+Pulse25 : Pulse_Gen generic map (3, 3) port map (
 		EN    => '1',
 		CLK   => CLK,
 		CLR   => '0',
 		PULSE => pixelCLK );
 		
+		
+------------------------------------------------------------------
+Hcount_clear <= '1' when ( pixelCLK = '1' and RollH = '1') else '0';
+--horizontal
+		
 Hcount : Counter_nbit generic map (10) port map (
 		EN    => pixelCLK,
 		CLK   => CLK,
-		CLR   => pixelCLK and RollH,
+		CLR   => Hcount_clear,
 		Q		=> X_out_int );
-		
-Vcount : Counter_nbit generic map (10) port map (
-		EN    => pixelCLK and RollH,
-		CLK   => CLK,
-		CLR   => pixelCLK and RollV and RollH,
-		Q		=> Y_out_int );
 		
 EQ799 : CompareEQU generic map (10) port map (
 		X => X_out_int,
-		Y => v799,
+		Y => "1100011111",
 		EQU => RollH);
 		
 LES640 : LST generic map (10) port map (
 		A =>	X_out_int,
-		B =>	v640,
-		OUTPUT =>	HActive);
+		B =>	"1010000000",
+		OUTPUT =>	H_LT_656);
 		
 LES656 : LST generic map (10) port map (
 		A =>	X_out_int,
-		B =>	v656,
-		OUTPUT =>	H_LT_656);
+		B =>	"1010010000",
+		OUTPUT =>	HActive);
 		
 GRT751 : CompareGRT generic map (10) port map (
 		A =>	X_out_int,
-		B =>	v751,
-		OUTPUT =>	H_GT_751);	
+		B =>	"1011101111",
+		OUTPUT =>	H_GT_751);
+		
+x_out <= X_out_int;
+		
+-----------------------------------------------------------------
+Vcount_clear <= '1' when (pixelCLK = '1' and RollV = '1' and RollH = '1') else '0';
+Vcount_en <= '1' when (pixelCLK = '1' and RollH = '1') else '0';	
+--vertical		
+		
+Vcount : Counter_nbit generic map (10) port map (
+		EN    => Vcount_en,
+		CLK   => CLK,
+		CLR   => Vcount_clear,
+		Q		=> Y_out_int );
 		
 EQ524 : CompareEQU generic map (10) port map (
 		X => Y_out_int,
-		Y => v799,
+		Y => "1000001100",
 		EQU => RollV);
 		
 LES480 : LST generic map (10) port map (
 		A =>	Y_out_int,
-		B =>	v480,
+		B =>	"0111100000",
 		OUTPUT =>	VActive);
 		
 LES490 : LST generic map (10) port map (
 		A =>	Y_out_int,
-		B =>	v490,
+		B =>	"0111101010",
 		OUTPUT =>	V_LT_490);
 		
 GRT491 : CompareGRT generic map (10) port map (
 		A =>	Y_out_int,
-		B =>	v491,
+		B =>	"0111101011",
 		OUTPUT =>	V_GT_491);	
 		
+y_out <= y_out_int;		
+
+----------------------------------------------------------------
+--flip flops
+
+DholdH <= H_GT_751 or H_LT_656;
 hold_Hsync : DFF_CE port map (
-		D => H_GT_751 or H_LT_656,
+		D => DholdH,
 		CE => pixelCLK,
 		CLK => CLK,
 		Q => Hsync);
-		
+	
+DholdV <= V_GT_491 or V_LT_490;
 hold_Vsync : DFF_CE port map (
-		D => V_GT_491 or V_LT_490,
+		D => DholdV,
 		CE => pixelCLK,
 		CLK => CLK,
 		Q => Vsync);
-	
+
+
+holdActive <= HActive and VActive;
 hold_rgb_enable : DFF_CE port map (
-		D => HActive and VActive,
+		D => holdActive,
 		CE => pixelCLK,
 		CLK => CLK,
 		Q => RGB_enable_Reg);
 
-sel <= RGB_enable_Reg;
-
-with sel select
-	RGB_out	 <= RGB_in when '1',
-					 x"000" when '0';
+RGB_out	 <= RGB_in when( RGB_enable_Reg = '1') else
+				x"000";
 	
 
 
