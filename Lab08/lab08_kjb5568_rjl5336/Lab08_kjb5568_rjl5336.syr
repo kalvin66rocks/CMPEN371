@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: Lab08_kjb5568_rjl5336.prj
 
@@ -159,7 +159,6 @@ Elaborating entity <DFF_CE> (architecture <Behavioral>) from library <kjb5568_rj
 
 Synthesizing Unit <Lab08_kjb5568_rjl5336>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd".
-WARNING:Xst:647 - Input <Switch<15:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd" line 49: Output port <X_out> of the instance <Inst_VGA_Control> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd" line 49: Output port <Y_out> of the instance <Inst_VGA_Control> is unconnected or connected to loadless signal.
     Summary:
@@ -174,13 +173,13 @@ Unit <VGA_Control> synthesized.
 
 Synthesizing Unit <pulse_gen>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\pulse_gen.vhd".
-        n = 3
+        n = 2
         maxCount = 3
-    Found 3-bit register for signal <count>.
-    Found 3-bit adder for signal <count[2]_count[2]_mux_1_OUT> created at line 1241.
+    Found 2-bit register for signal <count>.
+    Found 2-bit adder for signal <count[1]_count[1]_mux_1_OUT> created at line 1241.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred   3 D-type flip-flop(s).
+	inferred   2 D-type flip-flop(s).
 Unit <pulse_gen> synthesized.
 
 Synthesizing Unit <Counter_nbit>.
@@ -234,11 +233,11 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 3
  10-bit adder                                          : 2
- 3-bit adder                                           : 1
+ 2-bit adder                                           : 1
 # Registers                                            : 6
  1-bit register                                        : 3
  10-bit register                                       : 2
- 3-bit register                                        : 1
+ 2-bit register                                        : 1
 # Comparators                                          : 14
  10-bit comparator equal                               : 2
  10-bit comparator greater                             : 6
@@ -268,7 +267,7 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 3
  10-bit up counter                                     : 2
- 3-bit up counter                                      : 1
+ 2-bit up counter                                      : 1
 # Registers                                            : 3
  Flip-Flops                                            : 3
 # Comparators                                          : 14
@@ -291,7 +290,6 @@ WARNING:Xst:1426 - The value init of the FF/Latch hold_Vsync/Q hinder the consta
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch hold_Vsync/Q hinder the constant cleaning in the block VGA_Control.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1710 - FF/Latch <Inst_VGA_Control/Pulse25/count_2> (without init value) has a constant value of 0 in block <Lab08_kjb5568_rjl5336>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -327,23 +325,23 @@ Top Level Output File Name         : Lab08_kjb5568_rjl5336.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 90
+# BELS                             : 100
 #      GND                         : 1
 #      INV                         : 3
 #      LUT1                        : 18
 #      LUT2                        : 14
 #      LUT3                        : 2
-#      LUT4                        : 2
-#      LUT5                        : 2
-#      LUT6                        : 9
+#      LUT4                        : 11
+#      LUT5                        : 4
+#      LUT6                        : 8
 #      MUXCY                       : 18
 #      VCC                         : 1
 #      XORCY                       : 20
 # FlipFlops/Latches                : 25
-#      FD                          : 1
+#      FD                          : 11
 #      FDE                         : 3
 #      FDR                         : 2
-#      FDRE                        : 19
+#      FDRE                        : 9
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 26
@@ -358,18 +356,18 @@ Selected Device : 7a100tcsg324-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:              25  out of  126800     0%  
- Number of Slice LUTs:                   50  out of  63400     0%  
-    Number used as Logic:                50  out of  63400     0%  
+ Number of Slice LUTs:                   60  out of  63400     0%  
+    Number used as Logic:                60  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     51
-   Number with an unused Flip Flop:      26  out of     51    50%  
-   Number with an unused LUT:             1  out of     51     1%  
-   Number of fully used LUT-FF pairs:    24  out of     51    47%  
-   Number of unique control sets:         5
+ Number of LUT Flip Flop pairs used:     61
+   Number with an unused Flip Flop:      36  out of     61    59%  
+   Number with an unused LUT:             1  out of     61     1%  
+   Number of fully used LUT-FF pairs:    24  out of     61    39%  
+   Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                          31
+ Number of IOs:                          27
  Number of bonded IOBs:                  27  out of    210    12%  
 
 Specific Feature Utilization:
@@ -407,7 +405,7 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.353ns (Maximum Frequency: 298.240MHz)
+   Minimum period: 3.264ns (Maximum Frequency: 306.373MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 1.609ns
    Maximum combinational path delay: 0.945ns
@@ -418,26 +416,26 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 3.353ns (frequency: 298.240MHz)
-  Total number of paths / destination ports: 644 / 67
+  Clock period: 3.264ns (frequency: 306.373MHz)
+  Total number of paths / destination ports: 653 / 47
 -------------------------------------------------------------------------
-Delay:               3.353ns (Levels of Logic = 2)
-  Source:            Inst_VGA_Control/Vcount/count_0 (FF)
+Delay:               3.264ns (Levels of Logic = 2)
+  Source:            Inst_VGA_Control/Hcount/count_3 (FF)
   Destination:       Inst_VGA_Control/Vcount/count_9 (FF)
   Source Clock:      Clk rising
   Destination Clock: Clk rising
 
-  Data Path: Inst_VGA_Control/Vcount/count_0 to Inst_VGA_Control/Vcount/count_9
+  Data Path: Inst_VGA_Control/Hcount/count_3 to Inst_VGA_Control/Vcount/count_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.478   0.959  Inst_VGA_Control/Vcount/count_0 (Inst_VGA_Control/Vcount/count_0)
-     LUT6:I0->O            1   0.124   0.716  Inst_VGA_Control/Vcount_clear_SW0 (N2)
-     LUT6:I3->O           10   0.124   0.458  Inst_VGA_Control/Vcount_clear (Inst_VGA_Control/Vcount_clear)
+     FD:C->Q               4   0.478   0.796  Inst_VGA_Control/Hcount/count_3 (Inst_VGA_Control/Hcount/count_3)
+     LUT4:I0->O            3   0.124   0.790  Inst_VGA_Control/Vcount_clear111 (Inst_VGA_Control/Vcount_clear11)
+     LUT6:I2->O           10   0.124   0.458  Inst_VGA_Control/Vcount_clear (Inst_VGA_Control/Vcount_clear)
      FDRE:R                    0.494          Inst_VGA_Control/Vcount/count_1
     ----------------------------------------
-    Total                      3.353ns (1.220ns logic, 2.133ns route)
-                                       (36.4% logic, 63.6% route)
+    Total                      3.264ns (1.220ns logic, 2.044ns route)
+                                       (37.4% logic, 62.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
@@ -488,20 +486,20 @@ Clock to Setup on destination clock Clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |    3.353|         |         |         |
+Clk            |    3.264|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.61 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.78 secs
  
 --> 
 
-Total memory usage is 405972 kilobytes
+Total memory usage is 405980 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    4 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

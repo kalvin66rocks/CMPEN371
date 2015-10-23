@@ -60,7 +60,7 @@ begin
 
 
 
-Pulse25 : Pulse_Gen generic map (3, 3) port map (
+Pulse25 : Pulse_Gen generic map (2, 3) port map (
 		EN    => '1',
 		CLK   => CLK,
 		CLR   => '0',

@@ -23,7 +23,7 @@ library kjb5568_rjl5336_Library;
 use     kjb5568_rjl5336_Library.kjb5568_rjl5336_Components.all;
 
 entity Lab08_kjb5568_rjl5336 is
-    Port ( Switch 	: in  STD_LOGIC_VECTOR (15 downto 0);
+    Port ( Switch 	: in  STD_LOGIC_VECTOR (11 downto 0);
 			  --BUTTON 	: in  STD_LOGIC_VECTOR (4 downto 0);
            Clk 		: in  STD_LOGIC;
            HSYNC 		: out  STD_LOGIC;
