@@ -29,10 +29,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 250796 kilobytes
+Total memory usage is 250756 kilobytes
 
 Writing NGD file "Lab08_kjb5568_rjl5336.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
-Total CPU time to NGDBUILD completion:   5 sec
+Total REAL time to NGDBUILD completion:  11 sec
+Total CPU time to NGDBUILD completion:   11 sec
 
 Writing NGDBUILD log file "Lab08_kjb5568_rjl5336.bld"...

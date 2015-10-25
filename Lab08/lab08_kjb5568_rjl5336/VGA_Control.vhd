@@ -135,14 +135,14 @@ y_out <= y_out_int;
 ----------------------------------------------------------------
 --flip flops
 
-DholdH <= H_GT_751 or H_LT_656;
+DholdH <= '1' when ( H_GT_751 = '1' or H_LT_656 = '1') else '0';
 hold_Hsync : DFF_CE port map (
 		D => DholdH,
 		CE => pixelCLK,
 		CLK => CLK,
 		Q => Hsync);
 	
-DholdV <= V_GT_491 or V_LT_490;
+DholdV <= '1' when ( V_GT_491 = '1' or V_LT_490 = '1') else '0';
 hold_Vsync : DFF_CE port map (
 		D => DholdV,
 		CE => pixelCLK,

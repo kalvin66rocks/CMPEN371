@@ -5,18 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">X_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_VGA_Control</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">Y_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_VGA_Control</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">hold_Vsync/Q</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">VGA_Control</arg>.
-You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">hold_Vsync/Q</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">VGA_Control</arg>.
-You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Button</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 </messages>

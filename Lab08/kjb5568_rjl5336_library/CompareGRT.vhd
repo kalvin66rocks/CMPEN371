@@ -34,8 +34,7 @@ architecture structural of CompareGRT is
 begin
 
 OUTPUT <= '1' when (A> B) else
-			 '0' when (B> A) else
-			 '1';
+			 '0';
 
 
 end structural;

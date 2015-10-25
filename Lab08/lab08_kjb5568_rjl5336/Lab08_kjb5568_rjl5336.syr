@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.60 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.62 secs
  
 --> Reading design: Lab08_kjb5568_rjl5336.prj
 
@@ -129,6 +129,9 @@ Parsing architecture <structural> of entity <compareequ>.
 Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\VGA_Control.vhd" into library work
 Parsing entity <VGA_Control>.
 Parsing architecture <Behavioral> of entity <vga_control>.
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" into library work
+Parsing entity <Image_Generator>.
+Parsing architecture <Behavioral> of entity <image_generator>.
 Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd" into library work
 Parsing entity <Lab08_kjb5568_rjl5336>.
 Parsing architecture <Structural> of entity <lab08_kjb5568_rjl5336>.
@@ -153,14 +156,14 @@ Elaborating entity <CompareGRT> (architecture <structural>) with generics from l
 
 Elaborating entity <DFF_CE> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
+Elaborating entity <Image_Generator> (architecture <Behavioral>) from library <work>.
+
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <Lab08_kjb5568_rjl5336>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd".
-INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd" line 49: Output port <X_out> of the instance <Inst_VGA_Control> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd" line 49: Output port <Y_out> of the instance <Inst_VGA_Control> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Lab08_kjb5568_rjl5336> synthesized.
@@ -203,21 +206,17 @@ Unit <CompareEQU> synthesized.
 Synthesizing Unit <LST>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\LST.vhd".
         n = 10
-    Found 10-bit comparator greater for signal <A[9]_B[9]_LessThan_1_o> created at line 27
-    Found 10-bit comparator lessequal for signal <B[9]_A[9]_LessThan_2_o> created at line 28
+    Found 10-bit comparator greater for signal <OUTPUT> created at line 27
     Summary:
-	inferred   2 Comparator(s).
-	inferred   1 Multiplexer(s).
+	inferred   1 Comparator(s).
 Unit <LST> synthesized.
 
 Synthesizing Unit <CompareGRT>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\CompareGRT.vhd".
         n = 10
-    Found 10-bit comparator greater for signal <B[9]_A[9]_LessThan_1_o> created at line 36
-    Found 10-bit comparator lessequal for signal <A[9]_B[9]_LessThan_2_o> created at line 37
+    Found 10-bit comparator greater for signal <OUTPUT> created at line 36
     Summary:
-	inferred   2 Comparator(s).
-	inferred   1 Multiplexer(s).
+	inferred   1 Comparator(s).
 Unit <CompareGRT> synthesized.
 
 Synthesizing Unit <DFF_CE>.
@@ -226,6 +225,13 @@ Synthesizing Unit <DFF_CE>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <DFF_CE> synthesized.
+
+Synthesizing Unit <Image_Generator>.
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd".
+WARNING:Xst:647 - Input <Button> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <Image_Generator> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -238,13 +244,11 @@ Macro Statistics
  1-bit register                                        : 3
  10-bit register                                       : 2
  2-bit register                                        : 1
-# Comparators                                          : 14
+# Comparators                                          : 16
  10-bit comparator equal                               : 2
- 10-bit comparator greater                             : 6
- 10-bit comparator lessequal                           : 6
-# Multiplexers                                         : 7
- 1-bit 2-to-1 multiplexer                              : 6
- 12-bit 2-to-1 multiplexer                             : 1
+ 10-bit comparator greater                             : 14
+# Multiplexers                                         : 3
+ 12-bit 2-to-1 multiplexer                             : 3
 
 =========================================================================
 
@@ -270,12 +274,11 @@ Macro Statistics
  2-bit up counter                                      : 1
 # Registers                                            : 3
  Flip-Flops                                            : 3
-# Comparators                                          : 14
+# Comparators                                          : 16
  10-bit comparator equal                               : 2
- 10-bit comparator greater                             : 6
- 10-bit comparator lessequal                           : 6
-# Multiplexers                                         : 1
- 12-bit 2-to-1 multiplexer                             : 1
+ 10-bit comparator greater                             : 14
+# Multiplexers                                         : 3
+ 12-bit 2-to-1 multiplexer                             : 3
 
 =========================================================================
 
@@ -286,10 +289,6 @@ Macro Statistics
 Optimizing unit <Lab08_kjb5568_rjl5336> ...
 
 Optimizing unit <VGA_Control> ...
-WARNING:Xst:1426 - The value init of the FF/Latch hold_Vsync/Q hinder the constant cleaning in the block VGA_Control.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch hold_Vsync/Q hinder the constant cleaning in the block VGA_Control.
-   You should achieve better results by setting this init to 1.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -325,23 +324,22 @@ Top Level Output File Name         : Lab08_kjb5568_rjl5336.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 100
+# BELS                             : 105
 #      GND                         : 1
 #      INV                         : 3
 #      LUT1                        : 18
-#      LUT2                        : 14
-#      LUT3                        : 2
-#      LUT4                        : 11
-#      LUT5                        : 4
-#      LUT6                        : 8
+#      LUT2                        : 2
+#      LUT4                        : 13
+#      LUT5                        : 19
+#      LUT6                        : 10
 #      MUXCY                       : 18
 #      VCC                         : 1
 #      XORCY                       : 20
 # FlipFlops/Latches                : 25
-#      FD                          : 11
+#      FD                          : 12
 #      FDE                         : 3
 #      FDR                         : 2
-#      FDRE                        : 9
+#      FDRE                        : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 26
@@ -356,18 +354,18 @@ Selected Device : 7a100tcsg324-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:              25  out of  126800     0%  
- Number of Slice LUTs:                   60  out of  63400     0%  
-    Number used as Logic:                60  out of  63400     0%  
+ Number of Slice LUTs:                   65  out of  63400     0%  
+    Number used as Logic:                65  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     61
-   Number with an unused Flip Flop:      36  out of     61    59%  
-   Number with an unused LUT:             1  out of     61     1%  
-   Number of fully used LUT-FF pairs:    24  out of     61    39%  
+ Number of LUT Flip Flop pairs used:     65
+   Number with an unused Flip Flop:      40  out of     65    61%  
+   Number with an unused LUT:             0  out of     65     0%  
+   Number of fully used LUT-FF pairs:    25  out of     65    38%  
    Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                          27
+ Number of IOs:                          32
  Number of bonded IOBs:                  27  out of    210    12%  
 
 Specific Feature Utilization:
@@ -405,10 +403,10 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.264ns (Maximum Frequency: 306.373MHz)
+   Minimum period: 3.225ns (Maximum Frequency: 310.078MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 1.609ns
-   Maximum combinational path delay: 0.945ns
+   Maximum output required time after clock: 3.768ns
+   Maximum combinational path delay: 1.300ns
 
 Timing Details:
 ---------------
@@ -416,52 +414,54 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 3.264ns (frequency: 306.373MHz)
-  Total number of paths / destination ports: 653 / 47
+  Clock period: 3.225ns (frequency: 310.078MHz)
+  Total number of paths / destination ports: 641 / 46
 -------------------------------------------------------------------------
-Delay:               3.264ns (Levels of Logic = 2)
-  Source:            Inst_VGA_Control/Hcount/count_3 (FF)
-  Destination:       Inst_VGA_Control/Vcount/count_9 (FF)
+Delay:               3.225ns (Levels of Logic = 2)
+  Source:            Inst_VGA_Control/Hcount/count_2 (FF)
+  Destination:       Inst_VGA_Control/Hcount/count_9 (FF)
   Source Clock:      Clk rising
   Destination Clock: Clk rising
 
-  Data Path: Inst_VGA_Control/Hcount/count_3 to Inst_VGA_Control/Vcount/count_9
+  Data Path: Inst_VGA_Control/Hcount/count_2 to Inst_VGA_Control/Hcount/count_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.478   0.796  Inst_VGA_Control/Hcount/count_3 (Inst_VGA_Control/Hcount/count_3)
-     LUT4:I0->O            3   0.124   0.790  Inst_VGA_Control/Vcount_clear111 (Inst_VGA_Control/Vcount_clear11)
-     LUT6:I2->O           10   0.124   0.458  Inst_VGA_Control/Vcount_clear (Inst_VGA_Control/Vcount_clear)
-     FDRE:R                    0.494          Inst_VGA_Control/Vcount/count_1
+     FDRE:C->Q             4   0.478   0.939  Inst_VGA_Control/Hcount/count_2 (Inst_VGA_Control/Hcount/count_2)
+     LUT5:I0->O            2   0.124   0.542  Inst_VGA_Control/Vcount_clear12 (Inst_VGA_Control/Vcount_clear11)
+     LUT4:I2->O           20   0.124   0.524  Inst_VGA_Control/Vcount_clear13 (Inst_VGA_Control/Hcount_clear)
+     FDRE:R                    0.494          Inst_VGA_Control/Hcount/count_2
     ----------------------------------------
-    Total                      3.264ns (1.220ns logic, 2.044ns route)
-                                       (37.4% logic, 62.6% route)
+    Total                      3.225ns (1.220ns logic, 2.005ns route)
+                                       (37.8% logic, 62.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
-  Total number of paths / destination ports: 14 / 14
+  Total number of paths / destination ports: 434 / 14
 -------------------------------------------------------------------------
-Offset:              1.609ns (Levels of Logic = 2)
-  Source:            Inst_VGA_Control/hold_rgb_enable/Q (FF)
+Offset:              3.768ns (Levels of Logic = 4)
+  Source:            Inst_VGA_Control/Hcount/count_8 (FF)
   Destination:       RGB_out<11> (PAD)
   Source Clock:      Clk rising
 
-  Data Path: Inst_VGA_Control/hold_rgb_enable/Q to RGB_out<11>
+  Data Path: Inst_VGA_Control/Hcount/count_8 to RGB_out<11>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             12   0.478   0.608  Inst_VGA_Control/hold_rgb_enable/Q (Inst_VGA_Control/hold_rgb_enable/Q)
-     LUT2:I0->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out13 (RGB_out_0_OBUF)
+     FDRE:C->Q             6   0.478   0.972  Inst_VGA_Control/Hcount/count_8 (Inst_VGA_Control/Hcount/count_8)
+     LUT6:I0->O            1   0.124   0.939  Inst_Image_Generator/v_les12_h_grt628_OR_16_o1 (Inst_Image_Generator/v_les12_h_grt628_OR_16_o1)
+     LUT6:I0->O           12   0.124   0.608  Inst_Image_Generator/v_les12_h_grt628_OR_16_o3 (Inst_Image_Generator/v_les12_h_grt628_OR_16_o3)
+     LUT5:I3->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out13 (RGB_out_0_OBUF)
      OBUF:I->O                 0.000          RGB_out_0_OBUF (RGB_out<0>)
     ----------------------------------------
-    Total                      1.609ns (0.602ns logic, 1.007ns route)
-                                       (37.4% logic, 62.6% route)
+    Total                      3.768ns (0.850ns logic, 2.918ns route)
+                                       (22.6% logic, 77.4% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
-Delay:               0.945ns (Levels of Logic = 3)
+Delay:               1.300ns (Levels of Logic = 3)
   Source:            Switch<11> (PAD)
   Destination:       RGB_out<11> (PAD)
 
@@ -469,12 +469,12 @@ Delay:               0.945ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.421  Switch_11_IBUF (Switch_11_IBUF)
-     LUT2:I1->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out31 (RGB_out_11_OBUF)
+     IBUF:I->O             1   0.001   0.776  Switch_11_IBUF (Switch_11_IBUF)
+     LUT5:I1->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out31 (RGB_out_11_OBUF)
      OBUF:I->O                 0.000          RGB_out_11_OBUF (RGB_out<11>)
     ----------------------------------------
-    Total                      0.945ns (0.125ns logic, 0.820ns route)
-                                       (13.2% logic, 86.8% route)
+    Total                      1.300ns (0.125ns logic, 1.175ns route)
+                                       (9.6% logic, 90.4% route)
 
 =========================================================================
 
@@ -486,20 +486,20 @@ Clock to Setup on destination clock Clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |    3.264|         |         |         |
+Clk            |    3.225|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.78 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.79 secs
  
 --> 
 
-Total memory usage is 405980 kilobytes
+Total memory usage is 405920 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 
