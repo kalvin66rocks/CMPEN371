@@ -1,4 +1,1 @@
-kjb5568_rjl5336_library	"../kjb5568_rjl5336_library/CompareGRT.vhd"
-kjb5568_rjl5336_library	"../kjb5568_rjl5336_library/LST.vhd"
-kjb5568_rjl5336_library	"../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd"
-work	"Image_Generator.vhd"
+kjb5568_rjl5336_library	"../kjb5568_rjl5336_library/Up_down_with_input_nbit.vhd"

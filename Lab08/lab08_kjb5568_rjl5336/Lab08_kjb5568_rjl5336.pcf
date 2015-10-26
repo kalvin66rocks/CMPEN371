@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Oct 25 15:16:30 2015
+// Written by: Map P.20131013 on Sun Oct 25 23:41:38 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -24,13 +24,33 @@ COMP "RGB_out<7>" LOCATE = SITE "D8" LEVEL 1;
 COMP "Switch<6>" LOCATE = SITE "V6" LEVEL 1;
 COMP "RGB_out<8>" LOCATE = SITE "C6" LEVEL 1;
 COMP "Switch<7>" LOCATE = SITE "V5" LEVEL 1;
+COMP "BUTTON<0>" LOCATE = SITE "T16" LEVEL 1;
 COMP "RGB_out<9>" LOCATE = SITE "A5" LEVEL 1;
 COMP "Switch<8>" LOCATE = SITE "U4" LEVEL 1;
+COMP "BUTTON<1>" LOCATE = SITE "V10" LEVEL 1;
 COMP "Switch<9>" LOCATE = SITE "V2" LEVEL 1;
+COMP "BUTTON<2>" LOCATE = SITE "R10" LEVEL 1;
+COMP "BUTTON<3>" LOCATE = SITE "E16" LEVEL 1;
+COMP "BUTTON<4>" LOCATE = SITE "F15" LEVEL 1;
 COMP "HSYNC" LOCATE = SITE "B11" LEVEL 1;
 COMP "Clk" LOCATE = SITE "E3" LEVEL 1;
 COMP "VSYNC" LOCATE = SITE "B12" LEVEL 1;
-TIMEGRP sys_clk_pin = BEL "Inst_VGA_Control/Hcount/count_9" BEL
+TIMEGRP sys_clk_pin = BEL "DB2/Flip1/Q" BEL "DB2/Flip2/Q" BEL "DB2/Flip3/Q"
+        BEL "DB0/Flip1/Q" BEL "DB0/Flip2/Q" BEL "DB0/Flip3/Q" BEL
+        "Pulse_d/count_11" BEL "Pulse_d/count_12" BEL "Pulse_d/count_13" BEL
+        "Pulse_d/count_14" BEL "Pulse_d/count_15" BEL "Pulse_d/count_16" BEL
+        "Pulse_d/count_17" BEL "Pulse_d/count_18" BEL "Pulse_d/count_19" BEL
+        "Inst_Image_Generator/rightCounter/count_9" BEL
+        "Inst_Image_Generator/rightCounter/count_8" BEL
+        "Inst_Image_Generator/rightCounter/count_7" BEL
+        "Inst_Image_Generator/rightCounter/count_6" BEL
+        "Inst_Image_Generator/rightCounter/count_5" BEL
+        "Inst_Image_Generator/rightCounter/count_4" BEL
+        "Inst_Image_Generator/rightCounter/count_3" BEL
+        "Inst_Image_Generator/rightCounter/count_2" BEL
+        "Inst_Image_Generator/rightCounter/count_1" BEL
+        "Inst_Image_Generator/rightCounter/count_0" BEL
+        "Inst_VGA_Control/Hcount/count_9" BEL
         "Inst_VGA_Control/Hcount/count_8" BEL
         "Inst_VGA_Control/Hcount/count_7" BEL
         "Inst_VGA_Control/Hcount/count_6" BEL
@@ -38,11 +58,16 @@ TIMEGRP sys_clk_pin = BEL "Inst_VGA_Control/Hcount/count_9" BEL
         "Inst_VGA_Control/Hcount/count_4" BEL
         "Inst_VGA_Control/Hcount/count_3" BEL
         "Inst_VGA_Control/Hcount/count_2" BEL
+        "Inst_VGA_Control/Hcount/count_1" BEL
+        "Inst_VGA_Control/Hcount/count_0" BEL
         "Inst_VGA_Control/Pulse25/count_1" BEL
         "Inst_VGA_Control/Pulse25/count_0" BEL "Inst_VGA_Control/hold_Hsync/Q"
         BEL "Inst_VGA_Control/hold_Vsync/Q" BEL
         "Inst_VGA_Control/hold_rgb_enable/Q" BEL
-        "Inst_VGA_Control/Vcount/count_0" BEL
+        "Inst_VGA_Control/Vcount/count_0" BEL "Pulse_d/count_0" BEL
+        "Pulse_d/count_1" BEL "Pulse_d/count_2" BEL "Pulse_d/count_3" BEL
+        "Pulse_d/count_4" BEL "Pulse_d/count_5" BEL "Pulse_d/count_6" BEL
+        "Pulse_d/count_7" BEL "Pulse_d/count_8" BEL
         "Inst_VGA_Control/Vcount/count_9" BEL
         "Inst_VGA_Control/Vcount/count_8" BEL
         "Inst_VGA_Control/Vcount/count_7" BEL
@@ -51,9 +76,8 @@ TIMEGRP sys_clk_pin = BEL "Inst_VGA_Control/Hcount/count_9" BEL
         "Inst_VGA_Control/Vcount/count_4" BEL
         "Inst_VGA_Control/Vcount/count_3" BEL
         "Inst_VGA_Control/Vcount/count_2" BEL
-        "Inst_VGA_Control/Vcount/count_1" BEL
-        "Inst_VGA_Control/Hcount/count_0" BEL
-        "Inst_VGA_Control/Hcount/count_1" BEL "Clk_BUFGP/BUFG";
+        "Inst_VGA_Control/Vcount/count_1" BEL "Pulse_d/count_9" BEL
+        "Pulse_d/count_10" BEL "Clk_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 

@@ -13,20 +13,21 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity CounterUpDown_nbit is
+entity Up_down_with_input_nbit is
   generic (n : integer := 8);
 	  port (EN : in STD_LOGIC;
 			  UP : in STD_LOGIC;
 			DOWN : in STD_LOGIC;
 			 CLK : in STD_LOGIC;
 			 CLR : in STD_LOGIC;
+		  INPUT : in STD_LOGIC_VECTOR (n-1 downto 0);
 				Q : out STD_LOGIC_VECTOR (n-1 downto 0));
-end CounterUpDown_nbit;
+end Up_down_with_input_nbit;
 
 
-architecture Behavioral of counterupdown_nbit is
+architecture Behavioral of Up_down_with_input_nbit is
 
-signal   count : STD_LOGIC_VECTOR (n-1 downto 0):= (others => '0') ;
+signal   count : STD_LOGIC_VECTOR (n-1 downto 0);
 
 begin
 
@@ -34,9 +35,9 @@ process (CLK) is
 begin 
 	if (CLK'event and CLK='1' and en = '1') then 
 		if(up = '1') then
-			count <= STD_LOGIC_VECTOR(unsigned(count)+1);
+			count <= STD_LOGIC_VECTOR(unsigned(input)+1);
 		elsif (down = '1') then 
-			count <= STD_LOGIC_VECTOR(unsigned(count)-1);
+			count <= STD_LOGIC_VECTOR(unsigned(input)+1) ;
 		elsif(CLR = '1') then 
 			count <= (others => '0');
 		end if;

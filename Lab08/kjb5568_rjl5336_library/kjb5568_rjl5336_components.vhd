@@ -183,6 +183,26 @@ package kjb5568_rjl5336_Components is
 		     CLR : in STD_LOGIC;
 			PULSE : out STD_LOGIC);
 	end component;
+	
+	component Up_down_with_input_nbit is
+		generic (n : integer := 8);
+	  port (EN : in STD_LOGIC;
+			  UP : in STD_LOGIC;
+			DOWN : in STD_LOGIC;
+			 CLK : in STD_LOGIC;
+			 CLR : in STD_LOGIC;
+		  INPUT : in STD_LOGIC_VECTOR (n-1 downto 0);
+				Q : out STD_LOGIC_VECTOR (n-1 downto 0));
+	end component;
+	
+	component Ripple_Carry_Adder is
+		generic (n: integer :=4);
+		Port ( A : in  STD_LOGIC_VECTOR (n-1 downto 0);
+           B : in  STD_LOGIC_VECTOR (n-1 downto 0);
+           C_in : in  STD_LOGIC;
+           C_out : out  STD_LOGIC;
+           SUM : out  STD_LOGIC_VECTOR (n-1 downto 0));
+	end component;
 
 
 end kjb5568_rjl5336_Components;
