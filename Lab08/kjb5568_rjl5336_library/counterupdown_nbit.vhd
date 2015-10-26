@@ -32,13 +32,15 @@ begin
 
 process (CLK) is 
 begin 
-	if (CLK'event and CLK='1' and en = '1') then 
-		if(up = '1') then
-			count <= STD_LOGIC_VECTOR(unsigned(count)+1);
-		elsif (down = '1') then 
-			count <= STD_LOGIC_VECTOR(unsigned(count)-1);
-		elsif(CLR = '1') then 
-			count <= (others => '0');
+	if (CLK'event and CLK='1') then 
+		if ( EN ='1') then	
+			if(up = '1') then
+				count <= STD_LOGIC_VECTOR(unsigned(count)+1);
+			elsif (down = '1') then 
+				count <= STD_LOGIC_VECTOR(unsigned(count)-1);
+			elsif(CLR = '1') then 
+				count <= (others => '0');
+			end if;
 		end if;
 	end if;
 	Q <= count; 

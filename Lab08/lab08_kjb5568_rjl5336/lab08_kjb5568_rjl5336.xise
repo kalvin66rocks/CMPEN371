@@ -34,12 +34,12 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/CompareEQU.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/CompareGRT.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/counter16hz.vhd" xil_pn:type="FILE_VHDL">
@@ -54,17 +54,17 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/counterupdown_nbit.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/Counter_nbit.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/Debouncer.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/DFF.vhd" xil_pn:type="FILE_VHDL">
@@ -74,7 +74,7 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/DFF_enable.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/encode__tb.vhd" xil_pn:type="FILE_VHDL">
@@ -108,7 +108,7 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/LST.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/maximum.vhd" xil_pn:type="FILE_VHDL">
@@ -159,7 +159,7 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/pulse_gen.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/Reg_nbit.vhd" xil_pn:type="FILE_VHDL">
@@ -169,7 +169,7 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/rippe_carry_adder.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/Shift_Register.vhd" xil_pn:type="FILE_VHDL">
@@ -188,14 +188,14 @@
     </file>
     <file xil_pn:name="VGA_Control.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
     </file>
     <file xil_pn:name="Nexys4_Master.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Image_Generator.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="98"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
     </file>
   </files>
 

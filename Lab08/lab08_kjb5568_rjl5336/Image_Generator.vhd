@@ -42,14 +42,58 @@ signal box_u : std_logic;
 signal box_d : std_logic;
 signal box_l : std_logic;
 signal box_r : std_logic;
-signal box_border_u : std_logic_vector ( 9 downto 0) := "0100000100"; --240 +20
+signal box_border_u : std_logic_vector ( 9 downto 0); -- := "0100000100"; --240 +20
 signal box_border_d : std_logic_vector ( 9 downto 0) := "0011011100"; --240 -20
 signal box_border_l : std_logic_vector ( 9 downto 0) := "0100101100"; --320 -20
 signal box_border_r : std_logic_vector ( 9 downto 0); --320 +20      := "0101010100"
-signal rightcount : std_logic_vector ( 9 downto 0);
+signal horizontal_count : std_logic_vector ( 9 downto 0);
+signal vertical_count : std_logic_vector ( 9 downto 0);
+signal pulse_debounce : std_logic;
+signal button_d : std_logic_vector (4 downto 0);
 
 
 begin
+
+Pulse_d : Pulse_Gen generic map (20, 1000000) port map (
+		EN    => '1',
+		CLK   => CLK,
+		CLR   => '0',
+		PULSE => pulse_debounce );
+		
+DB0 : Debouncer port map(
+	D => button(0),
+	CLK => clk,
+	PULSE => pulse_debounce,
+	Q => button_d(0)
+	);
+
+DB1 : Debouncer port map(
+	D => button(1),
+	CLK => clk,
+	PULSE => pulse_debounce,
+	Q => button_d(1)
+	);
+	
+DB2 : Debouncer port map(
+	D => button(2),
+	CLK => clk,
+	PULSE => pulse_debounce,
+	Q => button_d(2)
+	);
+	
+DB3 : Debouncer port map(
+	D => button(3),
+	CLK => clk,
+	PULSE => pulse_debounce,
+	Q => button_d(3)
+	);
+	
+DB4 : Debouncer port map(
+	D => button(4),
+	CLK => clk,
+	PULSE => pulse_debounce,
+	Q => button_d(4)
+	);
 
 vles12 : LST generic map (10) port map (
 	A =>	y_in,
@@ -72,36 +116,70 @@ hgrt628 : CompareGRT generic map (10) port map (
 	OUTPUT =>	h_grt628);
 borderbottom : LST generic map (10) port map (
 	A =>	y_in,
-	B =>	"0100000100", --260
+	B =>	box_border_d, --260
 	OUTPUT =>	box_d);
 bordertop : CompareGRT generic map (10) port map (
 	A =>	y_in,
-	B =>	"0011011100",--220
+	B =>	box_border_u,--220
 	OUTPUT =>	box_u);
 borderright : LST generic map (10) port map (
 	A =>	x_in,
-	B =>	box_border_r, --340
+	B =>	box_border_r,
 	OUTPUT =>	box_r);
 borderleft : CompareGRT generic map (10) port map (
 	A =>	x_in,
-	B =>	box_border_l, --300
+	B =>	box_border_l,
 	OUTPUT =>	box_l);
 	
 RightAdder: Ripple_Carry_Adder generic map (10) port map (
-	A => "0101010100",
-	B => rightcount,
+	A => "0000010000",
+	B => box_border_l,
 	C_in => '0',
 	C_out => OPEN,
 	Sum => box_border_r
 	);
 	
-rightCounter : CounterUpDown_nbit generic map (10) port map (
-		EN => '1',
-		UP => button(2),
-	 DOWN => button(0),
+LeftAdder: Ripple_Carry_Adder generic map (10) port map (
+	A => "0100101100",
+	B => horizontal_count,
+	C_in => '0',
+	C_out => OPEN,
+	Sum => box_border_l
+	);
+horizontalCounter : CounterUpDown_nbit generic map (10) port map (
+		EN => pulse_debounce,
+		UP => button_d(2),
+	 DOWN => button_d(0),
 	  CLK => clk,
 	  CLR => '0',
-	    Q => rightcount);
+	    Q => horizontal_count);
+	
+UpAdder: Ripple_Carry_Adder generic map (10) port map (
+	A => "0000010000",
+	B => box_border_d,
+	C_in => '0',
+	C_out => OPEN,
+	Sum => box_border_u
+	);
+	
+DownAdder: Ripple_Carry_Adder generic map (10) port map (
+	A => "0011011100",
+	B => vertical_count,
+	C_in => '0',
+	C_out => OPEN,
+	Sum => box_border_d
+	);
+verticalCounter : CounterUpDown_nbit generic map (10) port map (
+		EN => pulse_debounce,
+		UP => button_d(4),
+	 DOWN => button_d(1),
+	  CLK => clk,
+	  CLR => '0',
+	    Q => vertical_count);
+	
+	
+	--up 4
+	--down 1
 	
 RGB_out <= not switch when (v_les12 = '1' or v_grt468 = '1' or h_les12 = '1' or h_grt628 = '1') else
 		 "111111111111" when (box_l = '1' and box_r = '1' and box_u = '1' and box_d = '1') else 
