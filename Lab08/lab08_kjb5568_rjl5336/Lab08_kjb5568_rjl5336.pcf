@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Oct 26 17:36:27 2015
+// Written by: Map P.20131013 on Mon Oct 26 18:20:21 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -45,6 +45,16 @@ TIMEGRP sys_clk_pin = BEL "Inst_Image_Generator/horizontalCounter/count_9" BEL
         "Inst_Image_Generator/horizontalCounter/count_2" BEL
         "Inst_Image_Generator/horizontalCounter/count_1" BEL
         "Inst_Image_Generator/horizontalCounter/count_0" BEL
+        "Inst_Image_Generator/verticalCounter/count_9" BEL
+        "Inst_Image_Generator/verticalCounter/count_8" BEL
+        "Inst_Image_Generator/verticalCounter/count_7" BEL
+        "Inst_Image_Generator/verticalCounter/count_6" BEL
+        "Inst_Image_Generator/verticalCounter/count_5" BEL
+        "Inst_Image_Generator/verticalCounter/count_4" BEL
+        "Inst_Image_Generator/verticalCounter/count_3" BEL
+        "Inst_Image_Generator/verticalCounter/count_2" BEL
+        "Inst_Image_Generator/verticalCounter/count_1" BEL
+        "Inst_Image_Generator/verticalCounter/count_0" BEL
         "Inst_Image_Generator/Pulse_d/count_19" BEL
         "Inst_Image_Generator/Pulse_d/count_18" BEL
         "Inst_Image_Generator/Pulse_d/count_17" BEL
@@ -65,7 +75,9 @@ TIMEGRP sys_clk_pin = BEL "Inst_Image_Generator/horizontalCounter/count_9" BEL
         "Inst_Image_Generator/Pulse_d/count_2" BEL
         "Inst_Image_Generator/Pulse_d/count_1" BEL
         "Inst_Image_Generator/Pulse_d/count_0" BEL
+        "Inst_Image_Generator/DB4/Flip3/Q" BEL
         "Inst_Image_Generator/DB2/Flip3/Q" BEL
+        "Inst_Image_Generator/DB1/Flip3/Q" BEL
         "Inst_Image_Generator/DB0/Flip3/Q" BEL
         "Inst_VGA_Control/Hcount/count_9" BEL
         "Inst_VGA_Control/Hcount/count_8" BEL
@@ -91,8 +103,12 @@ TIMEGRP sys_clk_pin = BEL "Inst_Image_Generator/horizontalCounter/count_9" BEL
         "Inst_VGA_Control/Vcount/count_2" BEL
         "Inst_VGA_Control/Vcount/count_1" BEL
         "Inst_VGA_Control/Vcount/count_0" BEL "Clk_BUFGP/BUFG" BEL
+        "Inst_Image_Generator/DB4/Flip2/Mshreg_Q" BEL
+        "Inst_Image_Generator/DB4/Flip2/Q" BEL
         "Inst_Image_Generator/DB2/Flip2/Mshreg_Q" BEL
         "Inst_Image_Generator/DB2/Flip2/Q" BEL
+        "Inst_Image_Generator/DB1/Flip2/Mshreg_Q" BEL
+        "Inst_Image_Generator/DB1/Flip2/Q" BEL
         "Inst_Image_Generator/DB0/Flip2/Mshreg_Q" BEL
         "Inst_Image_Generator/DB0/Flip2/Q";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;

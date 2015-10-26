@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: Lab08_kjb5568_rjl5336.prj
 
@@ -144,8 +144,10 @@ Parsing architecture <Behavioral> of entity <vga_control>.
 Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" into library work
 Parsing entity <Image_Generator>.
 Parsing architecture <Behavioral> of entity <image_generator>.
-WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" Line 162: Actual for formal port up is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" Line 163: Actual for formal port down is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" Line 172: Actual for formal port up is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" Line 173: Actual for formal port down is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" Line 182: Actual for formal port up is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" Line 183: Actual for formal port down is neither a static name nor a globally static expression
 Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Lab08_kjb5568_rjl5336.vhd" into library work
 Parsing entity <Lab08_kjb5568_rjl5336>.
 Parsing architecture <Structural> of entity <lab08_kjb5568_rjl5336>.
@@ -182,9 +184,7 @@ Elaborating entity <FullAdder> (architecture <Dataflow>) from library <kjb5568_r
 
 Elaborating entity <CounterUpDown_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
 WARNING:HDLCompiler:92 - "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 46: count should be on the sensitivity list of the process
-WARNING:Xst:2972 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 71. All outputs of instance <DB1> of block <Debouncer> are unconnected in block <Image_Generator>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 85. All outputs of instance <DB3> of block <Debouncer> are unconnected in block <Image_Generator>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 92. All outputs of instance <DB4> of block <Debouncer> are unconnected in block <Image_Generator>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 88. All outputs of instance <DB3> of block <Debouncer> are unconnected in block <Image_Generator>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -256,11 +256,11 @@ Unit <DFF_CE> synthesized.
 
 Synthesizing Unit <Image_Generator>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd".
-INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 71: Output port <Q> of the instance <DB1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 85: Output port <Q> of the instance <DB3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 92: Output port <Q> of the instance <DB4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 145: Output port <C_out> of the instance <RightAdder> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 153: Output port <C_out> of the instance <LeftAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 88: Output port <Q> of the instance <DB3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 155: Output port <C_out> of the instance <RightAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 163: Output port <C_out> of the instance <LeftAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 188: Output port <C_out> of the instance <UpAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab08\lab08_kjb5568_rjl5336\Image_Generator.vhd" line 196: Output port <C_out> of the instance <DownAdder> is unconnected or connected to loadless signal.
     Summary:
 	inferred   2 Multiplexer(s).
 Unit <Image_Generator> synthesized.
@@ -298,8 +298,8 @@ Synthesizing Unit <CounterUpDown_nbit>.
     Related source file is "C:\Users\kalvi_000\Desktop\Lab08\kjb5568_rjl5336_library\counterupdown_nbit.vhd".
         n = 10
     Found 10-bit register for signal <count>.
-    Found 10-bit adder for signal <count[9]_GND_127_o_add_0_OUT> created at line 1241.
-    Found 10-bit subtractor for signal <GND_127_o_GND_127_o_sub_2_OUT<9:0>> created at line 1308.
+    Found 10-bit adder for signal <count[9]_GND_125_o_add_0_OUT> created at line 1241.
+    Found 10-bit subtractor for signal <GND_125_o_GND_125_o_sub_2_OUT<9:0>> created at line 1308.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  10 D-type flip-flop(s).
@@ -309,23 +309,23 @@ Unit <CounterUpDown_nbit> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 5
+# Adders/Subtractors                                   : 6
  10-bit adder                                          : 2
- 10-bit addsub                                         : 1
+ 10-bit addsub                                         : 2
  2-bit adder                                           : 1
  20-bit adder                                          : 1
-# Registers                                            : 14
- 1-bit register                                        : 9
- 10-bit register                                       : 3
+# Registers                                            : 21
+ 1-bit register                                        : 15
+ 10-bit register                                       : 4
  2-bit register                                        : 1
  20-bit register                                       : 1
-# Comparators                                          : 18
+# Comparators                                          : 20
  10-bit comparator equal                               : 2
- 10-bit comparator greater                             : 16
+ 10-bit comparator greater                             : 18
 # Multiplexers                                         : 3
  12-bit 2-to-1 multiplexer                             : 3
-# Xors                                                 : 40
- 1-bit xor2                                            : 40
+# Xors                                                 : 80
+ 1-bit xor2                                            : 80
 
 =========================================================================
 
@@ -354,20 +354,20 @@ Unit <pulse_gen_2> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 5
+# Counters                                             : 6
  10-bit up counter                                     : 2
- 10-bit updown counter                                 : 1
+ 10-bit updown counter                                 : 2
  2-bit up counter                                      : 1
  20-bit up counter                                     : 1
-# Registers                                            : 9
- Flip-Flops                                            : 9
-# Comparators                                          : 18
+# Registers                                            : 15
+ Flip-Flops                                            : 15
+# Comparators                                          : 20
  10-bit comparator equal                               : 2
- 10-bit comparator greater                             : 16
+ 10-bit comparator greater                             : 18
 # Multiplexers                                         : 3
  12-bit 2-to-1 multiplexer                             : 3
-# Xors                                                 : 40
- 1-bit xor2                                            : 40
+# Xors                                                 : 80
+ 1-bit xor2                                            : 80
 
 =========================================================================
 
@@ -388,7 +388,9 @@ Found area constraint ratio of 100 (+ 5) on block Lab08_kjb5568_rjl5336, actual 
 Final Macro Processing ...
 
 Processing Unit <Lab08_kjb5568_rjl5336> :
+	Found 2-bit shift register for signal <Inst_Image_Generator/DB4/Flip2/Q>.
 	Found 2-bit shift register for signal <Inst_Image_Generator/DB2/Flip2/Q>.
+	Found 2-bit shift register for signal <Inst_Image_Generator/DB1/Flip2/Q>.
 	Found 2-bit shift register for signal <Inst_Image_Generator/DB0/Flip2/Q>.
 Unit <Lab08_kjb5568_rjl5336> processed.
 
@@ -396,10 +398,10 @@ Unit <Lab08_kjb5568_rjl5336> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 57
- Flip-Flops                                            : 57
-# Shift Registers                                      : 2
- 2-bit shift register                                  : 2
+# Registers                                            : 69
+ Flip-Flops                                            : 69
+# Shift Registers                                      : 4
+ 2-bit shift register                                  : 4
 
 =========================================================================
 
@@ -422,29 +424,29 @@ Top Level Output File Name         : Lab08_kjb5568_rjl5336.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 251
+# BELS                             : 329
 #      GND                         : 1
-#      INV                         : 5
+#      INV                         : 6
 #      LUT1                        : 37
-#      LUT2                        : 13
-#      LUT3                        : 3
-#      LUT4                        : 49
-#      LUT5                        : 14
-#      LUT6                        : 24
-#      MUXCY                       : 54
+#      LUT2                        : 25
+#      LUT3                        : 9
+#      LUT4                        : 55
+#      LUT5                        : 21
+#      LUT6                        : 43
+#      MUXCY                       : 71
 #      VCC                         : 1
-#      XORCY                       : 50
-# FlipFlops/Latches                : 59
+#      XORCY                       : 60
+# FlipFlops/Latches                : 73
 #      FD                          : 10
-#      FDE                         : 17
+#      FDE                         : 11
 #      FDR                         : 22
-#      FDRE                        : 10
-# Shift Registers                  : 2
-#      SRLC16E                     : 2
+#      FDRE                        : 30
+# Shift Registers                  : 4
+#      SRLC16E                     : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 28
-#      IBUF                        : 14
+# IO Buffers                       : 30
+#      IBUF                        : 16
 #      OBUF                        : 14
 
 Device utilization summary:
@@ -454,22 +456,22 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              59  out of  126800     0%  
- Number of Slice LUTs:                  147  out of  63400     0%  
-    Number used as Logic:               145  out of  63400     0%  
-    Number used as Memory:                2  out of  19000     0%  
-       Number used as SRL:                2
+ Number of Slice Registers:              73  out of  126800     0%  
+ Number of Slice LUTs:                  200  out of  63400     0%  
+    Number used as Logic:               196  out of  63400     0%  
+    Number used as Memory:                4  out of  19000     0%  
+       Number used as SRL:                4
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    149
-   Number with an unused Flip Flop:      90  out of    149    60%  
-   Number with an unused LUT:             2  out of    149     1%  
-   Number of fully used LUT-FF pairs:    57  out of    149    38%  
-   Number of unique control sets:         7
+ Number of LUT Flip Flop pairs used:    204
+   Number with an unused Flip Flop:     131  out of    204    64%  
+   Number with an unused LUT:             4  out of    204     1%  
+   Number of fully used LUT-FF pairs:    69  out of    204    33%  
+   Number of unique control sets:         9
 
 IO Utilization: 
  Number of IOs:                          32
- Number of bonded IOBs:                  29  out of    210    13%  
+ Number of bonded IOBs:                  31  out of    210    14%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
@@ -495,7 +497,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk                                | BUFGP                  | 61    |
+Clk                                | BUFGP                  | 77    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -508,8 +510,8 @@ Speed Grade: -1
 
    Minimum period: 4.299ns (Maximum Frequency: 232.612MHz)
    Minimum input arrival time before clock: 0.414ns
-   Maximum output required time after clock: 6.624ns
-   Maximum combinational path delay: 1.060ns
+   Maximum output required time after clock: 6.330ns
+   Maximum combinational path delay: 1.443ns
 
 Timing Details:
 ---------------
@@ -518,7 +520,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
   Clock period: 4.299ns (frequency: 232.612MHz)
-  Total number of paths / destination ports: 3645 / 120
+  Total number of paths / destination ports: 5518 / 150
 -------------------------------------------------------------------------
 Delay:               4.299ns (Levels of Logic = 13)
   Source:            Inst_Image_Generator/DB2/Flip3/Q (FF)
@@ -531,7 +533,7 @@ Delay:               4.299ns (Levels of Logic = 13)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              3   0.478   0.790  Inst_Image_Generator/DB2/Flip3/Q (Inst_Image_Generator/DB2/Flip3/Q)
-     LUT4:I0->O            3   0.124   0.933  Inst_Image_Generator/button_d[2]_right_border_AND_9_o4_SW0 (N12)
+     LUT4:I0->O            3   0.124   0.933  Inst_Image_Generator/button_d[2]_right_border_AND_9_o4_SW0 (N20)
      LUT6:I1->O           10   0.124   0.480  Inst_Image_Generator/button_d[2]_right_border_AND_9_o4 (Inst_Image_Generator/button_d[2]_right_border_AND_9_o)
      LUT2:I1->O            1   0.124   0.000  Inst_Image_Generator/horizontalCounter/Mcount_count_lut<0> (Inst_Image_Generator/horizontalCounter/Mcount_count_lut<0>)
      MUXCY:S->O            1   0.472   0.000  Inst_Image_Generator/horizontalCounter/Mcount_count_cy<0> (Inst_Image_Generator/horizontalCounter/Mcount_count_cy<0>)
@@ -543,36 +545,36 @@ Delay:               4.299ns (Levels of Logic = 13)
      MUXCY:CI->O           1   0.029   0.000  Inst_Image_Generator/horizontalCounter/Mcount_count_cy<6> (Inst_Image_Generator/horizontalCounter/Mcount_count_cy<6>)
      MUXCY:CI->O           1   0.029   0.000  Inst_Image_Generator/horizontalCounter/Mcount_count_cy<7> (Inst_Image_Generator/horizontalCounter/Mcount_count_cy<7>)
      MUXCY:CI->O           0   0.029   0.000  Inst_Image_Generator/horizontalCounter/Mcount_count_cy<8> (Inst_Image_Generator/horizontalCounter/Mcount_count_cy<8>)
-     XORCY:CI->O           1   0.510   0.000  Inst_Image_Generator/horizontalCounter/Mcount_count_xor<9> (Inst_Image_Generator/Result<9>)
-     FDE:D                     0.030          Inst_Image_Generator/horizontalCounter/count_9
+     XORCY:CI->O           1   0.510   0.000  Inst_Image_Generator/horizontalCounter/Mcount_count_xor<9> (Inst_Image_Generator/Result<9>2)
+     FDRE:D                    0.030          Inst_Image_Generator/horizontalCounter/count_9
     ----------------------------------------
     Total                      4.299ns (2.096ns logic, 2.203ns route)
                                        (48.8% logic, 51.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
-  Total number of paths / destination ports: 2 / 2
+  Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Offset:              0.414ns (Levels of Logic = 1)
-  Source:            BUTTON<2> (PAD)
-  Destination:       Inst_Image_Generator/DB2/Flip2/Mshreg_Q (FF)
+  Source:            BUTTON<4> (PAD)
+  Destination:       Inst_Image_Generator/DB4/Flip2/Mshreg_Q (FF)
   Destination Clock: Clk rising
 
-  Data Path: BUTTON<2> to Inst_Image_Generator/DB2/Flip2/Mshreg_Q
+  Data Path: BUTTON<4> to Inst_Image_Generator/DB4/Flip2/Mshreg_Q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.399  BUTTON_2_IBUF (BUTTON_2_IBUF)
-     SRLC16E:D                 0.014          Inst_Image_Generator/DB2/Flip2/Mshreg_Q
+     IBUF:I->O             1   0.001   0.399  BUTTON_4_IBUF (BUTTON_4_IBUF)
+     SRLC16E:D                 0.014          Inst_Image_Generator/DB4/Flip2/Mshreg_Q
     ----------------------------------------
     Total                      0.414ns (0.015ns logic, 0.399ns route)
                                        (3.6% logic, 96.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
-  Total number of paths / destination ports: 3158 / 14
+  Total number of paths / destination ports: 4526 / 14
 -------------------------------------------------------------------------
-Offset:              6.624ns (Levels of Logic = 8)
+Offset:              6.330ns (Levels of Logic = 8)
   Source:            Inst_Image_Generator/horizontalCounter/count_5 (FF)
   Destination:       RGB_out<11> (PAD)
   Source Clock:      Clk rising
@@ -581,24 +583,24 @@ Offset:              6.624ns (Levels of Logic = 8)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             11   0.478   0.985  Inst_Image_Generator/horizontalCounter/count_5 (Inst_Image_Generator/horizontalCounter/count_5)
+     FDRE:C->Q            11   0.478   0.985  Inst_Image_Generator/horizontalCounter/count_5 (Inst_Image_Generator/horizontalCounter/count_5)
      LUT5:I0->O            3   0.124   0.730  Inst_Image_Generator/LeftAdder/genADDERS[7].FA0/Mxor_Sum_xo<0>11 (Inst_Image_Generator/LeftAdder/genADDERS[7].FA0/Mxor_Sum_xo<0>1)
      LUT4:I1->O            2   0.124   0.782  Inst_Image_Generator/LeftAdder/genADDERS[7].FA0/Mxor_Sum_xo<0>1 (Inst_Image_Generator/RightAdder/genADDERS[7].FA0/wire2)
      LUT4:I0->O            0   0.124   0.000  Inst_Image_Generator/borderleft/Mcompar_OUTPUT_lutdi3 (Inst_Image_Generator/borderleft/Mcompar_OUTPUT_lutdi3)
      MUXCY:DI->O           1   0.761   0.536  Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<3> (Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<3>)
-     LUT5:I3->O            1   0.124   0.421  Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<4> (Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<4>)
-     LUT5:I4->O           12   0.124   0.788  Inst_Image_Generator/Mmux_RGB_out144 (Inst_Image_Generator/Mmux_RGB_out14)
-     LUT4:I1->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out13 (RGB_out_0_OBUF)
-     OBUF:I->O                 0.000          RGB_out_0_OBUF (RGB_out<0>)
+     LUT5:I3->O            4   0.124   0.441  Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<4> (Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<4>)
+     LUT4:I3->O            9   0.124   0.474  Inst_Image_Generator/Mmux_RGB_out1011 (Inst_Image_Generator/Mmux_RGB_out101)
+     LUT6:I5->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out21 (RGB_out_10_OBUF)
+     OBUF:I->O                 0.000          RGB_out_10_OBUF (RGB_out<10>)
     ----------------------------------------
-    Total                      6.624ns (1.983ns logic, 4.641ns route)
-                                       (29.9% logic, 70.1% route)
+    Total                      6.330ns (1.983ns logic, 4.347ns route)
+                                       (31.3% logic, 68.7% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
-Delay:               1.060ns (Levels of Logic = 3)
+Delay:               1.443ns (Levels of Logic = 3)
   Source:            Switch<11> (PAD)
   Destination:       RGB_out<11> (PAD)
 
@@ -606,12 +608,12 @@ Delay:               1.060ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.536  Switch_11_IBUF (Switch_11_IBUF)
-     LUT4:I2->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out31 (RGB_out_11_OBUF)
+     IBUF:I->O             1   0.001   0.919  Switch_11_IBUF (Switch_11_IBUF)
+     LUT6:I1->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out31 (RGB_out_11_OBUF)
      OBUF:I->O                 0.000          RGB_out_11_OBUF (RGB_out<11>)
     ----------------------------------------
-    Total                      1.060ns (0.125ns logic, 0.935ns route)
-                                       (11.8% logic, 88.2% route)
+    Total                      1.443ns (0.125ns logic, 1.318ns route)
+                                       (8.7% logic, 91.3% route)
 
 =========================================================================
 
@@ -629,12 +631,12 @@ Clk            |    4.299|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.42 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.84 secs
  
 --> 
 
-Total memory usage is 405948 kilobytes
+Total memory usage is 405972 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    6 (   0 filtered)
