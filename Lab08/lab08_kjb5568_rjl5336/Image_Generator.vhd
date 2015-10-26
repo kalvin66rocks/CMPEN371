@@ -42,12 +42,11 @@ signal box_u : std_logic;
 signal box_d : std_logic;
 signal box_l : std_logic;
 signal box_r : std_logic;
-signal box_border_u : std_logic_vector ( 9 downto 0); -- := "0100000100"; --240 +20
+signal box_border_u : std_logic_vector ( 9 downto 0) := "0100000100"; --240 +20
 signal box_border_d : std_logic_vector ( 9 downto 0) := "0011011100"; --240 -20
-signal box_border_l : std_logic_vector ( 9 downto 0) := "0100101100"; --320 -20
+signal box_border_l : std_logic_vector ( 9 downto 0); --:= "0100101100"; --320 -20
 signal box_border_r : std_logic_vector ( 9 downto 0); --320 +20      := "0101010100"
 signal horizontal_count : std_logic_vector ( 9 downto 0);
-signal vertical_count : std_logic_vector ( 9 downto 0);
 signal pulse_debounce : std_logic;
 signal button_d : std_logic_vector (4 downto 0);
 
@@ -116,19 +115,19 @@ hgrt628 : CompareGRT generic map (10) port map (
 	OUTPUT =>	h_grt628);
 borderbottom : LST generic map (10) port map (
 	A =>	y_in,
-	B =>	box_border_d, --260
+	B =>	"0100000100", --260
 	OUTPUT =>	box_d);
 bordertop : CompareGRT generic map (10) port map (
 	A =>	y_in,
-	B =>	box_border_u,--220
+	B =>	"0011011100",--220
 	OUTPUT =>	box_u);
 borderright : LST generic map (10) port map (
 	A =>	x_in,
-	B =>	box_border_r,
+	B =>	box_border_r, --340
 	OUTPUT =>	box_r);
 borderleft : CompareGRT generic map (10) port map (
 	A =>	x_in,
-	B =>	box_border_l,
+	B =>	box_border_l, --300
 	OUTPUT =>	box_l);
 	
 RightAdder: Ripple_Carry_Adder generic map (10) port map (
@@ -154,29 +153,32 @@ horizontalCounter : CounterUpDown_nbit generic map (10) port map (
 	  CLR => '0',
 	    Q => horizontal_count);
 	
-UpAdder: Ripple_Carry_Adder generic map (10) port map (
-	A => "0000010000",
-	B => box_border_d,
-	C_in => '0',
-	C_out => OPEN,
-	Sum => box_border_u
-	);
-	
-DownAdder: Ripple_Carry_Adder generic map (10) port map (
-	A => "0011011100",
-	B => vertical_count,
-	C_in => '0',
-	C_out => OPEN,
-	Sum => box_border_d
-	);
-verticalCounter : CounterUpDown_nbit generic map (10) port map (
-		EN => pulse_debounce,
-		UP => button_d(4),
-	 DOWN => button_d(1),
-	  CLK => clk,
-	  CLR => '0',
-	    Q => vertical_count);
-	
+
+
+
+
+--UpAdder: Ripple_Carry_Adder generic map (10) port map (
+--	A => "0000010000",
+--	B => box_border_d,
+--	C_in => '0',
+--	C_out => OPEN,
+--	Sum => box_border_u
+--	);
+--	
+--DownAdder: Ripple_Carry_Adder generic map (10) port map (
+--	A => "0011011100",
+--	B => vertical_count,
+--	C_in => '0',
+--	C_out => OPEN,
+--	Sum => box_border_d
+--	);
+--verticalCounter : CounterUpDown_nbit generic map (10) port map (
+--		EN => pulse_debounce,
+--		UP => button_d(4),
+--	 DOWN => button_d(1),
+--	  CLK => clk,
+--	  CLR => '0',
+--	    Q => vertical_count);
 	
 	--up 4
 	--down 1

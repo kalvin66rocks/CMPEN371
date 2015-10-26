@@ -1,8 +1,14 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Oct 26 15:37:47 2015
+// Written by: Map P.20131013 on Mon Oct 26 16:29:53 2015
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "RGB_out<10>" LOCATE = SITE "B6" LEVEL 1;
+COMP "RGB_out<11>" LOCATE = SITE "A6" LEVEL 1;
+COMP "Switch<10>" LOCATE = SITE "U2" LEVEL 1;
+COMP "Switch<11>" LOCATE = SITE "T3" LEVEL 1;
+COMP "RGB_out<0>" LOCATE = SITE "A3" LEVEL 1;
+COMP "RGB_out<1>" LOCATE = SITE "B4" LEVEL 1;
 COMP "Switch<0>" LOCATE = SITE "U9" LEVEL 1;
 COMP "RGB_out<2>" LOCATE = SITE "C5" LEVEL 1;
 COMP "Switch<1>" LOCATE = SITE "U8" LEVEL 1;
@@ -29,12 +35,6 @@ COMP "BUTTON<4>" LOCATE = SITE "F15" LEVEL 1;
 COMP "HSYNC" LOCATE = SITE "B11" LEVEL 1;
 COMP "Clk" LOCATE = SITE "E3" LEVEL 1;
 COMP "VSYNC" LOCATE = SITE "B12" LEVEL 1;
-COMP "RGB_out<10>" LOCATE = SITE "B6" LEVEL 1;
-COMP "RGB_out<11>" LOCATE = SITE "A6" LEVEL 1;
-COMP "Switch<10>" LOCATE = SITE "U2" LEVEL 1;
-COMP "Switch<11>" LOCATE = SITE "T3" LEVEL 1;
-COMP "RGB_out<0>" LOCATE = SITE "A3" LEVEL 1;
-COMP "RGB_out<1>" LOCATE = SITE "B4" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "Inst_Image_Generator/horizontalCounter/count_9" BEL
         "Inst_Image_Generator/horizontalCounter/count_8" BEL
         "Inst_Image_Generator/horizontalCounter/count_7" BEL
@@ -45,16 +45,6 @@ TIMEGRP sys_clk_pin = BEL "Inst_Image_Generator/horizontalCounter/count_9" BEL
         "Inst_Image_Generator/horizontalCounter/count_2" BEL
         "Inst_Image_Generator/horizontalCounter/count_1" BEL
         "Inst_Image_Generator/horizontalCounter/count_0" BEL
-        "Inst_Image_Generator/verticalCounter/count_9" BEL
-        "Inst_Image_Generator/verticalCounter/count_8" BEL
-        "Inst_Image_Generator/verticalCounter/count_7" BEL
-        "Inst_Image_Generator/verticalCounter/count_6" BEL
-        "Inst_Image_Generator/verticalCounter/count_5" BEL
-        "Inst_Image_Generator/verticalCounter/count_4" BEL
-        "Inst_Image_Generator/verticalCounter/count_3" BEL
-        "Inst_Image_Generator/verticalCounter/count_2" BEL
-        "Inst_Image_Generator/verticalCounter/count_1" BEL
-        "Inst_Image_Generator/verticalCounter/count_0" BEL
         "Inst_Image_Generator/Pulse_d/count_19" BEL
         "Inst_Image_Generator/Pulse_d/count_18" BEL
         "Inst_Image_Generator/Pulse_d/count_17" BEL
@@ -64,15 +54,9 @@ TIMEGRP sys_clk_pin = BEL "Inst_Image_Generator/horizontalCounter/count_9" BEL
         "Inst_Image_Generator/Pulse_d/count_13" BEL
         "Inst_Image_Generator/Pulse_d/count_12" BEL
         "Inst_Image_Generator/Pulse_d/count_11" BEL
-        "Inst_Image_Generator/DB4/Flip1/Q" BEL
-        "Inst_Image_Generator/DB4/Flip2/Q" BEL
-        "Inst_Image_Generator/DB4/Flip3/Q" BEL
         "Inst_Image_Generator/DB2/Flip1/Q" BEL
         "Inst_Image_Generator/DB2/Flip2/Q" BEL
         "Inst_Image_Generator/DB2/Flip3/Q" BEL
-        "Inst_Image_Generator/DB1/Flip1/Q" BEL
-        "Inst_Image_Generator/DB1/Flip2/Q" BEL
-        "Inst_Image_Generator/DB1/Flip3/Q" BEL
         "Inst_Image_Generator/DB0/Flip1/Q" BEL
         "Inst_Image_Generator/DB0/Flip2/Q" BEL
         "Inst_Image_Generator/DB0/Flip3/Q" BEL
@@ -84,15 +68,14 @@ TIMEGRP sys_clk_pin = BEL "Inst_Image_Generator/horizontalCounter/count_9" BEL
         "Inst_VGA_Control/Hcount/count_4" BEL
         "Inst_VGA_Control/Hcount/count_3" BEL
         "Inst_VGA_Control/Hcount/count_2" BEL
-        "Inst_VGA_Control/Hcount/count_1" BEL
         "Inst_VGA_Control/Pulse25/count_1" BEL
         "Inst_VGA_Control/Pulse25/count_0" BEL "Inst_VGA_Control/hold_Hsync/Q"
         BEL "Inst_VGA_Control/hold_Vsync/Q" BEL
         "Inst_VGA_Control/hold_rgb_enable/Q" BEL
         "Inst_VGA_Control/Vcount/count_0" BEL
-        "Inst_Image_Generator/Pulse_d/count_2" BEL
         "Inst_Image_Generator/Pulse_d/count_1" BEL
         "Inst_Image_Generator/Pulse_d/count_0" BEL
+        "Inst_Image_Generator/Pulse_d/count_2" BEL
         "Inst_Image_Generator/Pulse_d/count_3" BEL
         "Inst_Image_Generator/Pulse_d/count_4" BEL
         "Inst_Image_Generator/Pulse_d/count_5" BEL
@@ -110,7 +93,8 @@ TIMEGRP sys_clk_pin = BEL "Inst_Image_Generator/horizontalCounter/count_9" BEL
         "Inst_VGA_Control/Vcount/count_2" BEL
         "Inst_VGA_Control/Vcount/count_1" BEL
         "Inst_Image_Generator/Pulse_d/count_10" BEL
-        "Inst_VGA_Control/Hcount/count_0" BEL "Clk_BUFGP/BUFG";
+        "Inst_VGA_Control/Hcount/count_0" BEL
+        "Inst_VGA_Control/Hcount/count_1" BEL "Clk_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 
