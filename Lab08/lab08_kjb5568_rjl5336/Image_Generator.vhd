@@ -42,6 +42,8 @@ signal box_u : std_logic;
 signal box_d : std_logic;
 signal box_l : std_logic;
 signal box_r : std_logic;
+signal right_border : std_logic;
+signal left_border : std_logic;
 signal box_border_u : std_logic_vector ( 9 downto 0) := "0100000100"; --240 +20
 signal box_border_d : std_logic_vector ( 9 downto 0) := "0011011100"; --240 -20
 signal box_border_l : std_logic_vector ( 9 downto 0); --:= "0100101100"; --320 -20
@@ -111,7 +113,7 @@ hles12 : LST generic map (10) port map (
 	
 hgrt628 : CompareGRT generic map (10) port map (
 	A =>	x_in,
-	B =>	"1001101100", --currently set to 620 rather than 628
+	B =>	"1001110100", --currently set to 620 rather than 628
 	OUTPUT =>	h_grt628);
 borderbottom : LST generic map (10) port map (
 	A =>	y_in,
@@ -129,6 +131,16 @@ borderleft : CompareGRT generic map (10) port map (
 	A =>	x_in,
 	B =>	box_border_l, --300
 	OUTPUT =>	box_l);
+hboxright : LST generic map (10) port map (
+	A =>	box_border_r,
+	B =>	"1001110101",
+	OUTPUT =>	right_border);
+hboxleft : CompareGRT generic map (10) port map (
+	A =>	box_border_l,
+	B =>	"0000001011",
+	OUTPUT =>	left_border);
+	
+	
 	
 RightAdder: Ripple_Carry_Adder generic map (10) port map (
 	A => "0000010000",
@@ -147,8 +159,8 @@ LeftAdder: Ripple_Carry_Adder generic map (10) port map (
 	);
 horizontalCounter : CounterUpDown_nbit generic map (10) port map (
 		EN => pulse_debounce,
-		UP => button_d(2),
-	 DOWN => button_d(0),
+		UP => button_d(2) and right_border,
+	 DOWN => button_d(0) and left_border,
 	  CLK => clk,
 	  CLR => '0',
 	    Q => horizontal_count);
