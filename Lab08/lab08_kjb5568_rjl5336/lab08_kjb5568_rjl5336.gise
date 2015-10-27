@@ -184,7 +184,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1445897678" xil_pn:in_ck="-7992019879041097812" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="4092074505197222855" xil_pn:start_ts="1445897667">
+    <transform xil_pn:end_ts="1445955604" xil_pn:in_ck="-7992019879041097812" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="4092074505197222855" xil_pn:start_ts="1445955572">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -206,7 +206,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1445897690" xil_pn:in_ck="6119940187095377157" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7803135731807808891" xil_pn:start_ts="1445897681">
+    <transform xil_pn:end_ts="1445955625" xil_pn:in_ck="6119940187095377157" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7803135731807808891" xil_pn:start_ts="1445955604">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Lab08_kjb5568_rjl5336.bld"/>
@@ -215,7 +215,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1445897718" xil_pn:in_ck="9011288561026811686" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-7188367874928765557" xil_pn:start_ts="1445897690">
+    <transform xil_pn:end_ts="1445955713" xil_pn:in_ck="9011288561026811686" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-7188367874928765557" xil_pn:start_ts="1445955625">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Lab08_kjb5568_rjl5336.pcf"/>
@@ -228,7 +228,7 @@
       <outfile xil_pn:name="Lab08_kjb5568_rjl5336_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1445897752" xil_pn:in_ck="2500362735567535455" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1445897718">
+    <transform xil_pn:end_ts="1445955797" xil_pn:in_ck="2500362735567535455" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1445955713">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -243,7 +243,7 @@
       <outfile xil_pn:name="Lab08_kjb5568_rjl5336_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1445897793" xil_pn:in_ck="-5160273768148938080" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="306664139534459597" xil_pn:start_ts="1445897752">
+    <transform xil_pn:end_ts="1445955883" xil_pn:in_ck="-5160273768148938080" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="306664139534459597" xil_pn:start_ts="1445955797">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -256,11 +256,11 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1445897806" xil_pn:in_ck="-8747830721046806390" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6383737364629502382" xil_pn:start_ts="1445897793">
+    <transform xil_pn:end_ts="1445955887" xil_pn:in_ck="-8747830721046806390" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6383737364629502382" xil_pn:start_ts="1445955883">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1445897752" xil_pn:in_ck="-3711815323731513822" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1445897738">
+    <transform xil_pn:end_ts="1445955797" xil_pn:in_ck="-3711815323731513822" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1445955761">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Lab08_kjb5568_rjl5336.twr"/>

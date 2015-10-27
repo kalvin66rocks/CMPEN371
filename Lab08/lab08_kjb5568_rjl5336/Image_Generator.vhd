@@ -101,22 +101,22 @@ DB4 : Debouncer port map(
 
 vles12 : LST generic map (10) port map (
 	A =>	y_in,
-	B =>	"0000001100",
+	B =>	"0000001010",
 	OUTPUT =>	v_les12);
 	
 vgrt468 : CompareGRT generic map (10) port map (
 	A =>	y_in,
-	B =>	"0111010100",
+	B =>	"0111010110",
 	OUTPUT =>	v_grt468);
 	
 hles12 : LST generic map (10) port map (
 	A =>	x_in,
-	B =>	"0000001100",
+	B =>	"0000001010",
 	OUTPUT =>	h_les12);
 	
 hgrt628 : CompareGRT generic map (10) port map (
 	A =>	x_in,
-	B =>	"1001110100", --currently set to 620 rather than 628
+	B =>	"1001110110", --currently set to 620 rather than 628
 	OUTPUT =>	h_grt628);
 borderbottom : LST generic map (10) port map (
 	A =>	y_in,
@@ -136,19 +136,19 @@ borderleft : CompareGRT generic map (10) port map (
 	OUTPUT =>	box_l);
 hboxright : LST generic map (10) port map (
 	A =>	box_border_r,
-	B =>	"1001110101",
+	B =>	"1001110111",
 	OUTPUT =>	right_border);
 hboxleft : CompareGRT generic map (10) port map (
 	A =>	box_border_l,
-	B =>	"0000001011",
+	B =>	"0000001001",
 	OUTPUT =>	left_border);
 vboxtop : LST generic map (10) port map (
 	A =>	box_border_u,
-	B =>	"0111010101",
+	B =>	"0111010111",
 	OUTPUT =>	top_border);
 vboxbottom : CompareGRT generic map (10) port map (
 	A =>	box_border_d,
-	B =>	"0000001011",
+	B =>	"0000001001",
 	OUTPUT =>	bottom_border);
 	
 	
