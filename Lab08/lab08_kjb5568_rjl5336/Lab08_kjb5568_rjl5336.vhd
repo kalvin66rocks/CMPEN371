@@ -1,22 +1,14 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+----------------------------------------------------------------------------
+-- Entity:        LAB 08
+-- Written By:    Kevin Brenneman Richard Lucas
+-- Date Created:  10/26/15
+-- Description:   Op level for lab 08
+--
+-- Revision History (date, initials, description): 10/26/15, KB RL, Initial Build
 -- 
--- Create Date:    14:51:47 10/21/2015 
--- Design Name: 
--- Module Name:    Lab08_kjb5568_rjl5336 - Structural 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+-- Dependencies:
+--		none
+----------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library kjb5568_rjl5336_Library;

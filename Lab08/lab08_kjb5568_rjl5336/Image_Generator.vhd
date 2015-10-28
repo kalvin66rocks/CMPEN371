@@ -1,22 +1,14 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+----------------------------------------------------------------------------
+-- Entity:        Image Generator
+-- Written By:    Kevin Brenneman Richard Lucas
+-- Date Created:  10/26/15
+-- Description:   generates an image for the vga output by setting the color of each pixel as it scans through
+--
+-- Revision History (date, initials, description): 10/26/15, KB RL, Initial Build
 -- 
--- Create Date:    20:26:10 10/24/2015 
--- Design Name: 
--- Module Name:    Image_Generator - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+-- Dependencies:
+--		none
+----------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_STD.ALL; 

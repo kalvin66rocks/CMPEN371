@@ -6,8 +6,8 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 Lab08_kjb5568_rjl5336.ngc Lab08_kjb5568_rjl5336.ngd
 
 Reading NGO file
-"C:/Users/Kevin/Desktop/Lab08/lab08_kjb5568_rjl5336/Lab08_kjb5568_rjl5336.ngc"
-...
+"C:/Users/kalvi_000/Desktop/Lab08/lab08_kjb5568_rjl5336/Lab08_kjb5568_rjl5336.ng
+c" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -32,7 +32,7 @@ NGDBUILD Design Results Summary:
 Total memory usage is 250776 kilobytes
 
 Writing NGD file "Lab08_kjb5568_rjl5336.ngd" ...
-Total REAL time to NGDBUILD completion:  16 sec
-Total CPU time to NGDBUILD completion:   14 sec
+Total REAL time to NGDBUILD completion:  7 sec
+Total CPU time to NGDBUILD completion:   7 sec
 
 Writing NGDBUILD log file "Lab08_kjb5568_rjl5336.bld"...
