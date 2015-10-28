@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.52 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.53 secs
+Total CPU time to Xst completion: 0.35 secs
  
 --> Reading design: Lab08_kjb5568_rjl5336.prj
 
@@ -431,8 +431,8 @@ Primitive and Black Box Usage:
 #      LUT2                        : 24
 #      LUT3                        : 10
 #      LUT4                        : 55
-#      LUT5                        : 21
-#      LUT6                        : 44
+#      LUT5                        : 34
+#      LUT6                        : 31
 #      MUXCY                       : 71
 #      VCC                         : 1
 #      XORCY                       : 60
@@ -510,8 +510,8 @@ Speed Grade: -1
 
    Minimum period: 4.299ns (Maximum Frequency: 232.612MHz)
    Minimum input arrival time before clock: 0.414ns
-   Maximum output required time after clock: 6.330ns
-   Maximum combinational path delay: 1.443ns
+   Maximum output required time after clock: 6.985ns
+   Maximum combinational path delay: 1.300ns
 
 Timing Details:
 ---------------
@@ -533,7 +533,7 @@ Delay:               4.299ns (Levels of Logic = 13)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              3   0.478   0.790  Inst_Image_Generator/DB2/Flip3/Q (Inst_Image_Generator/DB2/Flip3/Q)
-     LUT4:I0->O            3   0.124   0.933  Inst_Image_Generator/button_d[2]_right_border_AND_9_o4_SW0 (N18)
+     LUT4:I0->O            3   0.124   0.933  Inst_Image_Generator/button_d[2]_right_border_AND_9_o4_SW0 (N12)
      LUT6:I1->O           10   0.124   0.480  Inst_Image_Generator/button_d[2]_right_border_AND_9_o4 (Inst_Image_Generator/button_d[2]_right_border_AND_9_o)
      LUT2:I1->O            1   0.124   0.000  Inst_Image_Generator/horizontalCounter/Mcount_count_lut<0> (Inst_Image_Generator/horizontalCounter/Mcount_count_lut<0>)
      MUXCY:S->O            1   0.472   0.000  Inst_Image_Generator/horizontalCounter/Mcount_count_cy<0> (Inst_Image_Generator/horizontalCounter/Mcount_count_cy<0>)
@@ -572,9 +572,9 @@ Offset:              0.414ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
-  Total number of paths / destination ports: 4406 / 14
+  Total number of paths / destination ports: 8798 / 14
 -------------------------------------------------------------------------
-Offset:              6.330ns (Levels of Logic = 8)
+Offset:              6.985ns (Levels of Logic = 8)
   Source:            Inst_Image_Generator/horizontalCounter/count_5 (FF)
   Destination:       RGB_out<11> (PAD)
   Source Clock:      Clk rising
@@ -588,19 +588,19 @@ Offset:              6.330ns (Levels of Logic = 8)
      LUT4:I1->O            2   0.124   0.782  Inst_Image_Generator/LeftAdder/genADDERS[7].FA0/Mxor_Sum_xo<0>1 (Inst_Image_Generator/RightAdder/genADDERS[7].FA0/wire2)
      LUT4:I0->O            0   0.124   0.000  Inst_Image_Generator/borderleft/Mcompar_OUTPUT_lutdi3 (Inst_Image_Generator/borderleft/Mcompar_OUTPUT_lutdi3)
      MUXCY:DI->O           1   0.761   0.536  Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<3> (Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<3>)
-     LUT5:I3->O            4   0.124   0.441  Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<4> (Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<4>)
-     LUT4:I3->O            9   0.124   0.474  Inst_Image_Generator/Mmux_RGB_out1011 (Inst_Image_Generator/Mmux_RGB_out101)
-     LUT6:I5->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out21 (RGB_out_10_OBUF)
-     OBUF:I->O                 0.000          RGB_out_10_OBUF (RGB_out<10>)
+     LUT5:I3->O            2   0.124   0.782  Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<4> (Inst_Image_Generator/borderleft/Mcompar_OUTPUT_cy<4>)
+     LUT5:I1->O           12   0.124   0.788  Inst_Image_Generator/Mmux_RGB_out141 (Inst_Image_Generator/Mmux_RGB_out14)
+     LUT5:I2->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out13 (RGB_out_0_OBUF)
+     OBUF:I->O                 0.000          RGB_out_0_OBUF (RGB_out<0>)
     ----------------------------------------
-    Total                      6.330ns (1.983ns logic, 4.347ns route)
-                                       (31.3% logic, 68.7% route)
+    Total                      6.985ns (1.983ns logic, 5.002ns route)
+                                       (28.4% logic, 71.6% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
-Delay:               1.443ns (Levels of Logic = 3)
+Delay:               1.300ns (Levels of Logic = 3)
   Source:            Switch<11> (PAD)
   Destination:       RGB_out<11> (PAD)
 
@@ -608,12 +608,12 @@ Delay:               1.443ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.919  Switch_11_IBUF (Switch_11_IBUF)
-     LUT6:I1->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out31 (RGB_out_11_OBUF)
+     IBUF:I->O             1   0.001   0.776  Switch_11_IBUF (Switch_11_IBUF)
+     LUT5:I1->O            1   0.124   0.399  Inst_VGA_Control/Mmux_RGB_out31 (RGB_out_11_OBUF)
      OBUF:I->O                 0.000          RGB_out_11_OBUF (RGB_out<11>)
     ----------------------------------------
-    Total                      1.443ns (0.125ns logic, 1.318ns route)
-                                       (8.7% logic, 91.3% route)
+    Total                      1.300ns (0.125ns logic, 1.175ns route)
+                                       (9.6% logic, 90.4% route)
 
 =========================================================================
 
@@ -631,12 +631,12 @@ Clk            |    4.299|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 26.00 secs
-Total CPU time to Xst completion: 26.24 secs
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 24.32 secs
  
 --> 
 
-Total memory usage is 405488 kilobytes
+Total memory usage is 405480 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    6 (   0 filtered)

@@ -205,7 +205,7 @@ DownAdder: Ripple_Carry_Adder generic map (10) port map (
 	--down 1
 	
 RGB_out <= not switch when (v_les12 = '1' or v_grt468 = '1' or h_les12 = '1' or h_grt628 = '1') else
-		   x"111" when (box_l = '1' and box_r = '1' and box_u = '1' and box_d = '1') else 
+		   not switch when (box_l = '1' and box_r = '1' and box_u = '1' and box_d = '1') else 
 		  switch;
 	
 
