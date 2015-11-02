@@ -47,14 +47,25 @@ end component;
 
 begin
 
-PWM_INST: PWM is port map(
+PWM_INST1: PWM is port map(
 			PD 		=> ,
 			PW			=> ,
 			CLK		=> CLK,
 			PMW_out  =>  );
 end PWM;
 
+PWM_INST2: PWM is port map(
+			PD 		=> ,
+			PW			=> ,
+			CLK		=> CLK,
+			PMW_out  =>  );
+end PWM;
 
-
+PWM_INST1: PWM is port map(
+			PD 		=> ,
+			PW			=> ,
+			CLK		=> CLK,
+			PMW_out  =>  );
+end PWM;
 end Behavioral;
 

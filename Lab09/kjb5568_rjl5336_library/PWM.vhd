@@ -45,7 +45,7 @@ Hcount : Counter_nbit generic map (14) port map (
 		CLR   => Hcount_clear,
 		Q		=> eq9999 );
 
-EQ799 : CompareEQU generic map (14) port map (
+EQ9999 : CompareEQU generic map (14) port map (
 		X => eq9999,
 		Y => PD,
 		EQU => count_out);
