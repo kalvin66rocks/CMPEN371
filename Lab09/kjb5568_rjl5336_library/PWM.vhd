@@ -23,8 +23,8 @@ library kjb5568_rjl5336_Library;
 use     kjb5568_rjl5336_Library.kjb5568_rjl5336_Components.all;
 
 entity PWM is
-	port( PD 		: in  STD_LOGIC;
-			PW			: in  STD_LOGIC;
+	port( PD 		: in  STD_LOGIC_VECTOR (13 downto 0) ;
+			PW			: in  STD_LOGIC_VECTOR (13 downto 0);
 			CLK		: in  STD_LOGIC;
 			PMW_out  : out STD_LOGIC);
 end PWM;
@@ -40,18 +40,18 @@ signal les_out : std_logic;
 begin
 		
 Hcount : Counter_nbit generic map (14) port map (
-		EN    => pixelCLK,
+		EN    => '1',
 		CLK   => CLK,
-		CLR   => Hcount_clear,
-		Q		=> eq9999 );
+		CLR   => eq9999,
+		Q		=> count_out );
 
-EQ9999 : CompareEQU generic map (14) port map (
-		X => eq9999,
+EQU : CompareEQU generic map (14) port map (
+		X => count_out,
 		Y => PD,
-		EQU => count_out);
+		EQU => eq9999);
 		
 LES640 : LST generic map (14) port map (
-		A 		 =>	eq9999,
+		A 		 =>	count_out,
 		B 		 =>	PW,
 		OUTPUT =>	les_out);
 		

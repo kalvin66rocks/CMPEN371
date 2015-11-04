@@ -17,7 +17,7 @@
   <files>
     <file xil_pn:name="lab09_kjb5568_rjl5336.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/AdderSubtractor_nbit.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
@@ -38,7 +38,7 @@
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/CompareEQU.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/CompareGRT.vhd" xil_pn:type="FILE_VHDL">
@@ -63,7 +63,7 @@
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/Counter_nbit.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="10"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/Debouncer.vhd" xil_pn:type="FILE_VHDL">
@@ -73,7 +73,7 @@
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/DFF.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/DFF_enable.vhd" xil_pn:type="FILE_VHDL">
@@ -95,7 +95,7 @@
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/hextosevenseg.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/hextosevseg_tb.vhd" xil_pn:type="FILE_VHDL">
@@ -107,12 +107,12 @@
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/LST.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/maximum.vhd" xil_pn:type="FILE_VHDL">
@@ -153,7 +153,7 @@
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/numeric_display.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="26"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/OneShot.vhd" xil_pn:type="FILE_VHDL">
@@ -163,7 +163,7 @@
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/pulse_gen.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="28"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
       <library xil_pn:name="kjb5568_rjl5336_library"/>
     </file>
     <file xil_pn:name="../../Lab08/kjb5568_rjl5336_library/Reg_nbit.vhd" xil_pn:type="FILE_VHDL">
@@ -188,10 +188,10 @@
     </file>
     <file xil_pn:name="../kjb5568_rjl5336_library/PWM.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="33"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
     </file>
-    <file xil_pn:name="../../Lab08/lab08_kjb5568_rjl5336/Nexys4_Master.ucf" xil_pn:type="FILE_UCF">
-      <association xil_pn:name="Implementation" xil_pn:seqID="34"/>
+    <file xil_pn:name="Nexys4_Master.ucf" xil_pn:type="FILE_UCF">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
   </files>
 
@@ -260,6 +260,7 @@
     <property xil_pn:name="Enable Cyclic Redundancy Checking (CRC)" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Debugging of Serial Mode BitStream" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable External Master Clock" xil_pn:value="Disable" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable Hardware Co-Simulation" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Internal Done Pipe" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Message Filtering" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Multi-Threading" xil_pn:value="Off" xil_pn:valueState="default"/>
@@ -376,6 +377,7 @@
     <property xil_pn:name="Package" xil_pn:value="csg324" xil_pn:valueState="default"/>
     <property xil_pn:name="Perform Advanced Analysis" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Perform Advanced Analysis Post Trace" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Perform Timing-Driven Packing and Placement" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Place &amp; Route Effort Level (Overall)" xil_pn:value="High" xil_pn:valueState="default"/>
     <property xil_pn:name="Place And Route Mode" xil_pn:value="Route Only" xil_pn:valueState="default"/>
     <property xil_pn:name="Place MultiBoot Settings into Bitstream virtex7" xil_pn:value="false" xil_pn:valueState="default"/>
@@ -517,7 +519,7 @@
   </properties>
 
   <bindings>
-    <binding xil_pn:location="/lab09_kjb5568_rjl5336" xil_pn:name="../../Lab08/lab08_kjb5568_rjl5336/Nexys4_Master.ucf"/>
+    <binding xil_pn:location="/lab09_kjb5568_rjl5336" xil_pn:name="Nexys4_Master.ucf"/>
   </bindings>
 
   <libraries>
