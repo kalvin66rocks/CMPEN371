@@ -32,17 +32,17 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  446 paths analyzed, 48 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   3.657ns.
+ Minimum period is   3.766ns.
 --------------------------------------------------------------------------------
 
-Paths for end point pulse_strobe/count_15 (SLICE_X80Y82.A2), 16 paths
+Paths for end point pulse_strobe/count_7 (SLICE_X83Y82.A1), 16 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     6.343ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     6.234ns (requirement - (data path - clock path skew + uncertainty))
   Source:               pulse_strobe/count_15 (FF)
-  Destination:          pulse_strobe/count_15 (FF)
+  Destination:          pulse_strobe/count_7 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      3.622ns (Levels of Logic = 3)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      3.706ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.025ns (0.162 - 0.187)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -53,33 +53,33 @@ Slack (setup path):     6.343ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: pulse_strobe/count_15 to pulse_strobe/count_15
+  Maximum Data Path at Slow Process Corner: pulse_strobe/count_15 to pulse_strobe/count_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X80Y82.AQ      Tcko                  0.518   pulse_strobe/count<15>
+    SLICE_X84Y83.BQ      Tcko                  0.518   pulse_strobe/count<15>
                                                        pulse_strobe/count_15
-    SLICE_X79Y80.A2      net (fanout=2)        0.973   pulse_strobe/count<15>
-    SLICE_X79Y80.A       Tilo                  0.124   pulse_strobe/clear<15>
+    SLICE_X84Y82.A2      net (fanout=2)        0.814   pulse_strobe/count<15>
+    SLICE_X84Y82.A       Tilo                  0.124   ANODE_5_OBUF
                                                        pulse_strobe/clear<15>1
-    SLICE_X78Y79.B4      net (fanout=3)        0.610   pulse_strobe/clear<15>
-    SLICE_X78Y79.B       Tilo                  0.124   pulse_strobe/count<2>
+    SLICE_X84Y80.A2      net (fanout=3)        0.826   pulse_strobe/clear<15>
+    SLICE_X84Y80.A       Tilo                  0.124   pulse_strobe/count<2>
                                                        pulse_strobe/clear<15>3
-    SLICE_X80Y82.A2      net (fanout=16)       1.226   strobe
-    SLICE_X80Y82.CLK     Tas                   0.047   pulse_strobe/count<15>
-                                                       pulse_strobe/count_15_rstpot
-                                                       pulse_strobe/count_15
+    SLICE_X83Y82.A1      net (fanout=16)       1.205   strobe
+    SLICE_X83Y82.CLK     Tas                   0.095   pulse_strobe/count<10>
+                                                       pulse_strobe/count_7_rstpot
+                                                       pulse_strobe/count_7
     -------------------------------------------------  ---------------------------
-    Total                                      3.622ns (0.813ns logic, 2.809ns route)
-                                                       (22.4% logic, 77.6% route)
+    Total                                      3.706ns (0.861ns logic, 2.845ns route)
+                                                       (23.2% logic, 76.8% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     6.478ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pulse_strobe/count_5 (FF)
-  Destination:          pulse_strobe/count_15 (FF)
+Slack (setup path):     6.270ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pulse_strobe/count_14 (FF)
+  Destination:          pulse_strobe/count_7 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      3.467ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.020ns (0.162 - 0.182)
+  Data Path Delay:      3.670ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.025ns (0.162 - 0.187)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -90,33 +90,147 @@ Slack (setup path):     6.478ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: pulse_strobe/count_5 to pulse_strobe/count_15
+  Maximum Data Path at Slow Process Corner: pulse_strobe/count_14 to pulse_strobe/count_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X81Y79.CQ      Tcko                  0.456   pulse_strobe/count<6>
-                                                       pulse_strobe/count_5
-    SLICE_X79Y79.B2      net (fanout=2)        0.815   pulse_strobe/count<5>
-    SLICE_X79Y79.B       Tilo                  0.124   sevenseg/cnt/count<1>
-                                                       pulse_strobe/clear<15>2
-    SLICE_X78Y79.B2      net (fanout=3)        0.675   pulse_strobe/clear<15>1
-    SLICE_X78Y79.B       Tilo                  0.124   pulse_strobe/count<2>
+    SLICE_X83Y83.DQ      Tcko                  0.456   pulse_strobe/count<14>
+                                                       pulse_strobe/count_14
+    SLICE_X84Y82.A1      net (fanout=2)        0.840   pulse_strobe/count<14>
+    SLICE_X84Y82.A       Tilo                  0.124   ANODE_5_OBUF
+                                                       pulse_strobe/clear<15>1
+    SLICE_X84Y80.A2      net (fanout=3)        0.826   pulse_strobe/clear<15>
+    SLICE_X84Y80.A       Tilo                  0.124   pulse_strobe/count<2>
                                                        pulse_strobe/clear<15>3
-    SLICE_X80Y82.A2      net (fanout=16)       1.226   strobe
-    SLICE_X80Y82.CLK     Tas                   0.047   pulse_strobe/count<15>
-                                                       pulse_strobe/count_15_rstpot
-                                                       pulse_strobe/count_15
+    SLICE_X83Y82.A1      net (fanout=16)       1.205   strobe
+    SLICE_X83Y82.CLK     Tas                   0.095   pulse_strobe/count<10>
+                                                       pulse_strobe/count_7_rstpot
+                                                       pulse_strobe/count_7
     -------------------------------------------------  ---------------------------
-    Total                                      3.467ns (0.751ns logic, 2.716ns route)
+    Total                                      3.670ns (0.799ns logic, 2.871ns route)
+                                                       (21.8% logic, 78.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.447ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pulse_strobe/count_6 (FF)
+  Destination:          pulse_strobe/count_7 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.496ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.022ns (0.162 - 0.184)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pulse_strobe/count_6 to pulse_strobe/count_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X83Y81.DQ      Tcko                  0.456   pulse_strobe/count<6>
+                                                       pulse_strobe/count_6
+    SLICE_X84Y82.A3      net (fanout=2)        0.666   pulse_strobe/count<6>
+    SLICE_X84Y82.A       Tilo                  0.124   ANODE_5_OBUF
+                                                       pulse_strobe/clear<15>1
+    SLICE_X84Y80.A2      net (fanout=3)        0.826   pulse_strobe/clear<15>
+    SLICE_X84Y80.A       Tilo                  0.124   pulse_strobe/count<2>
+                                                       pulse_strobe/clear<15>3
+    SLICE_X83Y82.A1      net (fanout=16)       1.205   strobe
+    SLICE_X83Y82.CLK     Tas                   0.095   pulse_strobe/count<10>
+                                                       pulse_strobe/count_7_rstpot
+                                                       pulse_strobe/count_7
+    -------------------------------------------------  ---------------------------
+    Total                                      3.496ns (0.799ns logic, 2.697ns route)
+                                                       (22.9% logic, 77.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pulse_strobe/count_8 (SLICE_X83Y82.B1), 16 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.234ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pulse_strobe/count_15 (FF)
+  Destination:          pulse_strobe/count_8 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.706ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.025ns (0.162 - 0.187)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pulse_strobe/count_15 to pulse_strobe/count_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X84Y83.BQ      Tcko                  0.518   pulse_strobe/count<15>
+                                                       pulse_strobe/count_15
+    SLICE_X84Y82.A2      net (fanout=2)        0.814   pulse_strobe/count<15>
+    SLICE_X84Y82.A       Tilo                  0.124   ANODE_5_OBUF
+                                                       pulse_strobe/clear<15>1
+    SLICE_X84Y80.A2      net (fanout=3)        0.826   pulse_strobe/clear<15>
+    SLICE_X84Y80.A       Tilo                  0.124   pulse_strobe/count<2>
+                                                       pulse_strobe/clear<15>3
+    SLICE_X83Y82.B1      net (fanout=16)       1.207   strobe
+    SLICE_X83Y82.CLK     Tas                   0.093   pulse_strobe/count<10>
+                                                       pulse_strobe/count_8_rstpot
+                                                       pulse_strobe/count_8
+    -------------------------------------------------  ---------------------------
+    Total                                      3.706ns (0.859ns logic, 2.847ns route)
+                                                       (23.2% logic, 76.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.270ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pulse_strobe/count_14 (FF)
+  Destination:          pulse_strobe/count_8 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.670ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.025ns (0.162 - 0.187)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pulse_strobe/count_14 to pulse_strobe/count_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X83Y83.DQ      Tcko                  0.456   pulse_strobe/count<14>
+                                                       pulse_strobe/count_14
+    SLICE_X84Y82.A1      net (fanout=2)        0.840   pulse_strobe/count<14>
+    SLICE_X84Y82.A       Tilo                  0.124   ANODE_5_OBUF
+                                                       pulse_strobe/clear<15>1
+    SLICE_X84Y80.A2      net (fanout=3)        0.826   pulse_strobe/clear<15>
+    SLICE_X84Y80.A       Tilo                  0.124   pulse_strobe/count<2>
+                                                       pulse_strobe/clear<15>3
+    SLICE_X83Y82.B1      net (fanout=16)       1.207   strobe
+    SLICE_X83Y82.CLK     Tas                   0.093   pulse_strobe/count<10>
+                                                       pulse_strobe/count_8_rstpot
+                                                       pulse_strobe/count_8
+    -------------------------------------------------  ---------------------------
+    Total                                      3.670ns (0.797ns logic, 2.873ns route)
                                                        (21.7% logic, 78.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     6.491ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pulse_strobe/count_7 (FF)
-  Destination:          pulse_strobe/count_15 (FF)
+Slack (setup path):     6.447ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pulse_strobe/count_6 (FF)
+  Destination:          pulse_strobe/count_8 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      3.453ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.021ns (0.162 - 0.183)
+  Data Path Delay:      3.496ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.022ns (0.162 - 0.184)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -127,150 +241,36 @@ Slack (setup path):     6.491ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: pulse_strobe/count_7 to pulse_strobe/count_15
+  Maximum Data Path at Slow Process Corner: pulse_strobe/count_6 to pulse_strobe/count_8
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X81Y80.AQ      Tcko                  0.456   pulse_strobe/count<10>
-                                                       pulse_strobe/count_7
-    SLICE_X79Y79.B3      net (fanout=2)        0.801   pulse_strobe/count<7>
-    SLICE_X79Y79.B       Tilo                  0.124   sevenseg/cnt/count<1>
-                                                       pulse_strobe/clear<15>2
-    SLICE_X78Y79.B2      net (fanout=3)        0.675   pulse_strobe/clear<15>1
-    SLICE_X78Y79.B       Tilo                  0.124   pulse_strobe/count<2>
-                                                       pulse_strobe/clear<15>3
-    SLICE_X80Y82.A2      net (fanout=16)       1.226   strobe
-    SLICE_X80Y82.CLK     Tas                   0.047   pulse_strobe/count<15>
-                                                       pulse_strobe/count_15_rstpot
-                                                       pulse_strobe/count_15
-    -------------------------------------------------  ---------------------------
-    Total                                      3.453ns (0.751ns logic, 2.702ns route)
-                                                       (21.7% logic, 78.3% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point pulse_strobe/count_11 (SLICE_X81Y81.A2), 16 paths
---------------------------------------------------------------------------------
-Slack (setup path):     6.415ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pulse_strobe/count_15 (FF)
-  Destination:          pulse_strobe/count_11 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      3.524ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.026ns (0.160 - 0.186)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: pulse_strobe/count_15 to pulse_strobe/count_11
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X80Y82.AQ      Tcko                  0.518   pulse_strobe/count<15>
-                                                       pulse_strobe/count_15
-    SLICE_X79Y80.A2      net (fanout=2)        0.973   pulse_strobe/count<15>
-    SLICE_X79Y80.A       Tilo                  0.124   pulse_strobe/clear<15>
+    SLICE_X83Y81.DQ      Tcko                  0.456   pulse_strobe/count<6>
+                                                       pulse_strobe/count_6
+    SLICE_X84Y82.A3      net (fanout=2)        0.666   pulse_strobe/count<6>
+    SLICE_X84Y82.A       Tilo                  0.124   ANODE_5_OBUF
                                                        pulse_strobe/clear<15>1
-    SLICE_X78Y79.B4      net (fanout=3)        0.610   pulse_strobe/clear<15>
-    SLICE_X78Y79.B       Tilo                  0.124   pulse_strobe/count<2>
+    SLICE_X84Y80.A2      net (fanout=3)        0.826   pulse_strobe/clear<15>
+    SLICE_X84Y80.A       Tilo                  0.124   pulse_strobe/count<2>
                                                        pulse_strobe/clear<15>3
-    SLICE_X81Y81.A2      net (fanout=16)       1.080   strobe
-    SLICE_X81Y81.CLK     Tas                   0.095   pulse_strobe/count<14>
-                                                       pulse_strobe/count_11_rstpot
-                                                       pulse_strobe/count_11
+    SLICE_X83Y82.B1      net (fanout=16)       1.207   strobe
+    SLICE_X83Y82.CLK     Tas                   0.093   pulse_strobe/count<10>
+                                                       pulse_strobe/count_8_rstpot
+                                                       pulse_strobe/count_8
     -------------------------------------------------  ---------------------------
-    Total                                      3.524ns (0.861ns logic, 2.663ns route)
-                                                       (24.4% logic, 75.6% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     6.574ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pulse_strobe/count_5 (FF)
-  Destination:          pulse_strobe/count_11 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      3.369ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.022ns (0.160 - 0.182)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: pulse_strobe/count_5 to pulse_strobe/count_11
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X81Y79.CQ      Tcko                  0.456   pulse_strobe/count<6>
-                                                       pulse_strobe/count_5
-    SLICE_X79Y79.B2      net (fanout=2)        0.815   pulse_strobe/count<5>
-    SLICE_X79Y79.B       Tilo                  0.124   sevenseg/cnt/count<1>
-                                                       pulse_strobe/clear<15>2
-    SLICE_X78Y79.B2      net (fanout=3)        0.675   pulse_strobe/clear<15>1
-    SLICE_X78Y79.B       Tilo                  0.124   pulse_strobe/count<2>
-                                                       pulse_strobe/clear<15>3
-    SLICE_X81Y81.A2      net (fanout=16)       1.080   strobe
-    SLICE_X81Y81.CLK     Tas                   0.095   pulse_strobe/count<14>
-                                                       pulse_strobe/count_11_rstpot
-                                                       pulse_strobe/count_11
-    -------------------------------------------------  ---------------------------
-    Total                                      3.369ns (0.799ns logic, 2.570ns route)
-                                                       (23.7% logic, 76.3% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     6.587ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pulse_strobe/count_7 (FF)
-  Destination:          pulse_strobe/count_11 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      3.355ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.023ns (0.160 - 0.183)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: pulse_strobe/count_7 to pulse_strobe/count_11
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X81Y80.AQ      Tcko                  0.456   pulse_strobe/count<10>
-                                                       pulse_strobe/count_7
-    SLICE_X79Y79.B3      net (fanout=2)        0.801   pulse_strobe/count<7>
-    SLICE_X79Y79.B       Tilo                  0.124   sevenseg/cnt/count<1>
-                                                       pulse_strobe/clear<15>2
-    SLICE_X78Y79.B2      net (fanout=3)        0.675   pulse_strobe/clear<15>1
-    SLICE_X78Y79.B       Tilo                  0.124   pulse_strobe/count<2>
-                                                       pulse_strobe/clear<15>3
-    SLICE_X81Y81.A2      net (fanout=16)       1.080   strobe
-    SLICE_X81Y81.CLK     Tas                   0.095   pulse_strobe/count<14>
-                                                       pulse_strobe/count_11_rstpot
-                                                       pulse_strobe/count_11
-    -------------------------------------------------  ---------------------------
-    Total                                      3.355ns (0.799ns logic, 2.556ns route)
-                                                       (23.8% logic, 76.2% route)
+    Total                                      3.496ns (0.797ns logic, 2.699ns route)
+                                                       (22.8% logic, 77.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point pulse_strobe/count_12 (SLICE_X81Y81.B3), 13 paths
+Paths for end point pulse_strobe/count_11 (SLICE_X83Y83.A2), 12 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     6.416ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     6.436ns (requirement - (data path - clock path skew + uncertainty))
   Source:               pulse_strobe/count_1 (FF)
-  Destination:          pulse_strobe/count_12 (FF)
+  Destination:          pulse_strobe/count_11 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      3.513ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.036ns (0.869 - 0.905)
+  Data Path Delay:      3.509ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.020ns (0.163 - 0.183)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -281,84 +281,78 @@ Slack (setup path):     6.416ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: pulse_strobe/count_1 to pulse_strobe/count_12
+  Maximum Data Path at Slow Process Corner: pulse_strobe/count_1 to pulse_strobe/count_11
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X78Y79.CQ      Tcko                  0.518   pulse_strobe/count<2>
+    SLICE_X84Y80.CQ      Tcko                  0.518   pulse_strobe/count<2>
                                                        pulse_strobe/count_1
-    SLICE_X80Y78.B1      net (fanout=2)        0.969   pulse_strobe/count<1>
-    SLICE_X80Y78.COUT    Topcyb                0.657   pulse_strobe/Mcount_count_cy<3>
+    SLICE_X82Y80.B1      net (fanout=2)        0.809   pulse_strobe/count<1>
+    SLICE_X82Y80.COUT    Topcyb                0.674   pulse_strobe/Mcount_count_cy<3>
                                                        pulse_strobe/count<1>_rt
                                                        pulse_strobe/Mcount_count_cy<3>
-    SLICE_X80Y79.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<3>
-    SLICE_X80Y79.COUT    Tbyp                  0.117   pulse_strobe/Mcount_count_cy<7>
+    SLICE_X82Y81.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<3>
+    SLICE_X82Y81.COUT    Tbyp                  0.114   pulse_strobe/Mcount_count_cy<7>
                                                        pulse_strobe/Mcount_count_cy<7>
-    SLICE_X80Y80.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<7>
-    SLICE_X80Y80.COUT    Tbyp                  0.117   pulse_strobe/Mcount_count_cy<11>
+    SLICE_X82Y82.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<7>
+    SLICE_X82Y82.DMUX    Tcind                 0.495   pulse_strobe/Mcount_count_cy<11>
                                                        pulse_strobe/Mcount_count_cy<11>
-    SLICE_X80Y81.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<11>
-    SLICE_X80Y81.AMUX    Tcina                 0.390   Result<15>
-                                                       pulse_strobe/Mcount_count_xor<15>
-    SLICE_X81Y81.B3      net (fanout=1)        0.652   Result<12>
-    SLICE_X81Y81.CLK     Tas                   0.093   pulse_strobe/count<14>
-                                                       pulse_strobe/count_12_rstpot
-                                                       pulse_strobe/count_12
+    SLICE_X83Y83.A2      net (fanout=1)        0.804   Result<11>
+    SLICE_X83Y83.CLK     Tas                   0.095   pulse_strobe/count<14>
+                                                       pulse_strobe/count_11_rstpot
+                                                       pulse_strobe/count_11
     -------------------------------------------------  ---------------------------
-    Total                                      3.513ns (1.892ns logic, 1.621ns route)
+    Total                                      3.509ns (1.896ns logic, 1.613ns route)
+                                                       (54.0% logic, 46.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.462ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pulse_strobe/count_0 (FF)
+  Destination:          pulse_strobe/count_11 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.483ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.020ns (0.163 - 0.183)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pulse_strobe/count_0 to pulse_strobe/count_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X84Y80.BQ      Tcko                  0.518   pulse_strobe/count<2>
+                                                       pulse_strobe/count_0
+    SLICE_X82Y80.A2      net (fanout=2)        0.801   pulse_strobe/count<0>
+    SLICE_X82Y80.COUT    Topcya                0.656   pulse_strobe/Mcount_count_cy<3>
+                                                       pulse_strobe/Mcount_count_lut<0>_INV_0
+                                                       pulse_strobe/Mcount_count_cy<3>
+    SLICE_X82Y81.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<3>
+    SLICE_X82Y81.COUT    Tbyp                  0.114   pulse_strobe/Mcount_count_cy<7>
+                                                       pulse_strobe/Mcount_count_cy<7>
+    SLICE_X82Y82.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<7>
+    SLICE_X82Y82.DMUX    Tcind                 0.495   pulse_strobe/Mcount_count_cy<11>
+                                                       pulse_strobe/Mcount_count_cy<11>
+    SLICE_X83Y83.A2      net (fanout=1)        0.804   Result<11>
+    SLICE_X83Y83.CLK     Tas                   0.095   pulse_strobe/count<14>
+                                                       pulse_strobe/count_11_rstpot
+                                                       pulse_strobe/count_11
+    -------------------------------------------------  ---------------------------
+    Total                                      3.483ns (1.878ns logic, 1.605ns route)
                                                        (53.9% logic, 46.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     6.569ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pulse_strobe/count_0 (FF)
-  Destination:          pulse_strobe/count_12 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      3.360ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.036ns (0.869 - 0.905)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: pulse_strobe/count_0 to pulse_strobe/count_12
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X78Y79.AQ      Tcko                  0.518   pulse_strobe/count<2>
-                                                       pulse_strobe/count_0
-    SLICE_X80Y78.A1      net (fanout=2)        0.836   pulse_strobe/count<0>
-    SLICE_X80Y78.COUT    Topcya                0.637   pulse_strobe/Mcount_count_cy<3>
-                                                       pulse_strobe/Mcount_count_lut<0>_INV_0
-                                                       pulse_strobe/Mcount_count_cy<3>
-    SLICE_X80Y79.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<3>
-    SLICE_X80Y79.COUT    Tbyp                  0.117   pulse_strobe/Mcount_count_cy<7>
-                                                       pulse_strobe/Mcount_count_cy<7>
-    SLICE_X80Y80.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<7>
-    SLICE_X80Y80.COUT    Tbyp                  0.117   pulse_strobe/Mcount_count_cy<11>
-                                                       pulse_strobe/Mcount_count_cy<11>
-    SLICE_X80Y81.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<11>
-    SLICE_X80Y81.AMUX    Tcina                 0.390   Result<15>
-                                                       pulse_strobe/Mcount_count_xor<15>
-    SLICE_X81Y81.B3      net (fanout=1)        0.652   Result<12>
-    SLICE_X81Y81.CLK     Tas                   0.093   pulse_strobe/count<14>
-                                                       pulse_strobe/count_12_rstpot
-                                                       pulse_strobe/count_12
-    -------------------------------------------------  ---------------------------
-    Total                                      3.360ns (1.872ns logic, 1.488ns route)
-                                                       (55.7% logic, 44.3% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     6.998ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     6.871ns (requirement - (data path - clock path skew + uncertainty))
   Source:               pulse_strobe/count_3 (FF)
-  Destination:          pulse_strobe/count_12 (FF)
+  Destination:          pulse_strobe/count_11 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      2.945ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.022ns (0.160 - 0.182)
+  Data Path Delay:      3.073ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.021ns (0.163 - 0.184)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -369,102 +363,43 @@ Slack (setup path):     6.998ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: pulse_strobe/count_3 to pulse_strobe/count_12
+  Maximum Data Path at Slow Process Corner: pulse_strobe/count_3 to pulse_strobe/count_11
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X81Y79.AQ      Tcko                  0.456   pulse_strobe/count<6>
+    SLICE_X83Y81.AQ      Tcko                  0.456   pulse_strobe/count<6>
                                                        pulse_strobe/count_3
-    SLICE_X80Y78.D4      net (fanout=2)        0.620   pulse_strobe/count<3>
-    SLICE_X80Y78.COUT    Topcyd                0.500   pulse_strobe/Mcount_count_cy<3>
+    SLICE_X82Y80.D4      net (fanout=2)        0.584   pulse_strobe/count<3>
+    SLICE_X82Y80.COUT    Topcyd                0.525   pulse_strobe/Mcount_count_cy<3>
                                                        pulse_strobe/count<3>_rt
                                                        pulse_strobe/Mcount_count_cy<3>
-    SLICE_X80Y79.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<3>
-    SLICE_X80Y79.COUT    Tbyp                  0.117   pulse_strobe/Mcount_count_cy<7>
+    SLICE_X82Y81.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<3>
+    SLICE_X82Y81.COUT    Tbyp                  0.114   pulse_strobe/Mcount_count_cy<7>
                                                        pulse_strobe/Mcount_count_cy<7>
-    SLICE_X80Y80.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<7>
-    SLICE_X80Y80.COUT    Tbyp                  0.117   pulse_strobe/Mcount_count_cy<11>
+    SLICE_X82Y82.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<7>
+    SLICE_X82Y82.DMUX    Tcind                 0.495   pulse_strobe/Mcount_count_cy<11>
                                                        pulse_strobe/Mcount_count_cy<11>
-    SLICE_X80Y81.CIN     net (fanout=1)        0.000   pulse_strobe/Mcount_count_cy<11>
-    SLICE_X80Y81.AMUX    Tcina                 0.390   Result<15>
-                                                       pulse_strobe/Mcount_count_xor<15>
-    SLICE_X81Y81.B3      net (fanout=1)        0.652   Result<12>
-    SLICE_X81Y81.CLK     Tas                   0.093   pulse_strobe/count<14>
-                                                       pulse_strobe/count_12_rstpot
-                                                       pulse_strobe/count_12
+    SLICE_X83Y83.A2      net (fanout=1)        0.804   Result<11>
+    SLICE_X83Y83.CLK     Tas                   0.095   pulse_strobe/count<14>
+                                                       pulse_strobe/count_11_rstpot
+                                                       pulse_strobe/count_11
     -------------------------------------------------  ---------------------------
-    Total                                      2.945ns (1.673ns logic, 1.272ns route)
-                                                       (56.8% logic, 43.2% route)
+    Total                                      3.073ns (1.685ns logic, 1.388ns route)
+                                                       (54.8% logic, 45.2% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point sevenseg/cnt/count_2 (SLICE_X78Y80.A6), 1 path
+Paths for end point sevenseg/cnt/count_0 (SLICE_X83Y80.A6), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.216ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               sevenseg/cnt/count_1 (FF)
-  Destination:          sevenseg/cnt/count_2 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.231ns (Levels of Logic = 1)
-  Clock Path Skew:      0.015ns (0.077 - 0.062)
-  Source Clock:         CLK_BUFGP rising at 10.000ns
-  Destination Clock:    CLK_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: sevenseg/cnt/count_1 to sevenseg/cnt/count_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X79Y79.CQ      Tcko                  0.141   sevenseg/cnt/count<1>
-                                                       sevenseg/cnt/count_1
-    SLICE_X78Y80.A6      net (fanout=16)       0.165   sevenseg/cnt/count<1>
-    SLICE_X78Y80.CLK     Tah         (-Th)     0.075   sevenseg/cnt/count<2>
-                                                       sevenseg/cnt/count_2_dpot
-                                                       sevenseg/cnt/count_2
-    -------------------------------------------------  ---------------------------
-    Total                                      0.231ns (0.066ns logic, 0.165ns route)
-                                                       (28.6% logic, 71.4% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point sevenseg/cnt/count_2 (SLICE_X78Y80.A5), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.233ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               sevenseg/cnt/count_0 (FF)
-  Destination:          sevenseg/cnt/count_2 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.248ns (Levels of Logic = 1)
-  Clock Path Skew:      0.015ns (0.077 - 0.062)
-  Source Clock:         CLK_BUFGP rising at 10.000ns
-  Destination Clock:    CLK_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: sevenseg/cnt/count_0 to sevenseg/cnt/count_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X79Y79.AQ      Tcko                  0.141   sevenseg/cnt/count<1>
-                                                       sevenseg/cnt/count_0
-    SLICE_X78Y80.A5      net (fanout=15)       0.182   sevenseg/cnt/count<0>
-    SLICE_X78Y80.CLK     Tah         (-Th)     0.075   sevenseg/cnt/count<2>
-                                                       sevenseg/cnt/count_2_dpot
-                                                       sevenseg/cnt/count_2
-    -------------------------------------------------  ---------------------------
-    Total                                      0.248ns (0.066ns logic, 0.182ns route)
-                                                       (26.6% logic, 73.4% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point sevenseg/cnt/count_0 (SLICE_X79Y79.A6), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.249ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      0.278ns (requirement - (clock path skew + uncertainty - data path))
   Source:               pulse_strobe/count_13 (FF)
   Destination:          sevenseg/cnt/count_0 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.281ns (Levels of Logic = 1)
-  Clock Path Skew:      0.032ns (0.334 - 0.302)
+  Data Path Delay:      0.289ns (Levels of Logic = 1)
+  Clock Path Skew:      0.011ns (0.077 - 0.066)
   Source Clock:         CLK_BUFGP rising at 10.000ns
   Destination Clock:    CLK_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
@@ -473,15 +408,71 @@ Slack (hold path):      0.249ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X81Y81.CQ      Tcko                  0.141   pulse_strobe/count<14>
+    SLICE_X83Y83.CQ      Tcko                  0.141   pulse_strobe/count<14>
                                                        pulse_strobe/count_13
-    SLICE_X79Y79.A6      net (fanout=4)        0.186   pulse_strobe/count<13>
-    SLICE_X79Y79.CLK     Tah         (-Th)     0.046   sevenseg/cnt/count<1>
+    SLICE_X83Y80.A6      net (fanout=4)        0.194   pulse_strobe/count<13>
+    SLICE_X83Y80.CLK     Tah         (-Th)     0.046   sevenseg/cnt/count<1>
                                                        sevenseg/cnt/count_0_dpot
                                                        sevenseg/cnt/count_0
     -------------------------------------------------  ---------------------------
-    Total                                      0.281ns (0.095ns logic, 0.186ns route)
-                                                       (33.8% logic, 66.2% route)
+    Total                                      0.289ns (0.095ns logic, 0.194ns route)
+                                                       (32.9% logic, 67.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point sevenseg/cnt/count_2 (SLICE_X82Y79.D3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.296ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               sevenseg/cnt/count_2 (FF)
+  Destination:          sevenseg/cnt/count_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.296ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 10.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: sevenseg/cnt/count_2 to sevenseg/cnt/count_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X82Y79.DQ      Tcko                  0.141   sevenseg/cnt/count<2>
+                                                       sevenseg/cnt/count_2
+    SLICE_X82Y79.D3      net (fanout=9)        0.202   sevenseg/cnt/count<2>
+    SLICE_X82Y79.CLK     Tah         (-Th)     0.047   sevenseg/cnt/count<2>
+                                                       sevenseg/cnt/count_2_dpot
+                                                       sevenseg/cnt/count_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.296ns (0.094ns logic, 0.202ns route)
+                                                       (31.8% logic, 68.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point sevenseg/cnt/count_0 (SLICE_X83Y80.A5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.311ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               pulse_strobe/count_11 (FF)
+  Destination:          sevenseg/cnt/count_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.322ns (Levels of Logic = 1)
+  Clock Path Skew:      0.011ns (0.077 - 0.066)
+  Source Clock:         CLK_BUFGP rising at 10.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: pulse_strobe/count_11 to sevenseg/cnt/count_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X83Y83.AQ      Tcko                  0.141   pulse_strobe/count<14>
+                                                       pulse_strobe/count_11
+    SLICE_X83Y80.A5      net (fanout=4)        0.227   pulse_strobe/count<11>
+    SLICE_X83Y80.CLK     Tah         (-Th)     0.046   sevenseg/cnt/count<1>
+                                                       sevenseg/cnt/count_0_dpot
+                                                       sevenseg/cnt/count_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.322ns (0.095ns logic, 0.227ns route)
+                                                       (29.5% logic, 70.5% route)
 
 --------------------------------------------------------------------------------
 
@@ -499,18 +490,18 @@ Slack: 9.000ns (period - (min low pulse limit / (low pulse / period)))
   Period: 10.000ns
   Low pulse: 5.000ns
   Low pulse limit: 0.500ns (Tcl)
-  Physical resource: store_B/Q<7>/CLK
-  Logical resource: store_B/Q_4/CK
-  Location pin: SLICE_X72Y75.CLK
+  Physical resource: store_A/Q<3>/CLK
+  Logical resource: store_A/Q_0/CK
+  Location pin: SLICE_X72Y69.CLK
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
 Slack: 9.000ns (period - (min high pulse limit / (high pulse / period)))
   Period: 10.000ns
   High pulse: 5.000ns
   High pulse limit: 0.500ns (Tch)
-  Physical resource: store_B/Q<7>/CLK
-  Logical resource: store_B/Q_4/CK
-  Location pin: SLICE_X72Y75.CLK
+  Physical resource: store_A/Q<3>/CLK
+  Logical resource: store_A/Q_0/CK
+  Location pin: SLICE_X72Y69.CLK
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
 
@@ -527,7 +518,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    3.657|         |         |         |
+CLK            |    3.766|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -539,20 +530,20 @@ Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 Constraints cover 446 paths, 0 nets, and 97 connections
 
 Design statistics:
-   Minimum period:   3.657ns{1}   (Maximum frequency: 273.448MHz)
+   Minimum period:   3.766ns{1}   (Maximum frequency: 265.534MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Sun Nov 08 23:23:36 2015 
+Analysis completed Mon Nov 09 16:39:05 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 674 MB
+Peak Memory Usage: 675 MB
 
 
 

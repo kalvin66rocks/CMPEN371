@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Nov 08 23:22:58 2015
+// Written by: Map P.20131013 on Mon Nov 09 16:38:31 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -56,6 +56,7 @@ COMP "SWITCH<9>" LOCATE = SITE "V2" LEVEL 1;
 COMP "SWITCH<12>" LOCATE = SITE "T1" LEVEL 1;
 COMP "SWITCH<13>" LOCATE = SITE "R3" LEVEL 1;
 COMP "SWITCH<14>" LOCATE = SITE "P3" LEVEL 1;
+PIN Mmult_n0015_pins<117> = BEL "Mmult_n0015" PINNAME CLK;
 TIMEGRP sys_clk_pin = BEL "store_B/Q_15" BEL "store_B/Q_14" BEL "store_B/Q_13"
         BEL "store_B/Q_12" BEL "store_B/Q_11" BEL "store_B/Q_10" BEL
         "store_B/Q_9" BEL "store_B/Q_8" BEL "store_B/Q_7" BEL "store_B/Q_6"
@@ -65,17 +66,17 @@ TIMEGRP sys_clk_pin = BEL "store_B/Q_15" BEL "store_B/Q_14" BEL "store_B/Q_13"
         "store_A/Q_11" BEL "store_A/Q_10" BEL "store_A/Q_9" BEL "store_A/Q_8"
         BEL "store_A/Q_7" BEL "store_A/Q_6" BEL "store_A/Q_5" BEL
         "store_A/Q_4" BEL "store_A/Q_3" BEL "store_A/Q_2" BEL "store_A/Q_1"
-        BEL "store_A/Q_0" BEL "sevenseg/cnt/count_2" BEL
-        "sevenseg/cnt/count_1" BEL "sevenseg/cnt/count_0" BEL
-        "pulse_strobe/count_0" BEL "pulse_strobe/count_1" BEL
-        "pulse_strobe/count_2" BEL "pulse_strobe/count_3" BEL
-        "pulse_strobe/count_4" BEL "pulse_strobe/count_5" BEL
-        "pulse_strobe/count_6" BEL "pulse_strobe/count_7" BEL
-        "pulse_strobe/count_8" BEL "pulse_strobe/count_9" BEL
-        "pulse_strobe/count_10" BEL "pulse_strobe/count_11" BEL
-        "pulse_strobe/count_12" BEL "pulse_strobe/count_13" BEL
-        "pulse_strobe/count_14" BEL "pulse_strobe/count_15" BEL
-        "CLK_BUFGP/BUFG";
+        BEL "store_A/Q_0" PIN "Mmult_n0015_pins<117>" BEL
+        "sevenseg/cnt/count_2" BEL "sevenseg/cnt/count_1" BEL
+        "sevenseg/cnt/count_0" BEL "pulse_strobe/count_0" BEL
+        "pulse_strobe/count_1" BEL "pulse_strobe/count_2" BEL
+        "pulse_strobe/count_3" BEL "pulse_strobe/count_4" BEL
+        "pulse_strobe/count_5" BEL "pulse_strobe/count_6" BEL
+        "pulse_strobe/count_7" BEL "pulse_strobe/count_8" BEL
+        "pulse_strobe/count_9" BEL "pulse_strobe/count_10" BEL
+        "pulse_strobe/count_11" BEL "pulse_strobe/count_12" BEL
+        "pulse_strobe/count_13" BEL "pulse_strobe/count_14" BEL
+        "pulse_strobe/count_15" BEL "CLK_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 

@@ -33,11 +33,35 @@ end Multiplier;
 architecture Behavioral of Multiplier is
 
 signal ones 	 : STD_LOGIC_VECTOR(31 downto 0);
-signal tens 	 : STD_LOGIC_VECTOR(31 downto 0);
-signal hundreds : STD_LOGIC_VECTOR(31 downto 0);
-signal thousands: STD_LOGIC_VECTOR(31 downto 0);
 signal ones_reg : STD_LOGIC_VECTOR(31 downto 0);
+signal ones_reg_ans : STD_LOGIC_VECTOR(31 downto 0);
+signal cnt_b1 : STD_LOGIC_VECTOR(3 downto 0);
 signal lst_b1	 : STD_logic;
+signal not_lst_b1	 : STD_logic;
+
+signal tens 	 : STD_LOGIC_VECTOR(31 downto 0);
+signal tens_answer 	 : STD_LOGIC_VECTOR(31 downto 0);
+signal tens_reg : STD_LOGIC_VECTOR(31 downto 0);
+signal tens_reg_ans : STD_LOGIC_VECTOR(31 downto 0);
+signal cnt_b2 : STD_LOGIC_VECTOR(3 downto 0);
+signal lst_b2	 : STD_logic;
+signal not_lst_b2	 : STD_logic;
+
+signal hund 	 : STD_LOGIC_VECTOR(31 downto 0);
+signal hund_answer 	 : STD_LOGIC_VECTOR(31 downto 0);
+signal hund_reg : STD_LOGIC_VECTOR(31 downto 0);
+signal hund_reg_ans : STD_LOGIC_VECTOR(31 downto 0);
+signal cnt_b3 : STD_LOGIC_VECTOR(3 downto 0);
+signal lst_b3	 : STD_logic;
+signal not_lst_b3	 : STD_logic;
+
+signal thous 	 : STD_LOGIC_VECTOR(31 downto 0);
+signal thous_answer 	 : STD_LOGIC_VECTOR(31 downto 0);
+signal thous_reg : STD_LOGIC_VECTOR(31 downto 0);
+signal thous_reg_ans : STD_LOGIC_VECTOR(31 downto 0);
+signal cnt_b4 : STD_LOGIC_VECTOR(3 downto 0);
+signal lst_b4	 : STD_logic;
+signal not_lst_b4	 : STD_logic;
 
 COMPONENT BCD_32bit
 	PORT(
@@ -60,15 +84,71 @@ Inst_BCD_Adder1: BCD_32bit PORT MAP(
 		cbo => open,
 		sum => ones
 	);
-	
-ones_reg: Reg_nbit generic map (32) PORT MAP (
+ones_register: Reg_nbit generic map (32) PORT MAP (
 	d => ones,
-	en => lst_b1,
+	load => lst_b1,
 	clk => clk,
 	clr => '0',
 	q => ones_reg
 	);
+lst_b1_cmp : LSTEQ generic map (4) port map (
+	A =>cnt_b1,
+	B => B(3 downto 0),
+	output => lst_b1
+	);
+b1_cnt : counter_nbit generic map (4) port map (
+	en => '1',
+	clk => clk,
+	clr => '0',
+	q => cnt_b1
+	);
+not_lst_b1 <= not lst_b1;	
+ones_regans: Reg_nbit generic map (32) PORT MAP (
+	d => ones_reg,
+	load => not_lst_b1,
+	clk => clk,
+	clr => '0',
+	q => ones_reg_ans
+	);
 
+
+	
+Inst_BCD_Adder2: BCD_32bit PORT MAP(
+		A => A,
+		B => tens_reg,
+		sub => '0',
+		cbi => '0',
+		cbo => open,
+		sum => tens
+	);
+tens_register: Reg_nbit generic map (32) PORT MAP (
+	d => tens,
+	load => lst_b2,
+	clk => clk,
+	clr => '0',
+	q => tens_reg
+	);
+lst_b2_cmp : LSTEQ generic map (4) port map (
+	A =>cnt_b2,
+	B => B(7 downto 4),
+	output => lst_b2
+	);
+b2_cnt : counter_nbit generic map (4) port map (
+	en => '1',
+	clk => clk,
+	clr => '0',
+	q => cnt_b2
+	);
+not_lst_b2 <= not lst_b2;	
+tens_regans: Reg_nbit generic map (32) PORT MAP (
+	d => ones_reg,
+	load => not_lst_b2,
+	clk => clk,
+	clr => '0',
+	q => tens_reg_ans
+	);
+	
+tens_answer <= tens_reg_ans(27 downto 0) & "0000";
 
 
 end Behavioral;

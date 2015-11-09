@@ -44,6 +44,8 @@ COMPONENT BCD_Adder
 		sum : OUT std_logic_vector(15 downto 0)
 		);
 	END COMPONENT;
+	
+signal cb_1 : std_logic;
 
 begin
 
@@ -60,7 +62,7 @@ Inst_BCD_Adder2: BCD_Adder PORT MAP(
 		A => A(31 downto 16),
 		B => B(31 downto 16),
 		sub => sub,
-		cbi => cb1,
+		cbi => cb_1,
 		cbo => cbo,
 		sum => Sum(31 downto 16)
 	);end Behavioral;

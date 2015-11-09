@@ -203,6 +203,13 @@ package kjb5568_rjl5336_Components is
            C_out : out  STD_LOGIC;
            SUM : out  STD_LOGIC_VECTOR (n-1 downto 0));
 	end component;
+	
+	component LSTEQ is
+	generic (n: integer :=4);
+    Port ( A        : in  STD_LOGIC_VECTOR (n-1 downto 0);
+           B        : in  STD_LOGIC_VECTOR (n-1 downto 0);
+           OUTPUT   : out STD_LOGIC);
+	end component;
 
 
 end kjb5568_rjl5336_Components;
