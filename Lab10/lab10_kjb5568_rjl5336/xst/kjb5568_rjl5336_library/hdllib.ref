@@ -1,0 +1,8 @@
+PB kjb5568_rjl5336_components kjb5568_rjl5336_components C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd sub00/vhpl07 1446932183
+EN fulladder NULL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/FullAdder.vhd sub00/vhpl00 1446932176
+EN ripple_carry_adder NULL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/rippe_carry_adder.vhd sub00/vhpl04 1446932180
+AR ripple_carry_adder structural C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/rippe_carry_adder.vhd sub00/vhpl05 1446932181
+PH kjb5568_rjl5336_components NULL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd sub00/vhpl06 1446932182
+AR fulladder dataflow C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/FullAdder.vhd sub00/vhpl01 1446932177
+AR comparegrt structural C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/CompareGRT.vhd sub00/vhpl03 1446932179
+EN comparegrt NULL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/CompareGRT.vhd sub00/vhpl02 1446932178

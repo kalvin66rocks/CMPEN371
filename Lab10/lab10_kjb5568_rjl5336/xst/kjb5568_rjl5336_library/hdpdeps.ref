@@ -1,0 +1,34 @@
+V3 38
+FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/CompareGRT.vhd 2015/11/01.15:07:35 P.20131013
+EN kjb5568_rjl5336_library/CompareGRT 1446932178 \
+      FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/CompareGRT.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR kjb5568_rjl5336_library/CompareGRT/structural 1446932179 \
+      FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/CompareGRT.vhd \
+      EN kjb5568_rjl5336_library/CompareGRT 1446932178
+FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/FullAdder.vhd 2015/11/01.15:07:35 P.20131013
+EN kjb5568_rjl5336_library/FullAdder 1446932176 \
+      FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/FullAdder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR kjb5568_rjl5336_library/FullAdder/Dataflow 1446932177 \
+      FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/FullAdder.vhd \
+      EN kjb5568_rjl5336_library/FullAdder 1446932176
+FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd 2015/11/01.15:07:35 P.20131013
+PH kjb5568_rjl5336_library/kjb5568_rjl5336_Components 1446932182 \
+      FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd \
+      PB ieee/std_logic_1164 1381692176 CD FullAdder CD AdderSubtractor_nbit \
+      CD CompareEQU CD CompareGRT CD maximum CD LST CD minimum CD Average CD mux4to1 \
+      CD threeto8encoder CD hextosevenseg CD Counter_nbit CD CounterUpDown_nbit \
+      CD Reg_nbit CD DFF CD DFF_CE CD counter50mhz CD counter16hz CD OneShot \
+      CD Debouncer CD Shift_Register CD WordTo8dig7seg CD pulse_gen \
+      CD Up_down_with_input_nbit CD Ripple_Carry_Adder
+PB kjb5568_rjl5336_library/kjb5568_rjl5336_Components 1446932183 \
+      FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd \
+      PH kjb5568_rjl5336_library/kjb5568_rjl5336_Components 1446932182
+FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/rippe_carry_adder.vhd 2015/11/01.15:07:35 P.20131013
+EN kjb5568_rjl5336_library/Ripple_Carry_Adder 1446932180 \
+      FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/rippe_carry_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR kjb5568_rjl5336_library/Ripple_Carry_Adder/Structural 1446932181 \
+      FL C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/../kjb5568_rjl5336_library/rippe_carry_adder.vhd \
+      EN kjb5568_rjl5336_library/Ripple_Carry_Adder 1446932180 CP FullAdder
