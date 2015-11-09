@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: lab10_kjb5568_rjl5336.prj
 
@@ -274,8 +274,8 @@ Macro Statistics
  4-bit 2-to-1 multiplexer                              : 12
  4-bit 8-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 8
-# Xors                                                 : 84
- 1-bit xor2                                            : 84
+# Xors                                                 : 88
+ 1-bit xor2                                            : 88
 
 =========================================================================
 
@@ -325,8 +325,8 @@ Macro Statistics
  4-bit 2-to-1 multiplexer                              : 12
  4-bit 8-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 8
-# Xors                                                 : 84
- 1-bit xor2                                            : 84
+# Xors                                                 : 88
+ 1-bit xor2                                            : 88
 
 =========================================================================
 
@@ -379,10 +379,10 @@ Primitive and Black Box Usage:
 #      INV                         : 1
 #      LUT1                        : 15
 #      LUT2                        : 16
-#      LUT3                        : 10
-#      LUT4                        : 20
-#      LUT5                        : 13
-#      LUT6                        : 44
+#      LUT3                        : 11
+#      LUT4                        : 19
+#      LUT5                        : 12
+#      LUT6                        : 45
 #      MUXCY                       : 15
 #      MUXF7                       : 4
 #      VCC                         : 1
@@ -408,10 +408,10 @@ Slice Logic Utilization:
     Number used as Logic:               119  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    126
-   Number with an unused Flip Flop:      75  out of    126    59%  
-   Number with an unused LUT:             7  out of    126     5%  
-   Number of fully used LUT-FF pairs:    44  out of    126    34%  
+ Number of LUT Flip Flop pairs used:    125
+   Number with an unused Flip Flop:      74  out of    125    59%  
+   Number with an unused LUT:             6  out of    125     4%  
+   Number of fully used LUT-FF pairs:    45  out of    125    36%  
    Number of unique control sets:         4
 
 IO Utilization: 
@@ -455,8 +455,8 @@ Speed Grade: -1
 
    Minimum period: 3.009ns (Maximum Frequency: 332.336MHz)
    Minimum input arrival time before clock: 0.637ns
-   Maximum output required time after clock: 14.715ns
-   Maximum combinational path delay: 14.524ns
+   Maximum output required time after clock: 13.582ns
+   Maximum combinational path delay: 12.953ns
 
 Timing Details:
 ---------------
@@ -509,27 +509,27 @@ Offset:              0.637ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 56129 / 15
 -------------------------------------------------------------------------
-Offset:              14.715ns (Levels of Logic = 18)
-  Source:            store_B/Q_1 (FF)
+Offset:              13.582ns (Levels of Logic = 18)
+  Source:            store_B/Q_0 (FF)
   Destination:       SEGMENT<0> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: store_B/Q_1 to SEGMENT<0>
+  Data Path: store_B/Q_0 to SEGMENT<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             3   0.478   0.790  store_B/Q_1 (store_B/Q_1)
-     LUT5:I1->O            3   0.124   0.730  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[1].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<2>)
-     LUT4:I1->O            1   0.124   0.716  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<3>)
-     LUT6:I3->O            6   0.124   0.569  Inst_BCD_Adder/Inst_BCD_Adder1/Mmux_cbo_int11 (Inst_BCD_Adder/cb_1)
-     LUT6:I4->O            3   0.124   0.730  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[1].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<2>)
-     LUT4:I1->O            1   0.124   0.716  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<3>)
-     LUT6:I3->O            7   0.124   0.576  Inst_BCD_Adder/Inst_BCD_Adder2/Mmux_cbo_int11 (Inst_BCD_Adder/cb_2)
-     LUT6:I4->O            3   0.124   0.730  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[1].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<2>)
-     LUT4:I1->O            1   0.124   0.716  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<3>)
-     LUT6:I3->O            7   0.124   0.576  Inst_BCD_Adder/Inst_BCD_Adder3/Mmux_cbo_int11 (Inst_BCD_Adder/cb_3)
-     LUT6:I4->O            3   0.124   0.730  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[1].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<2>)
-     LUT4:I1->O            1   0.124   0.716  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<3>)
+     FDRE:C->Q             3   0.478   0.730  store_B/Q_0 (store_B/Q_0)
+     LUT3:I0->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<1>)
+     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<3>)
+     LUT6:I3->O            6   0.124   0.454  Inst_BCD_Adder/Inst_BCD_Adder1/Mmux_cbo_int11 (Inst_BCD_Adder/cb_1)
+     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<1>)
+     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<3>)
+     LUT6:I3->O            7   0.124   0.461  Inst_BCD_Adder/Inst_BCD_Adder2/Mmux_cbo_int11 (Inst_BCD_Adder/cb_2)
+     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<1>)
+     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<3>)
+     LUT6:I3->O            7   0.124   0.461  Inst_BCD_Adder/Inst_BCD_Adder3/Mmux_cbo_int11 (Inst_BCD_Adder/cb_3)
+     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<1>)
+     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<3>)
      LUT6:I3->O            5   0.124   0.803  Inst_BCD_Adder/Inst_BCD_Adder4/Mmux_cbo_int11 (overflow)
      LUT5:I1->O            1   0.124   0.919  Mmux_display_word7_SW4 (N36)
      LUT6:I1->O            1   0.124   0.716  Mmux_display_word7 (display_word<15>)
@@ -538,14 +538,14 @@ Offset:              14.715ns (Levels of Logic = 18)
      LUT4:I1->O            1   0.124   0.399  sevenseg/segment<1>1 (SEGMENT_5_OBUF)
      OBUF:I->O                 0.000          SEGMENT_5_OBUF (SEGMENT<5>)
     ----------------------------------------
-    Total                     14.715ns (2.827ns logic, 11.888ns route)
-                                       (19.2% logic, 80.8% route)
+    Total                     13.582ns (2.827ns logic, 10.755ns route)
+                                       (20.8% logic, 79.2% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 19141 / 27
+  Total number of paths / destination ports: 19169 / 27
 -------------------------------------------------------------------------
-Delay:               14.524ns (Levels of Logic = 19)
+Delay:               12.953ns (Levels of Logic = 19)
   Source:            BUTTON<1> (PAD)
   Destination:       SEGMENT<0> (PAD)
 
@@ -553,18 +553,18 @@ Delay:               14.524ns (Levels of Logic = 19)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            54   0.001   1.076  BUTTON_1_IBUF (BUTTON_1_IBUF)
-     LUT5:I0->O            3   0.124   0.730  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[1].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<2>)
-     LUT4:I1->O            1   0.124   0.716  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<3>)
-     LUT6:I3->O            6   0.124   0.569  Inst_BCD_Adder/Inst_BCD_Adder1/Mmux_cbo_int11 (Inst_BCD_Adder/cb_1)
-     LUT6:I4->O            3   0.124   0.730  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[1].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<2>)
-     LUT4:I1->O            1   0.124   0.716  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<3>)
-     LUT6:I3->O            7   0.124   0.576  Inst_BCD_Adder/Inst_BCD_Adder2/Mmux_cbo_int11 (Inst_BCD_Adder/cb_2)
-     LUT6:I4->O            3   0.124   0.730  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[1].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<2>)
-     LUT4:I1->O            1   0.124   0.716  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<3>)
-     LUT6:I3->O            7   0.124   0.576  Inst_BCD_Adder/Inst_BCD_Adder3/Mmux_cbo_int11 (Inst_BCD_Adder/cb_3)
-     LUT6:I4->O            3   0.124   0.730  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[1].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<2>)
-     LUT4:I1->O            1   0.124   0.716  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<3>)
+     IBUF:I->O            54   0.001   0.578  BUTTON_1_IBUF (BUTTON_1_IBUF)
+     LUT3:I2->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<1>)
+     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<3>)
+     LUT6:I3->O            6   0.124   0.454  Inst_BCD_Adder/Inst_BCD_Adder1/Mmux_cbo_int11 (Inst_BCD_Adder/cb_1)
+     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<1>)
+     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<3>)
+     LUT6:I3->O            7   0.124   0.461  Inst_BCD_Adder/Inst_BCD_Adder2/Mmux_cbo_int11 (Inst_BCD_Adder/cb_2)
+     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<1>)
+     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<3>)
+     LUT6:I3->O            7   0.124   0.461  Inst_BCD_Adder/Inst_BCD_Adder3/Mmux_cbo_int11 (Inst_BCD_Adder/cb_3)
+     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<1>)
+     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<3>)
      LUT6:I3->O            5   0.124   0.803  Inst_BCD_Adder/Inst_BCD_Adder4/Mmux_cbo_int11 (overflow)
      LUT5:I1->O            1   0.124   0.919  Mmux_display_word7_SW4 (N36)
      LUT6:I1->O            1   0.124   0.716  Mmux_display_word7 (display_word<15>)
@@ -573,8 +573,8 @@ Delay:               14.524ns (Levels of Logic = 19)
      LUT4:I1->O            1   0.124   0.399  sevenseg/segment<1>1 (SEGMENT_5_OBUF)
      OBUF:I->O                 0.000          SEGMENT_5_OBUF (SEGMENT<5>)
     ----------------------------------------
-    Total                     14.524ns (2.350ns logic, 12.174ns route)
-                                       (16.2% logic, 83.8% route)
+    Total                     12.953ns (2.350ns logic, 10.603ns route)
+                                       (18.1% logic, 81.9% route)
 
 =========================================================================
 
@@ -592,8 +592,8 @@ CLK            |    3.009|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.79 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.56 secs
  
 --> 
 

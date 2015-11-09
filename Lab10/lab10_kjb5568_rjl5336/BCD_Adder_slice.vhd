@@ -51,7 +51,7 @@ cbo_int <= (c_out xor sub) when sub ='1' else
 			  greater when sub = '0' else
 			  '0';
 			  
-c_in_int <=cbi or sub;
+c_in_int <=cbi xor sub;
 main_adder: Ripple_Carry_Adder generic map (4) port map (
 	a=> a,
 	b=> bxor, 
