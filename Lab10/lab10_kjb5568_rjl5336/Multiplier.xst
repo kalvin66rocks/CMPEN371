@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Kevin/Desktop/Lab10/lab10_kjb5568_rjl5336/xst"
+set -tmpdir "C:/Users/kalvi_000/Desktop/Lab10/lab10_kjb5568_rjl5336/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/kalvi_000/Desktop/Lab10/lab10_kjb5568_rjl5336/xst"
 run -compileonly yes
 -p xc7a100t-1-csg324
 -top Multiplier

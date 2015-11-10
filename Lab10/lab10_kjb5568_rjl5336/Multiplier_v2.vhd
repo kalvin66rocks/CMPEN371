@@ -72,7 +72,7 @@ less_than_b : LSTEQ generic map (32) port map (
 	output => lsteq_b
 	);
 b1_cnt : counter_nbit generic map (32) port map (
-	en => start_count,
+	en => start_count and lsteq_b,
 	clk => clk,
 	clr => clr,
 	q => cnt_b1

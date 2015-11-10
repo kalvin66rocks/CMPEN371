@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: lab10_kjb5568_rjl5336.prj
 
@@ -105,42 +105,53 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\FullAdder.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\FullAdder.vhd" into library kjb5568_rjl5336_library
 Parsing entity <FullAdder>.
 Parsing architecture <Dataflow> of entity <fulladder>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\rippe_carry_adder.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\rippe_carry_adder.vhd" into library kjb5568_rjl5336_library
 Parsing entity <Ripple_Carry_Adder>.
 Parsing architecture <Structural> of entity <ripple_carry_adder>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\kjb5568_rjl5336_components.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\kjb5568_rjl5336_components.vhd" into library kjb5568_rjl5336_library
 Parsing package <kjb5568_rjl5336_Components>.
 Parsing package body <kjb5568_rjl5336_Components>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\CompareGRT.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\CompareGRT.vhd" into library kjb5568_rjl5336_library
 Parsing entity <CompareGRT>.
 Parsing architecture <structural> of entity <comparegrt>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_Adder_slice.vhd" into library work
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_Adder_slice.vhd" into library work
 Parsing entity <BCD_Adder_slice>.
 Parsing architecture <Behavioral> of entity <bcd_adder_slice>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\hextosevenseg.vhd" into library kjb5568_rjl5336_library
-Parsing entity <hextosevenseg>.
-Parsing architecture <structural> of entity <hextosevenseg>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\Counter_nbit.vhd" into library kjb5568_rjl5336_library
-Parsing entity <Counter_nbit>.
-Parsing architecture <Behavioral> of entity <counter_nbit>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_Adder.vhd" into library work
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_Adder.vhd" into library work
 Parsing entity <BCD_Adder>.
 Parsing architecture <Behavioral> of entity <bcd_adder>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\Reg_nbit.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_32bit.vhd" into library work
+Parsing entity <BCD_32bit>.
+Parsing architecture <Behavioral> of entity <bcd_32bit>.
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\Reg_nbit.vhd" into library kjb5568_rjl5336_library
 Parsing entity <Reg_nbit>.
 Parsing architecture <Behavioral> of entity <reg_nbit>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\pulse_gen.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\LST.vhd" into library kjb5568_rjl5336_library
+Parsing entity <LST>.
+Parsing architecture <structural> of entity <lst>.
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\hextosevenseg.vhd" into library kjb5568_rjl5336_library
+Parsing entity <hextosevenseg>.
+Parsing architecture <structural> of entity <hextosevenseg>.
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\Counter_nbit.vhd" into library kjb5568_rjl5336_library
+Parsing entity <Counter_nbit>.
+Parsing architecture <Behavioral> of entity <counter_nbit>.
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\Multiplier.vhd" into library work
+Parsing entity <Multiplier>.
+Parsing architecture <Behavioral> of entity <multiplier>.
+WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\Multiplier.vhd" Line 225: Actual for formal port load is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\pulse_gen.vhd" into library kjb5568_rjl5336_library
 Parsing entity <pulse_gen>.
 Parsing architecture <Behavioral> of entity <pulse_gen>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\numeric_display.vhd" into library kjb5568_rjl5336_library
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\numeric_display.vhd" into library kjb5568_rjl5336_library
 Parsing entity <WordTo8dig7seg>.
 Parsing architecture <Behavioral> of entity <wordto8dig7seg>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\Lab10\lab10_kjb5568_rjl5336\lab10_kjb5568_rjl5336.vhd" into library work
+Parsing VHDL file "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\lab10_kjb5568_rjl5336.vhd" into library work
 Parsing entity <lab10_kjb5568_rjl5336>.
 Parsing architecture <Behavioral> of entity <lab10_kjb5568_rjl5336>.
+WARNING:HDLCompiler:946 - "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\lab10_kjb5568_rjl5336.vhd" Line 120: Actual for formal port clear is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -162,6 +173,16 @@ Elaborating entity <FullAdder> (architecture <Dataflow>) from library <kjb5568_r
 
 Elaborating entity <CompareGRT> (architecture <structural>) with generics from library <kjb5568_rjl5336_library>.
 
+Elaborating entity <Multiplier> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BCD_32bit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Reg_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <LST> (architecture <structural>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
 Elaborating entity <WordTo8dig7seg> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
 
 Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
@@ -173,15 +194,13 @@ Elaborating entity <hextosevenseg> (architecture <structural>) from library <kjb
 =========================================================================
 
 Synthesizing Unit <lab10_kjb5568_rjl5336>.
-    Related source file is "C:\Users\Kevin\Desktop\Lab10\lab10_kjb5568_rjl5336\lab10_kjb5568_rjl5336.vhd".
-    Found 31x31-bit multiplier for signal <n0015> created at line 127.
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\lab10_kjb5568_rjl5336.vhd".
     Summary:
-	inferred   1 Multiplier(s).
 	inferred   4 Multiplexer(s).
 Unit <lab10_kjb5568_rjl5336> synthesized.
 
 Synthesizing Unit <pulse_gen>.
-    Related source file is "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\pulse_gen.vhd".
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\pulse_gen.vhd".
         n = 16
         maxCount = 50000
     Found 16-bit register for signal <count>.
@@ -191,66 +210,112 @@ Synthesizing Unit <pulse_gen>.
 	inferred  16 D-type flip-flop(s).
 Unit <pulse_gen> synthesized.
 
-Synthesizing Unit <Reg_nbit>.
-    Related source file is "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\Reg_nbit.vhd".
+Synthesizing Unit <Reg_nbit_1>.
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\Reg_nbit.vhd".
         n = 16
     Found 16-bit register for signal <Q>.
     Summary:
 	inferred  16 D-type flip-flop(s).
-Unit <Reg_nbit> synthesized.
+Unit <Reg_nbit_1> synthesized.
 
 Synthesizing Unit <BCD_Adder>.
-    Related source file is "C:\Users\Kevin\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_Adder.vhd".
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_Adder.vhd".
     Summary:
 	no macro.
 Unit <BCD_Adder> synthesized.
 
 Synthesizing Unit <BCD_Adder_slice>.
-    Related source file is "C:\Users\Kevin\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_Adder_slice.vhd".
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_Adder_slice.vhd" line 62: Output port <C_out> of the instance <correction_adder> is unconnected or connected to loadless signal.
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_Adder_slice.vhd".
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_Adder_slice.vhd" line 62: Output port <C_out> of the instance <correction_adder> is unconnected or connected to loadless signal.
     Summary:
 	inferred   5 Multiplexer(s).
 Unit <BCD_Adder_slice> synthesized.
 
 Synthesizing Unit <Ripple_Carry_Adder>.
-    Related source file is "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\rippe_carry_adder.vhd".
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\rippe_carry_adder.vhd".
         n = 4
     Summary:
 	no macro.
 Unit <Ripple_Carry_Adder> synthesized.
 
 Synthesizing Unit <FullAdder>.
-    Related source file is "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\FullAdder.vhd".
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\FullAdder.vhd".
     Summary:
 Unit <FullAdder> synthesized.
 
 Synthesizing Unit <CompareGRT>.
-    Related source file is "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\CompareGRT.vhd".
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\CompareGRT.vhd".
         n = 5
     Found 5-bit comparator greater for signal <OUTPUT> created at line 36
     Summary:
 	inferred   1 Comparator(s).
 Unit <CompareGRT> synthesized.
 
+Synthesizing Unit <Multiplier>.
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\Multiplier.vhd".
+WARNING:Xst:647 - Input <B<31:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\Multiplier.vhd" line 76: Output port <cbo> of the instance <Inst_BCD_Adder1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\Multiplier.vhd" line 105: Output port <cbo> of the instance <Inst_BCD_Adder2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\Multiplier.vhd" line 135: Output port <cbo> of the instance <Inst_BCD_Adder5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\Multiplier.vhd" line 166: Output port <cbo> of the instance <Inst_BCD_Adder6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\Multiplier.vhd" line 196: Output port <cbo> of the instance <Inst_BCD_Adder3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\Multiplier.vhd" line 205: Output port <cbo> of the instance <Inst_BCD_Adder7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\Multiplier.vhd" line 214: Output port <cbo> of the instance <Inst_BCD_Adder8> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Multiplier> synthesized.
+
+Synthesizing Unit <BCD_32bit>.
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\lab10_kjb5568_rjl5336\BCD_32bit.vhd".
+    Summary:
+	no macro.
+Unit <BCD_32bit> synthesized.
+
+Synthesizing Unit <Reg_nbit_2>.
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\Reg_nbit.vhd".
+        n = 32
+    Found 32-bit register for signal <Q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Reg_nbit_2> synthesized.
+
+Synthesizing Unit <LST>.
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\LST.vhd".
+        n = 4
+    Found 4-bit comparator greater for signal <OUTPUT> created at line 27
+    Summary:
+	inferred   1 Comparator(s).
+Unit <LST> synthesized.
+
+Synthesizing Unit <Counter_nbit_1>.
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\Counter_nbit.vhd".
+        n = 4
+    Found 4-bit register for signal <count>.
+    Found 4-bit adder for signal <count[3]_GND_27_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <Counter_nbit_1> synthesized.
+
 Synthesizing Unit <WordTo8dig7seg>.
-    Related source file is "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\numeric_display.vhd".
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\numeric_display.vhd".
     Found 4-bit 8-to-1 multiplexer for signal <w2h> created at line 39.
     Summary:
 	inferred   8 Multiplexer(s).
 Unit <WordTo8dig7seg> synthesized.
 
-Synthesizing Unit <Counter_nbit>.
-    Related source file is "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\Counter_nbit.vhd".
+Synthesizing Unit <Counter_nbit_2>.
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\Counter_nbit.vhd".
         n = 3
     Found 3-bit register for signal <count>.
-    Found 3-bit adder for signal <count[2]_GND_23_o_add_0_OUT> created at line 1241.
+    Found 3-bit adder for signal <count[2]_GND_41_o_add_0_OUT> created at line 1241.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   3 D-type flip-flop(s).
-Unit <Counter_nbit> synthesized.
+Unit <Counter_nbit_2> synthesized.
 
 Synthesizing Unit <hextosevenseg>.
-    Related source file is "C:\Users\Kevin\Desktop\Lab10\kjb5568_rjl5336_library\hextosevenseg.vhd".
+    Related source file is "C:\Users\kalvi_000\Desktop\Lab10\kjb5568_rjl5336_library\hextosevenseg.vhd".
     Found 16x7-bit Read Only RAM for signal <Segment>
     Summary:
 	inferred   1 RAM(s).
@@ -262,24 +327,26 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  16x7-bit single-port Read Only RAM                    : 1
-# Multipliers                                          : 1
- 31x31-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 6
  16-bit adder                                          : 1
  3-bit adder                                           : 1
-# Registers                                            : 4
+ 4-bit adder                                           : 4
+# Registers                                            : 13
  16-bit register                                       : 3
  3-bit register                                        : 1
-# Comparators                                          : 4
- 5-bit comparator greater                              : 4
-# Multiplexers                                         : 32
- 1-bit 2-to-1 multiplexer                              : 8
+ 32-bit register                                       : 5
+ 4-bit register                                        : 4
+# Comparators                                          : 64
+ 4-bit comparator greater                              : 4
+ 5-bit comparator greater                              : 60
+# Multiplexers                                         : 312
+ 1-bit 2-to-1 multiplexer                              : 120
  32-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 2-to-1 multiplexer                              : 180
  4-bit 8-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 8
-# Xors                                                 : 88
- 1-bit xor2                                            : 88
+# Xors                                                 : 1320
+ 1-bit xor2                                            : 1320
 
 =========================================================================
 
@@ -288,9 +355,13 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <Counter_nbit>.
+Synthesizing (advanced) Unit <Counter_nbit_1>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
-Unit <Counter_nbit> synthesized (advanced).
+Unit <Counter_nbit_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_nbit_2>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter_nbit_2> synthesized (advanced).
 
 Synthesizing (advanced) Unit <hextosevenseg>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Segment> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -316,23 +387,23 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  16x7-bit single-port distributed Read Only RAM        : 1
-# Multipliers                                          : 1
- 17x17-bit multiplier                                  : 1
-# Counters                                             : 2
+# Counters                                             : 6
  16-bit up counter                                     : 1
  3-bit up counter                                      : 1
-# Registers                                            : 32
- Flip-Flops                                            : 32
-# Comparators                                          : 4
- 5-bit comparator greater                              : 4
-# Multiplexers                                         : 32
- 1-bit 2-to-1 multiplexer                              : 8
+ 4-bit up counter                                      : 4
+# Registers                                            : 192
+ Flip-Flops                                            : 192
+# Comparators                                          : 64
+ 4-bit comparator greater                              : 4
+ 5-bit comparator greater                              : 60
+# Multiplexers                                         : 312
+ 1-bit 2-to-1 multiplexer                              : 120
  32-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 2-to-1 multiplexer                              : 180
  4-bit 8-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 8
-# Xors                                                 : 88
- 1-bit xor2                                            : 88
+# Xors                                                 : 1320
+ 1-bit xor2                                            : 1320
 
 =========================================================================
 
@@ -340,15 +411,44 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 
+Optimizing unit <Reg_nbit_2> ...
+
 Optimizing unit <lab10_kjb5568_rjl5336> ...
 
-Optimizing unit <WordTo8dig7seg> ...
+Optimizing unit <Multiplier> ...
 
 Optimizing unit <BCD_Adder_slice> ...
 
+Optimizing unit <WordTo8dig7seg> ...
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_31> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_30> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_29> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_28> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_27> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_26> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_25> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_24> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_23> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_22> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_21> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/thous_register/Q_20> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/hund_register/Q_31> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/hund_register/Q_30> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/hund_register/Q_29> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/hund_register/Q_28> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/hund_register/Q_27> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/hund_register/Q_26> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/hund_register/Q_25> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/hund_register/Q_24> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/tens_register/Q_31> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/tens_register/Q_30> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/tens_register/Q_29> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+WARNING:Xst:2677 - Node <Inst_Multiplier/tens_register/Q_28> of sequential type is unconnected in block <lab10_kjb5568_rjl5336>.
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block lab10_kjb5568_rjl5336, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block lab10_kjb5568_rjl5336, actual ratio is 1.
+FlipFlop Inst_Multiplier/tens_register/Q_4 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -356,8 +456,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 51
- Flip-Flops                                            : 51
+# Registers                                            : 204
+ Flip-Flops                                            : 204
 
 =========================================================================
 
@@ -380,29 +480,27 @@ Top Level Output File Name         : lab10_kjb5568_rjl5336.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 166
+# BELS                             : 803
 #      GND                         : 1
-#      INV                         : 1
+#      INV                         : 6
 #      LUT1                        : 15
-#      LUT2                        : 17
-#      LUT3                        : 7
-#      LUT4                        : 15
-#      LUT5                        : 25
-#      LUT6                        : 48
+#      LUT2                        : 45
+#      LUT3                        : 46
+#      LUT4                        : 97
+#      LUT5                        : 248
+#      LUT6                        : 296
 #      MUXCY                       : 15
-#      MUXF7                       : 5
+#      MUXF7                       : 17
 #      VCC                         : 1
 #      XORCY                       : 16
-# FlipFlops/Latches                : 51
-#      FD                          : 16
-#      FDRE                        : 35
+# FlipFlops/Latches                : 204
+#      FDR                         : 16
+#      FDRE                        : 188
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 52
 #      IBUF                        : 21
 #      OBUF                        : 31
-# DSPs                             : 1
-#      DSP48E1                     : 1
 
 Device utilization summary:
 ---------------------------
@@ -411,16 +509,16 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              51  out of  126800     0%  
- Number of Slice LUTs:                  128  out of  63400     0%  
-    Number used as Logic:               128  out of  63400     0%  
+ Number of Slice Registers:             204  out of  126800     0%  
+ Number of Slice LUTs:                  753  out of  63400     1%  
+    Number used as Logic:               753  out of  63400     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    128
-   Number with an unused Flip Flop:      77  out of    128    60%  
-   Number with an unused LUT:             0  out of    128     0%  
-   Number of fully used LUT-FF pairs:    51  out of    128    39%  
-   Number of unique control sets:         4
+ Number of LUT Flip Flop pairs used:    793
+   Number with an unused Flip Flop:     589  out of    793    74%  
+   Number with an unused LUT:            40  out of    793     5%  
+   Number of fully used LUT-FF pairs:   164  out of    793    20%  
+   Number of unique control sets:         9
 
 IO Utilization: 
  Number of IOs:                          53
@@ -428,7 +526,6 @@ IO Utilization:
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
- Number of DSP48E1s:                      1  out of    240     0%  
 
 ---------------------------
 Partition Resource Summary:
@@ -451,7 +548,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 52    |
+CLK                                | BUFGP                  | 204   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -462,10 +559,10 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.009ns (Maximum Frequency: 332.336MHz)
-   Minimum input arrival time before clock: 1.020ns
-   Maximum output required time after clock: 13.036ns
-   Maximum combinational path delay: 12.409ns
+   Minimum period: 8.733ns (Maximum Frequency: 114.508MHz)
+   Minimum input arrival time before clock: 1.893ns
+   Maximum output required time after clock: 13.779ns
+   Maximum combinational path delay: 13.333ns
 
 Timing Details:
 ---------------
@@ -473,88 +570,96 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 3.009ns (frequency: 332.336MHz)
-  Total number of paths / destination ports: 446 / 22
+  Clock period: 8.733ns (frequency: 114.508MHz)
+  Total number of paths / destination ports: 2416421 / 344
 -------------------------------------------------------------------------
-Delay:               3.009ns (Levels of Logic = 3)
-  Source:            pulse_strobe/count_1 (FF)
-  Destination:       pulse_strobe/count_12 (FF)
+Delay:               8.733ns (Levels of Logic = 10)
+  Source:            Inst_Multiplier/tens_register/Q_6 (FF)
+  Destination:       Inst_Multiplier/product_register/Q_31 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: pulse_strobe/count_1 to pulse_strobe/count_12
+  Data Path: Inst_Multiplier/tens_register/Q_6 to Inst_Multiplier/product_register/Q_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.478   0.945  pulse_strobe/count_1 (pulse_strobe/count_1)
-     LUT6:I0->O            3   0.124   0.550  pulse_strobe/clear<15>2 (pulse_strobe/clear<15>1)
-     LUT6:I4->O           16   0.124   0.634  pulse_strobe/clear<15>3 (strobe)
-     LUT2:I0->O            1   0.124   0.000  pulse_strobe/count_12_rstpot (pulse_strobe/count_12_rstpot)
-     FD:D                      0.030          pulse_strobe/count_12
+     FDRE:C->Q            10   0.478   0.998  Inst_Multiplier/tens_register/Q_6 (Inst_Multiplier/tens_register/Q_6)
+     LUT6:I0->O           10   0.124   0.595  Inst_Multiplier/Inst_BCD_Adder3/Inst_BCD_Adder1/Inst_BCD_Adder3/Mmux_cbo_int11_SW1 (N139)
+     LUT6:I4->O            1   0.124   0.716  Inst_Multiplier/Inst_BCD_Adder3/Inst_BCD_Adder1/Inst_BCD_Adder2/Mmux_cbo_int11_SW4 (N358)
+     LUT6:I3->O            4   0.124   0.441  Inst_Multiplier/Inst_BCD_Adder3/Inst_BCD_Adder1/Inst_BCD_Adder3/Mmux_cbo_int11 (Inst_Multiplier/Inst_BCD_Adder3/Inst_BCD_Adder1/cb_3)
+     LUT5:I4->O            6   0.124   0.749  Inst_Multiplier/Inst_BCD_Adder3/Inst_BCD_Adder1/Inst_BCD_Adder4/main_adder/genADDERS[1].FA0/Mxor_Sum_xo<0>1 (Inst_Multiplier/Inst_BCD_Adder3/Inst_BCD_Adder1/Inst_BCD_Adder4/correction_adder/carry<2>)
+     LUT5:I2->O           10   0.124   0.480  Inst_Multiplier/Inst_BCD_Adder3/Inst_BCD_Adder1/Inst_BCD_Adder4/Mmux_sum41 (Inst_Multiplier/product_int_low<15>)
+     LUT6:I5->O            1   0.124   0.919  Inst_Multiplier/Inst_BCD_Adder8/Inst_BCD_Adder2/Inst_BCD_Adder1/main_adder/genADDERS[2].FA0/C_out1_SW0_SW0 (N278)
+     LUT6:I1->O            8   0.124   0.762  Inst_Multiplier/Inst_BCD_Adder8/Inst_BCD_Adder2/Inst_BCD_Adder1/main_adder/genADDERS[2].FA0/C_out1 (Inst_Multiplier/Inst_BCD_Adder8/Inst_BCD_Adder2/Inst_BCD_Adder1/main_adder/carry<3>)
+     LUT6:I3->O            6   0.124   0.749  Inst_Multiplier/Inst_BCD_Adder8/Inst_BCD_Adder2/Inst_BCD_Adder2/main_adder/genADDERS[1].FA0/Mxor_Sum_xo<0>1 (Inst_Multiplier/Inst_BCD_Adder8/Inst_BCD_Adder2/Inst_BCD_Adder2/correction_adder/carry<2>)
+     LUT6:I3->O            7   0.124   0.576  Inst_Multiplier/Inst_BCD_Adder8/Inst_BCD_Adder2/Inst_BCD_Adder3/main_adder/genADDERS[2].FA0/Mxor_Sum_xo<0>1 (Inst_Multiplier/Inst_BCD_Adder8/Inst_BCD_Adder2/Inst_BCD_Adder3/sum_int<2>)
+     LUT5:I3->O            1   0.124   0.000  Inst_Multiplier/Inst_BCD_Adder8/Inst_BCD_Adder2/Inst_BCD_Adder3/Mmux_sum41 (Inst_Multiplier/product_int<27>)
+     FDRE:D                    0.030          Inst_Multiplier/product_register/Q_27
     ----------------------------------------
-    Total                      3.009ns (0.880ns logic, 2.129ns route)
-                                       (29.2% logic, 70.8% route)
+    Total                      8.733ns (1.748ns logic, 6.985ns route)
+                                       (20.0% logic, 80.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 98 / 98
+  Total number of paths / destination ports: 370 / 217
 -------------------------------------------------------------------------
-Offset:              1.020ns (Levels of Logic = 1)
-  Source:            BUTTON<0> (PAD)
-  Destination:       Mmult_n0015 (DSP)
+Offset:              1.893ns (Levels of Logic = 2)
+  Source:            BUTTON<1> (PAD)
+  Destination:       Inst_Multiplier/b1_cnt/count_3 (FF)
   Destination Clock: CLK rising
 
-  Data Path: BUTTON<0> to Mmult_n0015
+  Data Path: BUTTON<1> to Inst_Multiplier/b1_cnt/count_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            17   0.001   0.505  BUTTON_0_IBUF (BUTTON_0_IBUF)
-     DSP48E1:CEB2              0.514          Mmult_n0015
+     IBUF:I->O            64   0.001   0.696  BUTTON_1_IBUF (BUTTON_1_IBUF)
+     LUT2:I0->O          153   0.124   0.578  BUTTON[1]_BUTTON[4]_AND_3_o1 (BUTTON[1]_BUTTON[4]_AND_3_o)
+     FDRE:R                    0.494          Inst_Multiplier/b4_cnt/count_0
     ----------------------------------------
-    Total                      1.020ns (0.515ns logic, 0.505ns route)
-                                       (50.5% logic, 49.5% route)
+    Total                      1.893ns (0.619ns logic, 1.274ns route)
+                                       (32.7% logic, 67.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 54470 / 15
 -------------------------------------------------------------------------
-Offset:              13.036ns (Levels of Logic = 18)
-  Source:            store_B/Q_0 (FF)
+Offset:              13.779ns (Levels of Logic = 18)
+  Source:            store_B/Q_2 (FF)
   Destination:       SEGMENT<0> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: store_B/Q_0 to SEGMENT<0>
+  Data Path: store_B/Q_2 to SEGMENT<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             3   0.478   0.730  store_B/Q_0 (store_B/Q_0)
-     LUT3:I0->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<1>)
-     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<3>)
+     FDRE:C->Q             3   0.478   0.550  store_B/Q_2 (store_B/Q_2)
+     LUT2:I0->O            2   0.124   0.925  Inst_BCD_Adder/Inst_BCD_Adder1/Mxor_bxor<2>_xo<0>1 (Inst_BCD_Adder/Inst_BCD_Adder1/bxor<2>)
+     LUT6:I1->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<3>)
      LUT6:I3->O            6   0.124   0.454  Inst_BCD_Adder/Inst_BCD_Adder1/Mmux_cbo_int11 (Inst_BCD_Adder/cb_1)
-     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<1>)
-     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<3>)
+     LUT4:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<1>)
+     LUT6:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<3>)
      LUT6:I3->O            6   0.124   0.454  Inst_BCD_Adder/Inst_BCD_Adder2/Mmux_cbo_int11 (Inst_BCD_Adder/cb_2)
-     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<1>)
-     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<3>)
+     LUT4:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<1>)
+     LUT6:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<3>)
      LUT6:I3->O            6   0.124   0.454  Inst_BCD_Adder/Inst_BCD_Adder3/Mmux_cbo_int11 (Inst_BCD_Adder/cb_3)
-     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<1>)
-     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<3>)
+     LUT4:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<1>)
+     LUT6:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<3>)
      LUT6:I3->O            5   0.124   0.946  Inst_BCD_Adder/Inst_BCD_Adder4/Mmux_cbo_int11 (overflow)
-     LUT6:I1->O            1   0.124   0.000  Mmux_display_word75_G (N20)
+     LUT6:I1->O            1   0.124   0.000  Mmux_display_word75_G (N584)
      MUXF7:I1->O           1   0.368   0.716  Mmux_display_word75 (display_word<15>)
      LUT6:I3->O            1   0.124   0.000  sevenseg/Mmux_w2h_43 (sevenseg/Mmux_w2h_43)
      MUXF7:I0->O           7   0.365   0.756  sevenseg/Mmux_w2h_2_f7_2 (sevenseg/w2h<3>)
      LUT4:I1->O            1   0.124   0.399  sevenseg/segment<1>1 (SEGMENT_5_OBUF)
      OBUF:I->O                 0.000          SEGMENT_5_OBUF (SEGMENT<5>)
     ----------------------------------------
-    Total                     13.036ns (3.071ns logic, 9.965ns route)
-                                       (23.6% logic, 76.4% route)
+    Total                     13.779ns (3.071ns logic, 10.708ns route)
+                                       (22.3% logic, 77.7% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 18742 / 27
+  Total number of paths / destination ports: 24664 / 27
 -------------------------------------------------------------------------
-Delay:               12.409ns (Levels of Logic = 19)
+Delay:               13.333ns (Levels of Logic = 19)
   Source:            BUTTON<1> (PAD)
   Destination:       SEGMENT<0> (PAD)
 
@@ -562,28 +667,28 @@ Delay:               12.409ns (Levels of Logic = 19)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            62   0.001   0.580  BUTTON_1_IBUF (BUTTON_1_IBUF)
-     LUT3:I2->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<1>)
-     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<3>)
+     IBUF:I->O            64   0.001   0.581  BUTTON_1_IBUF (BUTTON_1_IBUF)
+     LUT2:I1->O            2   0.124   0.925  Inst_BCD_Adder/Inst_BCD_Adder1/Mxor_bxor<2>_xo<0>1 (Inst_BCD_Adder/Inst_BCD_Adder1/bxor<2>)
+     LUT6:I1->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder1/main_adder/carry<3>)
      LUT6:I3->O            6   0.124   0.454  Inst_BCD_Adder/Inst_BCD_Adder1/Mmux_cbo_int11 (Inst_BCD_Adder/cb_1)
-     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<1>)
-     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<3>)
+     LUT4:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<1>)
+     LUT6:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder2/main_adder/carry<3>)
      LUT6:I3->O            6   0.124   0.454  Inst_BCD_Adder/Inst_BCD_Adder2/Mmux_cbo_int11 (Inst_BCD_Adder/cb_2)
-     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<1>)
-     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<3>)
+     LUT4:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<1>)
+     LUT6:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder3/main_adder/carry<3>)
      LUT6:I3->O            6   0.124   0.454  Inst_BCD_Adder/Inst_BCD_Adder3/Mmux_cbo_int11 (Inst_BCD_Adder/cb_3)
-     LUT4:I3->O            2   0.124   0.542  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<1>)
-     LUT6:I4->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<3>)
+     LUT4:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[0].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<1>)
+     LUT6:I3->O            2   0.124   0.722  Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/genADDERS[2].FA0/C_out1 (Inst_BCD_Adder/Inst_BCD_Adder4/main_adder/carry<3>)
      LUT6:I3->O            5   0.124   0.946  Inst_BCD_Adder/Inst_BCD_Adder4/Mmux_cbo_int11 (overflow)
-     LUT6:I1->O            1   0.124   0.000  Mmux_display_word75_G (N20)
+     LUT6:I1->O            1   0.124   0.000  Mmux_display_word75_G (N584)
      MUXF7:I1->O           1   0.368   0.716  Mmux_display_word75 (display_word<15>)
      LUT6:I3->O            1   0.124   0.000  sevenseg/Mmux_w2h_43 (sevenseg/Mmux_w2h_43)
      MUXF7:I0->O           7   0.365   0.756  sevenseg/Mmux_w2h_2_f7_2 (sevenseg/w2h<3>)
      LUT4:I1->O            1   0.124   0.399  sevenseg/segment<1>1 (SEGMENT_5_OBUF)
      OBUF:I->O                 0.000          SEGMENT_5_OBUF (SEGMENT<5>)
     ----------------------------------------
-    Total                     12.409ns (2.594ns logic, 9.815ns route)
-                                       (20.9% logic, 79.1% route)
+    Total                     13.333ns (2.594ns logic, 10.739ns route)
+                                       (19.5% logic, 80.5% route)
 
 =========================================================================
 
@@ -595,20 +700,20 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    3.009|         |         |         |
+CLK            |    8.733|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.90 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.59 secs
  
 --> 
 
-Total memory usage is 410696 kilobytes
+Total memory usage is 411276 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
 

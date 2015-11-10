@@ -37,14 +37,24 @@ COMPONENT BCD_Adder
 		);
 END COMPONENT;
 
-COMPONENT Multiplier_v2
+COMPONENT Multiplier
 	PORT(
 		A : IN std_logic_vector(31 downto 0);
 		B : IN std_logic_vector(31 downto 0);
-		CLK : IN std_logic;
-		clr : IN std_logic;
-		start_count : IN std_logic;          
+		CLK : IN std_logic; 
+		Clear : IN std_logic;
 		product : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
+	
+COMPONENT BCD_32bit
+	PORT(
+		A : IN std_logic_vector(31 downto 0);
+		B : IN std_logic_vector(31 downto 0);
+		sub : IN std_logic;
+		cbi : IN std_logic;          
+		cbo : OUT std_logic;
+		sum : OUT std_logic_vector(31 downto 0)
 		);
 	END COMPONENT;
 
@@ -103,29 +113,14 @@ Inst_BCD_Adder: BCD_Adder PORT MAP(
 
 A_mult <= x"0000" & A_reg;
 B_mult <= x"0000" & B_reg;
---clear <= button(2) or button(0);
---
---oneshot_down: OneShot port map (
---	d => button(3), 
---	clk => clk,
---	q => down_os
---	);
---	
---Flip1: DFF_CE port map (
---	D => down_os,
---	CE => down_os,
---	CLK => CLK,
---	Q => down_reg);
---Inst_Multiplier_v2: Multiplier_v2 PORT MAP(
---		A => A_mult,
---		B => B_mult,
---		CLK => clk,
---		clr => clear,
---		start_count => down_reg,
---		product => product
---	);
-prod <= to_integer(unsigned(A_mult)) * to_integer(unsigned(b_mult));
-product <= std_logic_vector(to_unsigned(prod, 32));
+
+Inst_Multiplier: Multiplier PORT MAP(
+		A => A_mult,
+		B => B_mult,
+		clear => button(1) and button(4),
+		CLK => clk,
+		product => product
+	);
 digit_en <= "00011111" when button(4) = '1' else  
 				"00001111" when button(1) = '1' else
 				"11111111";
