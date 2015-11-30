@@ -110,20 +110,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="SVGA.lso"/>
-      <outfile xil_pn:name="SVGA.ngc"/>
-      <outfile xil_pn:name="SVGA.ngr"/>
-      <outfile xil_pn:name="SVGA.prj"/>
-      <outfile xil_pn:name="SVGA.stx"/>
-      <outfile xil_pn:name="SVGA.syr"/>
-      <outfile xil_pn:name="SVGA.xst"/>
-      <outfile xil_pn:name="SVGA_Control.prj"/>
-      <outfile xil_pn:name="SVGA_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1448501669" xil_pn:in_ck="43575121159833474" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4067332433683011241" xil_pn:start_ts="1448501668">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -131,66 +123,58 @@
     </transform>
     <transform xil_pn:end_ts="1448557468" xil_pn:in_ck="3475152390675050425" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2742747655011633139" xil_pn:start_ts="1448557446">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="SVGA.bld"/>
-      <outfile xil_pn:name="SVGA.ngd"/>
-      <outfile xil_pn:name="SVGA_ngdbuild.xrpt"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1448557562" xil_pn:in_ck="3475152390675050426" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-7188367874928765557" xil_pn:start_ts="1448557468">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="SVGA.pcf"/>
-      <outfile xil_pn:name="SVGA_map.map"/>
-      <outfile xil_pn:name="SVGA_map.mrp"/>
-      <outfile xil_pn:name="SVGA_map.ncd"/>
-      <outfile xil_pn:name="SVGA_map.ngm"/>
-      <outfile xil_pn:name="SVGA_map.xrpt"/>
-      <outfile xil_pn:name="SVGA_summary.xml"/>
-      <outfile xil_pn:name="SVGA_usage.xml"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1448557645" xil_pn:in_ck="-4682179912495051821" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1448557562">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="SVGA.ncd"/>
-      <outfile xil_pn:name="SVGA.pad"/>
-      <outfile xil_pn:name="SVGA.par"/>
-      <outfile xil_pn:name="SVGA.ptwx"/>
-      <outfile xil_pn:name="SVGA.unroutes"/>
-      <outfile xil_pn:name="SVGA.xpi"/>
-      <outfile xil_pn:name="SVGA_pad.csv"/>
-      <outfile xil_pn:name="SVGA_pad.txt"/>
-      <outfile xil_pn:name="SVGA_par.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1448557739" xil_pn:in_ck="3651254486452" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="306664139534459597" xil_pn:start_ts="1448557645">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="SVGA.ut"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="svga.bgn"/>
-      <outfile xil_pn:name="svga.bit"/>
-      <outfile xil_pn:name="svga.drc"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1448559205" xil_pn:in_ck="5057661905918" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6383737364629502382" xil_pn:start_ts="1448559193">
+    <transform xil_pn:end_ts="1448820637" xil_pn:in_ck="5057661905918" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6383737364629502382" xil_pn:start_ts="1448820635">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1448557645" xil_pn:in_ck="3475152390675050294" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1448557612">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="SVGA.twr"/>
-      <outfile xil_pn:name="SVGA.twx"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 
