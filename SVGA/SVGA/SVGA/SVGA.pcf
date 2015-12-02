@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Nov 26 12:05:55 2015
+// Written by: Map P.20131013 on Mon Nov 30 17:57:51 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -101,8 +101,8 @@ TIMEGRP sys_clk_pin = BEL "Inst_Image_Generator/horizontalCounter/count_10"
         "Inst_SVGA_Control/Vcount/count_2" BEL
         "Inst_SVGA_Control/Vcount/count_1" BEL
         "Inst_SVGA_Control/Vcount/count_0" BEL
-        "Inst_SVGA_Control/Pulse25/count_1" BEL
-        "Inst_SVGA_Control/Pulse25/count_0" BEL
+        "Inst_SVGA_Control/Pulse33/count_1" BEL
+        "Inst_SVGA_Control/Pulse33/count_0" BEL
         "Inst_SVGA_Control/hold_Hsync/Q" BEL "Inst_SVGA_Control/hold_Vsync/Q"
         BEL "Inst_SVGA_Control/hold_rgb_enable/Q" BEL "Clk_BUFGP/BUFG" BEL
         "Inst_Image_Generator/DB4/Flip2/Mshreg_Q" BEL

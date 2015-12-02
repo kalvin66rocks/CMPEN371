@@ -1,0 +1,623 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
+-n 3 -fastpaths -xml SXGA.twx SXGA.ncd -o SXGA.twr SXGA.pcf -ucf
+Nexys4_Master.ucf
+
+Design file:              SXGA.ncd
+Physical constraint file: SXGA.pcf
+Device,package,speed:     xc7a100t,csg324,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   4.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 6.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 2.000ns (Tmmcmpw_CLKIN1_100_150)
+  Physical resource: clocks/mmcm_adv_inst/CLKIN1
+  Logical resource: clocks/mmcm_adv_inst/CLKIN1
+  Location pin: MMCME2_ADV_X1Y2.CLKIN1
+  Clock network: clocks/clkin1
+--------------------------------------------------------------------------------
+Slack: 6.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 2.000ns (Tmmcmpw_CLKIN1_100_150)
+  Physical resource: clocks/mmcm_adv_inst/CLKIN1
+  Logical resource: clocks/mmcm_adv_inst/CLKIN1
+  Location pin: MMCME2_ADV_X1Y2.CLKIN1
+  Clock network: clocks/clkin1
+--------------------------------------------------------------------------------
+Slack: 8.751ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.249ns (800.641MHz) (Tmmcmper_CLKIN(Finmax))
+  Physical resource: clocks/mmcm_adv_inst/CLKIN1
+  Logical resource: clocks/mmcm_adv_inst/CLKIN1
+  Location pin: MMCME2_ADV_X1Y2.CLKIN1
+  Clock network: clocks/clkin1
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clocks_clkout0 = PERIOD TIMEGRP "clocks_clkout0" 
+TS_sys_clk_pin HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 11015 paths analyzed, 705 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.075ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_Image_Generator/horizontalCounter/count_0 (SLICE_X56Y95.CE), 106 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     3.925ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Image_Generator/horizontalCounter/count_5 (FF)
+  Destination:          Inst_Image_Generator/horizontalCounter/count_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.983ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.025ns (0.170 - 0.195)
+  Source Clock:         board_clk rising at 0.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.067ns
+
+  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.114ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_Image_Generator/horizontalCounter/count_5 to Inst_Image_Generator/horizontalCounter/count_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X56Y96.BQ      Tcko                  0.518   Inst_Image_Generator/horizontalCounter/count<7>
+                                                       Inst_Image_Generator/horizontalCounter/count_5
+    SLICE_X58Y98.A2      net (fanout=15)       1.095   Inst_Image_Generator/horizontalCounter/count<5>
+    SLICE_X58Y98.A       Tilo                  0.124   N56
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1_SW2
+    SLICE_X59Y105.D1     net (fanout=2)        1.026   N56
+    SLICE_X59Y105.D      Tilo                  0.124   Inst_Image_Generator/box_border_r<10>
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1
+    SLICE_X57Y97.B1      net (fanout=3)        1.341   Inst_Image_Generator/box_border_r<10>
+    SLICE_X57Y97.B       Tilo                  0.124   Inst_Image_Generator/box_border_r<7>
+                                                       Inst_Image_Generator/button_d[2]_right_border_AND_9_o4
+    SLICE_X56Y97.D3      net (fanout=3)        0.763   Inst_Image_Generator/button_d[2]_right_border_AND_9_o
+    SLICE_X56Y97.D       Tilo                  0.124   Inst_Image_Generator/horizontalCounter/count<10>
+                                                       Inst_Image_Generator/horizontalCounter/_n0031_inv3
+    SLICE_X56Y95.CE      net (fanout=3)        0.575   Inst_Image_Generator/horizontalCounter/_n0031_inv
+    SLICE_X56Y95.CLK     Tceck                 0.169   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.983ns (1.183ns logic, 4.800ns route)
+                                                       (19.8% logic, 80.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.345ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Image_Generator/horizontalCounter/count_4 (FF)
+  Destination:          Inst_Image_Generator/horizontalCounter/count_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.563ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.025ns (0.170 - 0.195)
+  Source Clock:         board_clk rising at 0.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.067ns
+
+  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.114ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_Image_Generator/horizontalCounter/count_4 to Inst_Image_Generator/horizontalCounter/count_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X56Y96.AQ      Tcko                  0.518   Inst_Image_Generator/horizontalCounter/count<7>
+                                                       Inst_Image_Generator/horizontalCounter/count_4
+    SLICE_X58Y98.A5      net (fanout=16)       0.675   Inst_Image_Generator/horizontalCounter/count<4>
+    SLICE_X58Y98.A       Tilo                  0.124   N56
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1_SW2
+    SLICE_X59Y105.D1     net (fanout=2)        1.026   N56
+    SLICE_X59Y105.D      Tilo                  0.124   Inst_Image_Generator/box_border_r<10>
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1
+    SLICE_X57Y97.B1      net (fanout=3)        1.341   Inst_Image_Generator/box_border_r<10>
+    SLICE_X57Y97.B       Tilo                  0.124   Inst_Image_Generator/box_border_r<7>
+                                                       Inst_Image_Generator/button_d[2]_right_border_AND_9_o4
+    SLICE_X56Y97.D3      net (fanout=3)        0.763   Inst_Image_Generator/button_d[2]_right_border_AND_9_o
+    SLICE_X56Y97.D       Tilo                  0.124   Inst_Image_Generator/horizontalCounter/count<10>
+                                                       Inst_Image_Generator/horizontalCounter/_n0031_inv3
+    SLICE_X56Y95.CE      net (fanout=3)        0.575   Inst_Image_Generator/horizontalCounter/_n0031_inv
+    SLICE_X56Y95.CLK     Tceck                 0.169   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.563ns (1.183ns logic, 4.380ns route)
+                                                       (21.3% logic, 78.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.437ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Image_Generator/horizontalCounter/count_2 (FF)
+  Destination:          Inst_Image_Generator/horizontalCounter/count_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.496ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         board_clk rising at 0.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.067ns
+
+  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.114ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_Image_Generator/horizontalCounter/count_2 to Inst_Image_Generator/horizontalCounter/count_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X56Y95.CQ      Tcko                  0.518   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_2
+    SLICE_X58Y98.A6      net (fanout=17)       0.608   Inst_Image_Generator/horizontalCounter/count<2>
+    SLICE_X58Y98.A       Tilo                  0.124   N56
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1_SW2
+    SLICE_X59Y105.D1     net (fanout=2)        1.026   N56
+    SLICE_X59Y105.D      Tilo                  0.124   Inst_Image_Generator/box_border_r<10>
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1
+    SLICE_X57Y97.B1      net (fanout=3)        1.341   Inst_Image_Generator/box_border_r<10>
+    SLICE_X57Y97.B       Tilo                  0.124   Inst_Image_Generator/box_border_r<7>
+                                                       Inst_Image_Generator/button_d[2]_right_border_AND_9_o4
+    SLICE_X56Y97.D3      net (fanout=3)        0.763   Inst_Image_Generator/button_d[2]_right_border_AND_9_o
+    SLICE_X56Y97.D       Tilo                  0.124   Inst_Image_Generator/horizontalCounter/count<10>
+                                                       Inst_Image_Generator/horizontalCounter/_n0031_inv3
+    SLICE_X56Y95.CE      net (fanout=3)        0.575   Inst_Image_Generator/horizontalCounter/_n0031_inv
+    SLICE_X56Y95.CLK     Tceck                 0.169   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.496ns (1.183ns logic, 4.313ns route)
+                                                       (21.5% logic, 78.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_Image_Generator/horizontalCounter/count_1 (SLICE_X56Y95.CE), 106 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     3.925ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Image_Generator/horizontalCounter/count_5 (FF)
+  Destination:          Inst_Image_Generator/horizontalCounter/count_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.983ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.025ns (0.170 - 0.195)
+  Source Clock:         board_clk rising at 0.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.067ns
+
+  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.114ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_Image_Generator/horizontalCounter/count_5 to Inst_Image_Generator/horizontalCounter/count_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X56Y96.BQ      Tcko                  0.518   Inst_Image_Generator/horizontalCounter/count<7>
+                                                       Inst_Image_Generator/horizontalCounter/count_5
+    SLICE_X58Y98.A2      net (fanout=15)       1.095   Inst_Image_Generator/horizontalCounter/count<5>
+    SLICE_X58Y98.A       Tilo                  0.124   N56
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1_SW2
+    SLICE_X59Y105.D1     net (fanout=2)        1.026   N56
+    SLICE_X59Y105.D      Tilo                  0.124   Inst_Image_Generator/box_border_r<10>
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1
+    SLICE_X57Y97.B1      net (fanout=3)        1.341   Inst_Image_Generator/box_border_r<10>
+    SLICE_X57Y97.B       Tilo                  0.124   Inst_Image_Generator/box_border_r<7>
+                                                       Inst_Image_Generator/button_d[2]_right_border_AND_9_o4
+    SLICE_X56Y97.D3      net (fanout=3)        0.763   Inst_Image_Generator/button_d[2]_right_border_AND_9_o
+    SLICE_X56Y97.D       Tilo                  0.124   Inst_Image_Generator/horizontalCounter/count<10>
+                                                       Inst_Image_Generator/horizontalCounter/_n0031_inv3
+    SLICE_X56Y95.CE      net (fanout=3)        0.575   Inst_Image_Generator/horizontalCounter/_n0031_inv
+    SLICE_X56Y95.CLK     Tceck                 0.169   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.983ns (1.183ns logic, 4.800ns route)
+                                                       (19.8% logic, 80.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.345ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Image_Generator/horizontalCounter/count_4 (FF)
+  Destination:          Inst_Image_Generator/horizontalCounter/count_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.563ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.025ns (0.170 - 0.195)
+  Source Clock:         board_clk rising at 0.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.067ns
+
+  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.114ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_Image_Generator/horizontalCounter/count_4 to Inst_Image_Generator/horizontalCounter/count_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X56Y96.AQ      Tcko                  0.518   Inst_Image_Generator/horizontalCounter/count<7>
+                                                       Inst_Image_Generator/horizontalCounter/count_4
+    SLICE_X58Y98.A5      net (fanout=16)       0.675   Inst_Image_Generator/horizontalCounter/count<4>
+    SLICE_X58Y98.A       Tilo                  0.124   N56
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1_SW2
+    SLICE_X59Y105.D1     net (fanout=2)        1.026   N56
+    SLICE_X59Y105.D      Tilo                  0.124   Inst_Image_Generator/box_border_r<10>
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1
+    SLICE_X57Y97.B1      net (fanout=3)        1.341   Inst_Image_Generator/box_border_r<10>
+    SLICE_X57Y97.B       Tilo                  0.124   Inst_Image_Generator/box_border_r<7>
+                                                       Inst_Image_Generator/button_d[2]_right_border_AND_9_o4
+    SLICE_X56Y97.D3      net (fanout=3)        0.763   Inst_Image_Generator/button_d[2]_right_border_AND_9_o
+    SLICE_X56Y97.D       Tilo                  0.124   Inst_Image_Generator/horizontalCounter/count<10>
+                                                       Inst_Image_Generator/horizontalCounter/_n0031_inv3
+    SLICE_X56Y95.CE      net (fanout=3)        0.575   Inst_Image_Generator/horizontalCounter/_n0031_inv
+    SLICE_X56Y95.CLK     Tceck                 0.169   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.563ns (1.183ns logic, 4.380ns route)
+                                                       (21.3% logic, 78.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.437ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Image_Generator/horizontalCounter/count_2 (FF)
+  Destination:          Inst_Image_Generator/horizontalCounter/count_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.496ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         board_clk rising at 0.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.067ns
+
+  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.114ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_Image_Generator/horizontalCounter/count_2 to Inst_Image_Generator/horizontalCounter/count_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X56Y95.CQ      Tcko                  0.518   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_2
+    SLICE_X58Y98.A6      net (fanout=17)       0.608   Inst_Image_Generator/horizontalCounter/count<2>
+    SLICE_X58Y98.A       Tilo                  0.124   N56
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1_SW2
+    SLICE_X59Y105.D1     net (fanout=2)        1.026   N56
+    SLICE_X59Y105.D      Tilo                  0.124   Inst_Image_Generator/box_border_r<10>
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1
+    SLICE_X57Y97.B1      net (fanout=3)        1.341   Inst_Image_Generator/box_border_r<10>
+    SLICE_X57Y97.B       Tilo                  0.124   Inst_Image_Generator/box_border_r<7>
+                                                       Inst_Image_Generator/button_d[2]_right_border_AND_9_o4
+    SLICE_X56Y97.D3      net (fanout=3)        0.763   Inst_Image_Generator/button_d[2]_right_border_AND_9_o
+    SLICE_X56Y97.D       Tilo                  0.124   Inst_Image_Generator/horizontalCounter/count<10>
+                                                       Inst_Image_Generator/horizontalCounter/_n0031_inv3
+    SLICE_X56Y95.CE      net (fanout=3)        0.575   Inst_Image_Generator/horizontalCounter/_n0031_inv
+    SLICE_X56Y95.CLK     Tceck                 0.169   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.496ns (1.183ns logic, 4.313ns route)
+                                                       (21.5% logic, 78.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_Image_Generator/horizontalCounter/count_2 (SLICE_X56Y95.CE), 106 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     3.925ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Image_Generator/horizontalCounter/count_5 (FF)
+  Destination:          Inst_Image_Generator/horizontalCounter/count_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.983ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.025ns (0.170 - 0.195)
+  Source Clock:         board_clk rising at 0.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.067ns
+
+  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.114ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_Image_Generator/horizontalCounter/count_5 to Inst_Image_Generator/horizontalCounter/count_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X56Y96.BQ      Tcko                  0.518   Inst_Image_Generator/horizontalCounter/count<7>
+                                                       Inst_Image_Generator/horizontalCounter/count_5
+    SLICE_X58Y98.A2      net (fanout=15)       1.095   Inst_Image_Generator/horizontalCounter/count<5>
+    SLICE_X58Y98.A       Tilo                  0.124   N56
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1_SW2
+    SLICE_X59Y105.D1     net (fanout=2)        1.026   N56
+    SLICE_X59Y105.D      Tilo                  0.124   Inst_Image_Generator/box_border_r<10>
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1
+    SLICE_X57Y97.B1      net (fanout=3)        1.341   Inst_Image_Generator/box_border_r<10>
+    SLICE_X57Y97.B       Tilo                  0.124   Inst_Image_Generator/box_border_r<7>
+                                                       Inst_Image_Generator/button_d[2]_right_border_AND_9_o4
+    SLICE_X56Y97.D3      net (fanout=3)        0.763   Inst_Image_Generator/button_d[2]_right_border_AND_9_o
+    SLICE_X56Y97.D       Tilo                  0.124   Inst_Image_Generator/horizontalCounter/count<10>
+                                                       Inst_Image_Generator/horizontalCounter/_n0031_inv3
+    SLICE_X56Y95.CE      net (fanout=3)        0.575   Inst_Image_Generator/horizontalCounter/_n0031_inv
+    SLICE_X56Y95.CLK     Tceck                 0.169   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.983ns (1.183ns logic, 4.800ns route)
+                                                       (19.8% logic, 80.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.345ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Image_Generator/horizontalCounter/count_4 (FF)
+  Destination:          Inst_Image_Generator/horizontalCounter/count_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.563ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.025ns (0.170 - 0.195)
+  Source Clock:         board_clk rising at 0.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.067ns
+
+  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.114ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_Image_Generator/horizontalCounter/count_4 to Inst_Image_Generator/horizontalCounter/count_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X56Y96.AQ      Tcko                  0.518   Inst_Image_Generator/horizontalCounter/count<7>
+                                                       Inst_Image_Generator/horizontalCounter/count_4
+    SLICE_X58Y98.A5      net (fanout=16)       0.675   Inst_Image_Generator/horizontalCounter/count<4>
+    SLICE_X58Y98.A       Tilo                  0.124   N56
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1_SW2
+    SLICE_X59Y105.D1     net (fanout=2)        1.026   N56
+    SLICE_X59Y105.D      Tilo                  0.124   Inst_Image_Generator/box_border_r<10>
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1
+    SLICE_X57Y97.B1      net (fanout=3)        1.341   Inst_Image_Generator/box_border_r<10>
+    SLICE_X57Y97.B       Tilo                  0.124   Inst_Image_Generator/box_border_r<7>
+                                                       Inst_Image_Generator/button_d[2]_right_border_AND_9_o4
+    SLICE_X56Y97.D3      net (fanout=3)        0.763   Inst_Image_Generator/button_d[2]_right_border_AND_9_o
+    SLICE_X56Y97.D       Tilo                  0.124   Inst_Image_Generator/horizontalCounter/count<10>
+                                                       Inst_Image_Generator/horizontalCounter/_n0031_inv3
+    SLICE_X56Y95.CE      net (fanout=3)        0.575   Inst_Image_Generator/horizontalCounter/_n0031_inv
+    SLICE_X56Y95.CLK     Tceck                 0.169   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.563ns (1.183ns logic, 4.380ns route)
+                                                       (21.3% logic, 78.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.437ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Image_Generator/horizontalCounter/count_2 (FF)
+  Destination:          Inst_Image_Generator/horizontalCounter/count_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.496ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         board_clk rising at 0.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.067ns
+
+  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.114ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_Image_Generator/horizontalCounter/count_2 to Inst_Image_Generator/horizontalCounter/count_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X56Y95.CQ      Tcko                  0.518   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_2
+    SLICE_X58Y98.A6      net (fanout=17)       0.608   Inst_Image_Generator/horizontalCounter/count<2>
+    SLICE_X58Y98.A       Tilo                  0.124   N56
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1_SW2
+    SLICE_X59Y105.D1     net (fanout=2)        1.026   N56
+    SLICE_X59Y105.D      Tilo                  0.124   Inst_Image_Generator/box_border_r<10>
+                                                       Inst_Image_Generator/RightAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>1
+    SLICE_X57Y97.B1      net (fanout=3)        1.341   Inst_Image_Generator/box_border_r<10>
+    SLICE_X57Y97.B       Tilo                  0.124   Inst_Image_Generator/box_border_r<7>
+                                                       Inst_Image_Generator/button_d[2]_right_border_AND_9_o4
+    SLICE_X56Y97.D3      net (fanout=3)        0.763   Inst_Image_Generator/button_d[2]_right_border_AND_9_o
+    SLICE_X56Y97.D       Tilo                  0.124   Inst_Image_Generator/horizontalCounter/count<10>
+                                                       Inst_Image_Generator/horizontalCounter/_n0031_inv3
+    SLICE_X56Y95.CE      net (fanout=3)        0.575   Inst_Image_Generator/horizontalCounter/_n0031_inv
+    SLICE_X56Y95.CLK     Tceck                 0.169   Inst_Image_Generator/horizontalCounter/count<3>
+                                                       Inst_Image_Generator/horizontalCounter/count_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.496ns (1.183ns logic, 4.313ns route)
+                                                       (21.5% logic, 78.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clocks_clkout0 = PERIOD TIMEGRP "clocks_clkout0" TS_sys_clk_pin HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_SXGA_Control/hold_Hsync/Q (SLICE_X60Y109.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.232ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_SXGA_Control/Hcount/count_10 (FF)
+  Destination:          Inst_SXGA_Control/hold_Hsync/Q (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.248ns (Levels of Logic = 1)
+  Clock Path Skew:      0.016ns (0.086 - 0.070)
+  Source Clock:         board_clk rising at 10.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Inst_SXGA_Control/Hcount/count_10 to Inst_SXGA_Control/hold_Hsync/Q
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X60Y108.CQ     Tcko                  0.164   Inst_SXGA_Control/Hcount/count<10>
+                                                       Inst_SXGA_Control/Hcount/count_10
+    SLICE_X60Y109.A6     net (fanout=6)        0.159   Inst_SXGA_Control/Hcount/count<10>
+    SLICE_X60Y109.CLK    Tah         (-Th)     0.075   Inst_SXGA_Control/hold_Hsync/Q
+                                                       Inst_SXGA_Control/DholdH1
+                                                       Inst_SXGA_Control/hold_Hsync/Q
+    -------------------------------------------------  ---------------------------
+    Total                                      0.248ns (0.089ns logic, 0.159ns route)
+                                                       (35.9% logic, 64.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_Image_Generator/verticalCounter/count_2 (SLICE_X58Y113.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.258ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_Image_Generator/verticalCounter/count_1 (FF)
+  Destination:          Inst_Image_Generator/verticalCounter/count_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.258ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         board_clk rising at 10.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Inst_Image_Generator/verticalCounter/count_1 to Inst_Image_Generator/verticalCounter/count_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X58Y113.BQ     Tcko                  0.164   Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_Image_Generator/verticalCounter/count_1
+    SLICE_X58Y113.BX     net (fanout=6)        0.079   Inst_Image_Generator/verticalCounter/count<1>
+    SLICE_X58Y113.CLK    Tckdi       (-Th)    -0.015   Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_Image_Generator/verticalCounter/Mcount_count_cy<3>
+                                                       Inst_Image_Generator/verticalCounter/count_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.258ns (0.179ns logic, 0.079ns route)
+                                                       (69.4% logic, 30.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point sevenseg/cnt/count_2 (SLICE_X81Y84.B3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.258ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               sevenseg/cnt/count_0 (FF)
+  Destination:          sevenseg/cnt/count_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.258ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         board_clk rising at 10.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: sevenseg/cnt/count_0 to sevenseg/cnt/count_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X81Y84.AQ      Tcko                  0.141   sevenseg/cnt/count<1>
+                                                       sevenseg/cnt/count_0
+    SLICE_X81Y84.B3      net (fanout=14)       0.181   sevenseg/cnt/count<0>
+    SLICE_X81Y84.CLK     Tah         (-Th)     0.064   sevenseg/cnt/count<1>
+                                                       sevenseg/cnt/Mcount_count_xor<2>11
+                                                       sevenseg/cnt/count_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.258ns (0.077ns logic, 0.181ns route)
+                                                       (29.8% logic, 70.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clocks_clkout0 = PERIOD TIMEGRP "clocks_clkout0" TS_sys_clk_pin HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.845ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.155ns (464.037MHz) (Tbcper_I(Fmax))
+  Physical resource: clocks/clkout1_buf/I0
+  Logical resource: clocks/clkout1_buf/I0
+  Location pin: BUFGCTRL_X0Y30.I0
+  Clock network: clocks/clkout0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: Inst_Image_Generator/DB0/Flip2/Q/CLK
+  Logical resource: Inst_Image_Generator/DB0/Flip2/Mshreg_Q/CLK
+  Location pin: SLICE_X14Y85.CLK
+  Clock network: board_clk
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: Inst_Image_Generator/DB0/Flip2/Q/CLK
+  Logical resource: Inst_Image_Generator/DB0/Flip2/Mshreg_Q/CLK
+  Location pin: SLICE_X14Y85.CLK
+  Clock network: board_clk
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     10.000ns|      4.000ns|      6.075ns|            0|            0|            0|        11015|
+| TS_clocks_clkout0             |     10.000ns|      6.075ns|          N/A|            0|            0|        11015|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    6.075|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 11015 paths, 0 nets, and 645 connections
+
+Design statistics:
+   Minimum period:   6.075ns{1}   (Maximum frequency: 164.609MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Nov 30 19:45:30 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 667 MB
+
+
+

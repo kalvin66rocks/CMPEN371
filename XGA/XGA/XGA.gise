@@ -77,6 +77,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1448824677" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1448824677">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1448824677" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2324486612977624767" xil_pn:start_ts="1448824677">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -177,7 +178,7 @@
       <outfile xil_pn:name="xga.bit"/>
       <outfile xil_pn:name="xga.drc"/>
     </transform>
-    <transform xil_pn:end_ts="1448836730" xil_pn:in_ck="159123899501" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6383737364629502382" xil_pn:start_ts="1448836721">
+    <transform xil_pn:end_ts="1448924287" xil_pn:in_ck="159123899501" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6383737364629502382" xil_pn:start_ts="1448924284">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
