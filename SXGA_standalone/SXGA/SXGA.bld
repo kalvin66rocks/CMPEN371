@@ -1,0 +1,43 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc Nexys4_Master.ucf -p xc7a100t-csg324-1
+SXGA.ngc SXGA.ngd
+
+Reading NGO file "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Nexys4_Master.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into MMCME2_ADV instance clocks/mmcm_adv_inst.
+   The following new TNM groups and period specifications were generated at the
+   MMCME2_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clocks_clkout0 = PERIOD "clocks_clkout0" TS_sys_clk_pin
+   HIGH 50%>
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 250792 kilobytes
+
+Writing NGD file "SXGA.ngd" ...
+Total REAL time to NGDBUILD completion:  17 sec
+Total CPU time to NGDBUILD completion:   17 sec
+
+Writing NGDBUILD log file "SXGA.bld"...

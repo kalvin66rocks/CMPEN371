@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.xst" -ofn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4_Master.ucf -p xc7a100t-csg324-1 SXGA.ngc SXGA.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o SXGA_map.ncd SXGA.ngd SXGA.pcf 
+par -w -intstyle ise -ol high -mt off SXGA_map.ncd SXGA.ncd SXGA.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml SXGA.twx SXGA.ncd -o SXGA.twr SXGA.pcf -ucf Nexys4_Master.ucf 
+bitgen -intstyle ise -f SXGA.ut SXGA.ncd 
+xst -intstyle ise -ifn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.xst" -ofn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.syr" 
+xst -intstyle ise -ifn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.xst" -ofn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.syr" 
+xst -intstyle ise -ifn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.xst" -ofn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.syr" 
+xst -intstyle ise -ifn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.xst" -ofn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4_Master.ucf -p xc7a100t-csg324-1 SXGA.ngc SXGA.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o SXGA_map.ncd SXGA.ngd SXGA.pcf 
+par -w -intstyle ise -ol high -mt off SXGA_map.ncd SXGA.ncd SXGA.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml SXGA.twx SXGA.ncd -o SXGA.twr SXGA.pcf -ucf Nexys4_Master.ucf 
+bitgen -intstyle ise -f SXGA.ut SXGA.ncd 
+xst -intstyle ise -ifn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.xst" -ofn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4_Master.ucf -p xc7a100t-csg324-1 SXGA.ngc SXGA.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o SXGA_map.ncd SXGA.ngd SXGA.pcf 
+par -w -intstyle ise -ol high -mt off SXGA_map.ncd SXGA.ncd SXGA.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml SXGA.twx SXGA.ncd -o SXGA.twr SXGA.pcf -ucf Nexys4_Master.ucf 
+bitgen -intstyle ise -f SXGA.ut SXGA.ncd 
+xst -intstyle ise -ifn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.xst" -ofn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4_Master.ucf -p xc7a100t-csg324-1 SXGA.ngc SXGA.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o SXGA_map.ncd SXGA.ngd SXGA.pcf 
+par -w -intstyle ise -ol high -mt off SXGA_map.ncd SXGA.ncd SXGA.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml SXGA.twx SXGA.ncd -o SXGA.twr SXGA.pcf -ucf Nexys4_Master.ucf 
+bitgen -intstyle ise -f SXGA.ut SXGA.ncd 
+xst -intstyle ise -ifn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.xst" -ofn "C:/Users/Kevin/Desktop/SXGA/SXGA/SXGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4_Master.ucf -p xc7a100t-csg324-1 SXGA.ngc SXGA.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o SXGA_map.ncd SXGA.ngd SXGA.pcf 
+par -w -intstyle ise -ol high -mt off SXGA_map.ncd SXGA.ncd SXGA.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml SXGA.twx SXGA.ncd -o SXGA.twr SXGA.pcf -ucf Nexys4_Master.ucf 
+bitgen -intstyle ise -f SXGA.ut SXGA.ncd 

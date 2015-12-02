@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\XGA_Image_Generator.vhd" Line 172: Actual for formal port <arg fmt="%s" index="1">up</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\XGA_Image_Generator.vhd" Line 173: Actual for formal port <arg fmt="%s" index="1">down</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\XGA_Image_Generator.vhd" Line 182: Actual for formal port <arg fmt="%s" index="1">up</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\XGA_Image_Generator.vhd" Line 183: Actual for formal port <arg fmt="%s" index="1">down</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\SXGA_Image_Generator.vhd" Line 172: Actual for formal port <arg fmt="%s" index="1">up</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\SXGA_Image_Generator.vhd" Line 173: Actual for formal port <arg fmt="%s" index="1">down</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\SXGA_Image_Generator.vhd" Line 182: Actual for formal port <arg fmt="%s" index="1">up</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\SXGA_Image_Generator.vhd" Line 183: Actual for formal port <arg fmt="%s" index="1">down</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\SVGA_Image_Generator.vhd" Line 172: Actual for formal port <arg fmt="%s" index="1">up</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\SVGA_Image_Generator.vhd" Line 173: Actual for formal port <arg fmt="%s" index="1">down</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\SVGA_Image_Generator.vhd" Line 182: Actual for formal port <arg fmt="%s" index="1">up</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Users\Kevin\Desktop\Final Top\Final_Top\SVGA_Image_Generator.vhd" Line 183: Actual for formal port <arg fmt="%s" index="1">down</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\Users\Kevin\Desktop\Final Top\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 46: <arg fmt="%s" index="1">count</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\VGA_Imaage_Generator.vhd</arg>&quot; line <arg fmt="%d" index="2">69</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">DB1</arg>&gt; of block &lt;<arg fmt="%s" index="4">Debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">VGA_Image_Generator</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\VGA_Imaage_Generator.vhd</arg>&quot; line <arg fmt="%d" index="2">83</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">DB3</arg>&gt; of block &lt;<arg fmt="%s" index="4">Debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">VGA_Image_Generator</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\VGA_Imaage_Generator.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">DB4</arg>&gt; of block &lt;<arg fmt="%s" index="4">Debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">VGA_Image_Generator</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SVGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%d" index="2">88</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">DB3</arg>&gt; of block &lt;<arg fmt="%s" index="4">Debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">SVGA_Image_Generator</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\XGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%d" index="2">88</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">DB3</arg>&gt; of block &lt;<arg fmt="%s" index="4">Debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">XGA_Image_Generator</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SXGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%d" index="2">88</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">DB3</arg>&gt; of block &lt;<arg fmt="%s" index="4">Debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">SXGA_Image_Generator</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\Final_top.vhd</arg>&quot; line <arg fmt="%s" index="2">192</arg>: Output port &lt;<arg fmt="%s" index="3">CLK_OUT6</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">your_instance_name</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\VGA_Imaage_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">69</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DB1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\VGA_Imaage_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">83</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DB3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\VGA_Imaage_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DB4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\VGA_Imaage_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">133</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RightAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\VGA_Imaage_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">LeftAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SVGA.vhd</arg>&quot; line <arg fmt="%s" index="2">94</arg>: Output port &lt;<arg fmt="%s" index="3">anode</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sevenseg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ANODE</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SVGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">88</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DB3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SVGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">155</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RightAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SVGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">163</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">LeftAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SVGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">UpAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SVGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">196</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DownAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\XGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">88</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DB3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\XGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">155</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RightAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\XGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">163</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">LeftAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\XGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">UpAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\XGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">196</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DownAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SXGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">88</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DB3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SXGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">155</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RightAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SXGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">163</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">LeftAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SXGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">UpAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kevin\Desktop\Final Top\Final_Top\SXGA_Image_Generator.vhd</arg>&quot; line <arg fmt="%s" index="2">196</arg>: Output port &lt;<arg fmt="%s" index="3">C_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DownAdder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_Segment</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_19&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_19&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/DB4/Flip1/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/DB4/Flip1/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB4/Flip1/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/DB1/Flip1/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/DB1/Flip1/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB1/Flip1/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/DB4/Flip2/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/DB4/Flip2/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB4/Flip2/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/verticalCounter/count_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/verticalCounter/count_10&gt; &lt;Inst_SXGA/Inst_Image_Generator/verticalCounter/count_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Test_counter/count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_VGA/Inst_VGA_Control/Hcount/count_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Test_counter/count_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_VGA/Inst_VGA_Control/Hcount/count_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Test_counter/count_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_VGA/Inst_VGA_Control/Hcount/count_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Test_counter/count_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_VGA/Inst_VGA_Control/Hcount/count_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Test_counter/count_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_VGA/Inst_VGA_Control/Hcount/count_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/DB1/Flip2/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB1/Flip2/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/DB4/Flip3/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/DB4/Flip3/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB4/Flip3/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/verticalCounter/count_0&gt; &lt;Inst_SXGA/Inst_Image_Generator/verticalCounter/count_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/verticalCounter/count_1&gt; &lt;Inst_SXGA/Inst_Image_Generator/verticalCounter/count_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/verticalCounter/count_2&gt; &lt;Inst_SXGA/Inst_Image_Generator/verticalCounter/count_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/verticalCounter/count_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/verticalCounter/count_3&gt; &lt;Inst_SXGA/Inst_Image_Generator/verticalCounter/count_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/verticalCounter/count_4&gt; &lt;Inst_SXGA/Inst_Image_Generator/verticalCounter/count_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/DB1/Flip3/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/DB1/Flip3/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB1/Flip3/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/verticalCounter/count_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/verticalCounter/count_5&gt; &lt;Inst_SXGA/Inst_Image_Generator/verticalCounter/count_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/verticalCounter/count_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/verticalCounter/count_6&gt; &lt;Inst_SXGA/Inst_Image_Generator/verticalCounter/count_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/verticalCounter/count_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/verticalCounter/count_7&gt; &lt;Inst_SXGA/Inst_Image_Generator/verticalCounter/count_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/verticalCounter/count_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/verticalCounter/count_8&gt; &lt;Inst_SXGA/Inst_Image_Generator/verticalCounter/count_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/verticalCounter/count_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/verticalCounter/count_9&gt; &lt;Inst_SXGA/Inst_Image_Generator/verticalCounter/count_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/DB2/Flip1/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/DB2/Flip1/Q&gt; &lt;Inst_XGA/Inst_Image_Generator/DB2/Flip1/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB2/Flip1/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_0&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_0&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_1&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_1&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_2&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_2&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_3&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_3&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_4&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_4&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_5&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_5&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_6&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_6&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_7&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_7&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_8&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_8&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_9&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_9&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/DB0/Flip1/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/DB0/Flip1/Q&gt; &lt;Inst_XGA/Inst_Image_Generator/DB0/Flip1/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB0/Flip1/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_9&gt; &lt;Inst_XGA/Inst_Image_Generator/horizontalCounter/count_10&gt; &lt;Inst_XGA/Inst_Image_Generator/horizontalCounter/count_9&gt; &lt;Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_10&gt; &lt;Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/DB2/Flip2/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/DB2/Flip2/Q&gt; &lt;Inst_XGA/Inst_Image_Generator/DB2/Flip2/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB2/Flip2/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_10&gt; &lt;Inst_XGA/pulse_strobe/count_10&gt; &lt;Inst_SXGA/pulse_strobe/count_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_11&gt; &lt;Inst_XGA/pulse_strobe/count_11&gt; &lt;Inst_SXGA/pulse_strobe/count_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_12&gt; &lt;Inst_XGA/pulse_strobe/count_12&gt; &lt;Inst_SXGA/pulse_strobe/count_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_13&gt; &lt;Inst_XGA/pulse_strobe/count_13&gt; &lt;Inst_SXGA/pulse_strobe/count_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/DB0/Flip2/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/DB0/Flip2/Q&gt; &lt;Inst_XGA/Inst_Image_Generator/DB0/Flip2/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB0/Flip2/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_14&gt; &lt;Inst_XGA/pulse_strobe/count_14&gt; &lt;Inst_SXGA/pulse_strobe/count_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_15&gt; &lt;Inst_XGA/pulse_strobe/count_15&gt; &lt;Inst_SXGA/pulse_strobe/count_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/DB2/Flip3/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/DB2/Flip3/Q&gt; &lt;Inst_XGA/Inst_Image_Generator/DB2/Flip3/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB2/Flip3/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/sevenseg/cnt/count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/sevenseg/cnt/count_0&gt; &lt;Inst_XGA/sevenseg/cnt/count_0&gt; &lt;Inst_SXGA/sevenseg/cnt/count_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/sevenseg/cnt/count_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/sevenseg/cnt/count_1&gt; &lt;Inst_XGA/sevenseg/cnt/count_1&gt; &lt;Inst_SXGA/sevenseg/cnt/count_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/sevenseg/cnt/count_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/sevenseg/cnt/count_2&gt; &lt;Inst_XGA/sevenseg/cnt/count_2&gt; &lt;Inst_SXGA/sevenseg/cnt/count_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_0&gt; &lt;Inst_XGA/pulse_strobe/count_0&gt; &lt;Inst_SXGA/pulse_strobe/count_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_1&gt; &lt;Inst_XGA/pulse_strobe/count_1&gt; &lt;Inst_SXGA/pulse_strobe/count_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_2&gt; &lt;Inst_XGA/pulse_strobe/count_2&gt; &lt;Inst_SXGA/pulse_strobe/count_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/DB0/Flip3/Q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/DB0/Flip3/Q&gt; &lt;Inst_XGA/Inst_Image_Generator/DB0/Flip3/Q&gt; &lt;Inst_SXGA/Inst_Image_Generator/DB0/Flip3/Q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_3&gt; &lt;Inst_XGA/pulse_strobe/count_3&gt; &lt;Inst_SXGA/pulse_strobe/count_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_4&gt; &lt;Inst_XGA/pulse_strobe/count_4&gt; &lt;Inst_SXGA/pulse_strobe/count_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_5&gt; &lt;Inst_XGA/pulse_strobe/count_5&gt; &lt;Inst_SXGA/pulse_strobe/count_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_6&gt; &lt;Inst_XGA/pulse_strobe/count_6&gt; &lt;Inst_SXGA/pulse_strobe/count_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_7&gt; &lt;Inst_XGA/pulse_strobe/count_7&gt; &lt;Inst_SXGA/pulse_strobe/count_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_8&gt; &lt;Inst_XGA/pulse_strobe/count_8&gt; &lt;Inst_SXGA/pulse_strobe/count_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/pulse_strobe/count_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/pulse_strobe/count_9&gt; &lt;Inst_XGA/pulse_strobe/count_9&gt; &lt;Inst_SXGA/pulse_strobe/count_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/horizontalCounter/count_0&gt; &lt;Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/horizontalCounter/count_1&gt; &lt;Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/horizontalCounter/count_2&gt; &lt;Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/horizontalCounter/count_3&gt; &lt;Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/horizontalCounter/count_4&gt; &lt;Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/horizontalCounter/count_5&gt; &lt;Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/horizontalCounter/count_6&gt; &lt;Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/horizontalCounter/count_7&gt; &lt;Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_XGA/Inst_Image_Generator/horizontalCounter/count_8&gt; &lt;Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_10&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_10&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_11&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_11&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_12&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_12&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_13&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_13&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_14&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_14&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_15&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_15&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_16&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_16&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_17&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_17&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_VGA/Inst_Image_Generator/Pulse_d/count_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Final_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_SVGA/Inst_Image_Generator/Pulse_d/count_18&gt; &lt;Inst_XGA/Inst_Image_Generator/Pulse_d/count_18&gt; &lt;Inst_SXGA/Inst_Image_Generator/Pulse_d/count_18&gt; </arg>
+</msg>
+
+</messages>
+

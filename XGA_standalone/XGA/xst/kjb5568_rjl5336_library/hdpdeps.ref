@@ -1,0 +1,103 @@
+V3 69
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/CompareEQU.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/CompareEQU 1449037021 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/CompareEQU.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR kjb5568_rjl5336_library/CompareEQU/structural 1449037022 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/CompareEQU.vhd \
+      EN kjb5568_rjl5336_library/CompareEQU 1449037021
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/CompareGRT.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/CompareGRT 1449037023 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/CompareGRT.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR kjb5568_rjl5336_library/CompareGRT/structural 1449037024 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/CompareGRT.vhd \
+      EN kjb5568_rjl5336_library/CompareGRT 1449037023
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/counterupdown_nbit.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/CounterUpDown_nbit 1449037029 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/counterupdown_nbit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR kjb5568_rjl5336_library/counterupdown_nbit/Behavioral 1449037030 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/counterupdown_nbit.vhd \
+      EN kjb5568_rjl5336_library/CounterUpDown_nbit 1449037029
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/Counter_nbit.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/Counter_nbit 1449037015 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/Counter_nbit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR kjb5568_rjl5336_library/Counter_nbit/Behavioral 1449037016 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/Counter_nbit.vhd \
+      EN kjb5568_rjl5336_library/Counter_nbit 1449037015
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/Debouncer.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/Debouncer 1449037025 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/Debouncer.vhd \
+      PB ieee/std_logic_1164 1381692176 LB kjb5568_rjl5336_library \
+      PB kjb5568_rjl5336_library/kjb5568_rjl5336_Components 1449037014
+AR kjb5568_rjl5336_library/Debouncer/Behavioral 1449037026 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/Debouncer.vhd \
+      EN kjb5568_rjl5336_library/Debouncer 1449037025 CP DFF_CE
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/DFF_enable.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/DFF_CE 1449037019 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/DFF_enable.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR kjb5568_rjl5336_library/DFF_CE/Behavioral 1449037020 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/DFF_enable.vhd \
+      EN kjb5568_rjl5336_library/DFF_CE 1449037019
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/FullAdder.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/FullAdder 1449037011 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/FullAdder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR kjb5568_rjl5336_library/FullAdder/Dataflow 1449037012 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/FullAdder.vhd \
+      EN kjb5568_rjl5336_library/FullAdder 1449037011
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/hextosevenseg.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/hextosevenseg 1449037017 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/hextosevenseg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR kjb5568_rjl5336_library/hextosevenseg/structural 1449037018 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/hextosevenseg.vhd \
+      EN kjb5568_rjl5336_library/hextosevenseg 1449037017
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd 2015/11/29.11:43:36 P.20131013
+PH kjb5568_rjl5336_library/kjb5568_rjl5336_Components 1449037013 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd \
+      PB ieee/std_logic_1164 1381692176 CD FullAdder CD AdderSubtractor_nbit \
+      CD CompareEQU CD CompareGRT CD maximum CD LST CD minimum CD Average CD mux4to1 \
+      CD threeto8encoder CD hextosevenseg CD Counter_nbit CD CounterUpDown_nbit \
+      CD Reg_nbit CD DFF CD DFF_CE CD counter50mhz CD counter16hz CD OneShot \
+      CD Debouncer CD Shift_Register CD WordTo8dig7seg CD pulse_gen \
+      CD Up_down_with_input_nbit CD Ripple_Carry_Adder
+PB kjb5568_rjl5336_library/kjb5568_rjl5336_Components 1449037014 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/kjb5568_rjl5336_components.vhd \
+      PH kjb5568_rjl5336_library/kjb5568_rjl5336_Components 1449037013
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/LST.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/LST 1449037027 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/LST.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR kjb5568_rjl5336_library/LST/structural 1449037028 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/LST.vhd \
+      EN kjb5568_rjl5336_library/LST 1449037027
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/numeric_display.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/WordTo8dig7seg 1449037031 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/numeric_display.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      LB kjb5568_rjl5336_library \
+      PB kjb5568_rjl5336_library/kjb5568_rjl5336_Components 1449037014
+AR kjb5568_rjl5336_library/WordTo8dig7seg/Behavioral 1449037032 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/numeric_display.vhd \
+      EN kjb5568_rjl5336_library/WordTo8dig7seg 1449037031 CP counter_nbit \
+      CP hextosevenseg
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/pulse_gen.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/pulse_gen 1449037033 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/pulse_gen.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      LB kjb5568_rjl5336_library \
+      PB kjb5568_rjl5336_library/kjb5568_rjl5336_Components 1449037014
+AR kjb5568_rjl5336_library/pulse_gen/Behavioral 1449037034 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/pulse_gen.vhd \
+      EN kjb5568_rjl5336_library/pulse_gen 1449037033
+FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/rippe_carry_adder.vhd 2015/11/29.11:43:36 P.20131013
+EN kjb5568_rjl5336_library/Ripple_Carry_Adder 1449037035 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/rippe_carry_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR kjb5568_rjl5336_library/Ripple_Carry_Adder/Structural 1449037036 \
+      FL C:/Users/Kevin/Desktop/XGA/XGA/../kjb5568_rjl5336_library/rippe_carry_adder.vhd \
+      EN kjb5568_rjl5336_library/Ripple_Carry_Adder 1449037035 CP FullAdder
