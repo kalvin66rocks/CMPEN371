@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Dec 02 02:26:05 2015
+// Written by: Map P.20131013 on Fri Dec 04 13:33:05 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -503,14 +503,14 @@ PIN your_instance_name/mmcm_adv_inst_pins<2> = BEL
         "your_instance_name/mmcm_adv_inst" PINNAME CLKIN1;
 TIMEGRP sys_clk_pin = PIN "your_instance_name/mmcm_adv_inst_pins<2>";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
-TS_your_instance_name_clkout1 = PERIOD TIMEGRP "your_instance_name_clkout1"
-        TS_sys_clk_pin * 0.25 HIGH 50%;
-TS_your_instance_name_clkout0 = PERIOD TIMEGRP "your_instance_name_clkout0"
-        TS_sys_clk_pin HIGH 50%;
-TS_your_instance_name_clkout4 = PERIOD TIMEGRP "your_instance_name_clkout4"
-        TS_sys_clk_pin * 1.09090909 HIGH 50%;
 TS_your_instance_name_clkout2 = PERIOD TIMEGRP "your_instance_name_clkout2"
         TS_sys_clk_pin * 0.4 HIGH 50%;
+TS_your_instance_name_clkout1 = PERIOD TIMEGRP "your_instance_name_clkout1"
+        TS_sys_clk_pin * 0.25 HIGH 50%;
+TS_your_instance_name_clkout4 = PERIOD TIMEGRP "your_instance_name_clkout4"
+        TS_sys_clk_pin * 1.09090909 HIGH 50%;
+TS_your_instance_name_clkout0 = PERIOD TIMEGRP "your_instance_name_clkout0"
+        TS_sys_clk_pin HIGH 50%;
 TS_your_instance_name_clkout3 = PERIOD TIMEGRP "your_instance_name_clkout3"
         TS_sys_clk_pin * 0.666666667 HIGH 50%;
 SCHEMATIC END;

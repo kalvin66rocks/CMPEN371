@@ -77,12 +77,12 @@ EQ799 : CompareEQU generic map (10) port map (
 LES640 : LST generic map (10) port map (
 		A =>	X_out_int,
 		B =>	"1010000000",
-		OUTPUT =>	H_LT_656);
+		OUTPUT =>	HActive);
 		
 LES656 : LST generic map (10) port map (
 		A =>	X_out_int,
 		B =>	"1010010000",
-		OUTPUT =>	HActive);
+		OUTPUT =>	H_LT_656);
 		
 GRT751 : CompareGRT generic map (10) port map (
 		A =>	X_out_int,

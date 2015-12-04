@@ -10,7 +10,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -1
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Wed Dec 02 02:25:39 2015
+Mapped Date    : Fri Dec 04 13:31:33 2015
 
 Design Summary
 --------------
@@ -41,11 +41,11 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   223 out of  15,850    1%
-  Number of LUT Flip Flop pairs used:          672
-    Number with an unused Flip Flop:           371 out of     672   55%
-    Number with an unused LUT:                   3 out of     672    1%
-    Number of fully used LUT-FF pairs:         298 out of     672   44%
+  Number of occupied Slices:                   233 out of  15,850    1%
+  Number of LUT Flip Flop pairs used:          673
+    Number with an unused Flip Flop:           372 out of     673   55%
+    Number with an unused LUT:                   4 out of     673    1%
+    Number of fully used LUT-FF pairs:         297 out of     673   44%
     Number of unique control sets:              21
     Number of slice register sites lost
       to control set restrictions:              95 out of 126,800    1%
@@ -95,11 +95,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of XADCs:                               0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.77
+Average Fanout of Non-Clock Nets:                3.76
 
-Peak Memory Usage:  916 MB
-Total REAL time to MAP completion:  27 secs 
-Total CPU time to MAP completion:   27 secs 
+Peak Memory Usage:  930 MB
+Total REAL time to MAP completion:  1 mins 36 secs 
+Total CPU time to MAP completion:   1 mins 22 secs 
 
 Table of Contents
 -----------------

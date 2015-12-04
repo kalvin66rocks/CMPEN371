@@ -97,12 +97,12 @@ port
  (-- Clock in ports
   CLK_IN1           : in     std_logic;
   -- Clock out ports
-  CLK_OUT1          : out    std_logic;
-  CLK_OUT2          : out    std_logic;
-  CLK_OUT3          : out    std_logic;
-  CLK_OUT4          : out    std_logic;
-  CLK_OUT5          : out    std_logic;
-  CLK_OUT6          : out    std_logic
+  CLK_OUT1          : out    std_logic; --100mhz
+  CLK_OUT2          : out    std_logic; --25mhz
+  CLK_OUT3          : out    std_logic; --40mhz
+  CLK_OUT4          : out    std_logic; --65mhz
+  CLK_OUT5          : out    std_logic; --108mhz
+  CLK_OUT6          : out    std_logic  --234mhz
  );
 end component;
 
@@ -194,12 +194,12 @@ your_instance_name : clk_wiz_v3_6
    (-- Clock in ports
     CLK_IN1 => CLK,
     -- Clock out ports
-    CLK_OUT1 => board_clk,
-    CLK_OUT2 => vga_clk,
-    CLK_OUT3 => svga_clk,
-    CLK_OUT4 => xga_clk,
-    CLK_OUT5 => sxga_clk,
-    CLK_OUT6 => custom);
+    CLK_OUT1 => board_clk, --100
+    CLK_OUT2 => vga_clk, --25
+    CLK_OUT3 => svga_clk, --40
+    CLK_OUT4 => xga_clk, --65
+    CLK_OUT5 => sxga_clk, --108
+    CLK_OUT6 => custom); --234
 
 HSYNC <=  HSYNC_vga when switch(15 downto 12) = "0000" else
 			 HSYNC_Svga when switch(15 downto 12) = "0001" else
