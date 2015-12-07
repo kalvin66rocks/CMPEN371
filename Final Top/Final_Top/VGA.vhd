@@ -60,7 +60,7 @@ component VGA_Control is
            Y_out 		: out  STD_LOGIC_VECTOR (9 downto 0);
            RGB_in 	: in  STD_LOGIC_VECTOR (11 downto 0);
            Clk 		: in  STD_LOGIC;
-           pixelCLK 	: in  STD_LOGIC;
+           --pixelCLK 	: in  STD_LOGIC;
            HSYNC 		: out  STD_LOGIC;
            VSYNC 		: out  STD_LOGIC;
            RGB_out 	: out  STD_LOGIC_VECTOR (11 downto 0));
@@ -91,7 +91,7 @@ Inst_VGA_Control: VGA_Control PORT MAP(
 		Y_out => y,
 		RGB_in => RGB,
 		Clk => CLK,
-		pixelCLK => pixelCLK,
+		--pixelCLK => pixelCLK,
 		HSYNC => HSYNC,
 		VSYNC => VSYNC,
 		RGB_out => RGB_out

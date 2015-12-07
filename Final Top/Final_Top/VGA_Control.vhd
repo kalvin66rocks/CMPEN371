@@ -28,7 +28,7 @@ entity VGA_Control is
            Y_out 		: out  STD_LOGIC_VECTOR (9 downto 0);
            RGB_in 	: in  STD_LOGIC_VECTOR (11 downto 0);
            Clk 		: in  STD_LOGIC;
-           pixelCLK 		: in  STD_LOGIC;
+           --pixelCLK 		: in  STD_LOGIC;
            HSYNC 		: out  STD_LOGIC;
            VSYNC 		: out  STD_LOGIC;
            RGB_out 	: out  STD_LOGIC_VECTOR (11 downto 0));
@@ -36,7 +36,7 @@ end VGA_Control;
 
 architecture Behavioral of VGA_Control is
 
-
+signal pixelCLK	 : std_logic;
 signal RollH	 : std_logic;
 signal RollV	 : std_logic;
 signal Vcount_clear	 : std_logic;
@@ -58,7 +58,11 @@ signal y_out_int : STD_LOGIC_VECTOR (9 downto 0);
 begin
 
 
-
+Pulse25 : Pulse_Gen generic map (2, 3) port map (
+		EN    => '1',
+		CLK   => CLK,
+		CLR   => '0',
+		PULSE => pixelCLK );
 ------------------------------------------------------------------
 Hcount_clear <= '1' when ( pixelCLK = '1' and RollH = '1') else '0';
 --horizontal
@@ -77,12 +81,12 @@ EQ799 : CompareEQU generic map (10) port map (
 LES640 : LST generic map (10) port map (
 		A =>	X_out_int,
 		B =>	"1010000000",
-		OUTPUT =>	HActive);
+		OUTPUT =>	H_LT_656);
 		
 LES656 : LST generic map (10) port map (
 		A =>	X_out_int,
 		B =>	"1010010000",
-		OUTPUT =>	H_LT_656);
+		OUTPUT =>	HActive);
 		
 GRT751 : CompareGRT generic map (10) port map (
 		A =>	X_out_int,
@@ -151,6 +155,7 @@ hold_rgb_enable : DFF_CE port map (
 
 RGB_out	 <= RGB_in when( RGB_enable_Reg = '1') else
 				x"000";
+	
 	
 
 

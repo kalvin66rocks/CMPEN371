@@ -50,7 +50,7 @@ cnt: counter_nbit generic map (n=>3) port map (
 	CLR => clr_int,
 	Q => sel);
 	
-clr_int <= '1' when (to_integer(unsigned( sel(2 downto 0))))= 7 else
+clr_int <= '1' when (to_integer(unsigned( sel(2 downto 0))))= 8 else
 		     '0';
 w2h <= word( 31 downto 28) when sel = "111" else
 		 word( 27 downto 24) when sel = "110" else
