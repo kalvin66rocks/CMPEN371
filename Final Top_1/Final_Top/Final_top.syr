@@ -1,0 +1,1176 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Final_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Final_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Final_top"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : Final_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\kjb5568_rjl5336_components.vhd" into library kjb5568_rjl5336_library
+Parsing package <kjb5568_rjl5336_Components>.
+Parsing package body <kjb5568_rjl5336_Components>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\FullAdder.vhd" into library kjb5568_rjl5336_library
+Parsing entity <FullAdder>.
+Parsing architecture <Dataflow> of entity <fulladder>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\DFF_enable.vhd" into library kjb5568_rjl5336_library
+Parsing entity <DFF_CE>.
+Parsing architecture <Behavioral> of entity <dff_ce>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\rippe_carry_adder.vhd" into library kjb5568_rjl5336_library
+Parsing entity <Ripple_Carry_Adder>.
+Parsing architecture <Structural> of entity <ripple_carry_adder>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\pulse_gen.vhd" into library kjb5568_rjl5336_library
+Parsing entity <pulse_gen>.
+Parsing architecture <Behavioral> of entity <pulse_gen>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\LST.vhd" into library kjb5568_rjl5336_library
+Parsing entity <LST>.
+Parsing architecture <structural> of entity <lst>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\hextosevenseg.vhd" into library kjb5568_rjl5336_library
+Parsing entity <hextosevenseg>.
+Parsing architecture <structural> of entity <hextosevenseg>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\Debouncer.vhd" into library kjb5568_rjl5336_library
+Parsing entity <Debouncer>.
+Parsing architecture <Behavioral> of entity <debouncer>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\Counter_nbit.vhd" into library kjb5568_rjl5336_library
+Parsing entity <Counter_nbit>.
+Parsing architecture <Behavioral> of entity <counter_nbit>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\counterupdown_nbit.vhd" into library kjb5568_rjl5336_library
+Parsing entity <CounterUpDown_nbit>.
+Parsing architecture <Behavioral> of entity <counterupdown_nbit>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\CompareGRT.vhd" into library kjb5568_rjl5336_library
+Parsing entity <CompareGRT>.
+Parsing architecture <structural> of entity <comparegrt>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\CompareEQU.vhd" into library kjb5568_rjl5336_library
+Parsing entity <CompareEQU>.
+Parsing architecture <structural> of entity <compareequ>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\CircleROM.vhd" into library work
+Parsing entity <CircleROM>.
+Parsing architecture <Behavioral> of entity <circlerom>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\numeric_display.vhd" into library kjb5568_rjl5336_library
+Parsing entity <WordTo8dig7seg>.
+Parsing architecture <Behavioral> of entity <wordto8dig7seg>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" into library work
+Parsing entity <XGA_Image_Generator>.
+Parsing architecture <Behavioral> of entity <xga_image_generator>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" Line 187: Actual for formal port up is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" Line 188: Actual for formal port down is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" Line 197: Actual for formal port up is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" Line 198: Actual for formal port down is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" Line 240: Actual for formal port en is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Control.vhd" into library work
+Parsing entity <XGA_Control>.
+Parsing architecture <Behavioral> of entity <xga_control>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" into library work
+Parsing entity <VGA_Image_Generator>.
+Parsing architecture <Behavioral> of entity <vga_image_generator>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" Line 188: Actual for formal port up is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" Line 189: Actual for formal port down is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" Line 198: Actual for formal port up is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" Line 199: Actual for formal port down is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" Line 242: Actual for formal port en is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Control.vhd" into library work
+Parsing entity <VGA_Control>.
+Parsing architecture <Behavioral> of entity <vga_control>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" into library work
+Parsing entity <SXGA_Image_Generator>.
+Parsing architecture <Behavioral> of entity <sxga_image_generator>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" Line 187: Actual for formal port up is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" Line 188: Actual for formal port down is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" Line 197: Actual for formal port up is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" Line 198: Actual for formal port down is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" Line 239: Actual for formal port en is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Control.vhd" into library work
+Parsing entity <SXGA_Control>.
+Parsing architecture <Behavioral> of entity <sxga_control>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" into library work
+Parsing entity <SVGA_Image_Generator>.
+Parsing architecture <Behavioral> of entity <svga_image_generator>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" Line 187: Actual for formal port up is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" Line 188: Actual for formal port down is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" Line 197: Actual for formal port up is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" Line 198: Actual for formal port down is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" Line 240: Actual for formal port en is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Control.vhd" into library work
+Parsing entity <SVGA_Control>.
+Parsing architecture <Behavioral> of entity <svga_control>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA.vhd" into library work
+Parsing entity <XGA>.
+Parsing architecture <Behavioral> of entity <xga>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA.vhd" into library work
+Parsing entity <VGA>.
+Parsing architecture <Structural> of entity <vga>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA.vhd" into library work
+Parsing entity <SXGA>.
+Parsing architecture <Behavioral> of entity <sxga>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA.vhd" into library work
+Parsing entity <SVGA>.
+Parsing architecture <Behavioral> of entity <svga>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\clk_wiz_v3_6.vhd" into library work
+Parsing entity <clk_wiz_v3_6>.
+Parsing architecture <xilinx> of entity <clk_wiz_v3_6>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\Final_top.vhd" into library work
+Parsing entity <Final_top>.
+Parsing architecture <Behavioral> of entity <final_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Final_top> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <VGA> (architecture <Structural>) from library <work>.
+
+Elaborating entity <VGA_Control> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <CompareEQU> (architecture <structural>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <LST> (architecture <structural>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <CompareGRT> (architecture <structural>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <DFF_CE> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <VGA_Image_Generator> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <Debouncer> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <Ripple_Carry_Adder> (architecture <Structural>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <FullAdder> (architecture <Dataflow>) from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <CounterUpDown_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\counterupdown_nbit.vhd" Line 46: count should be on the sensitivity list of the process
+
+Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <LST> (architecture <structural>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <CircleROM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <WordTo8dig7seg> (architecture <Behavioral>) from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <hextosevenseg> (architecture <structural>) from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <SVGA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SVGA_Control> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <pulse_gen> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <Counter_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <CompareEQU> (architecture <structural>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <LST> (architecture <structural>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <CompareGRT> (architecture <structural>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <SVGA_Image_Generator> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Ripple_Carry_Adder> (architecture <Structural>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <CounterUpDown_nbit> (architecture <Behavioral>) with generics from library <kjb5568_rjl5336_library>.
+
+Elaborating entity <XGA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <XGA_Control> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <XGA_Image_Generator> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SXGA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SXGA_Control> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SXGA_Image_Generator> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <clk_wiz_v3_6> (architecture <xilinx>) from library <work>.
+WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" line 104. All outputs of instance <DB3> of block <Debouncer> are unconnected in block <VGA_Image_Generator>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" line 228. All outputs of instance <Pulse25> of block <pulse_gen> are unconnected in block <VGA_Image_Generator>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" line 233. All outputs of instance <Pulse2525> of block <pulse_gen> are unconnected in block <VGA_Image_Generator>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" line 103. All outputs of instance <DB3> of block <Debouncer> are unconnected in block <SVGA_Image_Generator>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" line 103. All outputs of instance <DB3> of block <Debouncer> are unconnected in block <XGA_Image_Generator>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" line 103. All outputs of instance <DB3> of block <Debouncer> are unconnected in block <SXGA_Image_Generator>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Final_top>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\Final_top.vhd".
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\Final_top.vhd" line 192: Output port <CLK_OUT6> of the instance <your_instance_name> is unconnected or connected to loadless signal.
+    Summary:
+	inferred  30 Multiplexer(s).
+Unit <Final_top> synthesized.
+
+Synthesizing Unit <VGA>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <VGA> synthesized.
+
+Synthesizing Unit <VGA_Control>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Control.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <VGA_Control> synthesized.
+
+Synthesizing Unit <pulse_gen_1>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\pulse_gen.vhd".
+        n = 2
+        maxCount = 3
+    Found 2-bit register for signal <count>.
+    Found 2-bit adder for signal <count[1]_count[1]_mux_1_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <pulse_gen_1> synthesized.
+
+Synthesizing Unit <Counter_nbit_1>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\Counter_nbit.vhd".
+        n = 10
+    Found 10-bit register for signal <count>.
+    Found 10-bit adder for signal <count[9]_GND_10_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+Unit <Counter_nbit_1> synthesized.
+
+Synthesizing Unit <CompareEQU_1>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\CompareEQU.vhd".
+        n = 10
+    Found 10-bit comparator equal for signal <EQU> created at line 27
+    Summary:
+	inferred   1 Comparator(s).
+Unit <CompareEQU_1> synthesized.
+
+Synthesizing Unit <LST_1>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\LST.vhd".
+        n = 10
+    Found 10-bit comparator greater for signal <OUTPUT> created at line 27
+    Summary:
+	inferred   1 Comparator(s).
+Unit <LST_1> synthesized.
+
+Synthesizing Unit <CompareGRT_1>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\CompareGRT.vhd".
+        n = 10
+    Found 10-bit comparator greater for signal <OUTPUT> created at line 36
+    Summary:
+	inferred   1 Comparator(s).
+Unit <CompareGRT_1> synthesized.
+
+Synthesizing Unit <DFF_CE>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\DFF_enable.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <DFF_CE> synthesized.
+
+Synthesizing Unit <VGA_Image_Generator>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd".
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" line 104: Output port <Q> of the instance <DB3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" line 171: Output port <C_out> of the instance <RightAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" line 179: Output port <C_out> of the instance <LeftAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" line 204: Output port <C_out> of the instance <UpAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" line 212: Output port <C_out> of the instance <DownAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\VGA_Imaage_Generator.vhd" line 233: Output port <PULSE> of the instance <Pulse2525> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <VGA_Image_Generator> synthesized.
+
+Synthesizing Unit <pulse_gen_2>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\pulse_gen.vhd".
+        n = 20
+        maxCount = 1000000
+    Found 20-bit register for signal <count>.
+    Found 20-bit adder for signal <count[19]_GND_56_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+Unit <pulse_gen_2> synthesized.
+
+Synthesizing Unit <Debouncer>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\Debouncer.vhd".
+    Summary:
+	no macro.
+Unit <Debouncer> synthesized.
+
+Synthesizing Unit <Ripple_Carry_Adder_1>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\rippe_carry_adder.vhd".
+        n = 10
+    Summary:
+	no macro.
+Unit <Ripple_Carry_Adder_1> synthesized.
+
+Synthesizing Unit <FullAdder>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\FullAdder.vhd".
+    Summary:
+Unit <FullAdder> synthesized.
+
+Synthesizing Unit <CounterUpDown_nbit_1>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\counterupdown_nbit.vhd".
+        n = 10
+    Found 10-bit register for signal <count>.
+    Found 10-bit adder for signal <count[9]_GND_124_o_add_0_OUT> created at line 1241.
+    Found 10-bit subtractor for signal <GND_124_o_GND_124_o_sub_2_OUT<9:0>> created at line 1308.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+Unit <CounterUpDown_nbit_1> synthesized.
+
+Synthesizing Unit <Counter_nbit_2>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\Counter_nbit.vhd".
+        n = 12
+    Found 12-bit register for signal <count>.
+    Found 12-bit adder for signal <count[11]_GND_145_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+Unit <Counter_nbit_2> synthesized.
+
+Synthesizing Unit <LST_2>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\LST.vhd".
+        n = 12
+    Found 12-bit comparator greater for signal <OUTPUT> created at line 27
+    Summary:
+	inferred   1 Comparator(s).
+Unit <LST_2> synthesized.
+
+Synthesizing Unit <CircleROM>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\CircleROM.vhd".
+WARNING:Xst:647 - Input <ADDRESS<11:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 12-bit register for signal <DATA_OUT>.
+    Found 2048x12-bit Read Only RAM for signal <ADDRESS[10]_GND_158_o_wide_mux_0_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  12 D-type flip-flop(s).
+Unit <CircleROM> synthesized.
+
+Synthesizing Unit <pulse_gen_3>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\pulse_gen.vhd".
+        n = 16
+        maxCount = 50000
+    Found 16-bit register for signal <count>.
+    Found 16-bit adder for signal <count[15]_GND_159_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <pulse_gen_3> synthesized.
+
+Synthesizing Unit <Counter_nbit_3>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\Counter_nbit.vhd".
+        n = 32
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_161_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <Counter_nbit_3> synthesized.
+
+Synthesizing Unit <WordTo8dig7seg>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\numeric_display.vhd".
+    Found 4-bit 8-to-1 multiplexer for signal <w2h> created at line 39.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <WordTo8dig7seg> synthesized.
+
+Synthesizing Unit <Counter_nbit_4>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\Counter_nbit.vhd".
+        n = 3
+    Found 3-bit register for signal <count>.
+    Found 3-bit adder for signal <count[2]_GND_164_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+Unit <Counter_nbit_4> synthesized.
+
+Synthesizing Unit <hextosevenseg>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\hextosevenseg.vhd".
+    Found 16x7-bit Read Only RAM for signal <Segment>
+    Summary:
+	inferred   1 RAM(s).
+Unit <hextosevenseg> synthesized.
+
+Synthesizing Unit <SVGA>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <SVGA> synthesized.
+
+Synthesizing Unit <SVGA_Control>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Control.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <SVGA_Control> synthesized.
+
+Synthesizing Unit <pulse_gen_4>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\pulse_gen.vhd".
+        n = 2
+        maxCount = 2
+    Found 2-bit register for signal <count>.
+    Found 2-bit adder for signal <count[1]_count[1]_mux_1_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <pulse_gen_4> synthesized.
+
+Synthesizing Unit <Counter_nbit_5>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\Counter_nbit.vhd".
+        n = 11
+    Found 11-bit register for signal <count>.
+    Found 11-bit adder for signal <count[10]_GND_170_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <Counter_nbit_5> synthesized.
+
+Synthesizing Unit <CompareEQU_2>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\CompareEQU.vhd".
+        n = 11
+    Found 11-bit comparator equal for signal <EQU> created at line 27
+    Summary:
+	inferred   1 Comparator(s).
+Unit <CompareEQU_2> synthesized.
+
+Synthesizing Unit <LST_3>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\LST.vhd".
+        n = 11
+    Found 11-bit comparator greater for signal <OUTPUT> created at line 27
+    Summary:
+	inferred   1 Comparator(s).
+Unit <LST_3> synthesized.
+
+Synthesizing Unit <CompareGRT_2>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\CompareGRT.vhd".
+        n = 11
+    Found 11-bit comparator greater for signal <OUTPUT> created at line 36
+    Summary:
+	inferred   1 Comparator(s).
+Unit <CompareGRT_2> synthesized.
+
+Synthesizing Unit <SVGA_Image_Generator>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd".
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" line 103: Output port <Q> of the instance <DB3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" line 170: Output port <C_out> of the instance <RightAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" line 178: Output port <C_out> of the instance <LeftAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" line 203: Output port <C_out> of the instance <UpAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SVGA_Image_Generator.vhd" line 211: Output port <C_out> of the instance <DownAdder> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <SVGA_Image_Generator> synthesized.
+
+Synthesizing Unit <Ripple_Carry_Adder_2>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\rippe_carry_adder.vhd".
+        n = 11
+    Summary:
+	no macro.
+Unit <Ripple_Carry_Adder_2> synthesized.
+
+Synthesizing Unit <CounterUpDown_nbit_2>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\kjb5568_rjl5336_library\counterupdown_nbit.vhd".
+        n = 11
+    Found 11-bit register for signal <count>.
+    Found 11-bit adder for signal <count[10]_GND_303_o_add_0_OUT> created at line 1241.
+    Found 11-bit subtractor for signal <GND_303_o_GND_303_o_sub_2_OUT<10:0>> created at line 1308.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <CounterUpDown_nbit_2> synthesized.
+
+Synthesizing Unit <XGA>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <XGA> synthesized.
+
+Synthesizing Unit <XGA_Control>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Control.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <XGA_Control> synthesized.
+
+Synthesizing Unit <XGA_Image_Generator>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd".
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" line 103: Output port <Q> of the instance <DB3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" line 170: Output port <C_out> of the instance <RightAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" line 178: Output port <C_out> of the instance <LeftAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" line 203: Output port <C_out> of the instance <UpAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\XGA_Image_Generator.vhd" line 211: Output port <C_out> of the instance <DownAdder> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <XGA_Image_Generator> synthesized.
+
+Synthesizing Unit <SXGA>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <SXGA> synthesized.
+
+Synthesizing Unit <SXGA_Control>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Control.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <SXGA_Control> synthesized.
+
+Synthesizing Unit <SXGA_Image_Generator>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd".
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" line 103: Output port <Q> of the instance <DB3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" line 170: Output port <C_out> of the instance <RightAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" line 178: Output port <C_out> of the instance <LeftAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" line 203: Output port <C_out> of the instance <UpAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\SXGA_Image_Generator.vhd" line 211: Output port <C_out> of the instance <DownAdder> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <SXGA_Image_Generator> synthesized.
+
+Synthesizing Unit <clk_wiz_v3_6>.
+    Related source file is "C:\Users\Kevin\Desktop\Final Top_1\Final_Top\clk_wiz_v3_6.vhd".
+    Summary:
+	no macro.
+Unit <clk_wiz_v3_6> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 8
+ 16x7-bit single-port Read Only RAM                    : 4
+ 2048x12-bit single-port Read Only RAM                 : 4
+# Adders/Subtractors                                   : 38
+ 10-bit adder                                          : 2
+ 10-bit addsub                                         : 2
+ 11-bit adder                                          : 6
+ 11-bit addsub                                         : 6
+ 12-bit adder                                          : 4
+ 16-bit adder                                          : 4
+ 2-bit adder                                           : 2
+ 20-bit adder                                          : 4
+ 3-bit adder                                           : 4
+ 32-bit adder                                          : 4
+# Registers                                            : 102
+ 1-bit register                                        : 60
+ 10-bit register                                       : 4
+ 11-bit register                                       : 12
+ 12-bit register                                       : 8
+ 16-bit register                                       : 4
+ 2-bit register                                        : 2
+ 20-bit register                                       : 4
+ 3-bit register                                        : 4
+ 32-bit register                                       : 4
+# Comparators                                          : 84
+ 10-bit comparator equal                               : 2
+ 10-bit comparator greater                             : 18
+ 11-bit comparator equal                               : 6
+ 11-bit comparator greater                             : 54
+ 12-bit comparator greater                             : 4
+# Multiplexers                                         : 82
+ 1-bit 2-to-1 multiplexer                              : 12
+ 12-bit 2-to-1 multiplexer                             : 18
+ 32-bit 2-to-1 multiplexer                             : 8
+ 4-bit 8-to-1 multiplexer                              : 4
+ 7-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 34
+# Xors                                                 : 344
+ 1-bit xor2                                            : 344
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CircleROM>.
+INFO:Xst:3226 - The RAM <Mram_ADDRESS[10]_GND_158_o_wide_mux_0_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <DATA_OUT>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 12-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ADDRESS>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <DATA_OUT>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <CircleROM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CounterUpDown_nbit_1>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <CounterUpDown_nbit_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CounterUpDown_nbit_2>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <CounterUpDown_nbit_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_nbit_1>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter_nbit_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_nbit_2>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter_nbit_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_nbit_3>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter_nbit_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_nbit_4>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter_nbit_4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_nbit_5>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter_nbit_5> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hextosevenseg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Segment> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Hex>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Segment>       |          |
+    -----------------------------------------------------------------------
+Unit <hextosevenseg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pulse_gen_1>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <pulse_gen_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pulse_gen_2>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <pulse_gen_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pulse_gen_3>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <pulse_gen_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pulse_gen_4>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <pulse_gen_4> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 8
+ 16x7-bit single-port distributed Read Only RAM        : 4
+ 2048x12-bit single-port block Read Only RAM           : 4
+# Counters                                             : 38
+ 10-bit up counter                                     : 2
+ 10-bit updown counter                                 : 2
+ 11-bit up counter                                     : 6
+ 11-bit updown counter                                 : 6
+ 12-bit up counter                                     : 4
+ 16-bit up counter                                     : 4
+ 2-bit up counter                                      : 2
+ 20-bit up counter                                     : 4
+ 3-bit up counter                                      : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 60
+ Flip-Flops                                            : 60
+# Comparators                                          : 84
+ 10-bit comparator equal                               : 2
+ 10-bit comparator greater                             : 18
+ 11-bit comparator equal                               : 6
+ 11-bit comparator greater                             : 54
+ 12-bit comparator greater                             : 4
+# Multiplexers                                         : 82
+ 1-bit 2-to-1 multiplexer                              : 12
+ 12-bit 2-to-1 multiplexer                             : 18
+ 32-bit 2-to-1 multiplexer                             : 8
+ 4-bit 8-to-1 multiplexer                              : 4
+ 7-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 34
+# Xors                                                 : 344
+ 1-bit xor2                                            : 344
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <clk_wiz_v3_6> ...
+
+Optimizing unit <Final_top> ...
+
+Optimizing unit <VGA> ...
+
+Optimizing unit <VGA_Image_Generator> ...
+
+Optimizing unit <VGA_Control> ...
+
+Optimizing unit <SVGA> ...
+
+Optimizing unit <SVGA_Image_Generator> ...
+
+Optimizing unit <SVGA_Control> ...
+
+Optimizing unit <XGA> ...
+
+Optimizing unit <XGA_Image_Generator> ...
+
+Optimizing unit <XGA_Control> ...
+
+Optimizing unit <SXGA> ...
+
+Optimizing unit <SXGA_Image_Generator> ...
+
+Optimizing unit <SXGA_Control> ...
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_19> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_19> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_19> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_19> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/verticalCounter/count_10> in Unit <Final_top> is equivalent to the following 5 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/verticalCounter/count_9> <Inst_XGA/Inst_Image_Generator/verticalCounter/count_10> <Inst_XGA/Inst_Image_Generator/verticalCounter/count_9> <Inst_SXGA/Inst_Image_Generator/verticalCounter/count_10> <Inst_SXGA/Inst_Image_Generator/verticalCounter/count_9> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB4/Flip1/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB4/Flip1/Q> <Inst_XGA/Inst_Image_Generator/DB4/Flip1/Q> <Inst_SXGA/Inst_Image_Generator/DB4/Flip1/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/verticalCounter/count_0> <Inst_SXGA/Inst_Image_Generator/verticalCounter/count_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/verticalCounter/count_1> <Inst_SXGA/Inst_Image_Generator/verticalCounter/count_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/verticalCounter/count_2> <Inst_SXGA/Inst_Image_Generator/verticalCounter/count_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/verticalCounter/count_3> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/verticalCounter/count_3> <Inst_SXGA/Inst_Image_Generator/verticalCounter/count_3> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/verticalCounter/count_4> <Inst_SXGA/Inst_Image_Generator/verticalCounter/count_4> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/verticalCounter/count_5> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/verticalCounter/count_5> <Inst_SXGA/Inst_Image_Generator/verticalCounter/count_5> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/verticalCounter/count_6> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/verticalCounter/count_6> <Inst_SXGA/Inst_Image_Generator/verticalCounter/count_6> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/verticalCounter/count_7> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/verticalCounter/count_7> <Inst_SXGA/Inst_Image_Generator/verticalCounter/count_7> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/verticalCounter/count_8> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/verticalCounter/count_8> <Inst_SXGA/Inst_Image_Generator/verticalCounter/count_8> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB2/Flip1/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB2/Flip1/Q> <Inst_XGA/Inst_Image_Generator/DB2/Flip1/Q> <Inst_SXGA/Inst_Image_Generator/DB2/Flip1/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_0> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_0> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_0> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_1> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_1> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_1> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_2> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_2> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_2> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_3> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_3> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_3> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_3> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_4> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_4> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_4> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_4> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_5> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_5> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_5> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_5> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_6> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_6> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_6> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_6> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB1/Flip1/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB1/Flip1/Q> <Inst_XGA/Inst_Image_Generator/DB1/Flip1/Q> <Inst_SXGA/Inst_Image_Generator/DB1/Flip1/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_7> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_7> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_7> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_7> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_8> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_8> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_8> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_8> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_9> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_9> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_9> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_9> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB4/Flip2/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB4/Flip2/Q> <Inst_XGA/Inst_Image_Generator/DB4/Flip2/Q> <Inst_SXGA/Inst_Image_Generator/DB4/Flip2/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB0/Flip1/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB0/Flip1/Q> <Inst_XGA/Inst_Image_Generator/DB0/Flip1/Q> <Inst_SXGA/Inst_Image_Generator/DB0/Flip1/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_10> in Unit <Final_top> is equivalent to the following 5 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_9> <Inst_XGA/Inst_Image_Generator/horizontalCounter/count_10> <Inst_XGA/Inst_Image_Generator/horizontalCounter/count_9> <Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_10> <Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_9> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB2/Flip2/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB2/Flip2/Q> <Inst_XGA/Inst_Image_Generator/DB2/Flip2/Q> <Inst_SXGA/Inst_Image_Generator/DB2/Flip2/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q> <Inst_XGA/Inst_Image_Generator/DB1/Flip2/Q> <Inst_SXGA/Inst_Image_Generator/DB1/Flip2/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_10> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_10> <Inst_XGA/pulse_strobe/count_10> <Inst_SXGA/pulse_strobe/count_10> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB4/Flip3/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB4/Flip3/Q> <Inst_XGA/Inst_Image_Generator/DB4/Flip3/Q> <Inst_SXGA/Inst_Image_Generator/DB4/Flip3/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_11> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_11> <Inst_XGA/pulse_strobe/count_11> <Inst_SXGA/pulse_strobe/count_11> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_12> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_12> <Inst_XGA/pulse_strobe/count_12> <Inst_SXGA/pulse_strobe/count_12> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_13> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_13> <Inst_XGA/pulse_strobe/count_13> <Inst_SXGA/pulse_strobe/count_13> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB0/Flip2/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB0/Flip2/Q> <Inst_XGA/Inst_Image_Generator/DB0/Flip2/Q> <Inst_SXGA/Inst_Image_Generator/DB0/Flip2/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_14> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_14> <Inst_XGA/pulse_strobe/count_14> <Inst_SXGA/pulse_strobe/count_14> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_15> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_15> <Inst_XGA/pulse_strobe/count_15> <Inst_SXGA/pulse_strobe/count_15> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB2/Flip3/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB2/Flip3/Q> <Inst_XGA/Inst_Image_Generator/DB2/Flip3/Q> <Inst_SXGA/Inst_Image_Generator/DB2/Flip3/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/sevenseg/cnt/count_0> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/sevenseg/cnt/count_0> <Inst_XGA/sevenseg/cnt/count_0> <Inst_SXGA/sevenseg/cnt/count_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/sevenseg/cnt/count_1> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/sevenseg/cnt/count_1> <Inst_XGA/sevenseg/cnt/count_1> <Inst_SXGA/sevenseg/cnt/count_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/sevenseg/cnt/count_2> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/sevenseg/cnt/count_2> <Inst_XGA/sevenseg/cnt/count_2> <Inst_SXGA/sevenseg/cnt/count_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB1/Flip3/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB1/Flip3/Q> <Inst_XGA/Inst_Image_Generator/DB1/Flip3/Q> <Inst_SXGA/Inst_Image_Generator/DB1/Flip3/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/verticalCounter/count_9> in Unit <Final_top> is equivalent to the following FF/Latch, which will be removed : <Inst_VGA/Inst_Image_Generator/verticalCounter/count_8> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_0> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_0> <Inst_XGA/pulse_strobe/count_0> <Inst_SXGA/pulse_strobe/count_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_1> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_1> <Inst_XGA/pulse_strobe/count_1> <Inst_SXGA/pulse_strobe/count_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_2> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_2> <Inst_XGA/pulse_strobe/count_2> <Inst_SXGA/pulse_strobe/count_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/DB0/Flip3/Q> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/DB0/Flip3/Q> <Inst_XGA/Inst_Image_Generator/DB0/Flip3/Q> <Inst_SXGA/Inst_Image_Generator/DB0/Flip3/Q> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_3> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_3> <Inst_XGA/pulse_strobe/count_3> <Inst_SXGA/pulse_strobe/count_3> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_4> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_4> <Inst_XGA/pulse_strobe/count_4> <Inst_SXGA/pulse_strobe/count_4> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_5> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_5> <Inst_XGA/pulse_strobe/count_5> <Inst_SXGA/pulse_strobe/count_5> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_6> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_6> <Inst_XGA/pulse_strobe/count_6> <Inst_SXGA/pulse_strobe/count_6> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_7> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_7> <Inst_XGA/pulse_strobe/count_7> <Inst_SXGA/pulse_strobe/count_7> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_8> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_8> <Inst_XGA/pulse_strobe/count_8> <Inst_SXGA/pulse_strobe/count_8> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/pulse_strobe/count_9> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/pulse_strobe/count_9> <Inst_XGA/pulse_strobe/count_9> <Inst_SXGA/pulse_strobe/count_9> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_0> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/horizontalCounter/count_0> <Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_1> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/horizontalCounter/count_1> <Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_2> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/horizontalCounter/count_2> <Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_3> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/horizontalCounter/count_3> <Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_3> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_4> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/horizontalCounter/count_4> <Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_4> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_5> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/horizontalCounter/count_5> <Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_5> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_6> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/horizontalCounter/count_6> <Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_6> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_7> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/horizontalCounter/count_7> <Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_7> 
+INFO:Xst:2261 - The FF/Latch <Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_8> in Unit <Final_top> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_XGA/Inst_Image_Generator/horizontalCounter/count_8> <Inst_SXGA/Inst_Image_Generator/horizontalCounter/count_8> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_10> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_10> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_10> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_10> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_11> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_11> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_11> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_11> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_12> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_12> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_12> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_12> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_13> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_13> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_13> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_13> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_14> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_14> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_14> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_14> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_15> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_15> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_15> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_15> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_16> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_16> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_16> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_16> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_17> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_17> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_17> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_17> 
+INFO:Xst:2261 - The FF/Latch <Inst_VGA/Inst_Image_Generator/Pulse_d/count_18> in Unit <Final_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_SVGA/Inst_Image_Generator/Pulse_d/count_18> <Inst_XGA/Inst_Image_Generator/Pulse_d/count_18> <Inst_SXGA/Inst_Image_Generator/Pulse_d/count_18> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Final_top, actual ratio is 2.
+
+Final Macro Processing ...
+
+Processing Unit <Final_top> :
+	Found 2-bit shift register for signal <Inst_VGA/Inst_Image_Generator/DB4/Flip2/Q>.
+	Found 2-bit shift register for signal <Inst_VGA/Inst_Image_Generator/DB2/Flip2/Q>.
+	Found 2-bit shift register for signal <Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q>.
+	Found 2-bit shift register for signal <Inst_VGA/Inst_Image_Generator/DB0/Flip2/Q>.
+Unit <Final_top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 360
+ Flip-Flops                                            : 360
+# Shift Registers                                      : 4
+ 2-bit shift register                                  : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Final_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1748
+#      GND                         : 1
+#      INV                         : 25
+#      LUT1                        : 280
+#      LUT2                        : 70
+#      LUT3                        : 68
+#      LUT4                        : 216
+#      LUT5                        : 99
+#      LUT6                        : 218
+#      MUXCY                       : 414
+#      MUXF7                       : 19
+#      VCC                         : 1
+#      XORCY                       : 337
+# FlipFlops/Latches                : 364
+#      FDE                         : 20
+#      FDR                         : 4
+#      FDRE                        : 340
+# RAMS                             : 4
+#      RAMB36E1                    : 4
+# Shift Registers                  : 4
+#      SRLC16E                     : 4
+# Clock Buffers                    : 7
+#      BUFG                        : 7
+# IO Buffers                       : 51
+#      IBUF                        : 21
+#      IBUFG                       : 1
+#      OBUF                        : 29
+# Others                           : 1
+#      MMCME2_ADV                  : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             364  out of  126800     0%  
+ Number of Slice LUTs:                  980  out of  63400     1%  
+    Number used as Logic:               976  out of  63400     1%  
+    Number used as Memory:                4  out of  19000     0%  
+       Number used as SRL:                4
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    988
+   Number with an unused Flip Flop:     624  out of    988    63%  
+   Number with an unused LUT:             8  out of    988     0%  
+   Number of fully used LUT-FF pairs:   356  out of    988    36%  
+   Number of unique control sets:        30
+
+IO Utilization: 
+ Number of IOs:                          51
+ Number of bonded IOBs:                  51  out of    210    24%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                4  out of    135     2%  
+    Number using Block RAM only:          4
+ Number of BUFG/BUFGCTRLs:                7  out of     32    21%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+your_instance_name/clkout0         | BUFG                   | 372   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.677ns (Maximum Frequency: 213.801MHz)
+   Minimum input arrival time before clock: 0.414ns
+   Maximum output required time after clock: 6.973ns
+   Maximum combinational path delay: 4.675ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'your_instance_name/clkout0'
+  Clock period: 4.677ns (frequency: 213.801MHz)
+  Total number of paths / destination ports: 37517 / 710
+-------------------------------------------------------------------------
+Delay:               4.677ns (Levels of Logic = 6)
+  Source:            Inst_SVGA/Inst_Image_Generator/verticalCounter/count_6 (FF)
+  Destination:       Inst_SVGA/Inst_Image_Generator/ROMCounter/count_11 (FF)
+  Source Clock:      your_instance_name/clkout0 rising
+  Destination Clock: your_instance_name/clkout0 rising
+
+  Data Path: Inst_SVGA/Inst_Image_Generator/verticalCounter/count_6 to Inst_SVGA/Inst_Image_Generator/ROMCounter/count_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            15   0.478   1.031  Inst_SVGA/Inst_Image_Generator/verticalCounter/count_6 (Inst_SVGA/Inst_Image_Generator/verticalCounter/count_6)
+     LUT6:I0->O            2   0.124   0.542  Inst_SVGA/Inst_Image_Generator/DownAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>21 (Inst_SVGA/Inst_Image_Generator/DownAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>2)
+     LUT4:I2->O            6   0.124   0.809  Inst_SVGA/Inst_Image_Generator/DownAdder/genADDERS[9].FA0/Mxor_Sum_xo<0>1 (Inst_SVGA/Inst_Image_Generator/UpAdder/genADDERS[9].FA0/wire2)
+     LUT4:I0->O            0   0.124   0.000  Inst_SVGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_lutdi4 (Inst_SVGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_lutdi4)
+     MUXCY:DI->O           1   0.456   0.000  Inst_SVGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_cy<4> (Inst_SVGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_cy<4>)
+     MUXCY:CI->O          13   0.334   0.501  Inst_SVGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_cy<5> (Inst_SVGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_cy<5>)
+     LUT6:I5->O            1   0.124   0.000  Inst_SVGA/Inst_Image_Generator/ROMCounter/count_0_dpot1 (Inst_SVGA/Inst_Image_Generator/ROMCounter/count_0_dpot1)
+     FDRE:D                    0.030          Inst_SVGA/Inst_Image_Generator/ROMCounter/count_0
+    ----------------------------------------
+    Total                      4.677ns (1.794ns logic, 2.883ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'your_instance_name/clkout0'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              0.414ns (Levels of Logic = 1)
+  Source:            BUTTON<4> (PAD)
+  Destination:       Inst_VGA/Inst_Image_Generator/DB4/Flip2/Mshreg_Q (FF)
+  Destination Clock: your_instance_name/clkout0 rising
+
+  Data Path: BUTTON<4> to Inst_VGA/Inst_Image_Generator/DB4/Flip2/Mshreg_Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.399  BUTTON_4_IBUF (BUTTON_4_IBUF)
+     SRLC16E:D                 0.014          Inst_VGA/Inst_Image_Generator/DB4/Flip2/Mshreg_Q
+    ----------------------------------------
+    Total                      0.414ns (0.015ns logic, 0.399ns route)
+                                       (3.6% logic, 96.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'your_instance_name/clkout0'
+  Total number of paths / destination ports: 26468 / 29
+-------------------------------------------------------------------------
+Offset:              6.973ns (Levels of Logic = 9)
+  Source:            Inst_SVGA/Inst_Image_Generator/verticalCounter/count_6 (FF)
+  Destination:       RGB_out<11> (PAD)
+  Source Clock:      your_instance_name/clkout0 rising
+
+  Data Path: Inst_SVGA/Inst_Image_Generator/verticalCounter/count_6 to RGB_out<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            15   0.478   1.031  Inst_SVGA/Inst_Image_Generator/verticalCounter/count_6 (Inst_SVGA/Inst_Image_Generator/verticalCounter/count_6)
+     LUT6:I0->O            2   0.124   0.542  Inst_SVGA/Inst_Image_Generator/DownAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>21 (Inst_SVGA/Inst_Image_Generator/DownAdder/genADDERS[10].FA0/Mxor_Sum_xo<0>2)
+     LUT4:I2->O            6   0.124   0.809  Inst_SVGA/Inst_Image_Generator/DownAdder/genADDERS[9].FA0/Mxor_Sum_xo<0>1 (Inst_SVGA/Inst_Image_Generator/UpAdder/genADDERS[9].FA0/wire2)
+     LUT4:I0->O            0   0.124   0.000  Inst_SXGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_lutdi4 (Inst_SXGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_lutdi4)
+     MUXCY:DI->O           1   0.456   0.000  Inst_SXGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_cy<4> (Inst_SXGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_cy<4>)
+     MUXCY:CI->O          13   0.334   0.796  Inst_SXGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_cy<5> (Inst_SXGA/Inst_Image_Generator/bordertop/Mcompar_OUTPUT_cy<5>)
+     LUT4:I1->O           12   0.124   0.608  Inst_SXGA/Inst_Image_Generator/Mmux_RGB_out131 (Inst_SXGA/Inst_Image_Generator/Mmux_RGB_out13)
+     LUT5:I3->O            1   0.124   0.776  RGB_out<11>6 (RGB_out<11>6)
+     LUT6:I2->O            1   0.124   0.399  RGB_out<11>9 (RGB_out_11_OBUF)
+     OBUF:I->O                 0.000          RGB_out_11_OBUF (RGB_out<11>)
+    ----------------------------------------
+    Total                      6.973ns (2.012ns logic, 4.961ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 524 / 22
+-------------------------------------------------------------------------
+Delay:               4.675ns (Levels of Logic = 7)
+  Source:            BUTTON<3> (PAD)
+  Destination:       SEGMENT<3> (PAD)
+
+  Data Path: BUTTON<3> to SEGMENT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   0.001   1.092  BUTTON_3_IBUF (BUTTON_3_IBUF)
+     LUT6:I0->O            1   0.124   0.000  Inst_XGA/sevenseg/Mmux_w2h_31 (Inst_XGA/sevenseg/Mmux_w2h_31)
+     MUXF7:I1->O           7   0.368   0.979  Inst_XGA/sevenseg/Mmux_w2h_2_f7_0 (Inst_XGA/sevenseg/w2h<1>)
+     LUT6:I0->O            1   0.124   0.919  SEGMENT<3>2 (SEGMENT<3>2)
+     LUT6:I1->O            1   0.124   0.421  SEGMENT<3>4 (SEGMENT<3>4)
+     LUT6:I5->O            1   0.124   0.399  SEGMENT<3>6 (SEGMENT_3_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_3_OBUF (SEGMENT<3>)
+    ----------------------------------------
+    Total                      4.675ns (0.865ns logic, 3.810ns route)
+                                       (18.5% logic, 81.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock your_instance_name/clkout0
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+your_instance_name/clkout0|    4.677|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.65 secs
+ 
+--> 
+
+Total memory usage is 444336 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
+Number of infos    :   96 (   0 filtered)
+
