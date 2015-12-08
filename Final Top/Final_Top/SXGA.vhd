@@ -64,6 +64,7 @@ signal x : std_logic_vector(10 downto 0);
 signal y : std_logic_vector(10 downto 0);
 signal RGB : std_logic_vector(11 downto 0);
 signal word : std_logic_vector(31 downto 0);
+signal select_word : std_logic_vector(31 downto 0);
 signal digit_en	: std_logic_vector (7 downto 0);
 
 begin
@@ -100,15 +101,20 @@ Test_counter : Counter_nbit generic map (32) port map (
 		CLR   => '0',
 		Q		=> word );
 
+select_word <= word when button(3) ='0' else
+					x"08000600" when button(3) = '1' else
+					word;
+
 digit_en <= "11111111";
 		
 sevenseg : WordTo8dig7seg port map(
-		 word 		=> word,
+		 word 		=> select_word,
 		 clk			=> Clk,
 		 strobe		=> strobe,
 		 Digit_en	=> digit_en,
 		 segment		=> Segment,
-		 anode 		=> Anode);
+		 anode 		=> Anode
+		 );
 
 
 end Behavioral;

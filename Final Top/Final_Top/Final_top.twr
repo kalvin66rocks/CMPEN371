@@ -2,7 +2,7 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-G:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
 -n 3 -fastpaths -xml Final_top.twx Final_top.ncd -o Final_top.twr Final_top.pcf
 -ucf Nexys4_Master.ucf
 
@@ -68,8 +68,8 @@ Slack: 7.918ns (period - min period limit)
 --------------------------------------------------------------------------------
 
 ================================================================================
-Timing constraint: TS_your_instance_name_clkout2 = PERIOD TIMEGRP 
-"your_instance_name_clkout2"         TS_sys_clk_pin * 0.4 HIGH 50%;
+Timing constraint: TS_your_instance_name_clkout1 = PERIOD TIMEGRP 
+"your_instance_name_clkout1"         TS_sys_clk_pin * 0.25 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
  0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
@@ -77,33 +77,33 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
  Minimum period is   2.155ns.
 --------------------------------------------------------------------------------
 
-Component Switching Limit Checks: TS_your_instance_name_clkout2 = PERIOD TIMEGRP "your_instance_name_clkout2"
-        TS_sys_clk_pin * 0.4 HIGH 50%;
+Component Switching Limit Checks: TS_your_instance_name_clkout1 = PERIOD TIMEGRP "your_instance_name_clkout1"
+        TS_sys_clk_pin * 0.25 HIGH 50%;
 --------------------------------------------------------------------------------
-Slack: 22.845ns (period - min period limit)
-  Period: 25.000ns
+Slack: 37.845ns (period - min period limit)
+  Period: 40.000ns
   Min period limit: 2.155ns (464.037MHz) (Tbcper_I(Fmax))
-  Physical resource: your_instance_name/clkout3_buf/I0
-  Logical resource: your_instance_name/clkout3_buf/I0
-  Location pin: BUFGCTRL_X0Y28.I0
-  Clock network: your_instance_name/clkout2
+  Physical resource: your_instance_name/clkout2_buf/I0
+  Logical resource: your_instance_name/clkout2_buf/I0
+  Location pin: BUFGCTRL_X0Y29.I0
+  Clock network: your_instance_name/clkout1
 --------------------------------------------------------------------------------
-Slack: 24.000ns (period - (min low pulse limit / (low pulse / period)))
-  Period: 25.000ns
-  Low pulse: 12.500ns
+Slack: 39.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 40.000ns
+  Low pulse: 20.000ns
   Low pulse limit: 0.500ns (Tcl)
-  Physical resource: Inst_SVGA/Test_counter/count<3>/CLK
-  Logical resource: Inst_SVGA/Test_counter/count_0/CK
-  Location pin: SLICE_X86Y82.CLK
+  Physical resource: Inst_VGA/Test_counter/count<3>/CLK
+  Logical resource: Inst_VGA/Test_counter/count_0/CK
+  Location pin: SLICE_X82Y93.CLK
   Clock network: board_clk
 --------------------------------------------------------------------------------
-Slack: 24.000ns (period - (min high pulse limit / (high pulse / period)))
-  Period: 25.000ns
-  High pulse: 12.500ns
+Slack: 39.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 40.000ns
+  High pulse: 20.000ns
   High pulse limit: 0.500ns (Tch)
-  Physical resource: Inst_SVGA/Test_counter/count<3>/CLK
-  Logical resource: Inst_SVGA/Test_counter/count_0/CK
-  Location pin: SLICE_X86Y82.CLK
+  Physical resource: Inst_VGA/Test_counter/count<3>/CLK
+  Logical resource: Inst_VGA/Test_counter/count_0/CK
+  Location pin: SLICE_X82Y93.CLK
   Clock network: board_clk
 --------------------------------------------------------------------------------
 
@@ -134,7 +134,7 @@ Slack: 8.166ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 0.500ns (Tcl)
   Physical resource: Inst_SXGA/Test_counter/count<3>/CLK
   Logical resource: Inst_SXGA/Test_counter/count_0/CK
-  Location pin: SLICE_X75Y79.CLK
+  Location pin: SLICE_X80Y88.CLK
   Clock network: board_clk
 --------------------------------------------------------------------------------
 Slack: 8.166ns (period - (min high pulse limit / (high pulse / period)))
@@ -143,7 +143,47 @@ Slack: 8.166ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 0.500ns (Tch)
   Physical resource: Inst_SXGA/Test_counter/count<3>/CLK
   Logical resource: Inst_SXGA/Test_counter/count_0/CK
-  Location pin: SLICE_X75Y79.CLK
+  Location pin: SLICE_X80Y88.CLK
+  Clock network: board_clk
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_your_instance_name_clkout2 = PERIOD TIMEGRP 
+"your_instance_name_clkout2"         TS_sys_clk_pin * 0.4 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.155ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_your_instance_name_clkout2 = PERIOD TIMEGRP "your_instance_name_clkout2"
+        TS_sys_clk_pin * 0.4 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 22.845ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 2.155ns (464.037MHz) (Tbcper_I(Fmax))
+  Physical resource: your_instance_name/clkout3_buf/I0
+  Logical resource: your_instance_name/clkout3_buf/I0
+  Location pin: BUFGCTRL_X0Y28.I0
+  Clock network: your_instance_name/clkout2
+--------------------------------------------------------------------------------
+Slack: 24.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 25.000ns
+  Low pulse: 12.500ns
+  Low pulse limit: 0.500ns (Tcl)
+  Physical resource: Inst_SVGA/Test_counter/count<3>/CLK
+  Logical resource: Inst_SVGA/Test_counter/count_0/CK
+  Location pin: SLICE_X76Y94.CLK
+  Clock network: board_clk
+--------------------------------------------------------------------------------
+Slack: 24.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 25.000ns
+  High pulse: 12.500ns
+  High pulse limit: 0.500ns (Tch)
+  Physical resource: Inst_SVGA/Test_counter/count<3>/CLK
+  Logical resource: Inst_SVGA/Test_counter/count_0/CK
+  Location pin: SLICE_X76Y94.CLK
   Clock network: board_clk
 --------------------------------------------------------------------------------
 
@@ -174,7 +214,7 @@ Slack: 14.000ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 0.500ns (Tcl)
   Physical resource: Inst_XGA/Inst_XGA_Control/Hcount/count<3>/CLK
   Logical resource: Inst_XGA/Inst_XGA_Control/Hcount/count_0/CK
-  Location pin: SLICE_X74Y100.CLK
+  Location pin: SLICE_X66Y96.CLK
   Clock network: board_clk
 --------------------------------------------------------------------------------
 Slack: 14.000ns (period - (min high pulse limit / (high pulse / period)))
@@ -183,7 +223,7 @@ Slack: 14.000ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 0.500ns (Tch)
   Physical resource: Inst_XGA/Inst_XGA_Control/Hcount/count<3>/CLK
   Logical resource: Inst_XGA/Inst_XGA_Control/Hcount/count_0/CK
-  Location pin: SLICE_X74Y100.CLK
+  Location pin: SLICE_X66Y96.CLK
   Clock network: board_clk
 --------------------------------------------------------------------------------
 
@@ -192,19 +232,19 @@ Timing constraint: TS_your_instance_name_clkout0 = PERIOD TIMEGRP
 "your_instance_name_clkout0"         TS_sys_clk_pin HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 11558 paths analyzed, 1344 endpoints analyzed, 0 failing endpoints
+ 15826 paths analyzed, 1517 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   6.402ns.
+ Minimum period is   6.576ns.
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0 (SLICE_X62Y101.CE), 53 paths
+Paths for end point Inst_VGA/Inst_Image_Generator/verticalCounter/count_0 (SLICE_X54Y98.CE), 53 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     3.598ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q (FF)
-  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0 (FF)
+Slack (setup path):     3.424ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_0 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      6.127ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.208ns (1.495 - 1.703)
+  Data Path Delay:      6.385ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.124ns (1.364 - 1.488)
   Source Clock:         board_clk rising at 0.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.067ns
@@ -214,35 +254,35 @@ Slack (setup path):     3.598ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.114ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0
+  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q to Inst_VGA/Inst_Image_Generator/verticalCounter/count_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X6Y74.AQ       Tcko                  0.518   Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q
-                                                       Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q
-    SLICE_X66Y102.D4     net (fanout=10)       2.879   Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q
-    SLICE_X66Y102.D      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o2
-                                                       Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o1
-    SLICE_X61Y103.D2     net (fanout=5)        1.210   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o2
-    SLICE_X61Y103.D      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o4
-    SLICE_X61Y103.C5     net (fanout=1)        0.263   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-    SLICE_X61Y103.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
-    SLICE_X62Y101.CE     net (fanout=3)        0.716   Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv
-    SLICE_X62Y101.CLK    Tceck                 0.169   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0
+    SLICE_X10Y81.DQ      Tcko                  0.518   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+                                                       Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y100.C1     net (fanout=11)       2.490   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y100.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_31_o2
+                                                       Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_31_o1
+    SLICE_X55Y100.A1     net (fanout=8)        0.871   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_31_o2
+    SLICE_X55Y100.A      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o3
+    SLICE_X49Y110.B3     net (fanout=10)       1.072   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+    SLICE_X49Y110.B      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
+    SLICE_X54Y98.CE      net (fanout=3)        0.893   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+    SLICE_X54Y98.CLK     Tceck                 0.169   Inst_VGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_0
     -------------------------------------------------  ---------------------------
-    Total                                      6.127ns (1.059ns logic, 5.068ns route)
-                                                       (17.3% logic, 82.7% route)
+    Total                                      6.385ns (1.059ns logic, 5.326ns route)
+                                                       (16.6% logic, 83.4% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     4.872ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Inst_Image_Generator/Pulse_d/count_4 (FF)
-  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0 (FF)
+Slack (setup path):     4.437ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_0 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      4.934ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.127ns (1.495 - 1.622)
+  Data Path Delay:      5.372ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.124ns (1.364 - 1.488)
   Source Clock:         board_clk rising at 0.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.067ns
@@ -252,35 +292,35 @@ Slack (setup path):     4.872ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.114ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/Pulse_d/count_4 to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0
+  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q to Inst_VGA/Inst_Image_Generator/verticalCounter/count_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X52Y89.AQ      Tcko                  0.456   Inst_VGA/Inst_Image_Generator/Pulse_d/count<7>
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/count_4
-    SLICE_X53Y88.D2      net (fanout=2)        0.815   Inst_VGA/Inst_Image_Generator/Pulse_d/count<4>
-    SLICE_X53Y88.D       Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>1
-    SLICE_X54Y90.A3      net (fanout=1)        0.797   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>
-    SLICE_X54Y90.A       Tilo                  0.124   Inst_VGA/Inst_Image_Generator/horizontalCounter/_n0025_inv
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>4
-    SLICE_X61Y103.C2     net (fanout=16)       1.609   Inst_SVGA/Inst_Image_Generator/Pulse_d/clear
-    SLICE_X61Y103.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
-    SLICE_X62Y101.CE     net (fanout=3)        0.716   Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv
-    SLICE_X62Y101.CLK    Tceck                 0.169   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0
+    SLICE_X10Y81.DQ      Tcko                  0.518   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+                                                       Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y99.D5      net (fanout=11)       1.915   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y99.D       Tilo                  0.124   N34
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o2_SW0
+    SLICE_X55Y100.A5     net (fanout=3)        0.433   N34
+    SLICE_X55Y100.A      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o3
+    SLICE_X49Y110.B3     net (fanout=10)       1.072   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+    SLICE_X49Y110.B      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
+    SLICE_X54Y98.CE      net (fanout=3)        0.893   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+    SLICE_X54Y98.CLK     Tceck                 0.169   Inst_VGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_0
     -------------------------------------------------  ---------------------------
-    Total                                      4.934ns (0.997ns logic, 3.937ns route)
-                                                       (20.2% logic, 79.8% route)
+    Total                                      5.372ns (1.059ns logic, 4.313ns route)
+                                                       (19.7% logic, 80.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     4.986ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Inst_Image_Generator/Pulse_d/count_18 (FF)
-  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0 (FF)
+Slack (setup path):     4.966ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VGA/Inst_Image_Generator/verticalCounter/count_7 (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_0 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      4.819ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.128ns (1.495 - 1.623)
+  Data Path Delay:      4.942ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.025ns (0.171 - 0.196)
   Source Clock:         board_clk rising at 0.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.067ns
@@ -290,38 +330,38 @@ Slack (setup path):     4.986ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.114ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/Pulse_d/count_18 to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0
+  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/verticalCounter/count_7 to Inst_VGA/Inst_Image_Generator/verticalCounter/count_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X52Y92.CQ      Tcko                  0.456   Inst_VGA/Inst_Image_Generator/Pulse_d/count<19>
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/count_18
-    SLICE_X53Y92.D3      net (fanout=2)        0.933   Inst_VGA/Inst_Image_Generator/Pulse_d/count<18>
-    SLICE_X53Y92.D       Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>1
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>2
-    SLICE_X54Y90.A5      net (fanout=1)        0.564   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>1
-    SLICE_X54Y90.A       Tilo                  0.124   Inst_VGA/Inst_Image_Generator/horizontalCounter/_n0025_inv
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>4
-    SLICE_X61Y103.C2     net (fanout=16)       1.609   Inst_SVGA/Inst_Image_Generator/Pulse_d/clear
-    SLICE_X61Y103.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
-    SLICE_X62Y101.CE     net (fanout=3)        0.716   Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv
-    SLICE_X62Y101.CLK    Tceck                 0.169   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0
+    SLICE_X54Y99.DQ      Tcko                  0.518   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_7
+    SLICE_X56Y98.B1      net (fanout=9)        0.911   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+    SLICE_X56Y98.B       Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o1
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o11
+    SLICE_X55Y100.A3     net (fanout=4)        1.007   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o1
+    SLICE_X55Y100.A      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o3
+    SLICE_X49Y110.B3     net (fanout=10)       1.072   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+    SLICE_X49Y110.B      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
+    SLICE_X54Y98.CE      net (fanout=3)        0.893   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+    SLICE_X54Y98.CLK     Tceck                 0.169   Inst_VGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_0
     -------------------------------------------------  ---------------------------
-    Total                                      4.819ns (0.997ns logic, 3.822ns route)
-                                                       (20.7% logic, 79.3% route)
+    Total                                      4.942ns (1.059ns logic, 3.883ns route)
+                                                       (21.4% logic, 78.6% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1 (SLICE_X62Y101.CE), 53 paths
+Paths for end point Inst_VGA/Inst_Image_Generator/verticalCounter/count_1 (SLICE_X54Y98.CE), 53 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     3.598ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q (FF)
-  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1 (FF)
+Slack (setup path):     3.424ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_1 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      6.127ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.208ns (1.495 - 1.703)
+  Data Path Delay:      6.385ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.124ns (1.364 - 1.488)
   Source Clock:         board_clk rising at 0.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.067ns
@@ -331,35 +371,35 @@ Slack (setup path):     3.598ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.114ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1
+  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q to Inst_VGA/Inst_Image_Generator/verticalCounter/count_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X6Y74.AQ       Tcko                  0.518   Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q
-                                                       Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q
-    SLICE_X66Y102.D4     net (fanout=10)       2.879   Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q
-    SLICE_X66Y102.D      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o2
-                                                       Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o1
-    SLICE_X61Y103.D2     net (fanout=5)        1.210   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o2
-    SLICE_X61Y103.D      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o4
-    SLICE_X61Y103.C5     net (fanout=1)        0.263   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-    SLICE_X61Y103.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
-    SLICE_X62Y101.CE     net (fanout=3)        0.716   Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv
-    SLICE_X62Y101.CLK    Tceck                 0.169   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1
+    SLICE_X10Y81.DQ      Tcko                  0.518   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+                                                       Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y100.C1     net (fanout=11)       2.490   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y100.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_31_o2
+                                                       Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_31_o1
+    SLICE_X55Y100.A1     net (fanout=8)        0.871   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_31_o2
+    SLICE_X55Y100.A      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o3
+    SLICE_X49Y110.B3     net (fanout=10)       1.072   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+    SLICE_X49Y110.B      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
+    SLICE_X54Y98.CE      net (fanout=3)        0.893   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+    SLICE_X54Y98.CLK     Tceck                 0.169   Inst_VGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_1
     -------------------------------------------------  ---------------------------
-    Total                                      6.127ns (1.059ns logic, 5.068ns route)
-                                                       (17.3% logic, 82.7% route)
+    Total                                      6.385ns (1.059ns logic, 5.326ns route)
+                                                       (16.6% logic, 83.4% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     4.872ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Inst_Image_Generator/Pulse_d/count_4 (FF)
-  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1 (FF)
+Slack (setup path):     4.437ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_1 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      4.934ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.127ns (1.495 - 1.622)
+  Data Path Delay:      5.372ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.124ns (1.364 - 1.488)
   Source Clock:         board_clk rising at 0.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.067ns
@@ -369,35 +409,35 @@ Slack (setup path):     4.872ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.114ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/Pulse_d/count_4 to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1
+  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q to Inst_VGA/Inst_Image_Generator/verticalCounter/count_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X52Y89.AQ      Tcko                  0.456   Inst_VGA/Inst_Image_Generator/Pulse_d/count<7>
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/count_4
-    SLICE_X53Y88.D2      net (fanout=2)        0.815   Inst_VGA/Inst_Image_Generator/Pulse_d/count<4>
-    SLICE_X53Y88.D       Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>1
-    SLICE_X54Y90.A3      net (fanout=1)        0.797   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>
-    SLICE_X54Y90.A       Tilo                  0.124   Inst_VGA/Inst_Image_Generator/horizontalCounter/_n0025_inv
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>4
-    SLICE_X61Y103.C2     net (fanout=16)       1.609   Inst_SVGA/Inst_Image_Generator/Pulse_d/clear
-    SLICE_X61Y103.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
-    SLICE_X62Y101.CE     net (fanout=3)        0.716   Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv
-    SLICE_X62Y101.CLK    Tceck                 0.169   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1
+    SLICE_X10Y81.DQ      Tcko                  0.518   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+                                                       Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y99.D5      net (fanout=11)       1.915   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y99.D       Tilo                  0.124   N34
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o2_SW0
+    SLICE_X55Y100.A5     net (fanout=3)        0.433   N34
+    SLICE_X55Y100.A      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o3
+    SLICE_X49Y110.B3     net (fanout=10)       1.072   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+    SLICE_X49Y110.B      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
+    SLICE_X54Y98.CE      net (fanout=3)        0.893   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+    SLICE_X54Y98.CLK     Tceck                 0.169   Inst_VGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_1
     -------------------------------------------------  ---------------------------
-    Total                                      4.934ns (0.997ns logic, 3.937ns route)
-                                                       (20.2% logic, 79.8% route)
+    Total                                      5.372ns (1.059ns logic, 4.313ns route)
+                                                       (19.7% logic, 80.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     4.986ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Inst_Image_Generator/Pulse_d/count_18 (FF)
-  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1 (FF)
+Slack (setup path):     4.966ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VGA/Inst_Image_Generator/verticalCounter/count_7 (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_1 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      4.819ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.128ns (1.495 - 1.623)
+  Data Path Delay:      4.942ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.025ns (0.171 - 0.196)
   Source Clock:         board_clk rising at 0.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.067ns
@@ -407,38 +447,38 @@ Slack (setup path):     4.986ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.114ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/Pulse_d/count_18 to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1
+  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/verticalCounter/count_7 to Inst_VGA/Inst_Image_Generator/verticalCounter/count_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X52Y92.CQ      Tcko                  0.456   Inst_VGA/Inst_Image_Generator/Pulse_d/count<19>
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/count_18
-    SLICE_X53Y92.D3      net (fanout=2)        0.933   Inst_VGA/Inst_Image_Generator/Pulse_d/count<18>
-    SLICE_X53Y92.D       Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>1
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>2
-    SLICE_X54Y90.A5      net (fanout=1)        0.564   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>1
-    SLICE_X54Y90.A       Tilo                  0.124   Inst_VGA/Inst_Image_Generator/horizontalCounter/_n0025_inv
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>4
-    SLICE_X61Y103.C2     net (fanout=16)       1.609   Inst_SVGA/Inst_Image_Generator/Pulse_d/clear
-    SLICE_X61Y103.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
-    SLICE_X62Y101.CE     net (fanout=3)        0.716   Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv
-    SLICE_X62Y101.CLK    Tceck                 0.169   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1
+    SLICE_X54Y99.DQ      Tcko                  0.518   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_7
+    SLICE_X56Y98.B1      net (fanout=9)        0.911   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+    SLICE_X56Y98.B       Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o1
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o11
+    SLICE_X55Y100.A3     net (fanout=4)        1.007   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o1
+    SLICE_X55Y100.A      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o3
+    SLICE_X49Y110.B3     net (fanout=10)       1.072   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+    SLICE_X49Y110.B      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
+    SLICE_X54Y98.CE      net (fanout=3)        0.893   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+    SLICE_X54Y98.CLK     Tceck                 0.169   Inst_VGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_1
     -------------------------------------------------  ---------------------------
-    Total                                      4.819ns (0.997ns logic, 3.822ns route)
-                                                       (20.7% logic, 79.3% route)
+    Total                                      4.942ns (1.059ns logic, 3.883ns route)
+                                                       (21.4% logic, 78.6% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2 (SLICE_X62Y101.CE), 53 paths
+Paths for end point Inst_VGA/Inst_Image_Generator/verticalCounter/count_2 (SLICE_X54Y98.CE), 53 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     3.598ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q (FF)
-  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2 (FF)
+Slack (setup path):     3.424ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_2 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      6.127ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.208ns (1.495 - 1.703)
+  Data Path Delay:      6.385ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.124ns (1.364 - 1.488)
   Source Clock:         board_clk rising at 0.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.067ns
@@ -448,35 +488,35 @@ Slack (setup path):     3.598ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.114ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2
+  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q to Inst_VGA/Inst_Image_Generator/verticalCounter/count_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X6Y74.AQ       Tcko                  0.518   Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q
-                                                       Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q
-    SLICE_X66Y102.D4     net (fanout=10)       2.879   Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q
-    SLICE_X66Y102.D      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o2
-                                                       Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o1
-    SLICE_X61Y103.D2     net (fanout=5)        1.210   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o2
-    SLICE_X61Y103.D      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o4
-    SLICE_X61Y103.C5     net (fanout=1)        0.263   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-    SLICE_X61Y103.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
-    SLICE_X62Y101.CE     net (fanout=3)        0.716   Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv
-    SLICE_X62Y101.CLK    Tceck                 0.169   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2
+    SLICE_X10Y81.DQ      Tcko                  0.518   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+                                                       Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y100.C1     net (fanout=11)       2.490   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y100.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_31_o2
+                                                       Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_31_o1
+    SLICE_X55Y100.A1     net (fanout=8)        0.871   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_31_o2
+    SLICE_X55Y100.A      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o3
+    SLICE_X49Y110.B3     net (fanout=10)       1.072   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+    SLICE_X49Y110.B      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
+    SLICE_X54Y98.CE      net (fanout=3)        0.893   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+    SLICE_X54Y98.CLK     Tceck                 0.169   Inst_VGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_2
     -------------------------------------------------  ---------------------------
-    Total                                      6.127ns (1.059ns logic, 5.068ns route)
-                                                       (17.3% logic, 82.7% route)
+    Total                                      6.385ns (1.059ns logic, 5.326ns route)
+                                                       (16.6% logic, 83.4% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     4.872ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Inst_Image_Generator/Pulse_d/count_4 (FF)
-  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2 (FF)
+Slack (setup path):     4.437ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_2 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      4.934ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.127ns (1.495 - 1.622)
+  Data Path Delay:      5.372ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.124ns (1.364 - 1.488)
   Source Clock:         board_clk rising at 0.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.067ns
@@ -486,35 +526,35 @@ Slack (setup path):     4.872ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.114ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/Pulse_d/count_4 to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2
+  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q to Inst_VGA/Inst_Image_Generator/verticalCounter/count_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X52Y89.AQ      Tcko                  0.456   Inst_VGA/Inst_Image_Generator/Pulse_d/count<7>
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/count_4
-    SLICE_X53Y88.D2      net (fanout=2)        0.815   Inst_VGA/Inst_Image_Generator/Pulse_d/count<4>
-    SLICE_X53Y88.D       Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>1
-    SLICE_X54Y90.A3      net (fanout=1)        0.797   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>
-    SLICE_X54Y90.A       Tilo                  0.124   Inst_VGA/Inst_Image_Generator/horizontalCounter/_n0025_inv
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>4
-    SLICE_X61Y103.C2     net (fanout=16)       1.609   Inst_SVGA/Inst_Image_Generator/Pulse_d/clear
-    SLICE_X61Y103.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
-    SLICE_X62Y101.CE     net (fanout=3)        0.716   Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv
-    SLICE_X62Y101.CLK    Tceck                 0.169   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2
+    SLICE_X10Y81.DQ      Tcko                  0.518   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+                                                       Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y99.D5      net (fanout=11)       1.915   Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q
+    SLICE_X56Y99.D       Tilo                  0.124   N34
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o2_SW0
+    SLICE_X55Y100.A5     net (fanout=3)        0.433   N34
+    SLICE_X55Y100.A      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o3
+    SLICE_X49Y110.B3     net (fanout=10)       1.072   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+    SLICE_X49Y110.B      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
+    SLICE_X54Y98.CE      net (fanout=3)        0.893   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+    SLICE_X54Y98.CLK     Tceck                 0.169   Inst_VGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_2
     -------------------------------------------------  ---------------------------
-    Total                                      4.934ns (0.997ns logic, 3.937ns route)
-                                                       (20.2% logic, 79.8% route)
+    Total                                      5.372ns (1.059ns logic, 4.313ns route)
+                                                       (19.7% logic, 80.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     4.986ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Inst_Image_Generator/Pulse_d/count_18 (FF)
-  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2 (FF)
+Slack (setup path):     4.966ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VGA/Inst_Image_Generator/verticalCounter/count_7 (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_2 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      4.819ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.128ns (1.495 - 1.623)
+  Data Path Delay:      4.942ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.025ns (0.171 - 0.196)
   Source Clock:         board_clk rising at 0.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.067ns
@@ -524,27 +564,27 @@ Slack (setup path):     4.986ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.114ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/Pulse_d/count_18 to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2
+  Maximum Data Path at Slow Process Corner: Inst_VGA/Inst_Image_Generator/verticalCounter/count_7 to Inst_VGA/Inst_Image_Generator/verticalCounter/count_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X52Y92.CQ      Tcko                  0.456   Inst_VGA/Inst_Image_Generator/Pulse_d/count<19>
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/count_18
-    SLICE_X53Y92.D3      net (fanout=2)        0.933   Inst_VGA/Inst_Image_Generator/Pulse_d/count<18>
-    SLICE_X53Y92.D       Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>1
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>2
-    SLICE_X54Y90.A5      net (fanout=1)        0.564   Inst_SVGA/Inst_Image_Generator/Pulse_d/pulse_int<19>1
-    SLICE_X54Y90.A       Tilo                  0.124   Inst_VGA/Inst_Image_Generator/horizontalCounter/_n0025_inv
-                                                       Inst_VGA/Inst_Image_Generator/Pulse_d/pulse_int<19>4
-    SLICE_X61Y103.C2     net (fanout=16)       1.609   Inst_SVGA/Inst_Image_Generator/Pulse_d/clear
-    SLICE_X61Y103.C      Tilo                  0.124   Inst_SVGA/Inst_Image_Generator/button_d[1]_top_border_AND_27_o
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
-    SLICE_X62Y101.CE     net (fanout=3)        0.716   Inst_SVGA/Inst_Image_Generator/verticalCounter/_n0031_inv
-    SLICE_X62Y101.CLK    Tceck                 0.169   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
-                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2
+    SLICE_X54Y99.DQ      Tcko                  0.518   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_7
+    SLICE_X56Y98.B1      net (fanout=9)        0.911   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+    SLICE_X56Y98.B       Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o1
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o11
+    SLICE_X55Y100.A3     net (fanout=4)        1.007   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o1
+    SLICE_X55Y100.A      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+                                                       Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o3
+    SLICE_X49Y110.B3     net (fanout=10)       1.072   Inst_VGA/Inst_Image_Generator/button_d[1]_top_border_AND_11_o
+    SLICE_X49Y110.B      Tilo                  0.124   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv3
+    SLICE_X54Y98.CE      net (fanout=3)        0.893   Inst_VGA/Inst_Image_Generator/verticalCounter/_n0031_inv
+    SLICE_X54Y98.CLK     Tceck                 0.169   Inst_VGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_2
     -------------------------------------------------  ---------------------------
-    Total                                      4.819ns (0.997ns logic, 3.822ns route)
-                                                       (20.7% logic, 79.3% route)
+    Total                                      4.942ns (1.059ns logic, 3.883ns route)
+                                                       (21.4% logic, 78.6% route)
 
 --------------------------------------------------------------------------------
 
@@ -552,87 +592,205 @@ Hold Paths: TS_your_instance_name_clkout0 = PERIOD TIMEGRP "your_instance_name_c
         TS_sys_clk_pin HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q (SLICE_X72Y99.A6), 1 path
+Paths for end point Inst_XGA/Inst_XGA_Control/hold_Vsync/Q (SLICE_X62Y101.A6), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.138ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_SXGA/Inst_SXGA_Control/Hcount/count_10 (FF)
-  Destination:          Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q (FF)
+Slack (hold path):      0.042ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_XGA/Inst_XGA_Control/Vcount/count_2 (FF)
+  Destination:          Inst_XGA/Inst_XGA_Control/hold_Vsync/Q (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.416ns (Levels of Logic = 1)
-  Clock Path Skew:      0.278ns (0.867 - 0.589)
+  Data Path Delay:      0.307ns (Levels of Logic = 1)
+  Clock Path Skew:      0.265ns (0.833 - 0.568)
   Source Clock:         board_clk rising at 10.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_SXGA/Inst_SXGA_Control/Hcount/count_10 to Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q
+  Minimum Data Path at Fast Process Corner: Inst_XGA/Inst_XGA_Control/Vcount/count_2 to Inst_XGA/Inst_XGA_Control/hold_Vsync/Q
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X72Y102.CQ     Tcko                  0.141   Inst_SXGA/Inst_SXGA_Control/Hcount/count<10>
-                                                       Inst_SXGA/Inst_SXGA_Control/Hcount/count_10
-    SLICE_X72Y99.A6      net (fanout=7)        0.321   Inst_SXGA/Inst_SXGA_Control/Hcount/count<10>
-    SLICE_X72Y99.CLK     Tah         (-Th)     0.046   Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q
-                                                       Inst_SXGA/Inst_SXGA_Control/holdActive
-                                                       Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q
+    SLICE_X62Y98.CQ      Tcko                  0.164   Inst_XGA/Inst_XGA_Control/Vcount/count<3>
+                                                       Inst_XGA/Inst_XGA_Control/Vcount/count_2
+    SLICE_X62Y101.A6     net (fanout=7)        0.218   Inst_XGA/Inst_XGA_Control/Vcount/count<2>
+    SLICE_X62Y101.CLK    Tah         (-Th)     0.075   Inst_XGA/Inst_XGA_Control/hold_Vsync/Q
+                                                       Inst_XGA/Inst_XGA_Control/DholdV
+                                                       Inst_XGA/Inst_XGA_Control/hold_Vsync/Q
     -------------------------------------------------  ---------------------------
-    Total                                      0.416ns (0.095ns logic, 0.321ns route)
-                                                       (22.8% logic, 77.2% route)
+    Total                                      0.307ns (0.089ns logic, 0.218ns route)
+                                                       (29.0% logic, 71.0% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q (SLICE_X72Y99.A5), 1 path
+Paths for end point Inst_VGA/Inst_Image_Generator/verticalCounter/count_8 (SLICE_X54Y100.CIN), 196 paths
 --------------------------------------------------------------------------------
-Slack (hold path):      0.155ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_SXGA/Inst_SXGA_Control/Hcount/count_8 (FF)
-  Destination:          Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q (FF)
+Slack (hold path):      0.052ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_VGA/Inst_Image_Generator/verticalCounter/count_7 (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_8 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.433ns (Levels of Logic = 1)
-  Clock Path Skew:      0.278ns (0.867 - 0.589)
+  Data Path Delay:      0.316ns (Levels of Logic = 2)
+  Clock Path Skew:      0.264ns (0.828 - 0.564)
   Source Clock:         board_clk rising at 10.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_SXGA/Inst_SXGA_Control/Hcount/count_8 to Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q
+  Minimum Data Path at Fast Process Corner: Inst_VGA/Inst_Image_Generator/verticalCounter/count_7 to Inst_VGA/Inst_Image_Generator/verticalCounter/count_8
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X72Y102.AQ     Tcko                  0.141   Inst_SXGA/Inst_SXGA_Control/Hcount/count<10>
-                                                       Inst_SXGA/Inst_SXGA_Control/Hcount/count_8
-    SLICE_X72Y99.A5      net (fanout=8)        0.338   Inst_SXGA/Inst_SXGA_Control/Hcount/count<8>
-    SLICE_X72Y99.CLK     Tah         (-Th)     0.046   Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q
-                                                       Inst_SXGA/Inst_SXGA_Control/holdActive
-                                                       Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q
+    SLICE_X54Y99.DQ      Tcko                  0.164   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_7
+    SLICE_X54Y99.DX      net (fanout=9)        0.115   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+    SLICE_X54Y99.COUT    Tdxcy                 0.117   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<7>
+    SLICE_X54Y100.CIN    net (fanout=1)        0.001   Inst_VGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<7>
+    SLICE_X54Y100.CLK    Tckcin      (-Th)     0.081   Inst_VGA/Inst_Image_Generator/verticalCounter/count<9>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/Mcount_count_xor<9>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_8
     -------------------------------------------------  ---------------------------
-    Total                                      0.433ns (0.095ns logic, 0.338ns route)
-                                                       (21.9% logic, 78.1% route)
+    Total                                      0.316ns (0.200ns logic, 0.116ns route)
+                                                       (63.3% logic, 36.7% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q (SLICE_X72Y99.A1), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.178ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_SXGA/Inst_SXGA_Control/Hcount/count_7 (FF)
-  Destination:          Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q (FF)
+Slack (hold path):      0.066ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_VGA/Inst_Image_Generator/verticalCounter/count_6 (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_8 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.456ns (Levels of Logic = 1)
-  Clock Path Skew:      0.278ns (0.867 - 0.589)
+  Data Path Delay:      0.330ns (Levels of Logic = 2)
+  Clock Path Skew:      0.264ns (0.828 - 0.564)
   Source Clock:         board_clk rising at 10.000ns
   Destination Clock:    board_clk rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_SXGA/Inst_SXGA_Control/Hcount/count_7 to Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q
+  Minimum Data Path at Fast Process Corner: Inst_VGA/Inst_Image_Generator/verticalCounter/count_6 to Inst_VGA/Inst_Image_Generator/verticalCounter/count_8
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X72Y101.DQ     Tcko                  0.141   Inst_SXGA/Inst_SXGA_Control/Hcount/count<7>
-                                                       Inst_SXGA/Inst_SXGA_Control/Hcount/count_7
-    SLICE_X72Y99.A1      net (fanout=8)        0.361   Inst_SXGA/Inst_SXGA_Control/Hcount/count<7>
-    SLICE_X72Y99.CLK     Tah         (-Th)     0.046   Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q
-                                                       Inst_SXGA/Inst_SXGA_Control/holdActive
-                                                       Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q
+    SLICE_X54Y99.CQ      Tcko                  0.164   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_6
+    SLICE_X54Y99.CX      net (fanout=10)       0.127   Inst_VGA/Inst_Image_Generator/verticalCounter/count<6>
+    SLICE_X54Y99.COUT    Tcxcy                 0.119   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<7>
+    SLICE_X54Y100.CIN    net (fanout=1)        0.001   Inst_VGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<7>
+    SLICE_X54Y100.CLK    Tckcin      (-Th)     0.081   Inst_VGA/Inst_Image_Generator/verticalCounter/count<9>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/Mcount_count_xor<9>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_8
     -------------------------------------------------  ---------------------------
-    Total                                      0.456ns (0.095ns logic, 0.361ns route)
-                                                       (20.8% logic, 79.2% route)
+    Total                                      0.330ns (0.202ns logic, 0.128ns route)
+                                                       (61.2% logic, 38.8% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      0.097ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_VGA/Inst_Image_Generator/verticalCounter/count_5 (FF)
+  Destination:          Inst_VGA/Inst_Image_Generator/verticalCounter/count_8 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.361ns (Levels of Logic = 2)
+  Clock Path Skew:      0.264ns (0.828 - 0.564)
+  Source Clock:         board_clk rising at 10.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Inst_VGA/Inst_Image_Generator/verticalCounter/count_5 to Inst_VGA/Inst_Image_Generator/verticalCounter/count_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y99.BQ      Tcko                  0.164   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_5
+    SLICE_X54Y99.BX      net (fanout=11)       0.127   Inst_VGA/Inst_Image_Generator/verticalCounter/count<5>
+    SLICE_X54Y99.COUT    Tbxcy                 0.150   Inst_VGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<7>
+    SLICE_X54Y100.CIN    net (fanout=1)        0.001   Inst_VGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<7>
+    SLICE_X54Y100.CLK    Tckcin      (-Th)     0.081   Inst_VGA/Inst_Image_Generator/verticalCounter/count<9>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/Mcount_count_xor<9>
+                                                       Inst_VGA/Inst_Image_Generator/verticalCounter/count_8
+    -------------------------------------------------  ---------------------------
+    Total                                      0.361ns (0.233ns logic, 0.128ns route)
+                                                       (64.5% logic, 35.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4 (SLICE_X58Y100.CIN), 139 paths
+--------------------------------------------------------------------------------
+Slack (hold path):      0.056ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2 (FF)
+  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.321ns (Levels of Logic = 2)
+  Clock Path Skew:      0.265ns (0.831 - 0.566)
+  Source Clock:         board_clk rising at 10.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2 to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X58Y99.CQ      Tcko                  0.164   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2
+    SLICE_X58Y99.CX      net (fanout=17)       0.118   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<2>
+    SLICE_X58Y99.COUT    Tcxcy                 0.119   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<3>
+    SLICE_X58Y100.CIN    net (fanout=1)        0.001   Inst_SVGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<3>
+    SLICE_X58Y100.CLK    Tckcin      (-Th)     0.081   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<7>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4
+    -------------------------------------------------  ---------------------------
+    Total                                      0.321ns (0.202ns logic, 0.119ns route)
+                                                       (62.9% logic, 37.1% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      0.066ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_SVGA/Inst_Image_Generator/verticalCounter/count_3 (FF)
+  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.331ns (Levels of Logic = 2)
+  Clock Path Skew:      0.265ns (0.831 - 0.566)
+  Source Clock:         board_clk rising at 10.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Inst_SVGA/Inst_Image_Generator/verticalCounter/count_3 to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X58Y99.DQ      Tcko                  0.164   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_3
+    SLICE_X58Y99.DX      net (fanout=11)       0.130   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
+    SLICE_X58Y99.COUT    Tdxcy                 0.117   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<3>
+    SLICE_X58Y100.CIN    net (fanout=1)        0.001   Inst_SVGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<3>
+    SLICE_X58Y100.CLK    Tckcin      (-Th)     0.081   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<7>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4
+    -------------------------------------------------  ---------------------------
+    Total                                      0.331ns (0.200ns logic, 0.131ns route)
+                                                       (60.4% logic, 39.6% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      0.087ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1 (FF)
+  Destination:          Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.352ns (Levels of Logic = 2)
+  Clock Path Skew:      0.265ns (0.831 - 0.566)
+  Source Clock:         board_clk rising at 10.000ns
+  Destination Clock:    board_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1 to Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X58Y99.BQ      Tcko                  0.164   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1
+    SLICE_X58Y99.BX      net (fanout=10)       0.118   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<1>
+    SLICE_X58Y99.COUT    Tbxcy                 0.150   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<3>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<3>
+    SLICE_X58Y100.CIN    net (fanout=1)        0.001   Inst_SVGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<3>
+    SLICE_X58Y100.CLK    Tckcin      (-Th)     0.081   Inst_SVGA/Inst_Image_Generator/verticalCounter/count<7>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/Mcount_count_cy<7>
+                                                       Inst_SVGA/Inst_Image_Generator/verticalCounter/count_4
+    -------------------------------------------------  ---------------------------
+    Total                                      0.352ns (0.233ns logic, 0.119ns route)
+                                                       (66.2% logic, 33.8% route)
 
 --------------------------------------------------------------------------------
 
@@ -651,617 +809,18 @@ Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
   Period: 10.000ns
   Low pulse: 5.000ns
   Low pulse limit: 0.980ns (Tmpw)
-  Physical resource: Inst_VGA/Inst_Image_Generator/DB2/Flip2/Q/CLK
+  Physical resource: Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q/CLK
   Logical resource: Inst_VGA/Inst_Image_Generator/DB2/Flip2/Mshreg_Q/CLK
-  Location pin: SLICE_X6Y68.CLK
+  Location pin: SLICE_X10Y81.CLK
   Clock network: board_clk
 --------------------------------------------------------------------------------
 Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
   Period: 10.000ns
   High pulse: 5.000ns
   High pulse limit: 0.980ns (Tmpw)
-  Physical resource: Inst_VGA/Inst_Image_Generator/DB2/Flip2/Q/CLK
+  Physical resource: Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q/CLK
   Logical resource: Inst_VGA/Inst_Image_Generator/DB2/Flip2/Mshreg_Q/CLK
-  Location pin: SLICE_X6Y68.CLK
-  Clock network: board_clk
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: TS_your_instance_name_clkout1 = PERIOD TIMEGRP 
-"your_instance_name_clkout1"         TS_sys_clk_pin * 0.25 HIGH 50%;
-For more information, see Period Analysis in the Timing Closure User Guide (UG612).
-
- 528 paths analyzed, 108 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   2.840ns.
---------------------------------------------------------------------------------
-
-Paths for end point Inst_VGA/Test_counter/count_29 (SLICE_X88Y87.CIN), 28 paths
---------------------------------------------------------------------------------
-Slack (setup path):     37.160ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Test_counter/count_1 (FF)
-  Destination:          Inst_VGA/Test_counter/count_29 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      2.756ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.017ns (0.166 - 0.183)
-  Source Clock:         board_clk rising at 0.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.067ns
-
-  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.114ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Test_counter/count_1 to Inst_VGA/Test_counter/count_29
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y80.BQ      Tcko                  0.518   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count_1
-    SLICE_X88Y80.B2      net (fanout=2)        0.665   Inst_VGA/Test_counter/count<1>
-    SLICE_X88Y80.COUT    Topcyb                0.657   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count<1>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<11>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<15>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<19>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<23>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<27>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CLK     Tcinck                0.214   Inst_VGA/Test_counter/count<31>
-                                                       Inst_VGA/Test_counter/Mcount_count_xor<31>
-                                                       Inst_VGA/Test_counter/count_29
-    -------------------------------------------------  ---------------------------
-    Total                                      2.756ns (2.091ns logic, 0.665ns route)
-                                                       (75.9% logic, 24.1% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     37.274ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Test_counter/count_5 (FF)
-  Destination:          Inst_VGA/Test_counter/count_29 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      2.641ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.018ns (0.166 - 0.184)
-  Source Clock:         board_clk rising at 0.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.067ns
-
-  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.114ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Test_counter/count_5 to Inst_VGA/Test_counter/count_29
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y81.BQ      Tcko                  0.518   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/count_5
-    SLICE_X88Y81.B2      net (fanout=2)        0.667   Inst_VGA/Test_counter/count<5>
-    SLICE_X88Y81.COUT    Topcyb                0.657   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/count<5>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<11>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<15>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<19>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<23>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<27>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CLK     Tcinck                0.214   Inst_VGA/Test_counter/count<31>
-                                                       Inst_VGA/Test_counter/Mcount_count_xor<31>
-                                                       Inst_VGA/Test_counter/count_29
-    -------------------------------------------------  ---------------------------
-    Total                                      2.641ns (1.974ns logic, 0.667ns route)
-                                                       (74.7% logic, 25.3% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     37.309ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Test_counter/count_2 (FF)
-  Destination:          Inst_VGA/Test_counter/count_29 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      2.607ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.017ns (0.166 - 0.183)
-  Source Clock:         board_clk rising at 0.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.067ns
-
-  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.114ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Test_counter/count_2 to Inst_VGA/Test_counter/count_29
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y80.CQ      Tcko                  0.518   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count_2
-    SLICE_X88Y80.C2      net (fanout=2)        0.669   Inst_VGA/Test_counter/count<2>
-    SLICE_X88Y80.COUT    Topcyc                0.504   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count<2>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<11>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<15>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<19>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<23>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<27>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CLK     Tcinck                0.214   Inst_VGA/Test_counter/count<31>
-                                                       Inst_VGA/Test_counter/Mcount_count_xor<31>
-                                                       Inst_VGA/Test_counter/count_29
-    -------------------------------------------------  ---------------------------
-    Total                                      2.607ns (1.938ns logic, 0.669ns route)
-                                                       (74.3% logic, 25.7% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_VGA/Test_counter/count_31 (SLICE_X88Y87.CIN), 28 paths
---------------------------------------------------------------------------------
-Slack (setup path):     37.169ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Test_counter/count_1 (FF)
-  Destination:          Inst_VGA/Test_counter/count_31 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      2.747ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.017ns (0.166 - 0.183)
-  Source Clock:         board_clk rising at 0.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.067ns
-
-  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.114ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Test_counter/count_1 to Inst_VGA/Test_counter/count_31
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y80.BQ      Tcko                  0.518   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count_1
-    SLICE_X88Y80.B2      net (fanout=2)        0.665   Inst_VGA/Test_counter/count<1>
-    SLICE_X88Y80.COUT    Topcyb                0.657   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count<1>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<11>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<15>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<19>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<23>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<27>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CLK     Tcinck                0.205   Inst_VGA/Test_counter/count<31>
-                                                       Inst_VGA/Test_counter/Mcount_count_xor<31>
-                                                       Inst_VGA/Test_counter/count_31
-    -------------------------------------------------  ---------------------------
-    Total                                      2.747ns (2.082ns logic, 0.665ns route)
-                                                       (75.8% logic, 24.2% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     37.283ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Test_counter/count_5 (FF)
-  Destination:          Inst_VGA/Test_counter/count_31 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      2.632ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.018ns (0.166 - 0.184)
-  Source Clock:         board_clk rising at 0.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.067ns
-
-  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.114ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Test_counter/count_5 to Inst_VGA/Test_counter/count_31
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y81.BQ      Tcko                  0.518   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/count_5
-    SLICE_X88Y81.B2      net (fanout=2)        0.667   Inst_VGA/Test_counter/count<5>
-    SLICE_X88Y81.COUT    Topcyb                0.657   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/count<5>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<11>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<15>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<19>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<23>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<27>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CLK     Tcinck                0.205   Inst_VGA/Test_counter/count<31>
-                                                       Inst_VGA/Test_counter/Mcount_count_xor<31>
-                                                       Inst_VGA/Test_counter/count_31
-    -------------------------------------------------  ---------------------------
-    Total                                      2.632ns (1.965ns logic, 0.667ns route)
-                                                       (74.7% logic, 25.3% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     37.318ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Test_counter/count_2 (FF)
-  Destination:          Inst_VGA/Test_counter/count_31 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      2.598ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.017ns (0.166 - 0.183)
-  Source Clock:         board_clk rising at 0.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.067ns
-
-  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.114ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Test_counter/count_2 to Inst_VGA/Test_counter/count_31
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y80.CQ      Tcko                  0.518   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count_2
-    SLICE_X88Y80.C2      net (fanout=2)        0.669   Inst_VGA/Test_counter/count<2>
-    SLICE_X88Y80.COUT    Topcyc                0.504   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count<2>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<11>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<15>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<19>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<23>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<27>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CLK     Tcinck                0.205   Inst_VGA/Test_counter/count<31>
-                                                       Inst_VGA/Test_counter/Mcount_count_xor<31>
-                                                       Inst_VGA/Test_counter/count_31
-    -------------------------------------------------  ---------------------------
-    Total                                      2.598ns (1.929ns logic, 0.669ns route)
-                                                       (74.2% logic, 25.8% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_VGA/Test_counter/count_30 (SLICE_X88Y87.CIN), 28 paths
---------------------------------------------------------------------------------
-Slack (setup path):     37.244ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Test_counter/count_1 (FF)
-  Destination:          Inst_VGA/Test_counter/count_30 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      2.672ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.017ns (0.166 - 0.183)
-  Source Clock:         board_clk rising at 0.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.067ns
-
-  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.114ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Test_counter/count_1 to Inst_VGA/Test_counter/count_30
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y80.BQ      Tcko                  0.518   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count_1
-    SLICE_X88Y80.B2      net (fanout=2)        0.665   Inst_VGA/Test_counter/count<1>
-    SLICE_X88Y80.COUT    Topcyb                0.657   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count<1>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<11>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<15>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<19>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<23>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<27>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CLK     Tcinck                0.130   Inst_VGA/Test_counter/count<31>
-                                                       Inst_VGA/Test_counter/Mcount_count_xor<31>
-                                                       Inst_VGA/Test_counter/count_30
-    -------------------------------------------------  ---------------------------
-    Total                                      2.672ns (2.007ns logic, 0.665ns route)
-                                                       (75.1% logic, 24.9% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     37.358ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Test_counter/count_5 (FF)
-  Destination:          Inst_VGA/Test_counter/count_30 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      2.557ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.018ns (0.166 - 0.184)
-  Source Clock:         board_clk rising at 0.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.067ns
-
-  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.114ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Test_counter/count_5 to Inst_VGA/Test_counter/count_30
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y81.BQ      Tcko                  0.518   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/count_5
-    SLICE_X88Y81.B2      net (fanout=2)        0.667   Inst_VGA/Test_counter/count<5>
-    SLICE_X88Y81.COUT    Topcyb                0.657   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/count<5>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<11>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<15>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<19>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<23>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<27>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CLK     Tcinck                0.130   Inst_VGA/Test_counter/count<31>
-                                                       Inst_VGA/Test_counter/Mcount_count_xor<31>
-                                                       Inst_VGA/Test_counter/count_30
-    -------------------------------------------------  ---------------------------
-    Total                                      2.557ns (1.890ns logic, 0.667ns route)
-                                                       (73.9% logic, 26.1% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     37.393ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_VGA/Test_counter/count_2 (FF)
-  Destination:          Inst_VGA/Test_counter/count_30 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      2.523ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.017ns (0.166 - 0.183)
-  Source Clock:         board_clk rising at 0.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.067ns
-
-  Clock Uncertainty:          0.067ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.114ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_VGA/Test_counter/count_2 to Inst_VGA/Test_counter/count_30
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y80.CQ      Tcko                  0.518   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count_2
-    SLICE_X88Y80.C2      net (fanout=2)        0.669   Inst_VGA/Test_counter/count<2>
-    SLICE_X88Y80.COUT    Topcyc                0.504   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count<2>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<3>
-    SLICE_X88Y81.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<7>
-    SLICE_X88Y82.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<11>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<11>
-    SLICE_X88Y83.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<15>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<15>
-    SLICE_X88Y84.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<19>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<19>
-    SLICE_X88Y85.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<23>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<23>
-    SLICE_X88Y86.COUT    Tbyp                  0.117   Inst_VGA/Test_counter/count<27>
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CIN     net (fanout=1)        0.000   Inst_VGA/Test_counter/Mcount_count_cy<27>
-    SLICE_X88Y87.CLK     Tcinck                0.130   Inst_VGA/Test_counter/count<31>
-                                                       Inst_VGA/Test_counter/Mcount_count_xor<31>
-                                                       Inst_VGA/Test_counter/count_30
-    -------------------------------------------------  ---------------------------
-    Total                                      2.523ns (1.854ns logic, 0.669ns route)
-                                                       (73.5% logic, 26.5% route)
-
---------------------------------------------------------------------------------
-
-Hold Paths: TS_your_instance_name_clkout1 = PERIOD TIMEGRP "your_instance_name_clkout1"
-        TS_sys_clk_pin * 0.25 HIGH 50%;
---------------------------------------------------------------------------------
-
-Paths for end point Inst_VGA/Test_counter/count_3 (SLICE_X88Y80.D3), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.288ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_VGA/Test_counter/count_3 (FF)
-  Destination:          Inst_VGA/Test_counter/count_3 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.288ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         board_clk rising at 40.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: Inst_VGA/Test_counter/count_3 to Inst_VGA/Test_counter/count_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y80.DQ      Tcko                  0.164   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count_3
-    SLICE_X88Y80.D3      net (fanout=2)        0.149   Inst_VGA/Test_counter/count<3>
-    SLICE_X88Y80.CLK     Tah         (-Th)     0.025   Inst_VGA/Test_counter/count<3>
-                                                       Inst_VGA/Test_counter/count<3>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<3>
-                                                       Inst_VGA/Test_counter/count_3
-    -------------------------------------------------  ---------------------------
-    Total                                      0.288ns (0.139ns logic, 0.149ns route)
-                                                       (48.3% logic, 51.7% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_VGA/Test_counter/count_7 (SLICE_X88Y81.D3), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.288ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_VGA/Test_counter/count_7 (FF)
-  Destination:          Inst_VGA/Test_counter/count_7 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.288ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         board_clk rising at 40.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: Inst_VGA/Test_counter/count_7 to Inst_VGA/Test_counter/count_7
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y81.DQ      Tcko                  0.164   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/count_7
-    SLICE_X88Y81.D3      net (fanout=2)        0.149   Inst_VGA/Test_counter/count<7>
-    SLICE_X88Y81.CLK     Tah         (-Th)     0.025   Inst_VGA/Test_counter/count<7>
-                                                       Inst_VGA/Test_counter/count<7>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<7>
-                                                       Inst_VGA/Test_counter/count_7
-    -------------------------------------------------  ---------------------------
-    Total                                      0.288ns (0.139ns logic, 0.149ns route)
-                                                       (48.3% logic, 51.7% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_VGA/Test_counter/count_11 (SLICE_X88Y82.D3), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.288ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_VGA/Test_counter/count_11 (FF)
-  Destination:          Inst_VGA/Test_counter/count_11 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.288ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         board_clk rising at 40.000ns
-  Destination Clock:    board_clk rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: Inst_VGA/Test_counter/count_11 to Inst_VGA/Test_counter/count_11
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X88Y82.DQ      Tcko                  0.164   Inst_VGA/Test_counter/count<11>
-                                                       Inst_VGA/Test_counter/count_11
-    SLICE_X88Y82.D3      net (fanout=2)        0.149   Inst_VGA/Test_counter/count<11>
-    SLICE_X88Y82.CLK     Tah         (-Th)     0.025   Inst_VGA/Test_counter/count<11>
-                                                       Inst_VGA/Test_counter/count<11>_rt
-                                                       Inst_VGA/Test_counter/Mcount_count_cy<11>
-                                                       Inst_VGA/Test_counter/count_11
-    -------------------------------------------------  ---------------------------
-    Total                                      0.288ns (0.139ns logic, 0.149ns route)
-                                                       (48.3% logic, 51.7% route)
-
---------------------------------------------------------------------------------
-
-Component Switching Limit Checks: TS_your_instance_name_clkout1 = PERIOD TIMEGRP "your_instance_name_clkout1"
-        TS_sys_clk_pin * 0.25 HIGH 50%;
---------------------------------------------------------------------------------
-Slack: 37.845ns (period - min period limit)
-  Period: 40.000ns
-  Min period limit: 2.155ns (464.037MHz) (Tbcper_I(Fmax))
-  Physical resource: your_instance_name/clkout2_buf/I0
-  Logical resource: your_instance_name/clkout2_buf/I0
-  Location pin: BUFGCTRL_X0Y29.I0
-  Clock network: your_instance_name/clkout1
---------------------------------------------------------------------------------
-Slack: 39.000ns (period - (min low pulse limit / (low pulse / period)))
-  Period: 40.000ns
-  Low pulse: 20.000ns
-  Low pulse limit: 0.500ns (Tcl)
-  Physical resource: Inst_VGA/Test_counter/count<3>/CLK
-  Logical resource: Inst_VGA/Test_counter/count_0/CK
-  Location pin: SLICE_X88Y80.CLK
-  Clock network: board_clk
---------------------------------------------------------------------------------
-Slack: 39.000ns (period - (min high pulse limit / (high pulse / period)))
-  Period: 40.000ns
-  High pulse: 20.000ns
-  High pulse limit: 0.500ns (Tch)
-  Physical resource: Inst_VGA/Test_counter/count<3>/CLK
-  Logical resource: Inst_VGA/Test_counter/count_0/CK
-  Location pin: SLICE_X88Y80.CLK
+  Location pin: SLICE_X10Y81.CLK
   Clock network: board_clk
 --------------------------------------------------------------------------------
 
@@ -1273,12 +832,12 @@ Derived Constraints for TS_sys_clk_pin
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_sys_clk_pin                 |     10.000ns|      4.000ns|      6.402ns|            0|            0|            0|        12086|
-| TS_your_instance_name_clkout2 |     25.000ns|      2.155ns|          N/A|            0|            0|            0|            0|
+|TS_sys_clk_pin                 |     10.000ns|      4.000ns|      6.576ns|            0|            0|            0|        15826|
+| TS_your_instance_name_clkout1 |     40.000ns|      2.155ns|          N/A|            0|            0|            0|            0|
 | TS_your_instance_name_clkout4 |      9.167ns|      2.155ns|          N/A|            0|            0|            0|            0|
+| TS_your_instance_name_clkout2 |     25.000ns|      2.155ns|          N/A|            0|            0|            0|            0|
 | TS_your_instance_name_clkout3 |     15.000ns|      2.155ns|          N/A|            0|            0|            0|            0|
-| TS_your_instance_name_clkout0 |     10.000ns|      6.402ns|          N/A|            0|            0|        11558|            0|
-| TS_your_instance_name_clkout1 |     40.000ns|      2.840ns|          N/A|            0|            0|          528|            0|
+| TS_your_instance_name_clkout0 |     10.000ns|      6.576ns|          N/A|            0|            0|        15826|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -1293,7 +852,7 @@ Clock to Setup on destination clock Clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |    6.402|         |         |         |
+Clk            |    6.576|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -1302,23 +861,23 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 12086 paths, 0 nets, and 1042 connections
+Constraints cover 15826 paths, 0 nets, and 1160 connections
 
 Design statistics:
-   Minimum period:   6.402ns{1}   (Maximum frequency: 156.201MHz)
+   Minimum period:   6.576ns{1}   (Maximum frequency: 152.068MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Sun Dec 06 19:23:17 2015 
+Analysis completed Mon Dec 07 19:29:22 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 670 MB
+Peak Memory Usage: 675 MB
 
 
 

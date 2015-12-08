@@ -1,10 +1,13 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Dec 06 19:22:37 2015
+// Written by: Map P.20131013 on Mon Dec 07 19:28:42 2015
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "ANODE<6>" LOCATE = SITE "L1" LEVEL 1;
 COMP "ANODE<4>" LOCATE = SITE "N2" LEVEL 1;
-COMP "VSYNC" LOCATE = SITE "B12" LEVEL 1;
+COMP "ANODE<0>" LOCATE = SITE "N6" LEVEL 1;
+COMP "ANODE<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "ANODE<3>" LOCATE = SITE "N5" LEVEL 1;
 COMP "RGB_out<5>" LOCATE = SITE "C7" LEVEL 1;
 COMP "RGB_out<6>" LOCATE = SITE "D7" LEVEL 1;
 COMP "RGB_out<7>" LOCATE = SITE "D8" LEVEL 1;
@@ -26,10 +29,10 @@ COMP "Switch<12>" LOCATE = SITE "T1" LEVEL 1;
 COMP "Switch<13>" LOCATE = SITE "R3" LEVEL 1;
 COMP "Switch<14>" LOCATE = SITE "P3" LEVEL 1;
 COMP "Switch<15>" LOCATE = SITE "P4" LEVEL 1;
+COMP "VSYNC" LOCATE = SITE "B12" LEVEL 1;
 COMP "Switch<9>" LOCATE = SITE "V2" LEVEL 1;
 COMP "Switch<7>" LOCATE = SITE "V5" LEVEL 1;
 COMP "Switch<8>" LOCATE = SITE "U4" LEVEL 1;
-COMP "HSYNC" LOCATE = SITE "B11" LEVEL 1;
 COMP "Switch<5>" LOCATE = SITE "V7" LEVEL 1;
 COMP "Switch<6>" LOCATE = SITE "V6" LEVEL 1;
 COMP "Switch<3>" LOCATE = SITE "R6" LEVEL 1;
@@ -37,6 +40,7 @@ COMP "Switch<4>" LOCATE = SITE "R5" LEVEL 1;
 COMP "Switch<1>" LOCATE = SITE "U8" LEVEL 1;
 COMP "Switch<2>" LOCATE = SITE "R7" LEVEL 1;
 COMP "Switch<0>" LOCATE = SITE "U9" LEVEL 1;
+COMP "ANODE<2>" LOCATE = SITE "M3" LEVEL 1;
 COMP "ANODE<7>" LOCATE = SITE "M1" LEVEL 1;
 COMP "RGB_out<11>" LOCATE = SITE "A6" LEVEL 1;
 COMP "SEGMENT<5>" LOCATE = SITE "M2" LEVEL 1;
@@ -48,125 +52,43 @@ COMP "SEGMENT<3>" LOCATE = SITE "L4" LEVEL 1;
 COMP "SEGMENT<4>" LOCATE = SITE "K3" LEVEL 1;
 COMP "SEGMENT<0>" LOCATE = SITE "L3" LEVEL 1;
 COMP "Clk" LOCATE = SITE "E3" LEVEL 1;
-COMP "ANODE<3>" LOCATE = SITE "N5" LEVEL 1;
 COMP "ANODE<1>" LOCATE = SITE "M6" LEVEL 1;
-COMP "ANODE<2>" LOCATE = SITE "M3" LEVEL 1;
-COMP "ANODE<0>" LOCATE = SITE "N6" LEVEL 1;
-COMP "ANODE<5>" LOCATE = SITE "N4" LEVEL 1;
-COMP "ANODE<6>" LOCATE = SITE "L1" LEVEL 1;
-TIMEGRP your_instance_name_clkout0 = BEL "Inst_VGA/pulse_strobe/count_0" BEL
-        "Inst_VGA/pulse_strobe/count_1" BEL "Inst_VGA/pulse_strobe/count_2"
-        BEL "Inst_VGA/pulse_strobe/count_3" BEL
-        "Inst_VGA/pulse_strobe/count_4" BEL "Inst_VGA/pulse_strobe/count_5"
-        BEL "Inst_VGA/pulse_strobe/count_6" BEL
-        "Inst_VGA/pulse_strobe/count_7" BEL "Inst_VGA/pulse_strobe/count_8"
-        BEL "Inst_VGA/pulse_strobe/count_9" BEL
-        "Inst_VGA/pulse_strobe/count_10" BEL "Inst_VGA/pulse_strobe/count_11"
-        BEL "Inst_VGA/pulse_strobe/count_12" BEL
-        "Inst_VGA/pulse_strobe/count_13" BEL "Inst_VGA/pulse_strobe/count_14"
-        BEL "Inst_VGA/pulse_strobe/count_15" BEL
-        "Inst_VGA/Test_counter/count_0" BEL "Inst_VGA/Test_counter/count_1"
-        BEL "Inst_VGA/Test_counter/count_2" BEL
-        "Inst_VGA/Test_counter/count_3" BEL "Inst_VGA/Test_counter/count_4"
-        BEL "Inst_VGA/Test_counter/count_5" BEL
-        "Inst_VGA/Test_counter/count_6" BEL "Inst_VGA/Test_counter/count_7"
-        BEL "Inst_VGA/Test_counter/count_8" BEL
-        "Inst_VGA/Test_counter/count_9" BEL "Inst_VGA/Test_counter/count_10"
-        BEL "Inst_VGA/Test_counter/count_11" BEL
-        "Inst_VGA/Test_counter/count_12" BEL "Inst_VGA/Test_counter/count_13"
-        BEL "Inst_VGA/Test_counter/count_14" BEL
-        "Inst_VGA/Test_counter/count_15" BEL "Inst_VGA/Test_counter/count_16"
-        BEL "Inst_VGA/Test_counter/count_17" BEL
-        "Inst_VGA/Test_counter/count_18" BEL "Inst_VGA/Test_counter/count_19"
-        BEL "Inst_VGA/Test_counter/count_20" BEL
-        "Inst_VGA/Test_counter/count_21" BEL "Inst_VGA/Test_counter/count_22"
-        BEL "Inst_VGA/Test_counter/count_23" BEL
-        "Inst_VGA/Test_counter/count_24" BEL "Inst_VGA/Test_counter/count_25"
-        BEL "Inst_VGA/Test_counter/count_26" BEL
-        "Inst_VGA/Test_counter/count_27" BEL "Inst_VGA/Test_counter/count_28"
-        BEL "Inst_VGA/Test_counter/count_29" BEL
-        "Inst_VGA/Test_counter/count_30" BEL "Inst_VGA/Test_counter/count_31"
-        BEL "Inst_VGA/sevenseg/cnt/count_0" BEL
-        "Inst_VGA/sevenseg/cnt/count_1" BEL "Inst_VGA/sevenseg/cnt/count_2"
-        BEL "Inst_SVGA/Test_counter/count_0" BEL
-        "Inst_SVGA/Test_counter/count_1" BEL "Inst_SVGA/Test_counter/count_2"
-        BEL "Inst_SVGA/Test_counter/count_3" BEL
-        "Inst_SVGA/Test_counter/count_4" BEL "Inst_SVGA/Test_counter/count_5"
-        BEL "Inst_SVGA/Test_counter/count_6" BEL
-        "Inst_SVGA/Test_counter/count_7" BEL "Inst_SVGA/Test_counter/count_8"
-        BEL "Inst_SVGA/Test_counter/count_9" BEL
-        "Inst_SVGA/Test_counter/count_10" BEL
-        "Inst_SVGA/Test_counter/count_11" BEL
-        "Inst_SVGA/Test_counter/count_12" BEL
-        "Inst_SVGA/Test_counter/count_13" BEL
-        "Inst_SVGA/Test_counter/count_14" BEL
-        "Inst_SVGA/Test_counter/count_15" BEL
-        "Inst_SVGA/Test_counter/count_16" BEL
-        "Inst_SVGA/Test_counter/count_17" BEL
-        "Inst_SVGA/Test_counter/count_18" BEL
-        "Inst_SVGA/Test_counter/count_19" BEL
-        "Inst_SVGA/Test_counter/count_20" BEL
-        "Inst_SVGA/Test_counter/count_21" BEL
-        "Inst_SVGA/Test_counter/count_22" BEL
-        "Inst_SVGA/Test_counter/count_23" BEL
-        "Inst_SVGA/Test_counter/count_24" BEL
-        "Inst_SVGA/Test_counter/count_25" BEL
-        "Inst_SVGA/Test_counter/count_26" BEL
-        "Inst_SVGA/Test_counter/count_27" BEL
-        "Inst_SVGA/Test_counter/count_28" BEL
-        "Inst_SVGA/Test_counter/count_29" BEL
-        "Inst_SVGA/Test_counter/count_30" BEL
-        "Inst_SVGA/Test_counter/count_31" BEL "Inst_XGA/Test_counter/count_0"
-        BEL "Inst_XGA/Test_counter/count_1" BEL
-        "Inst_XGA/Test_counter/count_2" BEL "Inst_XGA/Test_counter/count_3"
-        BEL "Inst_XGA/Test_counter/count_4" BEL
-        "Inst_XGA/Test_counter/count_5" BEL "Inst_XGA/Test_counter/count_6"
-        BEL "Inst_XGA/Test_counter/count_7" BEL
-        "Inst_XGA/Test_counter/count_8" BEL "Inst_XGA/Test_counter/count_9"
-        BEL "Inst_XGA/Test_counter/count_10" BEL
-        "Inst_XGA/Test_counter/count_11" BEL "Inst_XGA/Test_counter/count_12"
-        BEL "Inst_XGA/Test_counter/count_13" BEL
-        "Inst_XGA/Test_counter/count_14" BEL "Inst_XGA/Test_counter/count_15"
-        BEL "Inst_XGA/Test_counter/count_16" BEL
-        "Inst_XGA/Test_counter/count_17" BEL "Inst_XGA/Test_counter/count_18"
-        BEL "Inst_XGA/Test_counter/count_19" BEL
-        "Inst_XGA/Test_counter/count_20" BEL "Inst_XGA/Test_counter/count_21"
-        BEL "Inst_XGA/Test_counter/count_22" BEL
-        "Inst_XGA/Test_counter/count_23" BEL "Inst_XGA/Test_counter/count_24"
-        BEL "Inst_XGA/Test_counter/count_25" BEL
-        "Inst_XGA/Test_counter/count_26" BEL "Inst_XGA/Test_counter/count_27"
-        BEL "Inst_XGA/Test_counter/count_28" BEL
-        "Inst_XGA/Test_counter/count_29" BEL "Inst_XGA/Test_counter/count_30"
-        BEL "Inst_XGA/Test_counter/count_31" BEL
-        "Inst_SXGA/Test_counter/count_0" BEL "Inst_SXGA/Test_counter/count_1"
-        BEL "Inst_SXGA/Test_counter/count_2" BEL
-        "Inst_SXGA/Test_counter/count_3" BEL "Inst_SXGA/Test_counter/count_4"
-        BEL "Inst_SXGA/Test_counter/count_5" BEL
-        "Inst_SXGA/Test_counter/count_6" BEL "Inst_SXGA/Test_counter/count_7"
-        BEL "Inst_SXGA/Test_counter/count_8" BEL
-        "Inst_SXGA/Test_counter/count_9" BEL "Inst_SXGA/Test_counter/count_10"
-        BEL "Inst_SXGA/Test_counter/count_11" BEL
-        "Inst_SXGA/Test_counter/count_12" BEL
-        "Inst_SXGA/Test_counter/count_13" BEL
-        "Inst_SXGA/Test_counter/count_14" BEL
-        "Inst_SXGA/Test_counter/count_15" BEL
-        "Inst_SXGA/Test_counter/count_16" BEL
-        "Inst_SXGA/Test_counter/count_17" BEL
-        "Inst_SXGA/Test_counter/count_18" BEL
-        "Inst_SXGA/Test_counter/count_19" BEL
-        "Inst_SXGA/Test_counter/count_20" BEL
-        "Inst_SXGA/Test_counter/count_21" BEL
-        "Inst_SXGA/Test_counter/count_22" BEL
-        "Inst_SXGA/Test_counter/count_23" BEL
-        "Inst_SXGA/Test_counter/count_24" BEL
-        "Inst_SXGA/Test_counter/count_25" BEL
-        "Inst_SXGA/Test_counter/count_26" BEL
-        "Inst_SXGA/Test_counter/count_27" BEL
-        "Inst_SXGA/Test_counter/count_28" BEL
-        "Inst_SXGA/Test_counter/count_29" BEL
-        "Inst_SXGA/Test_counter/count_30" BEL
-        "Inst_SXGA/Test_counter/count_31" BEL
-        "Inst_VGA/Inst_Image_Generator/horizontalCounter/count_9" BEL
+COMP "HSYNC" LOCATE = SITE "B11" LEVEL 1;
+TIMEGRP your_instance_name_clkout0 = BEL "Inst_VGA/sevenseg/cnt/count_2" BEL
+        "Inst_VGA/sevenseg/cnt/count_1" BEL "Inst_VGA/sevenseg/cnt/count_0"
+        BEL "Inst_VGA/Test_counter/count_31" BEL
+        "Inst_VGA/Test_counter/count_30" BEL "Inst_VGA/Test_counter/count_29"
+        BEL "Inst_VGA/Test_counter/count_28" BEL
+        "Inst_VGA/Test_counter/count_27" BEL "Inst_VGA/Test_counter/count_26"
+        BEL "Inst_VGA/Test_counter/count_25" BEL
+        "Inst_VGA/Test_counter/count_24" BEL "Inst_VGA/Test_counter/count_23"
+        BEL "Inst_VGA/Test_counter/count_22" BEL
+        "Inst_VGA/Test_counter/count_21" BEL "Inst_VGA/Test_counter/count_20"
+        BEL "Inst_VGA/Test_counter/count_19" BEL
+        "Inst_VGA/Test_counter/count_18" BEL "Inst_VGA/Test_counter/count_17"
+        BEL "Inst_VGA/Test_counter/count_16" BEL
+        "Inst_VGA/Test_counter/count_15" BEL "Inst_VGA/Test_counter/count_14"
+        BEL "Inst_VGA/Test_counter/count_13" BEL
+        "Inst_VGA/Test_counter/count_12" BEL "Inst_VGA/Test_counter/count_11"
+        BEL "Inst_VGA/Test_counter/count_10" BEL
+        "Inst_VGA/Test_counter/count_9" BEL "Inst_VGA/Test_counter/count_8"
+        BEL "Inst_VGA/Test_counter/count_7" BEL
+        "Inst_VGA/Test_counter/count_6" BEL "Inst_VGA/Test_counter/count_5"
+        BEL "Inst_VGA/Test_counter/count_4" BEL
+        "Inst_VGA/Test_counter/count_3" BEL "Inst_VGA/Test_counter/count_2"
+        BEL "Inst_VGA/Test_counter/count_1" BEL
+        "Inst_VGA/Test_counter/count_0" BEL "Inst_VGA/pulse_strobe/count_15"
+        BEL "Inst_VGA/pulse_strobe/count_14" BEL
+        "Inst_VGA/pulse_strobe/count_13" BEL "Inst_VGA/pulse_strobe/count_12"
+        BEL "Inst_VGA/pulse_strobe/count_11" BEL
+        "Inst_VGA/pulse_strobe/count_10" BEL "Inst_VGA/pulse_strobe/count_9"
+        BEL "Inst_VGA/pulse_strobe/count_8" BEL
+        "Inst_VGA/pulse_strobe/count_7" BEL "Inst_VGA/pulse_strobe/count_6"
+        BEL "Inst_VGA/pulse_strobe/count_5" BEL
+        "Inst_VGA/pulse_strobe/count_4" BEL "Inst_VGA/pulse_strobe/count_3"
+        BEL "Inst_VGA/pulse_strobe/count_2" BEL
+        "Inst_VGA/pulse_strobe/count_1" BEL "Inst_VGA/pulse_strobe/count_0"
+        BEL "Inst_VGA/Inst_Image_Generator/horizontalCounter/count_9" BEL
         "Inst_VGA/Inst_Image_Generator/horizontalCounter/count_8" BEL
         "Inst_VGA/Inst_Image_Generator/horizontalCounter/count_7" BEL
         "Inst_VGA/Inst_Image_Generator/horizontalCounter/count_6" BEL
@@ -176,6 +98,16 @@ TIMEGRP your_instance_name_clkout0 = BEL "Inst_VGA/pulse_strobe/count_0" BEL
         "Inst_VGA/Inst_Image_Generator/horizontalCounter/count_2" BEL
         "Inst_VGA/Inst_Image_Generator/horizontalCounter/count_1" BEL
         "Inst_VGA/Inst_Image_Generator/horizontalCounter/count_0" BEL
+        "Inst_VGA/Inst_Image_Generator/verticalCounter/count_9" BEL
+        "Inst_VGA/Inst_Image_Generator/verticalCounter/count_8" BEL
+        "Inst_VGA/Inst_Image_Generator/verticalCounter/count_7" BEL
+        "Inst_VGA/Inst_Image_Generator/verticalCounter/count_6" BEL
+        "Inst_VGA/Inst_Image_Generator/verticalCounter/count_5" BEL
+        "Inst_VGA/Inst_Image_Generator/verticalCounter/count_4" BEL
+        "Inst_VGA/Inst_Image_Generator/verticalCounter/count_3" BEL
+        "Inst_VGA/Inst_Image_Generator/verticalCounter/count_2" BEL
+        "Inst_VGA/Inst_Image_Generator/verticalCounter/count_1" BEL
+        "Inst_VGA/Inst_Image_Generator/verticalCounter/count_0" BEL
         "Inst_VGA/Inst_Image_Generator/Pulse_d/count_19" BEL
         "Inst_VGA/Inst_Image_Generator/Pulse_d/count_18" BEL
         "Inst_VGA/Inst_Image_Generator/Pulse_d/count_17" BEL
@@ -196,7 +128,9 @@ TIMEGRP your_instance_name_clkout0 = BEL "Inst_VGA/pulse_strobe/count_0" BEL
         "Inst_VGA/Inst_Image_Generator/Pulse_d/count_2" BEL
         "Inst_VGA/Inst_Image_Generator/Pulse_d/count_1" BEL
         "Inst_VGA/Inst_Image_Generator/Pulse_d/count_0" BEL
+        "Inst_VGA/Inst_Image_Generator/DB4/Flip3/Q" BEL
         "Inst_VGA/Inst_Image_Generator/DB2/Flip3/Q" BEL
+        "Inst_VGA/Inst_Image_Generator/DB1/Flip3/Q" BEL
         "Inst_VGA/Inst_Image_Generator/DB0/Flip3/Q" BEL
         "Inst_VGA/Inst_VGA_Control/Hcount/count_9" BEL
         "Inst_VGA/Inst_VGA_Control/Hcount/count_8" BEL
@@ -223,7 +157,35 @@ TIMEGRP your_instance_name_clkout0 = BEL "Inst_VGA/pulse_strobe/count_0" BEL
         "Inst_VGA/Inst_VGA_Control/hold_Hsync/Q" BEL
         "Inst_VGA/Inst_VGA_Control/hold_Vsync/Q" BEL
         "Inst_VGA/Inst_VGA_Control/hold_rgb_enable/Q" BEL
-        "Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_10" BEL
+        "Inst_SVGA/Test_counter/count_31" BEL
+        "Inst_SVGA/Test_counter/count_30" BEL
+        "Inst_SVGA/Test_counter/count_29" BEL
+        "Inst_SVGA/Test_counter/count_28" BEL
+        "Inst_SVGA/Test_counter/count_27" BEL
+        "Inst_SVGA/Test_counter/count_26" BEL
+        "Inst_SVGA/Test_counter/count_25" BEL
+        "Inst_SVGA/Test_counter/count_24" BEL
+        "Inst_SVGA/Test_counter/count_23" BEL
+        "Inst_SVGA/Test_counter/count_22" BEL
+        "Inst_SVGA/Test_counter/count_21" BEL
+        "Inst_SVGA/Test_counter/count_20" BEL
+        "Inst_SVGA/Test_counter/count_19" BEL
+        "Inst_SVGA/Test_counter/count_18" BEL
+        "Inst_SVGA/Test_counter/count_17" BEL
+        "Inst_SVGA/Test_counter/count_16" BEL
+        "Inst_SVGA/Test_counter/count_15" BEL
+        "Inst_SVGA/Test_counter/count_14" BEL
+        "Inst_SVGA/Test_counter/count_13" BEL
+        "Inst_SVGA/Test_counter/count_12" BEL
+        "Inst_SVGA/Test_counter/count_11" BEL
+        "Inst_SVGA/Test_counter/count_10" BEL "Inst_SVGA/Test_counter/count_9"
+        BEL "Inst_SVGA/Test_counter/count_8" BEL
+        "Inst_SVGA/Test_counter/count_7" BEL "Inst_SVGA/Test_counter/count_6"
+        BEL "Inst_SVGA/Test_counter/count_5" BEL
+        "Inst_SVGA/Test_counter/count_4" BEL "Inst_SVGA/Test_counter/count_3"
+        BEL "Inst_SVGA/Test_counter/count_2" BEL
+        "Inst_SVGA/Test_counter/count_1" BEL "Inst_SVGA/Test_counter/count_0"
+        BEL "Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_10" BEL
         "Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_8" BEL
         "Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_7" BEL
         "Inst_SVGA/Inst_Image_Generator/horizontalCounter/count_6" BEL
@@ -244,8 +206,6 @@ TIMEGRP your_instance_name_clkout0 = BEL "Inst_VGA/pulse_strobe/count_0" BEL
         "Inst_SVGA/Inst_Image_Generator/verticalCounter/count_2" BEL
         "Inst_SVGA/Inst_Image_Generator/verticalCounter/count_1" BEL
         "Inst_SVGA/Inst_Image_Generator/verticalCounter/count_0" BEL
-        "Inst_SVGA/Inst_Image_Generator/DB4/Flip3/Q" BEL
-        "Inst_SVGA/Inst_Image_Generator/DB1/Flip3/Q" BEL
         "Inst_SVGA/Inst_SVGA_Control/Hcount/count_10" BEL
         "Inst_SVGA/Inst_SVGA_Control/Hcount/count_9" BEL
         "Inst_SVGA/Inst_SVGA_Control/Hcount/count_8" BEL
@@ -273,7 +233,28 @@ TIMEGRP your_instance_name_clkout0 = BEL "Inst_VGA/pulse_strobe/count_0" BEL
         "Inst_SVGA/Inst_SVGA_Control/hold_Hsync/Q" BEL
         "Inst_SVGA/Inst_SVGA_Control/hold_Vsync/Q" BEL
         "Inst_SVGA/Inst_SVGA_Control/hold_rgb_enable/Q" BEL
-        "Inst_XGA/Inst_XGA_Control/Vcount/count_10" BEL
+        "Inst_XGA/Test_counter/count_31" BEL "Inst_XGA/Test_counter/count_30"
+        BEL "Inst_XGA/Test_counter/count_29" BEL
+        "Inst_XGA/Test_counter/count_28" BEL "Inst_XGA/Test_counter/count_27"
+        BEL "Inst_XGA/Test_counter/count_26" BEL
+        "Inst_XGA/Test_counter/count_25" BEL "Inst_XGA/Test_counter/count_24"
+        BEL "Inst_XGA/Test_counter/count_23" BEL
+        "Inst_XGA/Test_counter/count_22" BEL "Inst_XGA/Test_counter/count_21"
+        BEL "Inst_XGA/Test_counter/count_20" BEL
+        "Inst_XGA/Test_counter/count_19" BEL "Inst_XGA/Test_counter/count_18"
+        BEL "Inst_XGA/Test_counter/count_17" BEL
+        "Inst_XGA/Test_counter/count_16" BEL "Inst_XGA/Test_counter/count_15"
+        BEL "Inst_XGA/Test_counter/count_14" BEL
+        "Inst_XGA/Test_counter/count_13" BEL "Inst_XGA/Test_counter/count_12"
+        BEL "Inst_XGA/Test_counter/count_11" BEL
+        "Inst_XGA/Test_counter/count_10" BEL "Inst_XGA/Test_counter/count_9"
+        BEL "Inst_XGA/Test_counter/count_8" BEL
+        "Inst_XGA/Test_counter/count_7" BEL "Inst_XGA/Test_counter/count_6"
+        BEL "Inst_XGA/Test_counter/count_5" BEL
+        "Inst_XGA/Test_counter/count_4" BEL "Inst_XGA/Test_counter/count_3"
+        BEL "Inst_XGA/Test_counter/count_2" BEL
+        "Inst_XGA/Test_counter/count_1" BEL "Inst_XGA/Test_counter/count_0"
+        BEL "Inst_XGA/Inst_XGA_Control/Vcount/count_10" BEL
         "Inst_XGA/Inst_XGA_Control/Vcount/count_9" BEL
         "Inst_XGA/Inst_XGA_Control/Vcount/count_8" BEL
         "Inst_XGA/Inst_XGA_Control/Vcount/count_7" BEL
@@ -298,7 +279,35 @@ TIMEGRP your_instance_name_clkout0 = BEL "Inst_VGA/pulse_strobe/count_0" BEL
         "Inst_XGA/Inst_XGA_Control/hold_Hsync/Q" BEL
         "Inst_XGA/Inst_XGA_Control/hold_Vsync/Q" BEL
         "Inst_XGA/Inst_XGA_Control/hold_rgb_enable/Q" BEL
-        "Inst_SXGA/Inst_SXGA_Control/Vcount/count_10" BEL
+        "Inst_SXGA/Test_counter/count_31" BEL
+        "Inst_SXGA/Test_counter/count_30" BEL
+        "Inst_SXGA/Test_counter/count_29" BEL
+        "Inst_SXGA/Test_counter/count_28" BEL
+        "Inst_SXGA/Test_counter/count_27" BEL
+        "Inst_SXGA/Test_counter/count_26" BEL
+        "Inst_SXGA/Test_counter/count_25" BEL
+        "Inst_SXGA/Test_counter/count_24" BEL
+        "Inst_SXGA/Test_counter/count_23" BEL
+        "Inst_SXGA/Test_counter/count_22" BEL
+        "Inst_SXGA/Test_counter/count_21" BEL
+        "Inst_SXGA/Test_counter/count_20" BEL
+        "Inst_SXGA/Test_counter/count_19" BEL
+        "Inst_SXGA/Test_counter/count_18" BEL
+        "Inst_SXGA/Test_counter/count_17" BEL
+        "Inst_SXGA/Test_counter/count_16" BEL
+        "Inst_SXGA/Test_counter/count_15" BEL
+        "Inst_SXGA/Test_counter/count_14" BEL
+        "Inst_SXGA/Test_counter/count_13" BEL
+        "Inst_SXGA/Test_counter/count_12" BEL
+        "Inst_SXGA/Test_counter/count_11" BEL
+        "Inst_SXGA/Test_counter/count_10" BEL "Inst_SXGA/Test_counter/count_9"
+        BEL "Inst_SXGA/Test_counter/count_8" BEL
+        "Inst_SXGA/Test_counter/count_7" BEL "Inst_SXGA/Test_counter/count_6"
+        BEL "Inst_SXGA/Test_counter/count_5" BEL
+        "Inst_SXGA/Test_counter/count_4" BEL "Inst_SXGA/Test_counter/count_3"
+        BEL "Inst_SXGA/Test_counter/count_2" BEL
+        "Inst_SXGA/Test_counter/count_1" BEL "Inst_SXGA/Test_counter/count_0"
+        BEL "Inst_SXGA/Inst_SXGA_Control/Vcount/count_10" BEL
         "Inst_SXGA/Inst_SXGA_Control/Vcount/count_9" BEL
         "Inst_SXGA/Inst_SXGA_Control/Vcount/count_8" BEL
         "Inst_SXGA/Inst_SXGA_Control/Vcount/count_7" BEL
@@ -324,88 +333,87 @@ TIMEGRP your_instance_name_clkout0 = BEL "Inst_VGA/pulse_strobe/count_0" BEL
         "Inst_SXGA/Inst_SXGA_Control/hold_Vsync/Q" BEL
         "Inst_SXGA/Inst_SXGA_Control/hold_rgb_enable/Q" BEL
         "your_instance_name/clkout1_buf" BEL
+        "Inst_VGA/Inst_Image_Generator/DB4/Flip2/Mshreg_Q" BEL
+        "Inst_VGA/Inst_Image_Generator/DB4/Flip2/Q" BEL
         "Inst_VGA/Inst_Image_Generator/DB2/Flip2/Mshreg_Q" BEL
         "Inst_VGA/Inst_Image_Generator/DB2/Flip2/Q" BEL
+        "Inst_VGA/Inst_Image_Generator/DB1/Flip2/Mshreg_Q" BEL
+        "Inst_VGA/Inst_Image_Generator/DB1/Flip2/Q" BEL
         "Inst_VGA/Inst_Image_Generator/DB0/Flip2/Mshreg_Q" BEL
-        "Inst_VGA/Inst_Image_Generator/DB0/Flip2/Q" BEL
-        "Inst_SVGA/Inst_Image_Generator/DB4/Flip2/Mshreg_Q" BEL
-        "Inst_SVGA/Inst_Image_Generator/DB4/Flip2/Q" BEL
-        "Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Mshreg_Q" BEL
-        "Inst_SVGA/Inst_Image_Generator/DB1/Flip2/Q";
-TIMEGRP your_instance_name_clkout1 = BEL "Inst_VGA/Test_counter/count_0" BEL
-        "Inst_VGA/Test_counter/count_1" BEL "Inst_VGA/Test_counter/count_2"
-        BEL "Inst_VGA/Test_counter/count_3" BEL
-        "Inst_VGA/Test_counter/count_4" BEL "Inst_VGA/Test_counter/count_5"
-        BEL "Inst_VGA/Test_counter/count_6" BEL
-        "Inst_VGA/Test_counter/count_7" BEL "Inst_VGA/Test_counter/count_8"
-        BEL "Inst_VGA/Test_counter/count_9" BEL
-        "Inst_VGA/Test_counter/count_10" BEL "Inst_VGA/Test_counter/count_11"
-        BEL "Inst_VGA/Test_counter/count_12" BEL
-        "Inst_VGA/Test_counter/count_13" BEL "Inst_VGA/Test_counter/count_14"
-        BEL "Inst_VGA/Test_counter/count_15" BEL
-        "Inst_VGA/Test_counter/count_16" BEL "Inst_VGA/Test_counter/count_17"
-        BEL "Inst_VGA/Test_counter/count_18" BEL
-        "Inst_VGA/Test_counter/count_19" BEL "Inst_VGA/Test_counter/count_20"
-        BEL "Inst_VGA/Test_counter/count_21" BEL
-        "Inst_VGA/Test_counter/count_22" BEL "Inst_VGA/Test_counter/count_23"
-        BEL "Inst_VGA/Test_counter/count_24" BEL
-        "Inst_VGA/Test_counter/count_25" BEL "Inst_VGA/Test_counter/count_26"
-        BEL "Inst_VGA/Test_counter/count_27" BEL
-        "Inst_VGA/Test_counter/count_28" BEL "Inst_VGA/Test_counter/count_29"
-        BEL "Inst_VGA/Test_counter/count_30" BEL
-        "Inst_VGA/Test_counter/count_31" BEL "your_instance_name/clkout2_buf";
-TIMEGRP your_instance_name_clkout2 = BEL "Inst_SVGA/Test_counter/count_0" BEL
-        "Inst_SVGA/Test_counter/count_1" BEL "Inst_SVGA/Test_counter/count_2"
-        BEL "Inst_SVGA/Test_counter/count_3" BEL
-        "Inst_SVGA/Test_counter/count_4" BEL "Inst_SVGA/Test_counter/count_5"
-        BEL "Inst_SVGA/Test_counter/count_6" BEL
-        "Inst_SVGA/Test_counter/count_7" BEL "Inst_SVGA/Test_counter/count_8"
-        BEL "Inst_SVGA/Test_counter/count_9" BEL
-        "Inst_SVGA/Test_counter/count_10" BEL
-        "Inst_SVGA/Test_counter/count_11" BEL
-        "Inst_SVGA/Test_counter/count_12" BEL
-        "Inst_SVGA/Test_counter/count_13" BEL
-        "Inst_SVGA/Test_counter/count_14" BEL
-        "Inst_SVGA/Test_counter/count_15" BEL
-        "Inst_SVGA/Test_counter/count_16" BEL
-        "Inst_SVGA/Test_counter/count_17" BEL
-        "Inst_SVGA/Test_counter/count_18" BEL
-        "Inst_SVGA/Test_counter/count_19" BEL
-        "Inst_SVGA/Test_counter/count_20" BEL
-        "Inst_SVGA/Test_counter/count_21" BEL
-        "Inst_SVGA/Test_counter/count_22" BEL
-        "Inst_SVGA/Test_counter/count_23" BEL
-        "Inst_SVGA/Test_counter/count_24" BEL
-        "Inst_SVGA/Test_counter/count_25" BEL
-        "Inst_SVGA/Test_counter/count_26" BEL
-        "Inst_SVGA/Test_counter/count_27" BEL
-        "Inst_SVGA/Test_counter/count_28" BEL
-        "Inst_SVGA/Test_counter/count_29" BEL
+        "Inst_VGA/Inst_Image_Generator/DB0/Flip2/Q";
+TIMEGRP your_instance_name_clkout1 = BEL "Inst_VGA/Test_counter/count_31" BEL
+        "Inst_VGA/Test_counter/count_30" BEL "Inst_VGA/Test_counter/count_29"
+        BEL "Inst_VGA/Test_counter/count_28" BEL
+        "Inst_VGA/Test_counter/count_27" BEL "Inst_VGA/Test_counter/count_26"
+        BEL "Inst_VGA/Test_counter/count_25" BEL
+        "Inst_VGA/Test_counter/count_24" BEL "Inst_VGA/Test_counter/count_23"
+        BEL "Inst_VGA/Test_counter/count_22" BEL
+        "Inst_VGA/Test_counter/count_21" BEL "Inst_VGA/Test_counter/count_20"
+        BEL "Inst_VGA/Test_counter/count_19" BEL
+        "Inst_VGA/Test_counter/count_18" BEL "Inst_VGA/Test_counter/count_17"
+        BEL "Inst_VGA/Test_counter/count_16" BEL
+        "Inst_VGA/Test_counter/count_15" BEL "Inst_VGA/Test_counter/count_14"
+        BEL "Inst_VGA/Test_counter/count_13" BEL
+        "Inst_VGA/Test_counter/count_12" BEL "Inst_VGA/Test_counter/count_11"
+        BEL "Inst_VGA/Test_counter/count_10" BEL
+        "Inst_VGA/Test_counter/count_9" BEL "Inst_VGA/Test_counter/count_8"
+        BEL "Inst_VGA/Test_counter/count_7" BEL
+        "Inst_VGA/Test_counter/count_6" BEL "Inst_VGA/Test_counter/count_5"
+        BEL "Inst_VGA/Test_counter/count_4" BEL
+        "Inst_VGA/Test_counter/count_3" BEL "Inst_VGA/Test_counter/count_2"
+        BEL "Inst_VGA/Test_counter/count_1" BEL
+        "Inst_VGA/Test_counter/count_0" BEL "your_instance_name/clkout2_buf";
+TIMEGRP your_instance_name_clkout2 = BEL "Inst_SVGA/Test_counter/count_31" BEL
         "Inst_SVGA/Test_counter/count_30" BEL
-        "Inst_SVGA/Test_counter/count_31" BEL
-        "your_instance_name/clkout3_buf";
-TIMEGRP your_instance_name_clkout3 = BEL "Inst_XGA/Test_counter/count_0" BEL
-        "Inst_XGA/Test_counter/count_1" BEL "Inst_XGA/Test_counter/count_2"
-        BEL "Inst_XGA/Test_counter/count_3" BEL
-        "Inst_XGA/Test_counter/count_4" BEL "Inst_XGA/Test_counter/count_5"
-        BEL "Inst_XGA/Test_counter/count_6" BEL
-        "Inst_XGA/Test_counter/count_7" BEL "Inst_XGA/Test_counter/count_8"
-        BEL "Inst_XGA/Test_counter/count_9" BEL
-        "Inst_XGA/Test_counter/count_10" BEL "Inst_XGA/Test_counter/count_11"
-        BEL "Inst_XGA/Test_counter/count_12" BEL
-        "Inst_XGA/Test_counter/count_13" BEL "Inst_XGA/Test_counter/count_14"
-        BEL "Inst_XGA/Test_counter/count_15" BEL
-        "Inst_XGA/Test_counter/count_16" BEL "Inst_XGA/Test_counter/count_17"
-        BEL "Inst_XGA/Test_counter/count_18" BEL
-        "Inst_XGA/Test_counter/count_19" BEL "Inst_XGA/Test_counter/count_20"
-        BEL "Inst_XGA/Test_counter/count_21" BEL
-        "Inst_XGA/Test_counter/count_22" BEL "Inst_XGA/Test_counter/count_23"
-        BEL "Inst_XGA/Test_counter/count_24" BEL
-        "Inst_XGA/Test_counter/count_25" BEL "Inst_XGA/Test_counter/count_26"
-        BEL "Inst_XGA/Test_counter/count_27" BEL
-        "Inst_XGA/Test_counter/count_28" BEL "Inst_XGA/Test_counter/count_29"
-        BEL "Inst_XGA/Test_counter/count_30" BEL
-        "Inst_XGA/Test_counter/count_31" BEL
+        "Inst_SVGA/Test_counter/count_29" BEL
+        "Inst_SVGA/Test_counter/count_28" BEL
+        "Inst_SVGA/Test_counter/count_27" BEL
+        "Inst_SVGA/Test_counter/count_26" BEL
+        "Inst_SVGA/Test_counter/count_25" BEL
+        "Inst_SVGA/Test_counter/count_24" BEL
+        "Inst_SVGA/Test_counter/count_23" BEL
+        "Inst_SVGA/Test_counter/count_22" BEL
+        "Inst_SVGA/Test_counter/count_21" BEL
+        "Inst_SVGA/Test_counter/count_20" BEL
+        "Inst_SVGA/Test_counter/count_19" BEL
+        "Inst_SVGA/Test_counter/count_18" BEL
+        "Inst_SVGA/Test_counter/count_17" BEL
+        "Inst_SVGA/Test_counter/count_16" BEL
+        "Inst_SVGA/Test_counter/count_15" BEL
+        "Inst_SVGA/Test_counter/count_14" BEL
+        "Inst_SVGA/Test_counter/count_13" BEL
+        "Inst_SVGA/Test_counter/count_12" BEL
+        "Inst_SVGA/Test_counter/count_11" BEL
+        "Inst_SVGA/Test_counter/count_10" BEL "Inst_SVGA/Test_counter/count_9"
+        BEL "Inst_SVGA/Test_counter/count_8" BEL
+        "Inst_SVGA/Test_counter/count_7" BEL "Inst_SVGA/Test_counter/count_6"
+        BEL "Inst_SVGA/Test_counter/count_5" BEL
+        "Inst_SVGA/Test_counter/count_4" BEL "Inst_SVGA/Test_counter/count_3"
+        BEL "Inst_SVGA/Test_counter/count_2" BEL
+        "Inst_SVGA/Test_counter/count_1" BEL "Inst_SVGA/Test_counter/count_0"
+        BEL "your_instance_name/clkout3_buf";
+TIMEGRP your_instance_name_clkout3 = BEL "Inst_XGA/Test_counter/count_31" BEL
+        "Inst_XGA/Test_counter/count_30" BEL "Inst_XGA/Test_counter/count_29"
+        BEL "Inst_XGA/Test_counter/count_28" BEL
+        "Inst_XGA/Test_counter/count_27" BEL "Inst_XGA/Test_counter/count_26"
+        BEL "Inst_XGA/Test_counter/count_25" BEL
+        "Inst_XGA/Test_counter/count_24" BEL "Inst_XGA/Test_counter/count_23"
+        BEL "Inst_XGA/Test_counter/count_22" BEL
+        "Inst_XGA/Test_counter/count_21" BEL "Inst_XGA/Test_counter/count_20"
+        BEL "Inst_XGA/Test_counter/count_19" BEL
+        "Inst_XGA/Test_counter/count_18" BEL "Inst_XGA/Test_counter/count_17"
+        BEL "Inst_XGA/Test_counter/count_16" BEL
+        "Inst_XGA/Test_counter/count_15" BEL "Inst_XGA/Test_counter/count_14"
+        BEL "Inst_XGA/Test_counter/count_13" BEL
+        "Inst_XGA/Test_counter/count_12" BEL "Inst_XGA/Test_counter/count_11"
+        BEL "Inst_XGA/Test_counter/count_10" BEL
+        "Inst_XGA/Test_counter/count_9" BEL "Inst_XGA/Test_counter/count_8"
+        BEL "Inst_XGA/Test_counter/count_7" BEL
+        "Inst_XGA/Test_counter/count_6" BEL "Inst_XGA/Test_counter/count_5"
+        BEL "Inst_XGA/Test_counter/count_4" BEL
+        "Inst_XGA/Test_counter/count_3" BEL "Inst_XGA/Test_counter/count_2"
+        BEL "Inst_XGA/Test_counter/count_1" BEL
+        "Inst_XGA/Test_counter/count_0" BEL
         "Inst_XGA/Inst_XGA_Control/Vcount/count_10" BEL
         "Inst_XGA/Inst_XGA_Control/Vcount/count_9" BEL
         "Inst_XGA/Inst_XGA_Control/Vcount/count_8" BEL
@@ -432,36 +440,35 @@ TIMEGRP your_instance_name_clkout3 = BEL "Inst_XGA/Test_counter/count_0" BEL
         "Inst_XGA/Inst_XGA_Control/hold_Vsync/Q" BEL
         "Inst_XGA/Inst_XGA_Control/hold_rgb_enable/Q" BEL
         "your_instance_name/clkout4_buf";
-TIMEGRP your_instance_name_clkout4 = BEL "Inst_SXGA/Test_counter/count_0" BEL
-        "Inst_SXGA/Test_counter/count_1" BEL "Inst_SXGA/Test_counter/count_2"
-        BEL "Inst_SXGA/Test_counter/count_3" BEL
-        "Inst_SXGA/Test_counter/count_4" BEL "Inst_SXGA/Test_counter/count_5"
-        BEL "Inst_SXGA/Test_counter/count_6" BEL
-        "Inst_SXGA/Test_counter/count_7" BEL "Inst_SXGA/Test_counter/count_8"
-        BEL "Inst_SXGA/Test_counter/count_9" BEL
-        "Inst_SXGA/Test_counter/count_10" BEL
-        "Inst_SXGA/Test_counter/count_11" BEL
-        "Inst_SXGA/Test_counter/count_12" BEL
-        "Inst_SXGA/Test_counter/count_13" BEL
-        "Inst_SXGA/Test_counter/count_14" BEL
-        "Inst_SXGA/Test_counter/count_15" BEL
-        "Inst_SXGA/Test_counter/count_16" BEL
-        "Inst_SXGA/Test_counter/count_17" BEL
-        "Inst_SXGA/Test_counter/count_18" BEL
-        "Inst_SXGA/Test_counter/count_19" BEL
-        "Inst_SXGA/Test_counter/count_20" BEL
-        "Inst_SXGA/Test_counter/count_21" BEL
-        "Inst_SXGA/Test_counter/count_22" BEL
-        "Inst_SXGA/Test_counter/count_23" BEL
-        "Inst_SXGA/Test_counter/count_24" BEL
-        "Inst_SXGA/Test_counter/count_25" BEL
-        "Inst_SXGA/Test_counter/count_26" BEL
-        "Inst_SXGA/Test_counter/count_27" BEL
-        "Inst_SXGA/Test_counter/count_28" BEL
-        "Inst_SXGA/Test_counter/count_29" BEL
+TIMEGRP your_instance_name_clkout4 = BEL "Inst_SXGA/Test_counter/count_31" BEL
         "Inst_SXGA/Test_counter/count_30" BEL
-        "Inst_SXGA/Test_counter/count_31" BEL
-        "Inst_SXGA/Inst_SXGA_Control/Vcount/count_10" BEL
+        "Inst_SXGA/Test_counter/count_29" BEL
+        "Inst_SXGA/Test_counter/count_28" BEL
+        "Inst_SXGA/Test_counter/count_27" BEL
+        "Inst_SXGA/Test_counter/count_26" BEL
+        "Inst_SXGA/Test_counter/count_25" BEL
+        "Inst_SXGA/Test_counter/count_24" BEL
+        "Inst_SXGA/Test_counter/count_23" BEL
+        "Inst_SXGA/Test_counter/count_22" BEL
+        "Inst_SXGA/Test_counter/count_21" BEL
+        "Inst_SXGA/Test_counter/count_20" BEL
+        "Inst_SXGA/Test_counter/count_19" BEL
+        "Inst_SXGA/Test_counter/count_18" BEL
+        "Inst_SXGA/Test_counter/count_17" BEL
+        "Inst_SXGA/Test_counter/count_16" BEL
+        "Inst_SXGA/Test_counter/count_15" BEL
+        "Inst_SXGA/Test_counter/count_14" BEL
+        "Inst_SXGA/Test_counter/count_13" BEL
+        "Inst_SXGA/Test_counter/count_12" BEL
+        "Inst_SXGA/Test_counter/count_11" BEL
+        "Inst_SXGA/Test_counter/count_10" BEL "Inst_SXGA/Test_counter/count_9"
+        BEL "Inst_SXGA/Test_counter/count_8" BEL
+        "Inst_SXGA/Test_counter/count_7" BEL "Inst_SXGA/Test_counter/count_6"
+        BEL "Inst_SXGA/Test_counter/count_5" BEL
+        "Inst_SXGA/Test_counter/count_4" BEL "Inst_SXGA/Test_counter/count_3"
+        BEL "Inst_SXGA/Test_counter/count_2" BEL
+        "Inst_SXGA/Test_counter/count_1" BEL "Inst_SXGA/Test_counter/count_0"
+        BEL "Inst_SXGA/Inst_SXGA_Control/Vcount/count_10" BEL
         "Inst_SXGA/Inst_SXGA_Control/Vcount/count_9" BEL
         "Inst_SXGA/Inst_SXGA_Control/Vcount/count_8" BEL
         "Inst_SXGA/Inst_SXGA_Control/Vcount/count_7" BEL
@@ -491,15 +498,15 @@ PIN your_instance_name/mmcm_adv_inst_pins<2> = BEL
         "your_instance_name/mmcm_adv_inst" PINNAME CLKIN1;
 TIMEGRP sys_clk_pin = PIN "your_instance_name/mmcm_adv_inst_pins<2>";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
-TS_your_instance_name_clkout2 = PERIOD TIMEGRP "your_instance_name_clkout2"
-        TS_sys_clk_pin * 0.4 HIGH 50%;
+TS_your_instance_name_clkout1 = PERIOD TIMEGRP "your_instance_name_clkout1"
+        TS_sys_clk_pin * 0.25 HIGH 50%;
 TS_your_instance_name_clkout4 = PERIOD TIMEGRP "your_instance_name_clkout4"
         TS_sys_clk_pin * 1.09090909 HIGH 50%;
+TS_your_instance_name_clkout2 = PERIOD TIMEGRP "your_instance_name_clkout2"
+        TS_sys_clk_pin * 0.4 HIGH 50%;
 TS_your_instance_name_clkout3 = PERIOD TIMEGRP "your_instance_name_clkout3"
         TS_sys_clk_pin * 0.666666667 HIGH 50%;
 TS_your_instance_name_clkout0 = PERIOD TIMEGRP "your_instance_name_clkout0"
         TS_sys_clk_pin HIGH 50%;
-TS_your_instance_name_clkout1 = PERIOD TIMEGRP "your_instance_name_clkout1"
-        TS_sys_clk_pin * 0.25 HIGH 50%;
 SCHEMATIC END;
 
