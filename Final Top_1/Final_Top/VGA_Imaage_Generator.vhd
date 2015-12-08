@@ -248,7 +248,7 @@ ROMCounter: Counter_nbit generic map (9) port map (
 rom_count_int <=  '0' & rom_count;
 																																																							-----
 ROMCompare: LST generic map (10) port map (														
-	A     	=> "100000000000",																			
+	A     	=> "0110001110",																			
 	B     	=> rom_count_int,																			
 	OUTPUT   => rom_count_clr--_int																		
 );	
